@@ -14298,13 +14298,13 @@
           "groupRole": "历史题目稿"
         },
         {
-          "name": "卷属待核模拟一 · 详细解答",
+          "name": "模拟一（来源未确认） · 详细解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "模拟一_详细解答.pdf",
           "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
           "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/mock-one-unconfirmed.md",
-          "note": "有待核验、候选或未完成部分，见详情。",
+          "note": "",
           "subjects": [
             "综合数学"
           ],
@@ -14325,24 +14325,25 @@
             "同名“模拟一”历史材料（来源关系待核）",
             "模拟1",
             "模拟01",
-            "mock1"
+            "mock1",
+            "模拟一（来源未确认）"
           ],
           "pages": 15,
           "id": "703ba532021cf047",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "unpaired:703ba532021cf047",
+          "groupKey": "mock-one-source-unconfirmed",
           "section": "papers",
-          "groupRole": "待配卷解答"
+          "groupRole": "详细解答"
         },
         {
-          "name": "卷属待核模拟一 · 简版解答",
+          "name": "模拟一（来源未确认） · 简版解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "模拟一_解答.pdf",
           "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%A7%A3%E7%AD%94.pdf",
           "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/mock-one-unconfirmed.md",
-          "note": "有待核验、候选或未完成部分，见详情。",
+          "note": "",
           "subjects": [
             "综合数学"
           ],
@@ -14363,24 +14364,25 @@
             "同名“模拟一”历史材料（来源关系待核）",
             "模拟1",
             "模拟01",
-            "mock1"
+            "mock1",
+            "模拟一（来源未确认）"
           ],
           "pages": 5,
           "id": "7123d0733dd36c12",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "unpaired:7123d0733dd36c12",
+          "groupKey": "mock-one-source-unconfirmed",
           "section": "papers",
-          "groupRole": "待配卷解答"
+          "groupRole": "简版解答"
         },
         {
-          "name": "卷属待核模拟一 · 净题",
+          "name": "模拟一（来源未确认） · 净题",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
           "filename": "模拟一_净题.pdf",
           "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E5%87%80%E9%A2%98.pdf",
           "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/mock-one-unconfirmed.md",
-          "note": "有待核验、候选或未完成部分，见详情。",
+          "note": "",
           "subjects": [
             "综合数学"
           ],
@@ -14401,15 +14403,16 @@
             "同名“模拟一”历史材料（来源关系待核）",
             "模拟1",
             "模拟01",
-            "mock1"
+            "mock1",
+            "模拟一（来源未确认）"
           ],
           "pages": 2,
           "id": "2431c36e2069477c",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E5%87%80%E9%A2%98.pdf",
-          "groupKey": "unpaired:2431c36e2069477c",
+          "groupKey": "mock-one-source-unconfirmed",
           "section": "papers",
-          "groupRole": "待确认试卷题目"
+          "groupRole": "净题"
         },
         {
           "name": "第22届XMO二试 · 解答",
@@ -23669,13 +23672,13 @@
       "uncertainties": []
     },
     {
-      "key": "unpaired:703ba532021cf047",
-      "id": "c357d04400fcdb77",
-      "title": "卷属待核模拟一 · 详细解答",
+      "key": "mock-one-source-unconfirmed",
+      "id": "dd8c1992b0579761",
+      "title": "模拟一（来源未确认）",
       "section": "papers",
       "institution": "来源待核",
-      "materialType": "unpaired",
-      "status": "待配卷 / 归属待核",
+      "materialType": "exam-paper",
+      "status": "题面以题目版为准；第13题解答对伴随记号采用不同解释",
       "subjects": [
         "综合数学"
       ],
@@ -23683,78 +23686,14 @@
         "综合训练（未细分）"
       ],
       "itemIds": [
-        "703ba532021cf047"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "所配试卷或来源关系尚未确认，单独保留文件。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核",
-        "待配卷 / 归属待核"
-      ]
-    },
-    {
-      "key": "unpaired:7123d0733dd36c12",
-      "id": "147632c6566a9678",
-      "title": "卷属待核模拟一 · 简版解答",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "unpaired",
-      "status": "待配卷 / 归属待核",
-      "subjects": [
-        "综合数学"
-      ],
-      "topics": [
-        "综合训练（未细分）"
-      ],
-      "itemIds": [
-        "7123d0733dd36c12"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "所配试卷或来源关系尚未确认，单独保留文件。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核",
-        "待配卷 / 归属待核"
-      ]
-    },
-    {
-      "key": "unpaired:2431c36e2069477c",
-      "id": "daf10cc3761d992a",
-      "title": "卷属待核模拟一 · 净题",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "unpaired",
-      "status": "待配卷 / 归属待核",
-      "subjects": [
-        "综合数学"
-      ],
-      "topics": [
-        "综合训练（未细分）"
-      ],
-      "itemIds": [
+        "703ba532021cf047",
+        "7123d0733dd36c12",
         "2431c36e2069477c"
       ],
       "repoIds": [
         "exam-papers"
       ],
-      "description": "所配试卷或来源关系尚未确认，单独保留文件。",
+      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
       "series": "",
       "phase": "",
       "number": null,
@@ -23764,7 +23703,7 @@
       ],
       "uncertainties": [
         "机构 / 来源待核",
-        "待配卷 / 归属待核"
+        "题面以题目版为准；第13题解答对伴随记号采用不同解释"
       ]
     },
     {
