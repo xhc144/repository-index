@@ -3,44 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="按分类浏览数学讲义、参考书、试卷、软件与设计作品，查看用途和原仓库入口。">
+  <meta name="description" content="按学科、专题、机构、系列和用途查找讲义、试卷及参考书，查看实际页数并直接下载 PDF。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
   <meta name="theme-color" content="#142e32">
   <title>学习资料与作品导航 · xhc144</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23142e32'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23b4ccbe'%3E%CE%A3%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20261007-2">
+  <script src="./app.js?v=20261007-2" defer></script>
 </head>
 <body id="top">
-  <a class="skip-link" href="#catalog">跳到资料目录</a>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow"><span class="brand-mark" aria-hidden="true">∑</span> XHC144 / COLLECTION</div>
-      <div class="hero-copy">
-        <div><h1>学习资料与作品导航<span>从一份资料开始。</span></h1><p>讲义、试卷、参考书与工具。按分类查找，直接进入原文件与项目说明。</p></div>
-        <dl class="stats" aria-label="目录统计"><div><dt>仓库</dt><dd id="repo-total">—</dd></div><div><dt>PDF</dt><dd id="pdf-total">—</dd></div><div><dt>全部入口</dt><dd id="item-total">—</dd></div></dl>
-      </div>
-      <div class="access-note"><span aria-hidden="true">↗</span><p id="notice">这里公开资料名称、用途与 GitHub 入口。访问私有资料需要对应的 GitHub 权限。</p></div>
+  <a class="skip-link" href="#directory">跳到资料目录</a>
+  <header class="hero"><div class="hero-inner">
+    <div class="eyebrow"><span class="brand-mark" aria-hidden="true">∑</span> XHC144 / COLLECTION</div>
+    <div class="hero-copy"><div><h1>学习资料与作品导航</h1><p>按学科与专题找资料，按机构、系列和用途选版本。</p></div><dl class="stats" aria-label="目录统计"><div><dt>仓库</dt><dd id="repo-total">—</dd></div><div><dt>PDF</dt><dd id="pdf-total">—</dd></div><div><dt>全部入口</dt><dd id="item-total">—</dd></div></dl></div>
+    <p class="access-note" id="notice">导航公开，资料仍私有。直接下载保留 GitHub 原仓库权限。</p>
+  </div></header>
+  <div class="view-tabs" role="tablist" aria-label="浏览方式"><button id="directory-tab" type="button" role="tab" aria-selected="true" aria-controls="directory-view">资料目录</button><button id="overview-tab" type="button" role="tab" aria-selected="false" aria-controls="overview-view" tabindex="-1">仓库总览 <span>12</span></button></div>
+  <div id="directory-view" role="tabpanel" aria-labelledby="directory-tab">
+    <div class="workspace">
+      <aside class="sidebar" aria-label="资料学科"><p class="section-label">按内容分类</p><nav id="subjects" aria-label="学科筛选"></nav><p class="sidebar-note">学科和用途分别筛选。跨学科资料可从多个学科找到；无法确认的列为待分类。</p></aside>
+      <main id="directory" tabindex="-1">
+        <div class="search-bar"><label for="search">查找资料</label><div class="search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="如：清北 模拟三 教师、深中 零试、积分、群表示…" autocomplete="off"><button id="clear-search" type="button" hidden aria-label="清除搜索">清除</button></div></div>
+        <div class="filters" aria-label="组合筛选">
+          <div class="mobile-subject"><label for="subject-select">学科</label><select id="subject-select"></select></div>
+          <div><label for="topic-filter">子专题</label><select id="topic-filter"></select></div>
+          <div><label for="institution-filter">机构 / 来源</label><select id="institution-filter"></select></div>
+          <div><label for="use-filter">资料用途</label><select id="use-filter"></select></div>
+          <div><label for="series-filter">系列</label><select id="series-filter"></select></div>
+          <div><label for="phase-filter">考试阶段</label><select id="phase-filter"></select></div>
+          <div><label for="repo-filter">仓库</label><select id="repo-filter"></select></div>
+        </div>
+        <div class="result-line"><p id="results-status" role="status" aria-live="polite">正在载入目录…</p><button id="reset-filters" type="button">清空筛选</button></div>
+        <p id="pages-status" class="pages-status"></p>
+        <div class="list-labels" aria-hidden="true"><span>类型</span><span>资料名称 · 用途与来源</span><span>页数</span><span>下载 / 入口</span></div>
+        <div id="content"></div>
+        <div id="empty" class="empty-state" hidden><h2>没有找到匹配的资料</h2><p>试试较短的关键词，或清空部分筛选。</p><button id="reset" type="button">显示全部资料</button></div>
+        <noscript><p>请开启 JavaScript 查看分类目录，也可从 <a href="https://github.com/xhc144/repository-index">仓库主页</a>继续浏览。</p></noscript>
+      </main>
     </div>
-  </header>
-  <div class="workspace">
-    <aside class="sidebar" aria-label="目录导航">
-      <p class="section-label">浏览分类</p>
-      <nav id="categories" aria-label="分类筛选"></nav>
-      <div class="repo-jumps"><p class="section-label">仓库索引</p><nav id="repository-links" aria-label="跳到仓库"></nav></div>
-      <p class="sidebar-note">点击资料名称查看说明与源码入口；点击文件按钮进入 GitHub 文件页，登录后可按权限下载。</p>
-    </aside>
-    <main id="catalog" tabindex="-1">
-      <div class="search-bar">
-        <label for="search">查找资料</label>
-        <div class="search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索书名、专题、试卷或工具…" autocomplete="off"><button id="clear-search" type="button" hidden aria-label="清除搜索">清除</button></div>
-        <div class="result-line"><p id="results-status" role="status" aria-live="polite">正在载入目录…</p><p>核对日期 <time id="updated" datetime="2026-10-07">2026-10-07</time></p></div>
-      </div>
-      <div id="content"></div>
-      <div id="empty" class="empty-state" hidden><h2>没有找到匹配的资料</h2><p>试试较短的关键词，或切换到全部分类。</p><button id="reset" type="button">显示全部资料</button></div>
-      <noscript><p>请开启 JavaScript 查看完整分类目录，也可从 <a href="https://github.com/xhc144/repository-index">仓库主页</a>继续浏览。</p></noscript>
-    </main>
   </div>
-  <footer><div><p>资料与源码保存在原仓库。导航核对了目录与文件路径，具体版本和验证范围以项目说明为准。</p><nav aria-label="维护入口"><a href="https://github.com/xhc144/repository-index">导航仓库与历史</a><a href="https://github.com/xhc144/repository-index/blob/main/AGENTS.md">维护规则</a><a href="./catalog.json">目录数据</a><a href="#top" id="back-top">回到顶部 ↑</a></nav></div></footer>
+  <section id="overview-view" role="tabpanel" aria-labelledby="overview-tab" hidden><div class="overview-intro"><h2>12 个仓库，各有用途</h2><p>这里说明每个仓库放什么、适合怎样使用，并提供仓库主页与代表资料入口。</p></div><div id="overview"></div></section>
+  <footer><div><p>点击资料名称查看详情、源码与历史。PDF 页数只显示已核实的记录；待核内容和使用限制见原项目说明。核对日期 <time id="updated" datetime="2026-10-07">2026-10-07</time>。</p><nav aria-label="维护入口"><a href="https://github.com/xhc144/repository-index">导航仓库与历史</a><a href="https://github.com/xhc144/repository-index/blob/main/AGENTS.md">维护规则</a><a href="./catalog.json?v=20261007-2">目录数据</a><a href="#top" id="back-top">回到顶部 ↑</a></nav></div></footer>
 </body>
 </html>
