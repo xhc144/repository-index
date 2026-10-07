@@ -1,5 +1,9 @@
 # 仓库导航
 
+仓库总览现已移至 **[私人学习导览](https://xhc-study-library.dear-grass-9760.chatgpt.site)**。请使用本人 ChatGPT 账号登录；网页仅向所有者开放。
+
+下方旧目录及 [Git 历史](https://github.com/xhc144/repository-index/commits/main/) 继续保留，供查阅旧入口。新网页入口核对日期：2026-10-07；旧目录核对日期仍见文末。
+
 xhc144 的私有项目总目录，按用途查找资料、成品与源码。各项目的最新内容、使用限制和许可证，以对应仓库说明为准。
 
 分类 Topics 约定：数学与物理资料用 `math`，AI 工具用 `ai`，软件与游戏用 `software`，设计作品用 `design`；本索引用 `documentation`、`navigation`。
