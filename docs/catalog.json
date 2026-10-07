@@ -6335,7 +6335,8 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/stacked-grove/raw/refs/heads/main/dist/StackedGrove-V2-Windows-x64.zip",
           "groupKey": "tool:stacked-grove",
-          "section": "tools"
+          "section": "tools",
+          "groupRole": "成品 / 交付包"
         },
         {
           "name": "完整源码包",
@@ -6368,7 +6369,8 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/stacked-grove/raw/refs/heads/main/source/StackedGrove-V2-Source.zip",
           "groupKey": "tool:stacked-grove",
-          "section": "tools"
+          "section": "tools",
+          "groupRole": "源码包"
         }
       ],
       "contents": [
@@ -8027,7 +8029,8 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/blender-designs/raw/refs/heads/main/azure-sea-house/dist/Azure_Sea_House_Complete.zip",
           "groupKey": "tool:blender-designs",
-          "section": "tools"
+          "section": "tools",
+          "groupRole": "成品 / 交付包"
         },
         {
           "name": "可编辑 Blender 场景",
@@ -9270,7 +9273,8 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/api-observer/raw/refs/heads/main/distribution/api-observer-source.zip",
           "groupKey": "tool:api-observer",
-          "section": "tools"
+          "section": "tools",
+          "groupRole": "源码包"
         }
       ],
       "contents": [
