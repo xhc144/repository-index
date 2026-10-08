@@ -5268,18 +5268,20 @@
           "groupRole": "题目与AI解答"
         },
         {
-          "name": "解题札记：三题与手写要点",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "name": "解题札记",
+          "purpose": "按线性代数和概率论分类，查看简短关键想法与定理表述。",
           "kind": "PDF",
           "filename": "problem-solving-notes.pdf",
           "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/problem-solving-notes/dist/problem-solving-notes.pdf",
           "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/problem-solving-notes/README.md",
-          "note": "",
+          "note": "原三道矩阵题与要点保留；新增吾妻不等式表述，首页有可点击短目录，无新增证明或例题。",
           "subjects": [
-            "综合数学"
+            "线性代数",
+            "概率与统计"
           ],
           "topics": [
-            "综合专题与证明方法"
+            "矩阵方法",
+            "鞅与概率不等式"
           ],
           "institution": "来源待核",
           "institutions": [],
@@ -5288,13 +5290,14 @@
           "number": null,
           "examDate": null,
           "uses": [
-            "手写笔记"
+            "关键思路",
+            "定理表述"
           ],
           "aliases": [
             "解题札记：三题与手写要点",
             "解题札记"
           ],
-          "pages": 1,
+          "pages": 2,
           "id": "b150de18a5dfd881",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/problem-solving-notes/dist/problem-solving-notes.pdf",
@@ -16797,7 +16800,7 @@
       "howToUse": "组合机构、系列、阶段和用途筛选；专题讲义也按真实学科收录。"
     }
   ],
-  "revision": "ruanhe-72-20261008",
+  "revision": "azuma-short-notes-20261008",
   "subjects": [
     "分析",
     "线性代数",
@@ -19985,10 +19988,12 @@
       "materialType": "lecture",
       "status": "",
       "subjects": [
-        "综合数学"
+        "线性代数",
+        "概率与统计"
       ],
       "topics": [
-        "综合专题与证明方法"
+        "矩阵方法",
+        "鞅与概率不等式"
       ],
       "itemIds": [
         "b150de18a5dfd881"
@@ -19996,13 +20001,14 @@
       "repoIds": [
         "lecture-notes"
       ],
-      "description": "查阅原稿或学习笔记，核对批注与整理来源。",
+      "description": "原三道矩阵题与要点保留；新增吾妻不等式表述，首页有可点击短目录，无新增证明或例题。",
       "series": "",
       "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
-        "mixed"
+        "algebra",
+        "probability"
       ],
       "uncertainties": []
     },
