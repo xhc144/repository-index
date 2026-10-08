@@ -9,3 +9,16 @@
 
 .paper-series + .paper-series { margin-top: 32px; }
 .paper-series-title { margin: 0 0 16px; font-size: 1.35rem; }
+
+/* Native, keyboard-accessible source/teacher/subject navigation. */
+.tree-controls{display:flex;gap:.65rem;justify-content:flex-end;margin:0 0 1rem}
+.tree-controls button{border:1px solid var(--line,#d5ddd9);background:var(--surface,#fff);border-radius:.55rem;padding:.55rem .85rem;color:inherit;cursor:pointer}
+.material-tree{display:grid;gap:.8rem}
+.material-branch{border:1px solid var(--line,#d5ddd9);border-radius:.75rem;background:var(--surface,#fff);min-width:0}
+.branch-summary{padding:1rem 1.1rem;cursor:pointer;font-weight:650;list-style-position:inside}
+.branch-summary:focus-visible{outline:3px solid var(--accent,#193f3a);outline-offset:2px;border-radius:.65rem}
+.branch-title{margin-left:.35rem}.branch-count{float:right;font-size:.85rem;font-weight:400;opacity:.7;margin-left:.75rem}
+.branch-body{display:grid;gap:.65rem;padding:0 1rem 1rem}
+.branch-body .material-branch{border-radius:.55rem}.branch-body .branch-summary{padding:.7rem .85rem;font-size:.96rem}
+.branch-body .group-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:.4rem 0 0}
+@media(max-width:600px){.branch-body{padding:0 .45rem .55rem}.branch-summary{padding:.85rem .7rem}.branch-body .branch-summary{padding:.7rem .55rem}.branch-count{font-size:.78rem}.tree-controls{justify-content:flex-start}}

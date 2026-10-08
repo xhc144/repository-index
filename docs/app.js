@@ -2,11 +2,12 @@
 
 const $ = id => document.getElementById(id);
 const collator = new Intl.Collator('zh-CN', {numeric:true});
-const labels = {home:'首页',papers:'试卷',subjects:'学科资料',books:'书籍',tools:'工具与作品',repositories:'仓库总览'};
+const labels = {home:'首页',papers:'课程与试卷资料',subjects:'AI原创与学科资料',books:'书籍',tools:'工具与作品',repositories:'仓库总览'};
 const symbols = {papers:'▤',subjects:'∫',books:'▥',tools:'◇'};
 let catalog, groups, groupById, fileById, repositories;
 let lastBrowse = '#home', focusedGroup = '', currentPage = 1;
-let detailUse = 'all', activeDetailId = ''; 
+let detailUse = 'all', activeDetailId = '';
+const collapseState = new Map(); 
 const PAGE_SIZE = 18;
 const materialLabels={'exam-paper':'单套试卷','exam-bundle':'三卷合订','question-collection':'题集 / 汇编','unpaired':'待配卷','lecture-series':'讲义与配套练习','coursework':'课内作业','reference':'考纲与参考资料','problem-study':'专题练习','cross-paper-audit':'题源核查','printing-aid':'打印辅助'};
 
@@ -37,10 +38,10 @@ function navigate(target,resetSearch=true) {
 function routeLink(text,target,className) {const el=anchor(text,target,className);el.addEventListener('click',event=>{event.preventDefault();navigate(target);});return el;}
 function matchingFiles(group,query=terms()) {return group.itemIds.map(id=>fileById.get(id)).filter(record=>searchMatches(record,query));}
 function groupMatches(group) {return !terms().length||matchingFiles(group).length>0;}
-function browseSource(group) {return catalogClassification.sourceLabel(group);}
+function browseSource(group) {return sourceNavigation.source(group);}
 function contextGroups(section,key) {
-  let result=section==='home'?groups:groups.filter(group=>group.section===section);
-  if(key&&section==='papers')result=result.filter(group=>browseSource(group)===key);
+  let result=(section==='home'?groups:groups.filter(group=>group.section===section)).filter(group=>!group.browseHidden||terms().length>0);
+  if(key&&section==='papers')result=result.filter(group=>browseSource(group)===key||catalogClassification.sourceLabel(group)===key);
   if(key&&(section==='subjects'||section==='books'))result=result.filter(group=>group.subjectKeys.includes(key));
   return result.filter(groupMatches);
 }
@@ -62,7 +63,7 @@ function showHome() {
   breadcrumb([['首页']]);
   const fragment=document.createDocumentFragment();
   const grid=node('div','home-entries');
-  for(const section of catalog.navigation.sections){const count=groups.filter(group=>group.section===section.id).length;grid.append(entryCard(section.title,section.description,count+' 组',route(section.id),symbols[section.id],'entry-card home-entry '+section.id));}
+  for(const section of catalog.navigation.sections){const count=groups.filter(group=>group.section===section.id&&!group.browseHidden).length;grid.append(entryCard(section.title,section.description,count+' 组',route(section.id),symbols[section.id],'entry-card home-entry '+section.id));}
   fragment.append(grid);
   const quick=node('section','quick-start');quick.append(node('h2','','常用入口'));
   const links=node('div','quick-links');links.append(routeLink('清北学堂模拟卷 →',route('papers','清北学堂')),routeLink('深圳中学试卷 →',route('papers','深圳中学')),routeLink('概率与统计讲义 →',route('subjects','probability')));quick.append(links);fragment.append(quick);
@@ -70,6 +71,7 @@ function showHome() {
   $('view').replaceChildren(fragment);$('results-status').textContent='';
 }
 function browseCategories(section) {
+  if(section==='papers'||section==='subjects'){showTreeGroups(section);return;}
   const fragment=document.createDocumentFragment();const grid=node('div','category-grid');
   if(section==='papers'){
     const pending=name=>name==='待归类'||name==='来源待核';
@@ -82,7 +84,7 @@ function browseCategories(section) {
 }
 function groupCard(group) {
   const el=button('',()=>openGroup(group.id),'group-card');el.dataset.group=group.id;el.setAttribute('aria-label','查看 '+group.title);
-  const top=node('div','group-top');top.append(node('span','group-category',materialLabels[group.materialType]||labels[group.section]),node('span','group-files',group.itemIds.length+' 份文件'));
+  const top=node('div','group-top');top.append(node('span','group-category',group.browseHidden?'管理资料 · '+(materialLabels[group.materialType]||'核查记录'):materialLabels[group.materialType]||labels[group.section]),node('span','group-files',group.itemIds.length+' 份文件'));
   el.append(top,node('h2','',group.title));
   const tags=node('div','tags');for(const text of unique([browseSource(group)!=='待归类'&&group.section==='papers'?browseSource(group):'',group.examDate||group.dateLabel,group.phase,...group.subjects.slice(0,2)]))tags.append(node('span','',text));el.append(tags);
   const available=unique(group.itemIds.flatMap(id=>{const item=fileById.get(id).item;return item.groupRole?[item.groupRole]:item.uses;}));el.append(node('p','group-purpose',group.description),node('p','group-versions',available.slice(0,4).join(' · ')+(available.length>4?' 等':'')));
@@ -103,6 +105,7 @@ function paperSeries(group) {
 const paperSeriesOrder={'零试':0,'一试':1,'联赛模拟':2,'综合测试与诺特奖模拟':3};
 
 function showGroups(section,key) {
+  if(section==='papers'||section==='subjects'){showTreeGroups(section,key);return;}
   const visible=contextGroups(section,key).sort((a,b)=>(section==='papers'&&key==='深圳中学'?(paperSeriesOrder[paperSeries(a)]??9)-(paperSeriesOrder[paperSeries(b)]??9):0)||collator.compare(a.series,b.series)||collator.compare(a.title,b.title));
   const totalPages=Math.max(1,Math.ceil(visible.length/PAGE_SIZE));currentPage=Math.min(currentPage,totalPages);
   const fragment=document.createDocumentFragment();
@@ -117,18 +120,51 @@ function showGroups(section,key) {
       }
     }else{const grid=node('div','group-grid');for(const group of pageGroups)grid.append(groupCard(group));fragment.append(grid);}
   }
+  if(section==='tools'&&!terms().length){const admin=groups.filter(group=>group.browseHidden);if(admin.length){const fold=node('details','material-branch management-branch');const summary=node('summary','branch-summary','管理资料：核查记录');summary.append(node('span','branch-count',admin.length+' 组'));fold.append(summary);const grid=node('div','group-grid branch-body');for(const group of admin)grid.append(groupCard(group));fold.append(grid);fragment.append(fold);}}
   if(totalPages>1){const pager=node('nav','pagination');pager.setAttribute('aria-label','资料分页');const previous=button('← 上一页',()=>{currentPage--;showGroups(section,key);$('view').scrollIntoView({block:'start'});});previous.disabled=currentPage===1;const next=button('下一页 →',()=>{currentPage++;showGroups(section,key);$('view').scrollIntoView({block:'start'});});next.disabled=currentPage===totalPages;pager.append(previous,node('span','','第 '+currentPage+' / '+totalPages+' 页'),next);fragment.append(pager);}
   $('view').replaceChildren(fragment);
   const count=visible.reduce((sum,group)=>sum+matchingFiles(group).length,0);
   $('results-status').textContent=visible.length+' 组资料'+(terms().length?' · '+count+' 份文件匹配搜索':' · 点开一组，再选文件');
 }
+function treeCount(branch) {
+  return branch.groups.length+branch.children.reduce((sum,child)=>sum+treeCount(child),0);
+}
+function showTreeGroups(section,key) {
+  const visible=contextGroups(section,key).sort((a,b)=>collator.compare(a.title,b.title));
+  const byItem=new Map([...fileById.values()].map(record=>[record.item.id,record.item]));
+  const tree=sourceNavigation.build(visible,byItem,catalog.navigation.subjects,section);
+  const fragment=document.createDocumentFragment();
+  if(!visible.length){const empty=node('div','empty');empty.append(node('h2','','没有找到匹配的资料'),node('p','','试试较短的关键词，或清除搜索。'),button('清除搜索',()=>{$('search').value='';renderRoute();},'primary-button'));fragment.append(empty);}
+  else{
+    const controls=node('div','tree-controls');
+    const expand=value=>{for(const el of $('view').querySelectorAll('details.material-branch')){el.open=value;collapseState.set(el.dataset.branch,value);}};
+    controls.append(button('展开全部',()=>expand(true)),button('收起全部',()=>expand(false)));fragment.append(controls);
+    const container=node('div','material-tree');
+    function renderBranch(branch,parents,depth){
+      const path=[...parents,branch.id];const branchKey=JSON.stringify([section,...path]);
+      const el=node('details','material-branch depth-'+depth);el.dataset.branch=branchKey;
+      el.open=terms().length>0||(collapseState.has(branchKey)?collapseState.get(branchKey):depth===0&&!!key);
+      const summary=node('summary','branch-summary');summary.append(node('span','branch-title',branch.title),node('span','branch-count',treeCount(branch)+' 组'));
+      el.append(summary);const body=node('div','branch-body');
+      for(const child of branch.children.sort((a,b)=>a.title==='来源待核'?1:b.title==='来源待核'?-1:collator.compare(a.title,b.title)))body.append(renderBranch(child,path,depth+1));
+      if(branch.groups.length){const grid=node('div','group-grid');for(const group of branch.groups)grid.append(groupCard(group));body.append(grid);}
+      el.append(body);el.addEventListener('toggle',()=>{if(!terms().length)collapseState.set(branchKey,el.open);});return el;
+    }
+    for(const branch of tree.children.sort((a,b)=>a.title==='来源待核'?1:b.title==='来源待核'?-1:collator.compare(a.title,b.title)))container.append(renderBranch(branch,[],0));
+    fragment.append(container);
+  }
+  $('view').replaceChildren(fragment);
+  const count=visible.reduce((sum,group)=>sum+matchingFiles(group).length,0);
+  $('results-status').textContent=visible.length+' 组资料'+(terms().length?' · '+count+' 份文件匹配搜索，已展开匹配分支':' · 逐层展开，点开资料后选择用途与下载');
+}
+
 function showRepositories() {
   heading('12 个仓库，各有用途','了解每个项目放什么、怎样使用；具体资料从四个分类入口查找。');breadcrumb([['首页','#home'],['仓库总览']]);
   const grid=node('div','repository-grid');
   for(const repo of catalog.repositories){
     const article=node('article','repo-card');const h=node('h2');h.append(anchor(repo.title+' ↗',repo.url));article.append(h,node('p','repo-slug',repo.id),node('p','repo-intro',repo.intro));
     const contents=node('ul','repo-contents');for(const text of repo.contents)contents.append(node('li','',text));article.append(contents,node('p','repo-how',repo.howToUse));
-    const examples=node('div','repo-examples');for(const item of repo.items.slice(0,3)){const group=groups.find(value=>value.key===item.groupKey);if(group&&!examples.querySelector('[data-group="'+group.id+'"]')){const example=button(item.name+' →',()=>openGroup(group.id));example.dataset.group=group.id;examples.append(example);}}article.append(examples);
+    const examples=node('div','repo-examples');for(const item of repo.items.slice(0,3)){const group=groups.find(value=>value.key===item.groupKey);if(group&&!group.browseHidden&&!examples.querySelector('[data-group="'+group.id+'"]')){const example=button(item.name+' →',()=>openGroup(group.id));example.dataset.group=group.id;examples.append(example);}}article.append(examples);
     for(const text of repo.limits)article.append(node('p','repo-limit',text));article.append(anchor('GitHub 主页 ↗',repo.url,'repo-home'));grid.append(article);
   }
   $('view').replaceChildren(grid);$('results-status').textContent='';
@@ -200,17 +236,17 @@ function renderRoute() {
   }else if(labels[section]){
     const subject=catalog.navigation.subjects.find(value=>value.id===key);
     const title=key?(section==='papers'?key:subject?subject.title:labels[section]):labels[section];
-    heading(title,section==='papers'?(key?'每张卡片是一套卷或一组资料，点开后选择题目和答案。':'按机构 / 比赛进入，题目、原解答和 AI 解答集中在同一组。'):section==='books'?'参考书按学科浏览，点击书名选择当前文件。':section==='tools'?'打开项目查看成品、源码、版本与使用限制。':'讲义、专题题选与配套练习按实际内容归类。');
+    heading(title,section==='papers'?(key?'展开资料类别、老师或系列，再选择同组题目、原稿与配套解答。':'按机构、比赛、老师与学科展开；课堂讲义、机构试卷和竞赛真题分别列出，AI解答随原题组选择。'):section==='books'?'参考书按学科浏览，点击书名选择当前文件。':section==='tools'?'打开项目查看成品、源码、版本与使用限制。':'AI原创与独立专题按学科折叠浏览；外部课程资料另从课程与试卷资料进入。');
     breadcrumb(key?[['首页','#home'],[labels[section],route(section)],[title]]:[['首页','#home'],[labels[section]]]);
     if((section==='papers'||section==='subjects'||section==='books')&&!key&&!terms().length)browseCategories(section);else showGroups(section,key);
   }else{navigate('#home');return;}
-  if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger)trigger.focus({preventScroll:true});focusedGroup='';}
+  if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger){for(let ancestor=trigger.parentElement;ancestor;ancestor=ancestor.parentElement)if(ancestor.tagName==='DETAILS')ancestor.open=true;trigger.focus({preventScroll:true});}focusedGroup='';}
 }
 async function start() {
-  const response=await fetch('./catalog.json?v=20261008-competition-2');if(!response.ok)throw new Error('Catalog request failed');catalog=catalogClassification.apply(await response.json());
+  const response=await fetch('./catalog.json?v=20261008-source-groups');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
   groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
-  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
-  $('group-total').textContent=groups.length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
+  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
+  $('group-total').textContent=groups.filter(group=>!group.browseHidden).length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
   for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
   for(const id of ['brand','footer-home'])$(id).addEventListener('click',event=>{event.preventDefault();navigate('#home');});
   $('search-form').addEventListener('submit',event=>event.preventDefault());$('search').addEventListener('input',()=>{currentPage=1;renderRoute();});

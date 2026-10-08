@@ -3,7 +3,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {apply} = require('../docs/classify-catalog.js');
+const sourceNavigation = require('../docs/source-navigation.js');
 const filename = process.argv[2] || path.join(__dirname,'../docs/catalog.json');
-const data = apply(JSON.parse(fs.readFileSync(filename,'utf8')));
+const data = sourceNavigation.apply(apply(JSON.parse(fs.readFileSync(filename,'utf8'))));
 fs.writeFileSync(filename,JSON.stringify(data,null,2)+'\n');
-console.log('已规范化比赛来源、AI命题来源及同届入口：'+filename);
+console.log('已规范化资料来源、原题组关系及多层浏览入口：'+filename);

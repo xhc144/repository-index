@@ -2,7 +2,7 @@
 
 仓库总览现已移至 **[学习资料与作品导航](https://xhc144.github.io/repository-index/)**。导航网页与本仓库公开；PDF、源码和程序仍保存在原私有仓库，访问需要对应的 GitHub 权限。
 
-网页首页提供试卷、学科资料、书籍、工具与作品四个入口。试卷先选机构 / 比赛，讲义和书籍先选学科；同一套卷或同一讲义只显示一张资料卡，点开后选择题目、教师原解答、AI 解答、练习册或源码。已核 PDF 页数与原仓库直接下载保留，CMC、Putnam（普特南）、XMO、谜之竞赛等按明确比赛名分类，同届或同月度的一试、二试、加试集中在同一入口；AI 命题试卷另列。仅年份未标的资料保留年份说明，真正来源待核及待配卷资料单独标记；仓库总览另行介绍 12 个项目的用途与使用方式。
+网页首页提供课程与试卷资料、AI原创与学科资料、书籍、工具与作品四个入口。外部资料按机构或比赛进入，再展开课堂讲义、机构试卷、竞赛真题、老师、系列和学科；CMC独立折叠。同一原题组的题目、教师原解答、AI解答、练习册与源码集中选择，已核PDF页数与保留原权限的直接下载不变。AI原创资料单独按学科浏览。核查日志在管理资料中默认折叠，也可通过搜索和历史入口查找。
 
 下方旧目录及 [Git 历史](https://github.com/xhc144/repository-index/commits/main/) 继续保留，供查阅旧入口。分类修订日期：2026-10-08，已核对比赛名、来源字段及同届归并的回归测试；此前公开首页及静态资源核对日期为2026-10-07；旧目录核对日期仍见文末。
 
@@ -23,8 +23,8 @@ xhc144 的私有项目总目录，按用途查找资料、成品与源码。各�
 | 仓库 | 内容 | 阅读与下载 | 源码入口 |
 | --- | --- | --- | --- |
 | [book-project](https://github.com/xhc144/book-project) | 多年数学竞赛讲义的统一整理稿 | [当前总稿 PDF](https://github.com/xhc144/book-project/blob/main/deliverables/book-current.pdf) · [交付目录](https://github.com/xhc144/book-project/tree/main/deliverables) | [LaTeX 主文件](https://github.com/xhc144/book-project/blob/main/existing_latex/source_project/%E8%AE%B2%E4%B9%89%E9%87%8D%E6%8E%92LaTeX%E6%BA%90%E4%BB%A3%E7%A0%81/main.tex) |
-| [lecture-notes](https://github.com/xhc144/lecture-notes) | 数学、物理总讲义与独立专题讲义 | [讲义目录与 PDF / ZIP](https://github.com/xhc144/lecture-notes/blob/main/README.md) | [各讲义目录](https://github.com/xhc144/lecture-notes/tree/main/lectures) |
-| [exam-papers · 机构讲义与试卷](https://github.com/xhc144/exam-papers) | 机构资料、讲义、试卷、解答与源码的分系列归档 | [资料目录与下载](https://github.com/xhc144/exam-papers/blob/main/README.md) | [源码与文件目录](https://github.com/xhc144/exam-papers/tree/main) |
+| [lecture-notes](https://github.com/xhc144/lecture-notes) | AI原创讲义、独立专题与原创练习；外部题组的配套解答随原题归档 | [讲义目录与 PDF / ZIP](https://github.com/xhc144/lecture-notes/blob/main/README.md) | [各讲义目录](https://github.com/xhc144/lecture-notes/tree/main/lectures) |
+| [exam-papers · 课程与试卷资料](https://github.com/xhc144/exam-papers) | 老师、机构、比赛的外部资料与忠实转写；同组保留配套AI解答与源码 | [资料目录与下载](https://github.com/xhc144/exam-papers/blob/main/README.md) | [源码与文件目录](https://github.com/xhc144/exam-papers/tree/main) |
 
 ## AI 工具
 

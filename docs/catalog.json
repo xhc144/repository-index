@@ -119,7 +119,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/parameter-integrals-special-functions-probability/dist/parameter-integrals-special-functions-probability.pdf",
           "groupKey": "subjects:lecture-66482177e4a4",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "分析方法：收敛、微分与 Fourier 逼近（短稿）",
@@ -607,15 +607,17 @@
           "filename": "空间体积与积分估计_四题解答与推广.pdf",
           "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-22/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
           "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/spatial-volume-four-problems.md",
-          "note": "",
+          "note": "对应72题旧A1–A4的变式或推广，11页；不另计4道新题。",
           "subjects": [
             "分析"
           ],
           "topics": [
             "多元微积分与重积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -630,8 +632,10 @@
           "id": "3a6b5a83587bda34",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-22/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
-          "groupKey": "subjects:selected-lecture-spatial-volume-four-problems",
-          "section": "subjects"
+          "groupKey": "subjects:lecture-d1da471de272",
+          "section": "papers",
+          "groupRole": "旧A1–A4 · 变式与推广",
+          "sourceLabel": "深圳中学·阮禾"
         },
         {
           "name": "实变函数、复变函数与傅里叶分析",
@@ -1240,7 +1244,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-20/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88%281%29.pdf",
           "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "MIT积分竞赛：精选96题解答",
@@ -1276,7 +1280,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-18/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
           "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "MIT积分竞赛：571题专题题解",
@@ -1312,7 +1316,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
           "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "MIT积分竞赛：571题专题题目册",
@@ -1348,7 +1352,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
           "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "单调函数最优节点：完整证明",
@@ -5263,7 +5267,7 @@
           "author": "阮禾（原题）；AI（解答与排版）",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-notes.pdf",
           "groupKey": "subjects:lecture-d1da471de272",
-          "section": "subjects",
+          "section": "papers",
           "sourceLabel": "深圳中学·阮禾",
           "groupRole": "题目与AI解答"
         },
@@ -5958,7 +5962,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/mathematics/qualification-survey/library-2026-09-18/%E6%B1%82%E7%9C%9F%E5%8D%9A%E5%A3%AB%E8%B5%84%E6%A0%BC%E8%80%83%E8%AF%95_%E5%90%88%E8%AE%A2%E6%9C%AC.pdf",
           "groupKey": "subjects:selected-lecture-qualification-exam-series",
-          "section": "subjects"
+          "section": "papers"
         },
         {
           "name": "YMSC多页模板示例",
@@ -6342,7 +6346,7 @@
           "author": "阮禾（原题）；AI（解答与排版）",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-practice.pdf",
           "groupKey": "subjects:lecture-d1da471de272",
-          "section": "subjects",
+          "section": "papers",
           "sourceLabel": "深圳中学·阮禾",
           "groupRole": "纯题习题版"
         }
@@ -12536,7 +12540,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_national_day_5h_R04.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "自学讲义"
         },
         {
@@ -12574,7 +12578,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_student_P07.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "学生题册"
         },
         {
@@ -12612,7 +12616,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_teacher_P07.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "教师解答"
         },
         {
@@ -12653,7 +12657,7 @@
           "author": "谢非非",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%B8%80%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第一讲：SVD、低秩逼近与最小二乘"
         },
         {
@@ -12694,7 +12698,7 @@
           "author": "谢非非",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%BA%8C%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第二讲：谱半径、幂法与结构化特征值"
         },
         {
@@ -12735,7 +12739,7 @@
           "author": "谢非非",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%B8%89%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第三讲：矩阵范数、条件数与定常迭代"
         },
         {
@@ -12777,7 +12781,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT01_representations_examples_v2%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第1讲：群表示与基本结构 v2"
         },
         {
@@ -12818,7 +12822,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT02_module_schur_v1%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第2讲：群代数与Schur引理 v1"
         },
         {
@@ -12859,7 +12863,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT03_characters_orthogonality_v2.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第3讲：特征标与正交关系 v2"
         },
         {
@@ -12900,7 +12904,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT04_character_tables_v1.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第4讲：特征标表 v1"
         },
         {
@@ -12941,7 +12945,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT05_representation_constructions_v2%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "第5讲：构造不可约表示 v2"
         },
         {
@@ -12980,7 +12984,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/probability_student_R54%281%29.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "学生讲义"
         },
         {
@@ -13020,7 +13024,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5%282%29.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "一题一页留白练习"
         },
         {
@@ -13059,7 +13063,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%96%B0%E9%A2%86%E5%86%9B%E8%AE%A1%E5%88%92%E6%A6%82%E7%8E%87%E8%87%AA%E5%AD%A6%E8%AE%B2%E4%B9%89_%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88_R59.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "教师解答"
         },
         {
@@ -13097,7 +13101,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/source/%E8%AE%A1%E7%AE%97%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E9%A2%98%E8%AE%AD%E7%BB%83_%E7%AC%AC%E4%B8%80%E8%87%B3%E5%85%AB%E7%AB%A0_%E5%AD%A6%E7%94%9F%E9%A2%98%E5%86%8C%281%29.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "原版学生题册"
         },
         {
@@ -13136,7 +13140,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/reformatted/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "79题留白版"
         },
         {
@@ -13174,7 +13178,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/selected-core-6/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "6题留白选编"
         },
         {
@@ -13212,7 +13216,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/selected-theory-18/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "18题历史留白选编"
         },
         {
@@ -13250,7 +13254,7 @@
           "author": "阮禾",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/method-audit/method-audit.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "AI方法核查"
         },
         {
@@ -13291,7 +13295,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第1章：质点运动学"
         },
         {
@@ -13332,7 +13336,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A92%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第2章：质点动力学"
         },
         {
@@ -13373,7 +13377,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A93%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E5%9F%BA%E7%A1%80%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第3章：刚体力学基础"
         },
         {
@@ -13414,7 +13418,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A94%E7%94%B5%E8%8D%B7%E4%B8%8E%E7%94%B5%E5%9C%BA%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第4章：电荷与电场"
         },
         {
@@ -13455,7 +13459,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A95%E7%94%B5%E6%B5%81%E4%B8%8E%E7%A3%81%E5%9C%BA%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第5章：电流与磁场"
         },
         {
@@ -13496,7 +13500,7 @@
           "author": "高新雨",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A96%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E4%B8%8E%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84%E3%80%9026.1%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "普通物理第6章：电磁感应与麦克斯韦方程组"
         },
         {
@@ -13533,7 +13537,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E7%BB%BC%E5%90%88%E7%BB%83%E4%B9%A0%E8%AE%B2%E4%B9%89%EF%BC%88%E5%AD%A6%E7%94%9F%E7%89%88%EF%BC%89.pdf",
           "groupKey": "lecture-jiuxue-national-day-analysis",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "学生练习册"
         },
         {
@@ -13570,11 +13574,11 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E4%B8%93%E9%A2%98%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "lecture-jiuxue-national-day-analysis",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "原专题解答"
         },
         {
-          "name": "进阶九学一试模拟1 · 原解答",
+          "name": "进阶九学国庆研讨会模拟试题 · 原解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "国庆研讨会模拟试题解答.pdf",
@@ -13591,7 +13595,7 @@
           "institutions": [
             "进阶九学"
           ],
-          "series": "国庆研讨会",
+          "series": "国庆研讨会模拟试题",
           "phase": "一试",
           "number": 1,
           "examDate": null,
@@ -13602,7 +13606,8 @@
             "国庆研讨会模拟试题解答",
             "进阶九学 · 国庆数学分析练习与解答",
             "国庆研讨会一试模拟",
-            "进阶九学国庆研讨会模拟试题 · 原解答"
+            "进阶九学国庆研讨会模拟试题 · 原解答",
+            "进阶九学一试模拟1 · 原解答"
           ],
           "pages": 10,
           "id": "dcdbb8c87a017f4c",
@@ -13612,7 +13617,7 @@
           "section": "papers",
           "groupRole": "原解答",
           "sourceLabel": "进阶九学",
-          "dateLabel": "2026国庆"
+          "dateLabel": "年份未标"
         },
         {
           "name": "代数1H · 第一次作业",
@@ -13649,7 +13654,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/tsinghua-qiuzhen/2026/algebra-1h-hw-01/Algebra_1H_HW.pdf",
           "groupKey": "coursework-tsinghua-qiuzhen-algebra-1h-01",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "作业题目"
         },
         {
@@ -13684,7 +13689,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/syllabus-sources/library-2026-10-03/%E9%A2%86%E5%86%9B%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2.pdf",
           "groupKey": "reference-leader-syllabus",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "考纲整理稿"
         },
         {
@@ -13719,7 +13724,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-syllabus-original/library-2026-10-03/Picsew_20261004000057.PDF",
           "groupKey": "reference-leader-syllabus",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "考纲发布原文截图"
         },
         {
@@ -13755,7 +13760,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/syllabus-sources/library-2026-09-03/high_school_math_league_syllabus_2026.pdf",
           "groupKey": "reference-math-league-syllabus",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "联赛范围整理稿",
           "sourceLabel": "高中数学联赛"
         },
@@ -13792,7 +13797,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/gaolian-knowledge-and-syllabus/library-2026-09-03/gaolian_knowledge_points.pdf",
           "groupKey": "reference-math-league-syllabus",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "知识点清单",
           "sourceLabel": "高中数学联赛"
         },
@@ -13829,7 +13834,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/gaolian-knowledge-and-syllabus/library-2026-09-03/gaolian_syllabus_versions_2026.pdf",
           "groupKey": "reference-math-league-syllabus",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "考纲口径比较",
           "sourceLabel": "高中数学联赛"
         },
@@ -14613,7 +14618,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-08/%E7%8E%AF%E9%9D%A2%E6%96%B9%E6%A0%BC_XMO%E5%BE%97%E5%88%86%E6%9C%80%E5%A4%A7%E5%80%BC_%E4%B8%AD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "study-xmo-torus-grid",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "中英双语题解",
           "sourceLabel": "XMO"
         },
@@ -14848,7 +14853,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "题目与解答合订本",
           "sourceLabel": "AI 命题试卷"
         },
@@ -14885,7 +14890,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "答案与完整解答",
           "sourceLabel": "AI 命题试卷"
         },
@@ -14922,7 +14927,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "考生题册",
           "sourceLabel": "AI 命题试卷"
         },
@@ -14959,7 +14964,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "诊断体系",
           "sourceLabel": "AI 命题试卷"
         },
@@ -14996,7 +15001,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "命题覆盖表",
           "sourceLabel": "AI 命题试卷"
         },
@@ -15033,7 +15038,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
           "groupKey": "independent-leader-diagnostic-three",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "评分标准",
           "sourceLabel": "AI 命题试卷"
         },
@@ -15317,7 +15322,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/shenzhen-mock-exams/library-2026-10-04/%E5%85%AD%E5%A5%97%E6%95%B0%E5%AD%A6%E5%8D%B767%E9%A2%98%E9%A2%98%E6%BA%90%E6%A0%B8%E6%9F%A5.pdf",
           "groupKey": "reference-shenzhen-six-papers-origin-audit",
-          "section": "subjects",
+          "section": "tools",
           "groupRole": "题源核查"
         },
         {
@@ -15696,7 +15701,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-23/CMC%20%E4%B8%93%E9%A2%98%E5%88%86%E7%B1%BB.pdf",
           "groupKey": "study-cmc-fourier-six",
-          "section": "subjects",
+          "section": "papers",
           "groupRole": "手写证明与批注",
           "sourceLabel": "CMC 大学生数学竞赛"
         },
@@ -15924,13 +15929,13 @@
           "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
-          "name": "空间四题与领军模拟题 · 扩展解答及推广",
+          "name": "混合30题 · 阮禾四题、零模1与综合18",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "手写四题与领军模拟题_解答及推广.pdf",
           "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-22/%E6%89%8B%E5%86%99%E5%9B%9B%E9%A2%98%E4%B8%8E%E9%A2%86%E5%86%9B%E6%A8%A1%E6%8B%9F%E9%A2%98_%E8%A7%A3%E7%AD%94%E5%8F%8A%E6%8E%A8%E5%B9%BF.pdf",
           "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/spatial-four-problems-expanded-bundle.md",
-          "note": "",
+          "note": "21页混合解答：4道阮禾题、15道零模1题和11道综合18题，共30题；不把整册归为阮禾作品。",
           "subjects": [
             "综合数学"
           ],
@@ -15948,15 +15953,18 @@
           ],
           "aliases": [
             "空间四题与领军模拟题 · 扩展解答及推广",
-            "空间体积与积分四题：含模拟题的扩展合订包"
+            "空间体积与积分四题：含模拟题的扩展合订包",
+            "混合30题 · 阮禾四题、零模1与综合18",
+            "空间四题与领军模拟题"
           ],
           "pages": 21,
           "id": "8901806c19d5f722",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-22/%E6%89%8B%E5%86%99%E5%9B%9B%E9%A2%98%E4%B8%8E%E9%A2%86%E5%86%9B%E6%A8%A1%E6%8B%9F%E9%A2%98_%E8%A7%A3%E7%AD%94%E5%8F%8A%E6%8E%A8%E5%B9%BF.pdf",
           "groupKey": "study-spatial-four-expanded",
-          "section": "subjects",
-          "groupRole": "扩展解答与推广"
+          "section": "papers",
+          "groupRole": "扩展解答与推广",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "丘成桐大学生数学竞赛 · 2010—2026历年题解学习稿",
@@ -16279,7 +16287,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
           "groupKey": "probability-capability-test",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "历史题目稿",
           "sourceLabel": "AI 命题试卷"
         },
@@ -16315,7 +16323,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "probability-capability-test",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "历史简版解答",
           "sourceLabel": "AI 命题试卷"
         },
@@ -16351,7 +16359,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "probability-capability-test",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "历史详细解答",
           "sourceLabel": "AI 命题试卷"
         },
@@ -16387,7 +16395,7 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
           "groupKey": "probability-capability-test",
-          "section": "papers",
+          "section": "subjects",
           "groupRole": "历史重编题册",
           "sourceLabel": "AI 命题试卷"
         },
@@ -16908,13 +16916,13 @@
     "sections": [
       {
         "id": "papers",
-        "title": "试卷",
-        "description": "先选机构 / 比赛，再选套卷或届次；题目与答案放在一起。"
+        "title": "课程与试卷资料",
+        "description": "按机构、比赛、老师与学科折叠浏览课堂讲义、机构试卷和竞赛真题；题目与配套解答同组。"
       },
       {
         "id": "subjects",
-        "title": "学科资料",
-        "description": "按分析、代数、概率、物理等学科找讲义。"
+        "title": "AI原创与学科资料",
+        "description": "AI原创讲义与独立专题按学科浏览；原题的AI解答随原题组收录。"
       },
       {
         "id": "books",
@@ -16963,7 +16971,7 @@
       "key": "subjects:lecture-66482177e4a4",
       "id": "83629ba21c9a1bc3",
       "title": "含参积分、特殊函数与概率论",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture",
       "status": "",
@@ -16990,7 +16998,8 @@
         "analysis",
         "probability"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "subjects:lecture-a871692fdfd7",
@@ -17386,36 +17395,6 @@
       "uncertainties": []
     },
     {
-      "key": "subjects:selected-lecture-spatial-volume-four-problems",
-      "id": "722dea0f1ddd1e52",
-      "title": "空间体积与积分估计四题",
-      "section": "subjects",
-      "institution": "待归类",
-      "materialType": "lecture",
-      "status": "",
-      "subjects": [
-        "分析"
-      ],
-      "topics": [
-        "多元微积分与重积分"
-      ],
-      "itemIds": [
-        "3a6b5a83587bda34"
-      ],
-      "repoIds": [
-        "lecture-notes"
-      ],
-      "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "analysis"
-      ],
-      "uncertainties": []
-    },
-    {
       "key": "subjects:selected-lecture-item-8ebd9d1e699f",
       "id": "6168e26fd15ee1d2",
       "title": "实变函数、复变函数与傅里叶分析",
@@ -17728,7 +17707,7 @@
       "key": "subjects:selected-lecture-integration-bee",
       "id": "809b68c441e9b805",
       "title": "MIT Integration Bee：题目、解答与排版分支",
-      "section": "subjects",
+      "section": "papers",
       "institution": "MIT Integration Bee",
       "materialType": "lecture",
       "status": "",
@@ -17755,7 +17734,8 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-optimal-monotone-quadrature",
@@ -19939,8 +19919,8 @@
     {
       "key": "subjects:lecture-d1da471de272",
       "id": "b61cf26b053b1ad3",
-      "title": "阮禾思考题：72题分类讲义与习题版",
-      "section": "subjects",
+      "title": "阮禾思考题 · 72题与配套解答",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture",
       "status": "",
@@ -19960,12 +19940,13 @@
       ],
       "itemIds": [
         "d46317f110e36196",
-        "ruanhe-thinking-practice-72"
+        "ruanhe-thinking-practice-72",
+        "3a6b5a83587bda34"
       ],
       "repoIds": [
         "lecture-notes"
       ],
-      "description": "手稿64题与旧黑板8题合收，按6个专题分类；同组选择54页AI解答讲义、16页纯题版或源码。旧8题保留在版本历史。",
+      "description": "同一组72题：54页AI解答、16页纯题习题版及旧A1–A4的11页变式与推广。变式稿不另计4道新题。",
       "series": "",
       "phase": "",
       "number": null,
@@ -19977,7 +19958,16 @@
         "algebra"
       ],
       "uncertainties": [],
-      "sourceLabel": "深圳中学·阮禾"
+      "sourceLabel": "深圳中学·阮禾",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "专题题组",
+      "aliasIds": [
+        "722dea0f1ddd1e52"
+      ],
+      "aliasKeys": [
+        "subjects:selected-lecture-spatial-volume-four-problems"
+      ],
+      "originCategory": "external"
     },
     {
       "key": "subjects:lecture-ac7235794f5b",
@@ -20482,7 +20472,7 @@
       "key": "subjects:selected-lecture-qualification-exam-series",
       "id": "8a50b7af53ee24d2",
       "title": "求真博士资格考试：八科合订本",
-      "section": "subjects",
+      "section": "papers",
       "institution": "求真 / YMSC",
       "materialType": "lecture",
       "status": "",
@@ -20506,7 +20496,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-YMSC-typesetting-examples",
@@ -23168,7 +23159,8 @@
       "aliasKeys": [
         "mock-one-source-unconfirmed"
       ],
-      "sourceLabel": "清北学堂"
+      "sourceLabel": "清北学堂",
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-02",
@@ -23200,7 +23192,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-03",
@@ -23232,7 +23225,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-04",
@@ -23264,7 +23258,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-05",
@@ -23296,7 +23291,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-06",
@@ -23328,7 +23324,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-07",
@@ -23360,7 +23357,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-08",
@@ -23392,7 +23390,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-mock-10",
@@ -23423,7 +23422,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "qingbei-20261006-evening",
@@ -23455,7 +23455,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-comprehensive-18",
@@ -23486,7 +23487,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-zero-01",
@@ -23518,7 +23520,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-zero-02",
@@ -23549,7 +23552,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-zero-03",
@@ -23583,7 +23587,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-zero-04",
@@ -23616,7 +23621,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-zero-06",
@@ -23647,7 +23653,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-noether-20261002",
@@ -23681,7 +23688,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-first-01",
@@ -23714,7 +23722,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-first-02",
@@ -23749,7 +23758,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-first-03",
@@ -23782,13 +23792,14 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-topology-national-day-16",
       "id": "c99db3d0d0def158",
       "title": "拓扑与组合拓扑 · 国庆16题",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23814,13 +23825,14 @@
       "subjectKeys": [
         "geometry"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-numerical-linear-algebra",
       "id": "8545d03017271dce",
       "title": "数值线性代数 · 第一至三讲",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23850,13 +23862,14 @@
         "algebra",
         "applied"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-representation-theory",
       "id": "585283a0d399a473",
       "title": "群表示论 · 第一至五讲",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23885,13 +23898,14 @@
       "subjectKeys": [
         "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-probability-self-study",
       "id": "92f9c343cf94c353",
       "title": "新领军概率自学讲义与配套练习",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23917,13 +23931,14 @@
       "subjectKeys": [
         "probability"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-computational-applied-1-8",
       "id": "d9885261d04ef041",
       "title": "计算应用数学专题训练 · 第一至八章",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23951,13 +23966,14 @@
       "subjectKeys": [
         "applied"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-shenzhen-general-physics",
       "id": "faccd176400f0695",
       "title": "普通物理 · 六章原讲义",
-      "section": "subjects",
+      "section": "papers",
       "institution": "深圳中学",
       "materialType": "lecture-series",
       "status": "",
@@ -23991,13 +24007,14 @@
       "subjectKeys": [
         "physics"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "lecture-jiuxue-national-day-analysis",
       "id": "942ef1ff6a168d9c",
       "title": "进阶九学国庆数学分析练习与专题解答",
-      "section": "subjects",
+      "section": "papers",
       "institution": "进阶九学",
       "materialType": "lecture-series",
       "status": "",
@@ -24022,12 +24039,13 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "jiuxue-national-day-mock-year-unconfirmed",
       "id": "74033bf7b9476f33",
-      "title": "进阶九学一试模拟1",
+      "title": "进阶九学国庆研讨会模拟试题",
       "section": "papers",
       "institution": "进阶九学",
       "materialType": "exam-paper",
@@ -24052,8 +24070,8 @@
       "repoIds": [
         "exam-papers"
       ],
-      "description": "2026国庆研讨会，8题100分；反函数积分、生成σ代数、矩阵、群作用、符号动力系统、独立性、切比雪夫迭代与随机映射。原卷、重排题面、解答及源码同组下载。",
-      "series": "国庆研讨会",
+      "description": "已确认机构来源；原解答与后续整理的题目在同一套卷入口选择。",
+      "series": "国庆研讨会模拟试题",
       "phase": "一试",
       "number": 1,
       "examDate": null,
@@ -24065,13 +24083,14 @@
         "unpaired:dcdbb8c87a017f4c"
       ],
       "sourceLabel": "进阶九学",
-      "dateLabel": "2026国庆"
+      "dateLabel": "年份未标",
+      "originCategory": "external"
     },
     {
       "key": "coursework-tsinghua-qiuzhen-algebra-1h-01",
       "id": "87a2c60970bca122",
       "title": "代数1H · 第一次作业",
-      "section": "subjects",
+      "section": "papers",
       "institution": "清华求真书院",
       "materialType": "coursework",
       "status": "",
@@ -24095,13 +24114,14 @@
       "subjectKeys": [
         "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "reference-leader-syllabus",
       "id": "3f28be0bdbfb80c6",
       "title": "数学领军计划考试范围资料",
-      "section": "subjects",
+      "section": "papers",
       "institution": "来源待核",
       "materialType": "reference",
       "status": "",
@@ -24126,13 +24146,14 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "reference-math-league-syllabus",
       "id": "3fe18c5013d6819a",
       "title": "高中数学联赛范围与知识清单",
-      "section": "subjects",
+      "section": "papers",
       "institution": "来源待核",
       "materialType": "reference",
       "status": "",
@@ -24159,7 +24180,8 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "高中数学联赛"
+      "sourceLabel": "高中数学联赛",
+      "originCategory": "external"
     },
     {
       "key": "xmo-22",
@@ -24204,13 +24226,14 @@
       "phases": [
         "二试",
         "一试"
-      ]
+      ],
+      "originCategory": "external"
     },
     {
       "key": "study-xmo-torus-grid",
       "id": "5e646795339c2354",
       "title": "XMO环面方格得分最大值",
-      "section": "subjects",
+      "section": "papers",
       "institution": "来源待核",
       "materialType": "problem-study",
       "status": "",
@@ -24235,7 +24258,8 @@
         "combinatorics"
       ],
       "uncertainties": [],
-      "sourceLabel": "XMO"
+      "sourceLabel": "XMO",
+      "originCategory": "external"
     },
     {
       "key": "xmo-21",
@@ -24280,7 +24304,8 @@
       "phases": [
         "二试",
         "一试"
-      ]
+      ],
+      "originCategory": "external"
     },
     {
       "key": "math-league-2026-second-a",
@@ -24315,13 +24340,14 @@
       ],
       "uncertainties": [],
       "sourceLabel": "高中数学联赛",
-      "dateLabel": "2026年"
+      "dateLabel": "2026年",
+      "originCategory": "external"
     },
     {
       "key": "independent-leader-diagnostic-three",
       "id": "cf367fafe76248a9",
       "title": "领军综合诊断三卷（AI 命题）",
-      "section": "papers",
+      "section": "subjects",
       "institution": "来源待核",
       "materialType": "exam-bundle",
       "status": "AI 命题",
@@ -24351,7 +24377,9 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "AI 命题试卷"
+      "sourceLabel": "AI 命题试卷",
+      "navigationDomain": "AI原创题卷",
+      "originCategory": "ai-original"
     },
     {
       "key": "mystery-202608",
@@ -24395,7 +24423,8 @@
       "phases": [
         "一试",
         "加试"
-      ]
+      ],
+      "originCategory": "external"
     },
     {
       "key": "mystery-202607",
@@ -24441,13 +24470,14 @@
       "phases": [
         "加试",
         "一试"
-      ]
+      ],
+      "originCategory": "external"
     },
     {
       "key": "reference-shenzhen-six-papers-origin-audit",
       "id": "2225c053f4c10729",
       "title": "深圳中学六卷67题题源核查",
-      "section": "subjects",
+      "section": "tools",
       "institution": "深圳中学",
       "materialType": "cross-paper-audit",
       "status": "",
@@ -24471,7 +24501,9 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "browseHidden": true,
+      "navigationDomain": "管理资料：核查记录"
     },
     {
       "key": "shenzhen-league-mock-23",
@@ -24501,7 +24533,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "shenzhen-league-mock-unnumbered",
@@ -24540,7 +24573,8 @@
         "unpaired:34fc6fd96dc133a9"
       ],
       "sourceLabel": "深圳中学",
-      "dateLabel": "年份、卷号未标"
+      "dateLabel": "年份、卷号未标",
+      "originCategory": "external"
     },
     {
       "key": "guozixue-first-set",
@@ -24570,7 +24604,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "aijianzi-11",
@@ -24600,7 +24635,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "originCategory": "external"
     },
     {
       "key": "tool-printing-separators",
@@ -24667,13 +24703,14 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "CMC 大学生数学竞赛"
+      "sourceLabel": "CMC 大学生数学竞赛",
+      "originCategory": "external"
     },
     {
       "key": "study-cmc-fourier-six",
       "id": "71f7e6fa96eac2ca",
       "title": "CMC傅里叶专题六题 · 手写证明与批注",
-      "section": "subjects",
+      "section": "papers",
       "institution": "来源待核",
       "materialType": "problem-study",
       "status": "",
@@ -24698,7 +24735,8 @@
         "analysis"
       ],
       "uncertainties": [],
-      "sourceLabel": "CMC 大学生数学竞赛"
+      "sourceLabel": "CMC 大学生数学竞赛",
+      "originCategory": "external"
     },
     {
       "key": "collection-cmc-topical-734",
@@ -24730,7 +24768,8 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "CMC 大学生数学竞赛"
+      "sourceLabel": "CMC 大学生数学竞赛",
+      "originCategory": "external"
     },
     {
       "key": "collection-cmc-100",
@@ -24762,7 +24801,8 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "CMC 大学生数学竞赛"
+      "sourceLabel": "CMC 大学生数学竞赛",
+      "originCategory": "external"
     },
     {
       "key": "collection-cmc-historical-834",
@@ -24794,13 +24834,14 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "CMC 大学生数学竞赛"
+      "sourceLabel": "CMC 大学生数学竞赛",
+      "originCategory": "external"
     },
     {
       "key": "study-spatial-four-expanded",
       "id": "24df80575011e682",
-      "title": "空间四题与领军模拟题 · 扩展解答及推广",
-      "section": "subjects",
+      "title": "混合30题 · 阮禾四题、零模1与综合18",
+      "section": "papers",
       "institution": "来源待核",
       "materialType": "problem-study",
       "status": "",
@@ -24816,7 +24857,7 @@
       "repoIds": [
         "exam-papers"
       ],
-      "description": "对照解法与评分说明，留意原页的审校范围。",
+      "description": "21页混合解答：4道阮禾题、15道零模1题和11道综合18题，共30题；不把整册归为阮禾作品。",
       "series": "",
       "phase": "",
       "number": null,
@@ -24824,7 +24865,10 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "深圳中学",
+      "navigationDomain": "跨卷题组",
+      "originCategory": "external"
     },
     {
       "key": "collection-yau-2010-2026",
@@ -24856,7 +24900,8 @@
       ],
       "uncertainties": [],
       "sourceLabel": "丘成桐大学生数学竞赛",
-      "dateLabel": "2010—2026"
+      "dateLabel": "2010—2026",
+      "originCategory": "external"
     },
     {
       "key": "collection-putnam-2000-2024",
@@ -24888,7 +24933,8 @@
       ],
       "uncertainties": [],
       "sourceLabel": "Putnam（普特南）",
-      "dateLabel": "2000—2024"
+      "dateLabel": "2000—2024",
+      "originCategory": "external"
     },
     {
       "key": "study-wording-ambiguity",
@@ -25013,13 +25059,14 @@
         "mixed"
       ],
       "uncertainties": [],
-      "sourceLabel": "全国中学生物理竞赛"
+      "sourceLabel": "全国中学生物理竞赛",
+      "originCategory": "external"
     },
     {
       "key": "probability-capability-test",
       "id": "74615e0c37d8f985",
       "title": "概率综合能力测试（AI 命题，历史稿）",
-      "section": "papers",
+      "section": "subjects",
       "institution": "来源待核",
       "materialType": "exam-paper",
       "status": "AI 命题",
@@ -25047,8 +25094,11 @@
         "probability"
       ],
       "uncertainties": [],
-      "sourceLabel": "AI 命题试卷"
+      "sourceLabel": "AI 命题试卷",
+      "navigationDomain": "AI原创题卷",
+      "originCategory": "ai-original"
     }
   ],
-  "classificationRevision": "20261008-competition-2"
+  "classificationRevision": "20261008-competition-2",
+  "sourceNavigationRevision": "20261008-source-groups"
 }

@@ -1,0 +1,141 @@
+'use strict';
+
+// Presentation and source relationships only. File migration is applied separately
+// from a verified manifest, never inferred from a filename or a repository name.
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.sourceNavigation = api;
+})(typeof globalThis === 'object' ? globalThis : this, function () {
+  const unique = values => [...new Set(values.filter(Boolean))];
+  const contestSources = new Set(['CMC 大学生数学竞赛','Putnam（普特南）','XMO','谜之竞赛','高中数学联赛','丘成桐大学生数学竞赛','全国中学生物理竞赛','MIT Integration Bee','爱尖子杯']);
+  const knownExternalGroups = new Set([
+    'subjects:lecture-66482177e4a4','subjects:lecture-d1da471de272',
+    'subjects:selected-lecture-integration-bee','subjects:selected-lecture-qualification-exam-series',
+    'lecture-shenzhen-topology-national-day-16','lecture-shenzhen-numerical-linear-algebra',
+    'lecture-shenzhen-representation-theory','lecture-shenzhen-probability-self-study',
+    'lecture-shenzhen-computational-applied-1-8','lecture-shenzhen-general-physics',
+    'lecture-jiuxue-national-day-analysis','coursework-tsinghua-qiuzhen-algebra-1h-01',
+    'reference-leader-syllabus','reference-math-league-syllabus',
+    'study-xmo-torus-grid','study-cmc-fourier-six','study-spatial-four-expanded'
+  ]);
+  function source(group) {
+    const label = group.sourceLabel || group.institution || '来源待核';
+    return label === '深圳中学·阮禾' ? '深圳中学' : /^(待归类|来源未确认)$/.test(label) ? '来源待核' : label;
+  }
+  function teachers(group, byItem) {
+    if (group.teacherLabel) return [group.teacherLabel];
+    const authors=unique(group.itemIds.map(id => byItem.get(id)?.author)
+      .filter(author => author && !/AI|未知|未核|整理|原题|排版|；|\(/.test(author)));
+    return authors.length === 1 ? authors : [];
+  }
+  function domain(group) {
+    if (group.navigationDomain) return group.navigationDomain;
+    if (group.materialType === 'unpaired') return '待配卷';
+    if (group.materialType === 'reference') return '考纲与参考';
+    if (group.materialType === 'coursework') return '课程作业';
+    if (group.materialType === 'lecture-series') return '课堂讲义';
+    if (group.materialType === 'question-collection') return '竞赛题集';
+    if (group.materialType === 'problem-study') return '专题题组';
+    if (/^lecture/.test(group.materialType)) return '课堂讲义';
+    return contestSources.has(source(group)) ? '竞赛真题' : '机构试卷';
+  }
+  function series(group) {
+    if (source(group) === '深圳中学') {
+      if (/^shenzhen-zero-/.test(group.key)) return '零试';
+      if (/^shenzhen-first-/.test(group.key)) return '一试';
+      if (/^shenzhen-league-/.test(group.key)) return '联赛模拟';
+      if (/^shenzhen-(comprehensive|noether)-/.test(group.key)) return '综合测试与诺特奖模拟';
+    }
+    if (/^qingbei-/.test(group.key)) return '模拟卷';
+    return '';
+  }
+  function apply(data) {
+    const items=data.repositories.flatMap(repo => repo.items);
+    const byItem=new Map(items.map(item => [item.id,item]));
+    const ruanhe=data.materialGroups.find(group => group.key === 'subjects:lecture-d1da471de272');
+    const spatial=data.materialGroups.find(group => group.key === 'subjects:selected-lecture-spatial-volume-four-problems');
+    if (ruanhe) {
+      ruanhe.teacherLabel='阮禾';
+      ruanhe.navigationDomain='专题题组';
+      ruanhe.title='阮禾思考题 · 72题与配套解答';
+      ruanhe.description='同一组72题：54页AI解答、16页纯题习题版及旧A1–A4的11页变式与推广。变式稿不另计4道新题。';
+      if (spatial) {
+        ruanhe.itemIds=unique([...ruanhe.itemIds,...spatial.itemIds]);
+        ruanhe.aliasIds=unique([...(ruanhe.aliasIds||[]),spatial.id,...(spatial.aliasIds||[])]);
+        ruanhe.aliasKeys=unique([...(ruanhe.aliasKeys||[]),spatial.key,...(spatial.aliasKeys||[])]);
+        for (const id of spatial.itemIds) {
+          const item=byItem.get(id);
+          if (item) Object.assign(item,{groupKey:ruanhe.key,groupRole:'旧A1–A4 · 变式与推广',sourceLabel:'深圳中学·阮禾',institution:'深圳中学',institutions:['深圳中学'],note:'对应72题旧A1–A4的变式或推广，11页；不另计4道新题。'});
+        }
+        data.materialGroups=data.materialGroups.filter(group => group !== spatial);
+      }
+    }
+    const mixed=data.materialGroups.find(group => group.key === 'study-spatial-four-expanded');
+    if (mixed) {
+      mixed.title='混合30题 · 阮禾四题、零模1与综合18';
+      mixed.sourceLabel='深圳中学';
+      mixed.navigationDomain='跨卷题组';
+      mixed.description='21页混合解答：4道阮禾题、15道零模1题和11道综合18题，共30题；不把整册归为阮禾作品。';
+      for (const id of mixed.itemIds) {
+        const item=byItem.get(id);
+        if (item) {item.aliases=unique([...(item.aliases||[]),item.name,mixed.title,'空间四题与领军模拟题']);item.name='混合30题 · 阮禾四题、零模1与综合18';item.note=mixed.description;item.sourceLabel='深圳中学';}
+      }
+    }
+    for (const group of data.materialGroups) {
+      if (group.materialType === 'cross-paper-audit') {
+        group.browseHidden=true;
+        group.section='tools';
+        group.navigationDomain='管理资料：核查记录';
+      }
+      if (knownExternalGroups.has(group.key)) group.section='papers';
+      if (group.sourceLabel === 'AI 命题试卷') {
+        group.section='subjects';group.navigationDomain='AI原创题卷';group.originCategory='ai-original';
+      } else if (group.section === 'papers') group.originCategory='external';
+      for (const id of group.itemIds) {
+        const item=byItem.get(id);
+        if (item) item.section=group.section;
+      }
+    }
+    const papers=data.navigation.sections.find(section => section.id === 'papers');
+    if (papers) Object.assign(papers,{title:'课程与试卷资料',description:'按机构、比赛、老师与学科折叠浏览课堂讲义、机构试卷和竞赛真题；题目与配套解答同组。'});
+    const subjects=data.navigation.sections.find(section => section.id === 'subjects');
+    if (subjects) Object.assign(subjects,{title:'AI原创与学科资料',description:'AI原创讲义与独立专题按学科浏览；原题的AI解答随原题组收录。'});
+    data.sourceNavigationRevision='20261008-source-groups';
+    return data;
+  }
+  function primarySubject(group, subjects) {
+    const keys=group.subjectKeys||[];
+    if (keys.length !== 1) return {id:'mixed',title:'跨学科 / 综合'};
+    return subjects.find(subject => subject.id === keys[0]) || {id:keys[0],title:keys[0]};
+  }
+  function path(group, byItem, subjects, section) {
+    const subject=primarySubject(group,subjects);
+    if (section === 'subjects' || section === 'books') return [
+      {id:subject.id,title:subject.title},
+      {id:group.navigationDomain||'专题资料',title:group.navigationDomain||'专题资料'}
+    ];
+    const parts=[{id:source(group),title:source(group)},{id:domain(group),title:domain(group)}];
+    const teacher=teachers(group,byItem)[0];
+    if (teacher) parts.push({id:'teacher:'+teacher,title:'老师：'+teacher});
+    const family=series(group);
+    if (family) parts.push({id:'series:'+family,title:family});
+    parts.push({id:'subject:'+subject.id,title:subject.title});
+    return parts;
+  }
+  function build(groups, byItem, subjects, section) {
+    const root={id:section,title:section,children:[],groups:[]};
+    for (const group of groups) {
+      if (group.browseHidden) continue;
+      let cursor=root;
+      for (const part of path(group,byItem,subjects,section)) {
+        let child=cursor.children.find(value => value.id === part.id);
+        if (!child) {child={...part,children:[],groups:[]};cursor.children.push(child);}
+        cursor=child;
+      }
+      cursor.groups.push(group);
+    }
+    return root;
+  }
+  return {apply,source,domain,teachers,path,build,knownExternalGroups};
+});

@@ -56,7 +56,7 @@ assert.equal(groups.find(group=>group.key==='qingbei-mock-01').institution,'清�
 assert.equal(groups.find(group=>group.key==='shenzhen-league-mock-23').sourceLabel,undefined,'school mock stays with school');
 assert.equal(groups.find(group=>group.key==='study-xmo-torus-grid').edition,undefined,'torus question has no invented edition');
 assert.deepEqual(byId.get('3b619e11f038eb13').uses,['参考解答']);
-const appScope={catalogClassification:classification};vm.createContext(appScope);
+const appScope={catalogClassification:classification,sourceNavigation:require('../docs/source-navigation.js')};vm.createContext(appScope);
 const appText=fs.readFileSync(path.join(__dirname,'../docs/app.js'),'utf8').split('start().catch(')[0];
 vm.runInContext(appText+'\nglobalThis.classifyFile=detailKind;globalThis.classifySeries=paperSeries;',appScope);
 assert.equal(appScope.classifyFile(byId.get('daf10e3cfea7aa99')),'questions');
