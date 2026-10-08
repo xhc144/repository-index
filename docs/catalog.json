@@ -15202,7 +15202,7 @@
           "number": null,
           "examDate": null,
           "uses": [
-            "讲义/教材"
+            "参考解答"
           ],
           "aliases": [
             "七月谜之竞赛加试第二题 · 坐标法补充",
@@ -15216,7 +15216,7 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/mystery-contest-2026-july/library-2026-09-05/%E5%8A%A0%E8%AF%95%E7%AC%AC%E4%BA%8C%E9%A2%98_%E5%9D%90%E6%A0%87%E6%B3%95.pdf",
           "groupKey": "mystery-202607",
           "section": "papers",
-          "groupRole": "加试 · 加试第二题坐标法补充",
+          "groupRole": "加试 · 加试第二题坐标法补充题解",
           "sourceLabel": "谜之竞赛",
           "dateLabel": "2026年7月"
         },
@@ -16417,6 +16417,158 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/papers/qingbei-xuetang/2026/10/2026-10-06-evening/source.zip",
           "groupKey": "qingbei-20261006-evening",
+          "section": "papers",
+          "groupRole": "题目源码 ZIP"
+        },
+        {
+          "id": "5eea6757fabd5787",
+          "name": "进阶九学国庆研讨会模拟试题 · 整理题目",
+          "purpose": "用于独立作答与练习，原解答在同组选择。",
+          "kind": "PDF",
+          "filename": "questions.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/questions.pdf",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/questions.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "8题100分题面整理，保留原题条件及图形，供独立作答。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会模拟试题",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "进阶九学国庆研讨会模拟试题题目",
+            "进阶九学国庆研讨会模拟试题题册"
+          ],
+          "pages": 2,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "整理题目"
+        },
+        {
+          "id": "b848514af59c61b3",
+          "name": "进阶九学国庆研讨会模拟试题 · 题目源码 ZIP",
+          "purpose": "获取整理题目册的可编辑TeX、配图与PDF。",
+          "kind": "ZIP",
+          "filename": "source.zip",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/source.zip",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/source.zip",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "仅为新整理题目册源码，原解答按原文件保留。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会模拟试题",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "源码/安装"
+          ],
+          "aliases": [
+            "进阶九学国庆研讨会模拟试题题目",
+            "进阶九学国庆研讨会模拟试题题册"
+          ],
+          "pages": null,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "题目源码 ZIP"
+        },
+        {
+          "id": "6328ba0ba75ebc48",
+          "name": "深圳中学联赛模拟 · 整理题目",
+          "purpose": "用于独立作答与练习，原解答在同组选择。",
+          "kind": "PDF",
+          "filename": "questions.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/papers/shenzhen-middle-school/league-mock-unnumbered/questions.pdf",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/papers/shenzhen-middle-school/league-mock-unnumbered/questions.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/papers/shenzhen-middle-school/league-mock-unnumbered/README.md",
+          "note": "从原两图恢复12题：填空8题、证明4题；原18页解答仅覆盖10题，缺证明1、4。",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "sourceLabel": "深圳中学",
+          "series": "深圳中学联赛模拟",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "深圳中学联赛模拟题目",
+            "深圳中学联赛模拟题册"
+          ],
+          "pages": 2,
+          "author": "",
+          "groupKey": "shenzhen-league-mock-unnumbered",
+          "section": "papers",
+          "groupRole": "整理题目"
+        },
+        {
+          "id": "369140fcce854cae",
+          "name": "深圳中学联赛模拟 · 题目源码 ZIP",
+          "purpose": "获取整理题目册的可编辑TeX、配图与PDF。",
+          "kind": "ZIP",
+          "filename": "source.zip",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/papers/shenzhen-middle-school/league-mock-unnumbered/source.zip",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/papers/shenzhen-middle-school/league-mock-unnumbered/source.zip",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/papers/shenzhen-middle-school/league-mock-unnumbered/README.md",
+          "note": "题目册的完整源码包；原18页解答源码仍见原详情。",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "sourceLabel": "深圳中学",
+          "series": "深圳中学联赛模拟",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "源码/安装"
+          ],
+          "aliases": [
+            "深圳中学联赛模拟题目",
+            "深圳中学联赛模拟题册"
+          ],
+          "pages": null,
+          "author": "",
+          "groupKey": "shenzhen-league-mock-unnumbered",
           "section": "papers",
           "groupRole": "题目源码 ZIP"
         }
@@ -23652,7 +23804,9 @@
         "分析基础与微积分"
       ],
       "itemIds": [
-        "dcdbb8c87a017f4c"
+        "dcdbb8c87a017f4c",
+        "5eea6757fabd5787",
+        "b848514af59c61b3"
       ],
       "repoIds": [
         "exam-papers"
@@ -24123,7 +24277,9 @@
         "综合训练（未细分）"
       ],
       "itemIds": [
-        "34fc6fd96dc133a9"
+        "34fc6fd96dc133a9",
+        "6328ba0ba75ebc48",
+        "369140fcce854cae"
       ],
       "repoIds": [
         "exam-papers"
@@ -24136,7 +24292,9 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [],
+      "uncertainties": [
+        "原18页修订解答覆盖10/12题，缺证明1、4；新题册保留全部12题"
+      ],
       "aliasKeys": [
         "unpaired:34fc6fd96dc133a9"
       ],
@@ -24651,5 +24809,5 @@
       "sourceLabel": "AI 命题试卷"
     }
   ],
-  "classificationRevision": "20261008-competition-1"
+  "classificationRevision": "20261008-competition-2"
 }

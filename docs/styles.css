@@ -5,3 +5,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.entry-card,.group-card{transition:none}.entry-card:hover{transform:none}dialog::backdrop{backdrop-filter:none}}
 
 .detail-filters{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 15px}.detail-filters button{font-size:11px;border:1px solid var(--line);background:#fff;border-radius:5px;padding:6px 11px;color:var(--muted)}.detail-filters button[aria-pressed="true"]{background:#dfeee1;color:var(--accent);border-color:#adccb6}.archive-downloads{margin-bottom:16px}.archive-downloads p{margin-top:9px;font-size:11px;color:var(--muted)}
+
+
+.paper-series + .paper-series { margin-top: 32px; }
+.paper-series-title { margin: 0 0 16px; font-size: 1.35rem; }

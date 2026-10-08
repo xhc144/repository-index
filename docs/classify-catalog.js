@@ -92,6 +92,7 @@
       if (source) item.sourceLabel = source;
       if (source === 'Putnam（普特南）') item.aliases = unique([...(item.aliases || []),'普特南','普特兰']);
       if (item.id === '3b619e11f038eb13') item.uses = ['参考解答'];
+      if (item.id === '54dfd5c69d5cc5c8') {item.uses=['参考解答'];item.groupRole='加试 · 加试第二题坐标法补充题解';}
     }
     for (const group of data.materialGroups) {
       const evidence = unique(group.itemIds.map(id => byItem.get(id)?.sourceLabel));
@@ -140,8 +141,8 @@
     }
     const papers = data.navigation?.sections?.find(section => section.id === 'papers');
     if (papers) papers.description = '先选机构 / 比赛，再选套卷或届次；题目与答案放在一起。';
-    data.classificationRevision = '20261008-competition-1';
-    data.updated = '2026-10-08';
+    data.classificationRevision = '20261008-competition-2';
+    if (!data.updated || data.updated < '2026-10-08') data.updated = '2026-10-08';
     return data;
   }
   return {apply,sourceLabel,verifiedItems,editionGroups};

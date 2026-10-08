@@ -6,7 +6,7 @@ const labels = {home:'首页',papers:'试卷',subjects:'学科资料',books:'书
 const symbols = {papers:'▤',subjects:'∫',books:'▥',tools:'◇'};
 let catalog, groups, groupById, fileById, repositories;
 let lastBrowse = '#home', focusedGroup = '', currentPage = 1;
-let detailUse = 'all';
+let detailUse = 'all', activeDetailId = ''; 
 const PAGE_SIZE = 18;
 const materialLabels={'exam-paper':'单套试卷','exam-bundle':'三卷合订','question-collection':'题集 / 汇编','unpaired':'待配卷','lecture-series':'讲义与配套练习','coursework':'课内作业','reference':'考纲与参考资料','problem-study':'专题练习','cross-paper-audit':'题源核查','printing-aid':'打印辅助'};
 
@@ -90,12 +90,33 @@ function groupCard(group) {
   if(terms().length)el.append(node('p','group-matches',matchingFiles(group).length+' 份文件匹配搜索'));
   el.append(node('span','group-open','选择文件与下载 →'));return el;
 }
+
+function paperSeries(group) {
+  if(browseSource(group)==='深圳中学') {
+    if(/^shenzhen-zero-/.test(group.key))return '零试';
+    if(/^shenzhen-first-/.test(group.key))return '一试';
+    if(/^shenzhen-league-/.test(group.key))return '联赛模拟';
+    return '综合测试与诺特奖模拟';
+  }
+  return '';
+}
+const paperSeriesOrder={'零试':0,'一试':1,'联赛模拟':2,'综合测试与诺特奖模拟':3};
+
 function showGroups(section,key) {
-  const visible=contextGroups(section,key).sort((a,b)=>collator.compare(a.series,b.series)||collator.compare(a.title,b.title));
+  const visible=contextGroups(section,key).sort((a,b)=>(section==='papers'&&key==='深圳中学'?(paperSeriesOrder[paperSeries(a)]??9)-(paperSeriesOrder[paperSeries(b)]??9):0)||collator.compare(a.series,b.series)||collator.compare(a.title,b.title));
   const totalPages=Math.max(1,Math.ceil(visible.length/PAGE_SIZE));currentPage=Math.min(currentPage,totalPages);
   const fragment=document.createDocumentFragment();
   if(!visible.length){const empty=node('div','empty');empty.append(node('h2','','没有找到匹配的资料'),node('p','','试试较短的关键词，或清除搜索。'),button('清除搜索',()=>{$('search').value='';currentPage=1;renderRoute();},'primary-button'));fragment.append(empty);}
-  else {const grid=node('div','group-grid');for(const group of visible.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE))grid.append(groupCard(group));fragment.append(grid);}
+  else {
+    const pageGroups=visible.slice((currentPage-1)*PAGE_SIZE,currentPage*PAGE_SIZE);
+    if(section==='papers'&&key==='深圳中学'){
+      for(const series of unique(pageGroups.map(paperSeries))){
+        const sectionEl=node('section','paper-series');sectionEl.append(node('h2','paper-series-title',series));
+        const grid=node('div','group-grid');for(const group of pageGroups.filter(group=>paperSeries(group)===series))grid.append(groupCard(group));
+        sectionEl.append(grid);fragment.append(sectionEl);
+      }
+    }else{const grid=node('div','group-grid');for(const group of pageGroups)grid.append(groupCard(group));fragment.append(grid);}
+  }
   if(totalPages>1){const pager=node('nav','pagination');pager.setAttribute('aria-label','资料分页');const previous=button('← 上一页',()=>{currentPage--;showGroups(section,key);$('view').scrollIntoView({block:'start'});});previous.disabled=currentPage===1;const next=button('下一页 →',()=>{currentPage++;showGroups(section,key);$('view').scrollIntoView({block:'start'});});next.disabled=currentPage===totalPages;pager.append(previous,node('span','','第 '+currentPage+' / '+totalPages+' 页'),next);fragment.append(pager);}
   $('view').replaceChildren(fragment);
   const count=visible.reduce((sum,group)=>sum+matchingFiles(group).length,0);
@@ -165,6 +186,7 @@ function renderRoute() {
   const [section='home',key]=routeParts();const dialog=$('material-dialog');
   if(section==='group'){
     const group=groupById.get(key);if(!group){navigate('#home');return;}
+    if(activeDetailId!==group.id){detailUse='all';activeDetailId=group.id;}
     if(!$('view').children.length||$('view').querySelector('.loading'))showHome();
     details(group);if(!dialog.open)dialog.showModal();return;
   }
@@ -185,10 +207,10 @@ function renderRoute() {
   if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger)trigger.focus({preventScroll:true});focusedGroup='';}
 }
 async function start() {
-  const response=await fetch('./catalog.json?v=20261008-competition-1');if(!response.ok)throw new Error('Catalog request failed');catalog=catalogClassification.apply(await response.json());
+  const response=await fetch('./catalog.json?v=20261008-competition-2');if(!response.ok)throw new Error('Catalog request failed');catalog=catalogClassification.apply(await response.json());
   groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
   fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
-  $('group-total').textContent=groups.length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;
+  $('group-total').textContent=groups.length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
   for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
   for(const id of ['brand','footer-home'])$(id).addEventListener('click',event=>{event.preventDefault();navigate('#home');});
   $('search-form').addEventListener('submit',event=>event.preventDefault());$('search').addEventListener('input',()=>{currentPage=1;renderRoute();});
