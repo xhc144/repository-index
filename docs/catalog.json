@@ -5222,21 +5222,31 @@
           "section": "subjects"
         },
         {
-          "name": "阮禾思考题与 AI 解答",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "name": "阮禾思考题72题 · 题目与AI解答",
+          "purpose": "按专题学习72道思考题，核对简洁证明与原题条件。",
           "kind": "PDF",
           "filename": "ruanhe-thinking-notes.pdf",
           "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-notes.pdf",
           "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/README.md",
-          "note": "",
+          "note": "新手稿64题加原8题；6个专题，独立数学复核、逐页视觉及源码干净重编通过。原图歧义在相应题解说明。",
           "subjects": [
-            "综合数学"
+            "分析",
+            "概率与统计",
+            "拓扑与几何",
+            "数论与代数"
           ],
           "topics": [
-            "综合专题与证明方法"
+            "数列、递推与渐近",
+            "微分、积分与函数",
+            "级数与多项式",
+            "数论与离散构造",
+            "概率与随机过程",
+            "几何与多元积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -5248,12 +5258,14 @@
             "阮禾思考题与 AI 解答",
             "阮禾老师思考题：题目与AI解答"
           ],
-          "pages": 6,
+          "pages": 54,
           "id": "d46317f110e36196",
-          "author": "阮禾",
+          "author": "阮禾（原题）；AI（解答与排版）",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-notes.pdf",
           "groupKey": "subjects:lecture-d1da471de272",
-          "section": "subjects"
+          "section": "subjects",
+          "sourceLabel": "深圳中学·阮禾",
+          "groupRole": "题目与AI解答"
         },
         {
           "name": "解题札记：三题与手写要点",
@@ -6284,6 +6296,52 @@
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/probability/slutsky-demo/library-2026-09-15/Slutsky_MMA_Demo.zip",
           "groupKey": "subjects:ba4ee77dfc9001e6",
           "section": "subjects"
+        },
+        {
+          "name": "阮禾思考题72题 · 纯题习题版",
+          "purpose": "连续排版的72道题，不附AI解答，不强制一题一页。",
+          "kind": "PDF",
+          "filename": "ruanhe-thinking-practice.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-practice.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/README.md",
+          "note": "与54页解答册同一组72题，保留原题号和条件。",
+          "subjects": [
+            "分析",
+            "概率与统计",
+            "拓扑与几何",
+            "数论与代数"
+          ],
+          "topics": [
+            "数列、递推与渐近",
+            "微分、积分与函数",
+            "级数与多项式",
+            "数论与离散构造",
+            "概率与随机过程",
+            "几何与多元积分"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "阮禾思考题与 AI 解答",
+            "阮禾老师思考题：题目与AI解答"
+          ],
+          "pages": 16,
+          "id": "ruanhe-thinking-practice-72",
+          "author": "阮禾（原题）；AI（解答与排版）",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-practice.pdf",
+          "groupKey": "subjects:lecture-d1da471de272",
+          "section": "subjects",
+          "sourceLabel": "深圳中学·阮禾",
+          "groupRole": "纯题习题版"
         }
       ],
       "contents": [
@@ -16739,7 +16797,7 @@
       "howToUse": "组合机构、系列、阶段和用途筛选；专题讲义也按真实学科收录。"
     }
   ],
-  "revision": "jiuxue-first-test-01-20261008",
+  "revision": "ruanhe-72-20261008",
   "subjects": [
     "分析",
     "线性代数",
@@ -19878,32 +19936,45 @@
     {
       "key": "subjects:lecture-d1da471de272",
       "id": "b61cf26b053b1ad3",
-      "title": "阮禾老师思考题：题目与AI解答",
+      "title": "阮禾思考题：72题分类讲义与习题版",
       "section": "subjects",
-      "institution": "待归类",
+      "institution": "深圳中学",
       "materialType": "lecture",
       "status": "",
       "subjects": [
-        "综合数学"
+        "分析",
+        "概率与统计",
+        "拓扑与几何",
+        "数论与代数"
       ],
       "topics": [
-        "综合专题与证明方法"
+        "数列、递推与渐近",
+        "微分、积分与函数",
+        "级数与多项式",
+        "数论与离散构造",
+        "概率与随机过程",
+        "几何与多元积分"
       ],
       "itemIds": [
-        "d46317f110e36196"
+        "d46317f110e36196",
+        "ruanhe-thinking-practice-72"
       ],
       "repoIds": [
         "lecture-notes"
       ],
-      "description": "对照解法与评分说明，留意原页的审校范围。",
+      "description": "手稿64题与旧黑板8题合收，按6个专题分类；同组选择54页AI解答讲义、16页纯题版或源码。旧8题保留在版本历史。",
       "series": "",
       "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
-        "mixed"
+        "analysis",
+        "probability",
+        "geometry",
+        "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "深圳中学·阮禾"
     },
     {
       "key": "subjects:lecture-ac7235794f5b",
