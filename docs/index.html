@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="按机构找试卷，按学科找讲义和书籍；同一份资料的题目、原解答与PDF集中选择下载。">
+  <meta name="description" content="按机构 / 比赛找试卷，按学科找讲义和书籍；同一份资料的题目、原解答与PDF集中选择下载。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
   <meta name="theme-color" content="#193f3a">
   <title>学习资料与作品导航 · xhc144</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23193f3a'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23dceae1'%3E%CE%A3%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261007-4">
-  <script src="./app.js?v=20261007-4" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20261008-competition-1">
+  <script src="./classify-catalog.js?v=20261008-competition-1" defer></script>
+  <script src="./app.js?v=20261008-competition-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主内容</a>
@@ -27,6 +28,7 @@
     <noscript><p>请开启 JavaScript 浏览资料分组，或从 <a href="https://github.com/xhc144/repository-index">仓库主页</a>继续查看。</p></noscript>
   </main>
   <dialog id="material-dialog" aria-labelledby="detail-title"><div class="dialog-header"><div><p id="detail-category" class="eyebrow"></p><h2 id="detail-title"></h2></div><button id="close-detail" type="button" aria-label="关闭资料详情">×</button></div><div id="detail-body" class="dialog-body"></div><div class="dialog-footer"><p>下载保留 GitHub 原仓库权限。不同用途的文件分别列出。</p><button id="back-detail" type="button">返回资料列表</button></div></dialog>
-  <footer class="site-footer"><div><p>导航公开，资料保留在原仓库。已核实 <span id="verified-pdf-total">399</span> 份 PDF 页数；访问私有文件需要对应 GitHub 权限。核对日期 <time id="updated" datetime="2026-10-07">2026-10-07</time>。</p><nav aria-label="维护入口"><a href="https://github.com/xhc144/repository-index">导航源码与历史</a><a href="https://github.com/xhc144/repository-index/blob/main/AGENTS.md">维护规则</a><a href="./catalog.json?v=20261007-4">目录数据</a><a href="#home" id="footer-home">回到首页 ↑</a></nav></div></footer>
+  <footer class="site-footer"><div><p>导航公开，资料保留在原仓库。已核实 <span id="verified-pdf-total">399</span> 份 PDF 页数；访问私有文件需要对应 GitHub 权限。核对日期 <time id="updated" datetime="2026-10-07">2026-10-07</time>。</p><nav aria-label="维护入口"><a href="https://github.com/xhc144/repository-index">导航源码与历史</a><a href="https://github.com/xhc144/repository-index/blob/main/AGENTS.md">维护规则</a><a href="./catalog.json?v=20261008-competition-1">目录数据</a><a href="#home" id="footer-home">回到首页 ↑</a></nav></div></footer>
 </body>
 </html>
+

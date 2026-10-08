@@ -1,7 +1,7 @@
 {
   "version": 3,
   "title": "学习资料与作品导航",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "notice": "导航公开，资料仍私有。点击“下载 PDF”直接进入 GitHub 下载链接，访问需要原仓库权限；点击资料名称查看详情、源码与历史。",
   "groups": [
     {
@@ -13513,7 +13513,7 @@
           "groupRole": "原专题解答"
         },
         {
-          "name": "国庆研讨会模拟试题解答",
+          "name": "进阶九学国庆研讨会模拟试题 · 原解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "国庆研讨会模拟试题解答.pdf",
@@ -13530,7 +13530,7 @@
           "institutions": [
             "进阶九学"
           ],
-          "series": "国庆研讨会一试模拟",
+          "series": "国庆研讨会模拟试题",
           "phase": "",
           "number": null,
           "examDate": null,
@@ -13540,15 +13540,18 @@
           "aliases": [
             "国庆研讨会模拟试题解答",
             "进阶九学 · 国庆数学分析练习与解答",
-            "国庆研讨会一试模拟"
+            "国庆研讨会一试模拟",
+            "进阶九学国庆研讨会模拟试题 · 原解答"
           ],
           "pages": 10,
           "id": "dcdbb8c87a017f4c",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/%E5%9B%BD%E5%BA%86%E7%A0%94%E8%AE%A8%E4%BC%9A%E6%A8%A1%E6%8B%9F%E8%AF%95%E9%A2%98%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "unpaired:dcdbb8c87a017f4c",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
           "section": "papers",
-          "groupRole": "待配卷解答"
+          "groupRole": "原解答",
+          "sourceLabel": "进阶九学",
+          "dateLabel": "年份未标"
         },
         {
           "name": "代数1H · 第一次作业",
@@ -13692,7 +13695,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/syllabus-sources/library-2026-09-03/high_school_math_league_syllabus_2026.pdf",
           "groupKey": "reference-math-league-syllabus",
           "section": "subjects",
-          "groupRole": "联赛范围整理稿"
+          "groupRole": "联赛范围整理稿",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "高中数学联赛 · 知识点清单",
@@ -13728,7 +13732,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/gaolian-knowledge-and-syllabus/library-2026-09-03/gaolian_knowledge_points.pdf",
           "groupKey": "reference-math-league-syllabus",
           "section": "subjects",
-          "groupRole": "知识点清单"
+          "groupRole": "知识点清单",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "高中数学联赛 · 历年考纲与2026口径比较",
@@ -13764,7 +13769,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/gaolian-knowledge-and-syllabus/library-2026-09-03/gaolian_syllabus_versions_2026.pdf",
           "groupKey": "reference-math-league-syllabus",
           "section": "subjects",
-          "groupRole": "考纲口径比较"
+          "groupRole": "考纲口径比较",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "深圳中学数斗1 · 题目",
@@ -14298,7 +14304,7 @@
           "groupRole": "历史题目稿"
         },
         {
-          "name": "模拟一（来源未确认） · 详细解答",
+          "name": "清北学堂模拟1 · 历史详细解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "模拟一_详细解答.pdf",
@@ -14311,11 +14317,13 @@
           "topics": [
             "综合训练（未细分）"
           ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
+          "institution": "清北学堂",
+          "institutions": [
+            "清北学堂"
+          ],
+          "series": "清北学堂模拟1",
+          "phase": "模拟",
+          "number": 1,
           "examDate": null,
           "uses": [
             "参考解答"
@@ -14326,18 +14334,21 @@
             "模拟1",
             "模拟01",
             "mock1",
-            "模拟一（来源未确认）"
+            "模拟一（来源未确认）",
+            "模拟一（来源未确认） · 详细解答",
+            "清北学堂模拟1 · 历史详细解答"
           ],
           "pages": 15,
           "id": "703ba532021cf047",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "mock-one-source-unconfirmed",
+          "groupKey": "qingbei-mock-01",
           "section": "papers",
-          "groupRole": "详细解答"
+          "groupRole": "历史详细解答",
+          "sourceLabel": "清北学堂"
         },
         {
-          "name": "模拟一（来源未确认） · 简版解答",
+          "name": "清北学堂模拟1 · 历史简版解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "模拟一_解答.pdf",
@@ -14350,11 +14361,13 @@
           "topics": [
             "综合训练（未细分）"
           ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
+          "institution": "清北学堂",
+          "institutions": [
+            "清北学堂"
+          ],
+          "series": "清北学堂模拟1",
+          "phase": "模拟",
+          "number": 1,
           "examDate": null,
           "uses": [
             "参考解答"
@@ -14365,18 +14378,21 @@
             "模拟1",
             "模拟01",
             "mock1",
-            "模拟一（来源未确认）"
+            "模拟一（来源未确认）",
+            "模拟一（来源未确认） · 简版解答",
+            "清北学堂模拟1 · 历史简版解答"
           ],
           "pages": 5,
           "id": "7123d0733dd36c12",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "mock-one-source-unconfirmed",
+          "groupKey": "qingbei-mock-01",
           "section": "papers",
-          "groupRole": "简版解答"
+          "groupRole": "历史简版解答",
+          "sourceLabel": "清北学堂"
         },
         {
-          "name": "模拟一（来源未确认） · 净题",
+          "name": "清北学堂模拟1 · 历史净题",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
           "filename": "模拟一_净题.pdf",
@@ -14389,11 +14405,13 @@
           "topics": [
             "综合训练（未细分）"
           ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
+          "institution": "清北学堂",
+          "institutions": [
+            "清北学堂"
+          ],
+          "series": "清北学堂模拟1",
+          "phase": "模拟",
+          "number": 1,
           "examDate": null,
           "uses": [
             "题目/学生册"
@@ -14404,15 +14422,18 @@
             "模拟1",
             "模拟01",
             "mock1",
-            "模拟一（来源未确认）"
+            "模拟一（来源未确认）",
+            "模拟一（来源未确认） · 净题",
+            "清北学堂模拟1 · 历史净题"
           ],
           "pages": 2,
           "id": "2431c36e2069477c",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-10-01/%E6%A8%A1%E6%8B%9F%E4%B8%80_%E5%87%80%E9%A2%98.pdf",
-          "groupKey": "mock-one-source-unconfirmed",
+          "groupKey": "qingbei-mock-01",
           "section": "papers",
-          "groupRole": "净题"
+          "groupRole": "历史净题",
+          "sourceLabel": "清北学堂"
         },
         {
           "name": "第22届XMO二试 · 解答",
@@ -14449,9 +14470,12 @@
           "id": "c542008e45ba870e",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-10/%E7%AC%AC22%E5%B1%8AXMO%E4%BA%8C%E8%AF%95%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "xmo-22-second",
+          "groupKey": "xmo-22",
           "section": "papers",
-          "groupRole": "参考解答（作者未核）"
+          "groupRole": "二试 · 参考解答（作者未核）",
+          "sourceLabel": "XMO",
+          "dateLabel": "年份未标",
+          "edition": 22
         },
         {
           "name": "第22届XMO一试 · 解答",
@@ -14488,9 +14512,12 @@
           "id": "1aec65260e3828e7",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-10/%E7%AC%AC22%E5%B1%8AXMO%E4%B8%80%E8%AF%95%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "xmo-22-first",
+          "groupKey": "xmo-22",
           "section": "papers",
-          "groupRole": "参考解答（作者未核）"
+          "groupRole": "一试 · 参考解答（作者未核）",
+          "sourceLabel": "XMO",
+          "dateLabel": "年份未标",
+          "edition": 22
         },
         {
           "name": "XMO环面方格得分最大值 · 中英双语解答",
@@ -14526,7 +14553,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-08/%E7%8E%AF%E9%9D%A2%E6%96%B9%E6%A0%BC_XMO%E5%BE%97%E5%88%86%E6%9C%80%E5%A4%A7%E5%80%BC_%E4%B8%AD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "study-xmo-torus-grid",
           "section": "subjects",
-          "groupRole": "中英双语题解"
+          "groupRole": "中英双语题解",
+          "sourceLabel": "XMO"
         },
         {
           "name": "第21届XMO二试 · 解答",
@@ -14563,9 +14591,12 @@
           "id": "632d8de4fabf6178",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-08/%E7%AC%AC21%E5%B1%8AXMO%E4%BA%8C%E8%AF%95%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "xmo-21-second",
+          "groupKey": "xmo-21",
           "section": "papers",
-          "groupRole": "参考解答（作者未核）"
+          "groupRole": "二试 · 参考解答（作者未核）",
+          "sourceLabel": "XMO",
+          "dateLabel": "年份未标",
+          "edition": 21
         },
         {
           "name": "第21届XMO一试 · 解答",
@@ -14602,9 +14633,12 @@
           "id": "3d5668d3edfce47f",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-08/%E7%AC%AC21%E5%B1%8AXMO%E4%B8%80%E8%AF%95%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "xmo-21-first",
+          "groupKey": "xmo-21",
           "section": "papers",
-          "groupRole": "参考解答（作者未核）"
+          "groupRole": "一试 · 参考解答（作者未核）",
+          "sourceLabel": "XMO",
+          "dateLabel": "年份未标",
+          "edition": 21
         },
         {
           "name": "2026高中数学联赛二试A卷 · 原参考答案与评分标准",
@@ -14641,7 +14675,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-13/2026%E5%B9%B4%E5%85%A8%E5%9B%BD%E4%B8%AD%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B%EF%BC%88%E9%A2%84%E8%B5%9B%EF%BC%89%20%E6%9A%A82026%E5%B9%B4%E5%85%A8%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6%E8%81%94%E5%90%88%E7%AB%9E%E8%B5%9B%20%E5%8A%A0%E8%AF%95%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
           "groupKey": "math-league-2026-second-a",
           "section": "papers",
-          "groupRole": "原参考答案与评分标准"
+          "groupRole": "原参考答案与评分标准",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "2026高中数学联赛二试A卷 · 完整解答学习稿",
@@ -14678,7 +14713,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-13/2026%E5%85%A8%E5%9B%BD%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6%E8%81%94%E8%B5%9B%E4%BA%8C%E8%AF%95A%E5%8D%B7_%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94%281%29.pdf",
           "groupKey": "math-league-2026-second-a",
           "section": "papers",
-          "groupRole": "学习解答稿"
+          "groupRole": "学习解答稿",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "2026高中数学联赛二试A卷 · 原题",
@@ -14715,7 +14751,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/olympiad-papers/library-2026-09-13/26%E5%B9%B4%E9%AB%98%E4%B8%AD%E6%95%B0%E5%AD%A6%E8%81%94%E8%B5%9B%E4%BA%8C%E8%AF%95%E8%AF%95%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
           "groupKey": "math-league-2026-second-a",
           "section": "papers",
-          "groupRole": "原题"
+          "groupRole": "原题",
+          "sourceLabel": "高中数学联赛"
         },
         {
           "name": "领军综合诊断三卷 · 题目与解答合订本",
@@ -14751,7 +14788,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "题目与解答合订本"
+          "groupRole": "题目与解答合订本",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军综合诊断三卷 · 标准答案与完整解答",
@@ -14787,7 +14825,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "答案与完整解答"
+          "groupRole": "答案与完整解答",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军综合诊断三卷 · 考生题册",
@@ -14823,7 +14862,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "考生题册"
+          "groupRole": "考生题册",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军综合诊断三卷 · 诊断体系",
@@ -14859,7 +14899,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "诊断体系"
+          "groupRole": "诊断体系",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军综合诊断三卷 · 命题覆盖表",
@@ -14895,7 +14936,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "命题覆盖表"
+          "groupRole": "命题覆盖表",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军综合诊断三卷 · 评分标准",
@@ -14931,7 +14973,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
           "groupKey": "independent-leader-diagnostic-three",
           "section": "papers",
-          "groupRole": "评分标准"
+          "groupRole": "评分标准",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "领军零模一 · 历史扫描原卷",
@@ -15015,9 +15058,11 @@
           "id": "2e0729e16d93140e",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mystery-contest/library-2026-09-06/2026%E5%B9%B48%E6%9C%88%E8%B0%9C%E4%B9%8B%E7%AB%9E%E8%B5%9B%EF%BC%88%E4%B8%80%E8%AF%95%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "groupKey": "mystery-202608-first",
+          "groupKey": "mystery-202608",
           "section": "papers",
-          "groupRole": "参考答案与评分标准"
+          "groupRole": "一试 · 参考答案与评分标准",
+          "sourceLabel": "谜之竞赛",
+          "dateLabel": "2026年8月"
         },
         {
           "name": "2026年8月谜之竞赛加试 · 参考答案与评分标准",
@@ -15052,9 +15097,11 @@
           "id": "e5ffbb42492f9517",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mystery-contest/library-2026-09-06/2026%E5%B9%B48%E6%9C%88%E8%B0%9C%E4%B9%8B%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%8A%A0%E8%AF%95%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "groupKey": "mystery-202608-extra",
+          "groupKey": "mystery-202608",
           "section": "papers",
-          "groupRole": "参考答案与评分标准"
+          "groupRole": "加试 · 参考答案与评分标准",
+          "sourceLabel": "谜之竞赛",
+          "dateLabel": "2026年8月"
         },
         {
           "name": "2026年7月谜之竞赛加试 · 参考答案与评分标准",
@@ -15089,9 +15136,11 @@
           "id": "debeeb03f8af6836",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mystery-contest/library-2026-09-05/2026%E5%B9%B47%E6%9C%88%E8%B0%9C%E4%B9%8B%E7%AB%9E%E8%B5%9B%EF%BC%88%E5%8A%A0%E8%AF%95%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "groupKey": "mystery-202607-extra",
+          "groupKey": "mystery-202607",
           "section": "papers",
-          "groupRole": "参考答案与评分标准"
+          "groupRole": "加试 · 参考答案与评分标准",
+          "sourceLabel": "谜之竞赛",
+          "dateLabel": "2026年7月"
         },
         {
           "name": "2026年7月谜之竞赛一试 · 参考答案与评分标准",
@@ -15126,9 +15175,11 @@
           "id": "4876e641d998a538",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mystery-contest/library-2026-09-05/2026%E5%B9%B47%E6%9C%88%E8%B0%9C%E4%B9%8B%E7%AB%9E%E8%B5%9B%EF%BC%88%E4%B8%80%E8%AF%95%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "groupKey": "mystery-202607-first",
+          "groupKey": "mystery-202607",
           "section": "papers",
-          "groupRole": "参考答案与评分标准"
+          "groupRole": "一试 · 参考答案与评分标准",
+          "sourceLabel": "谜之竞赛",
+          "dateLabel": "2026年7月"
         },
         {
           "name": "七月谜之竞赛加试第二题 · 坐标法补充",
@@ -15163,9 +15214,11 @@
           "id": "54dfd5c69d5cc5c8",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/mystery-contest-2026-july/library-2026-09-05/%E5%8A%A0%E8%AF%95%E7%AC%AC%E4%BA%8C%E9%A2%98_%E5%9D%90%E6%A0%87%E6%B3%95.pdf",
-          "groupKey": "mystery-202607-extra",
+          "groupKey": "mystery-202607",
           "section": "papers",
-          "groupRole": "加试第二题坐标法补充"
+          "groupRole": "加试 · 加试第二题坐标法补充",
+          "sourceLabel": "谜之竞赛",
+          "dateLabel": "2026年7月"
         },
         {
           "name": "深圳中学六卷67题 · 题源核查",
@@ -15253,7 +15306,7 @@
           "groupRole": "修订题目与解答"
         },
         {
-          "name": "卷属待核数学测试 · 修订解答",
+          "name": "深圳中学联赛模拟 · 修订解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "math_test_full_solutions_revised.pdf",
@@ -15266,9 +15319,11 @@
           "topics": [
             "综合训练（未细分）"
           ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "深圳中学联赛模拟",
           "phase": "",
           "number": null,
           "examDate": null,
@@ -15277,15 +15332,18 @@
           ],
           "aliases": [
             "卷属待核数学测试 · 修订解答",
-            "数学测试：全卷解答历史稿（卷名待核）"
+            "数学测试：全卷解答历史稿（卷名待核）",
+            "深圳中学联赛模拟 · 修订解答"
           ],
           "pages": 18,
           "id": "34fc6fd96dc133a9",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-08-26/math_test_full_solutions_revised.pdf",
-          "groupKey": "unpaired:34fc6fd96dc133a9",
+          "groupKey": "shenzhen-league-mock-unnumbered",
           "section": "papers",
-          "groupRole": "待配卷解答"
+          "groupRole": "修订解答",
+          "sourceLabel": "深圳中学",
+          "dateLabel": "年份、卷号未标"
         },
         {
           "name": "国子学第一套 · 题目",
@@ -15465,7 +15523,8 @@
           "containerShared": true,
           "groupKey": "collection-cmc-recommended-review-package",
           "section": "papers",
-          "groupRole": "包内历届真题题册"
+          "groupRole": "包内历届真题题册",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC推荐核对稿 · 历届真题详解",
@@ -15488,7 +15547,7 @@
           "number": null,
           "examDate": null,
           "uses": [
-            "题目/学生册"
+            "参考解答"
           ],
           "aliases": [
             "CMC推荐核对稿 · 历届真题详解",
@@ -15502,7 +15561,8 @@
           "containerShared": true,
           "groupKey": "collection-cmc-recommended-review-package",
           "section": "papers",
-          "groupRole": "包内历届真题详解"
+          "groupRole": "包内历届真题详解",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC推荐核对稿 · 专题分类题解",
@@ -15539,7 +15599,8 @@
           "containerShared": true,
           "groupKey": "collection-cmc-recommended-review-package",
           "section": "papers",
-          "groupRole": "包内专题分类题解"
+          "groupRole": "包内专题分类题解",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC傅里叶专题六题 · 手写证明与批注",
@@ -15575,7 +15636,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-23/CMC%20%E4%B8%93%E9%A2%98%E5%88%86%E7%B1%BB.pdf",
           "groupKey": "study-cmc-fourier-six",
           "section": "subjects",
-          "groupRole": "手写证明与批注"
+          "groupRole": "手写证明与批注",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC专题分类734题 · 一题一页无解答练习册",
@@ -15612,7 +15674,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-23/%E4%B8%93%E9%A2%98%E5%88%86%E7%B1%BB%E9%A2%98%E5%BA%93_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5_%E6%97%A0%E8%A7%A3%E7%AD%94_%E5%90%AB%E7%9B%AE%E5%BD%95.pdf",
           "groupKey": "collection-cmc-topical-734",
           "section": "papers",
-          "groupRole": "留白题册"
+          "groupRole": "留白题册",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC王者百题 · AI解答与核验",
@@ -15648,7 +15711,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-14/%E7%8E%8B%E8%80%85%E7%99%BE%E9%A2%98_%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%A0%B8%E9%AA%8C%281%29.pdf",
           "groupKey": "collection-cmc-100",
           "section": "papers",
-          "groupRole": "AI解答与核验"
+          "groupRole": "AI解答与核验",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC王者百题 · 原作者题单",
@@ -15684,7 +15748,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-14/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E7%8E%8B%E8%80%85%E7%99%BE%E9%A2%98-%E7%BB%88%E7%A8%BF%20%281%29.pdf",
           "groupKey": "collection-cmc-100",
           "section": "papers",
-          "groupRole": "原作者题单"
+          "groupRole": "原作者题单",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC历届834题 · 详解稿",
@@ -15720,7 +15785,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-15/%E5%8E%86%E5%B1%8A%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3.pdf",
           "groupKey": "collection-cmc-historical-834",
           "section": "papers",
-          "groupRole": "学习解答稿"
+          "groupRole": "学习解答稿",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC历届834题 · 无解答题册",
@@ -15756,7 +15822,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/cmc-question-collections/library-2026-09-15/%E5%8E%86%E5%B1%8A%E7%9C%9F%E9%A2%98.pdf",
           "groupKey": "collection-cmc-historical-834",
           "section": "papers",
-          "groupRole": "题目"
+          "groupRole": "题目",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "CMC专题分类734题 · 有解答学习稿",
@@ -15792,7 +15859,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/cmc-three-volumes/library-2026-09-15/%E4%B8%93%E9%A2%98%E5%88%86%E7%B1%BB%E9%A2%98%E5%BA%93.pdf",
           "groupKey": "collection-cmc-topical-734",
           "section": "papers",
-          "groupRole": "学习解答稿"
+          "groupRole": "学习解答稿",
+          "sourceLabel": "CMC 大学生数学竞赛"
         },
         {
           "name": "空间四题与领军模拟题 · 扩展解答及推广",
@@ -15863,7 +15931,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/yau-undergraduate-competition/library-2026-09-16/%E4%B8%98%E6%88%90%E6%A1%90%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B_%E5%8E%86%E5%B9%B4%E9%A2%98%E8%A7%A3.pdf",
           "groupKey": "collection-yau-2010-2026",
           "section": "papers",
-          "groupRole": "历年题解学习稿"
+          "groupRole": "历年题解学习稿",
+          "sourceLabel": "丘成桐大学生数学竞赛"
         },
         {
           "name": "Putnam 2000—2024 · 中英双语题目汇编",
@@ -15891,7 +15960,9 @@
           "aliases": [
             "Putnam 2000—2024 · 中英双语题目汇编",
             "2000—2024 Putnam竞赛双语题目汇编",
-            "Putnam"
+            "Putnam",
+            "普特南",
+            "普特兰"
           ],
           "pages": 56,
           "id": "d2dd0e3eb5b86719",
@@ -15899,7 +15970,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/putnam-2000-2024/library-2026-09-10/PutnamInThisCentury2000%E2%80%912024.pdf",
           "groupKey": "collection-putnam-2000-2024",
           "section": "papers",
-          "groupRole": "中英双语题目汇编"
+          "groupRole": "中英双语题目汇编",
+          "sourceLabel": "Putnam（普特南）"
         },
         {
           "name": "题面理解 · 语义歧义练习",
@@ -16039,7 +16111,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/physics-olympiad-question-versions/library-2026-09-16/%E5%88%86%E7%B1%BB%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
           "groupKey": "collection-physics-olympiad",
           "section": "papers",
-          "groupRole": "专题分类题目"
+          "groupRole": "专题分类题目",
+          "sourceLabel": "全国中学生物理竞赛"
         },
         {
           "name": "物理竞赛 · 专题分类题解",
@@ -16074,7 +16147,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/physics-olympiad-question-versions/library-2026-09-16/%E5%88%86%E7%B1%BB%E7%89%88.pdf",
           "groupKey": "collection-physics-olympiad",
           "section": "papers",
-          "groupRole": "专题分类题解"
+          "groupRole": "专题分类题解",
+          "sourceLabel": "全国中学生物理竞赛"
         },
         {
           "name": "物理竞赛 · 按年份原题",
@@ -16109,7 +16183,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/physics-olympiad-question-versions/library-2026-09-16/%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
           "groupKey": "collection-physics-olympiad",
           "section": "papers",
-          "groupRole": "按年份题目"
+          "groupRole": "按年份题目",
+          "sourceLabel": "全国中学生物理竞赛"
         },
         {
           "name": "概率综合能力测试 · 历史题目",
@@ -16144,7 +16219,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
           "groupKey": "probability-capability-test",
           "section": "papers",
-          "groupRole": "历史题目稿"
+          "groupRole": "历史题目稿",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "概率综合能力测试 · 历史简版解答",
@@ -16179,7 +16255,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "probability-capability-test",
           "section": "papers",
-          "groupRole": "历史简版解答"
+          "groupRole": "历史简版解答",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "概率综合能力测试 · 历史详细解答",
@@ -16214,7 +16291,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
           "groupKey": "probability-capability-test",
           "section": "papers",
-          "groupRole": "历史详细解答"
+          "groupRole": "历史详细解答",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "概率综合能力测试 · 历史重编题册",
@@ -16249,7 +16327,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
           "groupKey": "probability-capability-test",
           "section": "papers",
-          "groupRole": "历史重编题册"
+          "groupRole": "历史重编题册",
+          "sourceLabel": "AI 命题试卷"
         },
         {
           "name": "清北学堂模拟9 · 题目",
@@ -16459,7 +16538,7 @@
       {
         "id": "papers",
         "title": "试卷",
-        "description": "先选机构，再选套卷；题目与答案放在一起。"
+        "description": "先选机构 / 比赛，再选套卷或届次；题目与答案放在一起。"
       },
       {
         "id": "subjects",
@@ -22677,7 +22756,10 @@
       "itemIds": [
         "d579a97b6a96d833",
         "75f4c8308335d0c6",
-        "d97227b5a66a339f"
+        "d97227b5a66a339f",
+        "703ba532021cf047",
+        "7123d0733dd36c12",
+        "2431c36e2069477c"
       ],
       "repoIds": [
         "exam-papers"
@@ -22690,7 +22772,16 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [
+        "历史解答对第13题伴随矩阵记号采用两种解释，归并不表示数学解答全部审校"
+      ],
+      "aliasIds": [
+        "dd8c1992b0579761"
+      ],
+      "aliasKeys": [
+        "mock-one-source-unconfirmed"
+      ],
+      "sourceLabel": "清北学堂"
     },
     {
       "key": "qingbei-mock-02",
@@ -23547,13 +23638,13 @@
       "uncertainties": []
     },
     {
-      "key": "unpaired:dcdbb8c87a017f4c",
+      "key": "jiuxue-national-day-mock-year-unconfirmed",
       "id": "74033bf7b9476f33",
-      "title": "国庆研讨会模拟试题解答",
+      "title": "进阶九学国庆研讨会模拟试题",
       "section": "papers",
       "institution": "进阶九学",
-      "materialType": "unpaired",
-      "status": "待配卷 / 归属待核",
+      "materialType": "exam-paper",
+      "status": "",
       "subjects": [
         "分析"
       ],
@@ -23566,17 +23657,20 @@
       "repoIds": [
         "exam-papers"
       ],
-      "description": "所配试卷或来源关系尚未确认，单独保留文件。",
-      "series": "国庆研讨会一试模拟",
+      "description": "已确认机构来源；原解答与后续整理的题目在同一套卷入口选择。",
+      "series": "国庆研讨会模拟试题",
       "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": [
-        "待配卷 / 归属待核"
-      ]
+      "uncertainties": [],
+      "aliasKeys": [
+        "unpaired:dcdbb8c87a017f4c"
+      ],
+      "sourceLabel": "进阶九学",
+      "dateLabel": "年份未标"
     },
     {
       "key": "coursework-tsinghua-qiuzhen-algebra-1h-01",
@@ -23669,105 +23763,52 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "高中数学联赛"
     },
     {
-      "key": "mock-one-source-unconfirmed",
-      "id": "dd8c1992b0579761",
-      "title": "模拟一（来源未确认）",
+      "key": "xmo-22",
+      "id": "db2751f888459e5c",
+      "title": "第22届XMO",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-paper",
-      "status": "题面以题目版为准；第13题解答对伴随记号采用不同解释",
+      "status": "",
       "subjects": [
-        "综合数学"
+        "试卷与竞赛"
       ],
       "topics": [
-        "综合训练（未细分）"
+        "竞赛题库"
       ],
       "itemIds": [
-        "703ba532021cf047",
-        "7123d0733dd36c12",
-        "2431c36e2069477c"
+        "c542008e45ba870e",
+        "1aec65260e3828e7"
       ],
       "repoIds": [
         "exam-papers"
       ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "",
+      "description": "同一届或同一月度比赛的一试、二试或加试资料集中选择，文件名称保留各自阶段。",
+      "series": "XMO",
       "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核",
-        "题面以题目版为准；第13题解答对伴随记号采用不同解释"
-      ]
-    },
-    {
-      "key": "xmo-22-second",
-      "id": "db2751f888459e5c",
-      "title": "第22届XMO二试",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "exam-paper",
-      "status": "",
-      "subjects": [
-        "试卷与竞赛"
+      "uncertainties": [],
+      "sourceLabel": "XMO",
+      "aliasIds": [
+        "18fbfe0384640a9e"
       ],
-      "topics": [
-        "竞赛题库"
+      "aliasKeys": [
+        "xmo-22-second",
+        "xmo-22-first"
       ],
-      "itemIds": [
-        "c542008e45ba870e"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "XMO",
-      "phase": "二试",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
-    },
-    {
-      "key": "xmo-22-first",
-      "id": "18fbfe0384640a9e",
-      "title": "第22届XMO一试",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "exam-paper",
-      "status": "",
-      "subjects": [
-        "试卷与竞赛"
-      ],
-      "topics": [
-        "竞赛题库"
-      ],
-      "itemIds": [
-        "1aec65260e3828e7"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "XMO",
-      "phase": "一试",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核"
+      "dateLabel": "年份未标",
+      "edition": 22,
+      "phases": [
+        "二试",
+        "一试"
       ]
     },
     {
@@ -23798,12 +23839,13 @@
       "subjectKeys": [
         "combinatorics"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "XMO"
     },
     {
-      "key": "xmo-21-second",
+      "key": "xmo-21",
       "id": "2a04298b1bd82023",
-      "title": "第21届XMO二试",
+      "title": "第21届XMO",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-paper",
@@ -23815,53 +23857,34 @@
         "竞赛题库"
       ],
       "itemIds": [
-        "632d8de4fabf6178"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "XMO",
-      "phase": "二试",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
-    },
-    {
-      "key": "xmo-21-first",
-      "id": "9b581bf8f59ebd84",
-      "title": "第21届XMO一试",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "exam-paper",
-      "status": "",
-      "subjects": [
-        "试卷与竞赛"
-      ],
-      "topics": [
-        "竞赛题库"
-      ],
-      "itemIds": [
+        "632d8de4fabf6178",
         "3d5668d3edfce47f"
       ],
       "repoIds": [
         "exam-papers"
       ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
+      "description": "同一届或同一月度比赛的一试、二试或加试资料集中选择，文件名称保留各自阶段。",
       "series": "XMO",
-      "phase": "一试",
+      "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
+      "uncertainties": [],
+      "sourceLabel": "XMO",
+      "aliasIds": [
+        "9b581bf8f59ebd84"
+      ],
+      "aliasKeys": [
+        "xmo-21-second",
+        "xmo-21-first"
+      ],
+      "dateLabel": "年份未标",
+      "edition": 21,
+      "phases": [
+        "二试",
+        "一试"
       ]
     },
     {
@@ -23895,18 +23918,18 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "高中数学联赛",
+      "dateLabel": "2026年"
     },
     {
       "key": "independent-leader-diagnostic-three",
       "id": "cf367fafe76248a9",
-      "title": "领军综合诊断三卷（独立编制练习）",
+      "title": "领军综合诊断三卷（AI 命题）",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-bundle",
-      "status": "",
+      "status": "AI 命题",
       "subjects": [
         "综合数学"
       ],
@@ -23932,14 +23955,13 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "AI 命题试卷"
     },
     {
-      "key": "mystery-202608-first",
+      "key": "mystery-202608",
       "id": "956098211db63d09",
-      "title": "2026年8月谜之竞赛一试",
+      "title": "2026年8月谜之竞赛",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-paper",
@@ -23951,59 +23973,39 @@
         "考纲、评分与打印辅助"
       ],
       "itemIds": [
-        "2e0729e16d93140e"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "谜之竞赛",
-      "phase": "一试",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
-    },
-    {
-      "key": "mystery-202608-extra",
-      "id": "af3a08b5a4757975",
-      "title": "2026年8月谜之竞赛加试",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "exam-paper",
-      "status": "",
-      "subjects": [
-        "试卷与竞赛"
-      ],
-      "topics": [
-        "考纲、评分与打印辅助"
-      ],
-      "itemIds": [
+        "2e0729e16d93140e",
         "e5ffbb42492f9517"
       ],
       "repoIds": [
         "exam-papers"
       ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
+      "description": "同一届或同一月度比赛的一试、二试或加试资料集中选择，文件名称保留各自阶段。",
       "series": "谜之竞赛",
-      "phase": "加试",
+      "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
+      "uncertainties": [],
+      "sourceLabel": "谜之竞赛",
+      "aliasIds": [
+        "af3a08b5a4757975"
+      ],
+      "aliasKeys": [
+        "mystery-202608-first",
+        "mystery-202608-extra"
+      ],
+      "dateLabel": "2026年8月",
+      "phases": [
+        "一试",
+        "加试"
       ]
     },
     {
-      "key": "mystery-202607-extra",
+      "key": "mystery-202607",
       "id": "68b36677189f17de",
-      "title": "2026年7月谜之竞赛加试",
+      "title": "2026年7月谜之竞赛",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-paper",
@@ -24017,53 +24019,33 @@
       ],
       "itemIds": [
         "debeeb03f8af6836",
-        "54dfd5c69d5cc5c8"
-      ],
-      "repoIds": [
-        "exam-papers"
-      ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
-      "series": "谜之竞赛",
-      "phase": "加试",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "mixed"
-      ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
-    },
-    {
-      "key": "mystery-202607-first",
-      "id": "4a8e835dd5e2e837",
-      "title": "2026年7月谜之竞赛一试",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "exam-paper",
-      "status": "",
-      "subjects": [
-        "试卷与竞赛"
-      ],
-      "topics": [
-        "考纲、评分与打印辅助"
-      ],
-      "itemIds": [
+        "54dfd5c69d5cc5c8",
         "4876e641d998a538"
       ],
       "repoIds": [
         "exam-papers"
       ],
-      "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
+      "description": "同一届或同一月度比赛的一试、二试或加试资料集中选择，文件名称保留各自阶段。",
       "series": "谜之竞赛",
-      "phase": "一试",
+      "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
+      "uncertainties": [],
+      "sourceLabel": "谜之竞赛",
+      "aliasIds": [
+        "4a8e835dd5e2e837"
+      ],
+      "aliasKeys": [
+        "mystery-202607-extra",
+        "mystery-202607-first"
+      ],
+      "dateLabel": "2026年7月",
+      "phases": [
+        "加试",
+        "一试"
       ]
     },
     {
@@ -24127,13 +24109,13 @@
       "uncertainties": []
     },
     {
-      "key": "unpaired:34fc6fd96dc133a9",
+      "key": "shenzhen-league-mock-unnumbered",
       "id": "8f802211a1b84e33",
-      "title": "卷属待核数学测试 · 修订解答",
+      "title": "深圳中学联赛模拟（卷号未标）",
       "section": "papers",
-      "institution": "来源待核",
-      "materialType": "unpaired",
-      "status": "待配卷 / 归属待核",
+      "institution": "深圳中学",
+      "materialType": "exam-paper",
+      "status": "",
       "subjects": [
         "综合数学"
       ],
@@ -24146,18 +24128,20 @@
       "repoIds": [
         "exam-papers"
       ],
-      "description": "所配试卷或来源关系尚未确认，单独保留文件。",
-      "series": "",
+      "description": "已确认机构来源；原解答与后续整理的题目在同一套卷入口选择。",
+      "series": "深圳中学联赛模拟",
       "phase": "",
       "number": null,
       "examDate": null,
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核",
-        "待配卷 / 归属待核"
-      ]
+      "uncertainties": [],
+      "aliasKeys": [
+        "unpaired:34fc6fd96dc133a9"
+      ],
+      "sourceLabel": "深圳中学",
+      "dateLabel": "年份、卷号未标"
     },
     {
       "key": "guozixue-first-set",
@@ -24283,9 +24267,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "CMC 大学生数学竞赛"
     },
     {
       "key": "study-cmc-fourier-six",
@@ -24315,7 +24298,8 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "CMC 大学生数学竞赛"
     },
     {
       "key": "collection-cmc-topical-734",
@@ -24346,9 +24330,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "CMC 大学生数学竞赛"
     },
     {
       "key": "collection-cmc-100",
@@ -24379,9 +24362,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "CMC 大学生数学竞赛"
     },
     {
       "key": "collection-cmc-historical-834",
@@ -24412,9 +24394,8 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "CMC 大学生数学竞赛"
     },
     {
       "key": "study-spatial-four-expanded",
@@ -24474,9 +24455,9 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "丘成桐大学生数学竞赛",
+      "dateLabel": "2010—2026"
     },
     {
       "key": "collection-putnam-2000-2024",
@@ -24506,9 +24487,9 @@
       "subjectKeys": [
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "Putnam（普特南）",
+      "dateLabel": "2000—2024"
     },
     {
       "key": "study-wording-ambiguity",
@@ -24632,18 +24613,17 @@
         "physics",
         "mixed"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "全国中学生物理竞赛"
     },
     {
       "key": "probability-capability-test",
       "id": "74615e0c37d8f985",
-      "title": "概率综合能力测试（历史稿）",
+      "title": "概率综合能力测试（AI 命题，历史稿）",
       "section": "papers",
       "institution": "来源待核",
       "materialType": "exam-paper",
-      "status": "",
+      "status": "AI 命题",
       "subjects": [
         "概率与统计"
       ],
@@ -24667,9 +24647,9 @@
       "subjectKeys": [
         "probability"
       ],
-      "uncertainties": [
-        "机构 / 来源待核"
-      ]
+      "uncertainties": [],
+      "sourceLabel": "AI 命题试卷"
     }
-  ]
+  ],
+  "classificationRevision": "20261008-competition-1"
 }

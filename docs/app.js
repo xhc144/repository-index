@@ -37,9 +37,10 @@ function navigate(target,resetSearch=true) {
 function routeLink(text,target,className) {const el=anchor(text,target,className);el.addEventListener('click',event=>{event.preventDefault();navigate(target);});return el;}
 function matchingFiles(group,query=terms()) {return group.itemIds.map(id=>fileById.get(id)).filter(record=>searchMatches(record,query));}
 function groupMatches(group) {return !terms().length||matchingFiles(group).length>0;}
+function browseSource(group) {return catalogClassification.sourceLabel(group);}
 function contextGroups(section,key) {
   let result=section==='home'?groups:groups.filter(group=>group.section===section);
-  if(key&&section==='papers')result=result.filter(group=>group.institution===key);
+  if(key&&section==='papers')result=result.filter(group=>browseSource(group)===key);
   if(key&&(section==='subjects'||section==='books'))result=result.filter(group=>group.subjectKeys.includes(key));
   return result.filter(groupMatches);
 }
@@ -72,18 +73,18 @@ function browseCategories(section) {
   const fragment=document.createDocumentFragment();const grid=node('div','category-grid');
   if(section==='papers'){
     const pending=name=>name==='待归类'||name==='来源待核';
-    const names=unique(groups.filter(group=>group.section==='papers').map(group=>group.institution)).sort((a,b)=>pending(a)?1:pending(b)?-1:collator.compare(a,b));
-    for(const name of names){const entries=groups.filter(group=>group.section==='papers'&&group.institution===name);const description=pending(name)?'来源待核的试卷、题集与待配卷分别标记。':entries.every(group=>group.materialType==='unpaired')?'现有解答尚待确认所配试卷，单独保留。':'进入后按套卷选择题目、原稿与解答。';grid.append(entryCard(name,description,entries.length+' 组',route(section,name),pending(name)?'?':'▤','entry-card category-card'));}
+    const names=unique(groups.filter(group=>group.section==='papers').map(browseSource)).sort((a,b)=>pending(a)?1:pending(b)?-1:collator.compare(a,b));
+    for(const name of names){const entries=groups.filter(group=>group.section==='papers'&&browseSource(group)===name);const description=pending(name)?'来源待核的试卷、题集与待配卷分别标记。':entries.every(group=>group.materialType==='unpaired')?'现有解答尚待确认所配试卷，单独保留。':'进入后按套卷选择题目、原稿与解答。';grid.append(entryCard(name,description,entries.length+' 组',route(section,name),pending(name)?'?':'▤','entry-card category-card'));}
   }else{
     for(const subject of catalog.navigation.subjects){const count=groups.filter(group=>group.section===section&&group.subjectKeys.includes(subject.id)).length;if(!count)continue;grid.append(entryCard(subject.title,subject.subjects.join(' · '),count+' 组',route(section,subject.id),section==='books'?'▥':'∫','entry-card category-card'));}
   }
-  fragment.append(grid);$('view').replaceChildren(fragment);$('results-status').textContent=section==='papers'?'先选机构或来源，同卷的文件在详情内选择。':'先选学科，再打开具体资料。';
+  fragment.append(grid);$('view').replaceChildren(fragment);$('results-status').textContent=section==='papers'?'先选机构 / 比赛，同卷的文件在详情内选择。':'先选学科，再打开具体资料。';
 }
 function groupCard(group) {
   const el=button('',()=>openGroup(group.id),'group-card');el.dataset.group=group.id;el.setAttribute('aria-label','查看 '+group.title);
   const top=node('div','group-top');top.append(node('span','group-category',materialLabels[group.materialType]||labels[group.section]),node('span','group-files',group.itemIds.length+' 份文件'));
   el.append(top,node('h2','',group.title));
-  const tags=node('div','tags');for(const text of unique([group.institution!=='待归类'&&group.section==='papers'?group.institution:'',group.examDate,group.phase,...group.subjects.slice(0,2)]))tags.append(node('span','',text));el.append(tags);
+  const tags=node('div','tags');for(const text of unique([browseSource(group)!=='待归类'&&group.section==='papers'?browseSource(group):'',group.examDate||group.dateLabel,group.phase,...group.subjects.slice(0,2)]))tags.append(node('span','',text));el.append(tags);
   const available=unique(group.itemIds.flatMap(id=>{const item=fileById.get(id).item;return item.groupRole?[item.groupRole]:item.uses;}));el.append(node('p','group-purpose',group.description),node('p','group-versions',available.slice(0,4).join(' · ')+(available.length>4?' 等':'')));
   if(group.uncertainties.length)el.append(node('p','group-warning',group.uncertainties.join(' · ')));
   if(terms().length)el.append(node('p','group-matches',matchingFiles(group).length+' 份文件匹配搜索'));
@@ -122,7 +123,7 @@ function fileRole(item) {
   return item.uses.join(' · ');
 }
 function filePriority(item) {return item.uses.includes('题目/学生册')?0:item.uses.includes('教师解答')?1:item.uses.includes('机构原解答')?2:item.uses.includes('AI 解答')?3:4;}
-function detailKind(item){const role=fileRole(item);return /源码/.test(role)||item.uses.includes('源码/安装')?'source':/AI.*解答/.test(role)?'ai':/解答|答案|解析|证明/.test(role)?'solutions':'questions';}
+function detailKind(item){const role=fileRole(item);return /源码/.test(role)||item.uses.includes('源码/安装')?'source':/AI.*解答/.test(role)?'ai':/解答|答案|解析|证明|题解|详解/.test(role)?'solutions':'questions';}
 function downloadButton(item) {
   const text=item.kind==='PDF'?'下载 PDF ↓':item.downloadUrl?'下载 '+(item.kind.includes('ZIP')?'ZIP':item.kind)+' ↓':'打开入口 ↗';
   const el=anchor(text,item.downloadUrl||item.url,'download-button');
@@ -130,7 +131,7 @@ function downloadButton(item) {
   el.setAttribute('aria-label',item.name+'：'+text);return el;
 }
 function details(group) {
-  $('detail-title').textContent=group.title;$('detail-category').textContent=labels[group.section]+(group.section==='papers'?' / '+group.institution:'');
+  $('detail-title').textContent=group.title;$('detail-category').textContent=labels[group.section]+(group.section==='papers'?' / '+browseSource(group):'');
   const fragment=document.createDocumentFragment();fragment.append(node('p','detail-intro',group.section==='papers'?'选择要下载的现有文件，页数和用途见各选项。':group.description));
   if(group.uncertainties.length)fragment.append(node('p','detail-warning',group.uncertainties.join(' · ')+'，以原项目说明为准。'));
   const records=group.itemIds.map(id=>fileById.get(id)).sort((a,b)=>filePriority(a.item)-filePriority(b.item)||collator.compare(a.item.name,b.item.name));
@@ -150,7 +151,7 @@ function details(group) {
   const sources=node('div','detail-sources');sources.append(node('span','','所属仓库'));for(const rid of group.repoIds)sources.append(anchor(rid+' ↗',repositories.get(rid).url));fragment.append(sources);
   $('detail-body').replaceChildren(fragment);
 }
-function inferredOrigin(group) {return group.section==='papers'?route('papers',group.institution):route(group.section,group.section==='subjects'||group.section==='books'?group.subjectKeys[0]:'');}
+function inferredOrigin(group) {return group.section==='papers'?route('papers',browseSource(group)):route(group.section,group.section==='subjects'||group.section==='books'?group.subjectKeys[0]:'');}
 function openGroup(id) {
   focusedGroup=id;lastBrowse=location.hash||'#home';detailUse='all';
   history.replaceState({browse:true,page:currentPage,query:$('search').value},'',lastBrowse);
@@ -177,16 +178,16 @@ function renderRoute() {
   }else if(labels[section]){
     const subject=catalog.navigation.subjects.find(value=>value.id===key);
     const title=key?(section==='papers'?key:subject?subject.title:labels[section]):labels[section];
-    heading(title,section==='papers'?(key?'每张卡片是一套卷或一组资料，点开后选择题目和答案。':'按机构或来源进入，题目、原解答和 AI 解答集中在同一组。'):section==='books'?'参考书按学科浏览，点击书名选择当前文件。':section==='tools'?'打开项目查看成品、源码、版本与使用限制。':'讲义、专题题选与配套练习按实际内容归类。');
+    heading(title,section==='papers'?(key?'每张卡片是一套卷或一组资料，点开后选择题目和答案。':'按机构 / 比赛进入，题目、原解答和 AI 解答集中在同一组。'):section==='books'?'参考书按学科浏览，点击书名选择当前文件。':section==='tools'?'打开项目查看成品、源码、版本与使用限制。':'讲义、专题题选与配套练习按实际内容归类。');
     breadcrumb(key?[['首页','#home'],[labels[section],route(section)],[title]]:[['首页','#home'],[labels[section]]]);
     if((section==='papers'||section==='subjects'||section==='books')&&!key&&!terms().length)browseCategories(section);else showGroups(section,key);
   }else{navigate('#home');return;}
   if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger)trigger.focus({preventScroll:true});focusedGroup='';}
 }
 async function start() {
-  const response=await fetch('./catalog.json?v=20261007-4');if(!response.ok)throw new Error('Catalog request failed');catalog=await response.json();
-  groups=catalog.materialGroups;groupById=new Map(groups.map(group=>[group.id,group]));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
-  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.series,item.phase,...item.uses,...item.aliases,item.author,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
+  const response=await fetch('./catalog.json?v=20261008-competition-1');if(!response.ok)throw new Error('Catalog request failed');catalog=catalogClassification.apply(await response.json());
+  groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
+  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
   $('group-total').textContent=groups.length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;
   for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
   for(const id of ['brand','footer-home'])$(id).addEventListener('click',event=>{event.preventDefault();navigate('#home');});
@@ -201,3 +202,4 @@ async function start() {
   renderRoute();
 }
 start().catch(()=>{$('results-status').textContent='目录暂时未能载入';const message=node('p','load-error','请刷新页面重试，或从导航仓库继续浏览。');message.append(' ',anchor('打开仓库 ↗','https://github.com/xhc144/repository-index'));$('view').replaceChildren(message);});
+
