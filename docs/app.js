@@ -120,7 +120,7 @@ function showGroups(section,key) {
       }
     }else{const grid=node('div','group-grid');for(const group of pageGroups)grid.append(groupCard(group));fragment.append(grid);}
   }
-  if(section==='tools'&&!terms().length){const admin=groups.filter(group=>group.browseHidden);if(admin.length){const fold=node('details','material-branch management-branch');const summary=node('summary','branch-summary','管理资料：核查记录');summary.append(node('span','branch-count',admin.length+' 组'));fold.append(summary);const grid=node('div','group-grid branch-body');for(const group of admin)grid.append(groupCard(group));fold.append(grid);fragment.append(fold);}}
+  if(section==='tools'&&!terms().length){const admin=groups.filter(group=>group.browseHidden);if(admin.length){const fold=node('details','material-branch management-branch');const summary=node('summary','branch-summary','管理资料：核查与打印');summary.append(node('span','branch-count',admin.length+' 组'));fold.append(summary);const grid=node('div','group-grid branch-body');for(const group of admin)grid.append(groupCard(group));fold.append(grid);fragment.append(fold);}}
   if(totalPages>1){const pager=node('nav','pagination');pager.setAttribute('aria-label','资料分页');const previous=button('← 上一页',()=>{currentPage--;showGroups(section,key);$('view').scrollIntoView({block:'start'});});previous.disabled=currentPage===1;const next=button('下一页 →',()=>{currentPage++;showGroups(section,key);$('view').scrollIntoView({block:'start'});});next.disabled=currentPage===totalPages;pager.append(previous,node('span','','第 '+currentPage+' / '+totalPages+' 页'),next);fragment.append(pager);}
   $('view').replaceChildren(fragment);
   const count=visible.reduce((sum,group)=>sum+matchingFiles(group).length,0);
@@ -243,9 +243,9 @@ function renderRoute() {
   if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger){for(let ancestor=trigger.parentElement;ancestor;ancestor=ancestor.parentElement)if(ancestor.tagName==='DETAILS')ancestor.open=true;trigger.focus({preventScroll:true});}focusedGroup='';}
 }
 async function start() {
-  const response=await fetch('./catalog.json?v=20261008-source-groups');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
+  const response=await fetch('./catalog.json?v=20261008-source-groups-final');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
   groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
-  const groupSearch=new Map(groups.map(group=>[group.key,[group.title,group.description,group.navigationDomain,group.browseHidden?'管理资料核查记录':''].join(' ')]));
+  const groupSearch=new Map(groups.map(group=>[group.key,[group.title,group.description,group.navigationDomain,group.browseHidden?'管理资料':''].join(' ')]));
   fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,groupSearch.get(item.groupKey),repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
   $('group-total').textContent=groups.filter(group=>!group.browseHidden).length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
   for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}

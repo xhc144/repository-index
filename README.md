@@ -4,7 +4,7 @@
 
 网页首页提供课程与试卷资料、AI原创与学科资料、书籍、工具与作品四个入口。外部资料按机构或比赛进入，再展开课堂讲义、机构试卷、竞赛真题、老师、系列和学科；CMC独立折叠。同一原题组的题目、教师原解答、AI解答、练习册与源码集中选择，已核PDF页数与保留原权限的直接下载不变。AI原创资料单独按学科浏览。核查日志在管理资料中默认折叠，也可通过搜索和历史入口查找。
 
-下方旧目录及 [Git 历史](https://github.com/xhc144/repository-index/commits/main/) 继续保留，供查阅旧入口。分类修订日期：2026-10-08，已核对比赛名、来源字段及同届归并的回归测试；此前公开首页及静态资源核对日期为2026-10-07；旧目录核对日期仍见文末。
+下方旧目录及 [Git 历史](https://github.com/xhc144/repository-index/commits/main/) 继续保留，供查阅旧入口。分类与迁移核对日期：2026-10-08，已核对31项迁移入口、原文件ID与PDF页数、全部259个旧资料组及其别名深链；桌面和移动浏览器的折叠、搜索、详情返回与下载入口已检查。拓扑课堂15页资料保留原ID，教师姓名仍待核；旧目录核对日期仍见文末。
 
 xhc144 的私有项目总目录，按用途查找资料、成品与源码。各项目的最新内容、使用限制和许可证，以对应仓库说明为准。
 
@@ -78,4 +78,4 @@ book-project、stacked-grove、blender-designs 从各自 README 和项目说明�
 
 比赛名称与机构身份分别记录：`sourceLabel` 用于机构 / 比赛导航，`institution` 保留有证据的机构信息；比赛名称明确时不因举办机构或解答作者未核而归入未知来源。作者及数学审校限制继续保留在各文件说明。
 
-每次重新生成 `docs/catalog.json` 后，运行 `node scripts/normalize-catalog.js` 和 `node tests/classification.test.js`，再提交目录。浏览器加载目录时调用同一 `docs/classify-catalog.js` 规范化规则，旧目录数据也不能把已知比赛降级为未知来源。同届合并保留旧资料深链，原 PDF、ZIP、文件路径和源码入口不变。
+每次重新生成 `docs/catalog.json` 后，运行 `node scripts/normalize-catalog.js`、`node tests/classification.test.js` 和 `node tests/source-navigation.test.js`，再提交目录。浏览器加载目录时调用相同的来源与分组规则，旧数据不能把已知比赛降级为未知来源，也不能把教师原稿与忠实转写放进AI原创资料。同届及原题组归并保留旧资料深链。迁移链接只采用已验证目标树的映射，保留文件ID、页数及GitHub原权限；不将私有维护清单或资料正文复制到公开导航。

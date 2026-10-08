@@ -41,6 +41,20 @@ assert(mixed.description.includes('11道综合18'));
 assert.equal(navigation.teachers(mixed,byItem).length,0,'mixed compilation is not all attributed to one teacher');
 const audit=groups.find(group=>group.key==='reference-shenzhen-six-papers-origin-audit');
 assert(audit.browseHidden,'audit stays available by deep link but leaves reading navigation');
+const printing=groups.find(group=>group.key==='tool-printing-separators');
+assert(printing.browseHidden,'printing aids do not crowd the reading tree');
+for(const [key,course] of Object.entries(navigation.verifiedCourseGroups)){
+  const group=groups.find(group=>group.key===key);
+  assert(group,'verified course is present: '+key);
+  assert.equal(group.section,'papers','external course stays with its source: '+key);
+  assert.equal(group.sourceLabel,course.source);
+  assert.equal(group.teacherLabel,course.teacher);
+  assert.equal(group.navigationDomain,'课堂讲义');
+}
+const topology=groups.find(group=>group.key==='subjects:lecture-d2be2228580d');
+assert.equal(byItem.get('81177043a75336b0').pages,15);
+assert(topology.itemIds.includes('81177043a75336b0'),'topology retains its original file ID');
+assert.equal(topology.teacherLabel,'教师姓名待核','unknown teacher is not invented');
 for(const key of ['independent-leader-diagnostic-three','probability-capability-test']){
   const group=groups.find(group=>group.key===key);
   assert.equal(group.section,'subjects');assert.equal(group.originCategory,'ai-original');
@@ -61,4 +75,11 @@ for(const section of ['papers','subjects']){
   }
 }
 assert.deepEqual(navigation.apply(copy(data)),data,'source navigation finalizer is idempotent');
+const regenerated=copy(data);
+for(const group of regenerated.materialGroups){delete group.teacherLabel;delete group.navigationDomain;if(navigation.verifiedCourseGroups[group.key]){group.section='subjects';delete group.sourceLabel;}}
+const restored=navigation.apply(regenerated);
+for(const [key,course] of Object.entries(navigation.verifiedCourseGroups)){
+  const group=restored.materialGroups.find(group=>group.key===key);
+  assert.equal(group.section,'papers');assert.equal(group.sourceLabel,course.source);assert.equal(group.teacherLabel,course.teacher);
+}
 console.log('PASS: preserved 443 files/assets and old deep links; 72-question ownership; mixed-source labeling; CMC/source/teacher/subject tree; hidden audit; AI original separation.');

@@ -75,52 +75,15 @@
     },
     {
       "id": "lecture-notes",
-      "title": "数学与物理专题讲义",
+      "title": "AI讲义与原创练习",
       "category": "math",
-      "intro": "按专题整理讲义、习题、题解与演示资料，适合查找单个学习主题。",
+      "intro": "按学科归档AI原创讲义、自主专题与原创命题；外部课程及同题转写、解答从课程与试卷资料进入。",
       "limits": [
         "矩阵微积分保留备用 PDF，原 TeX 尚未完成编译；各讲义证明未全部重新审校。"
       ],
       "url": "https://github.com/xhc144/lecture-notes",
       "detail": "https://github.com/xhc144/lecture-notes/blob/main/README.md",
       "items": [
-        {
-          "name": "含参积分、特殊函数与概率论",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "parameter-integrals-special-functions-probability.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/parameter-integrals-special-functions-probability/dist/parameter-integrals-special-functions-probability.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/parameter-integrals-special-functions-probability/README.md",
-          "note": "",
-          "subjects": [
-            "分析",
-            "概率与统计"
-          ],
-          "topics": [
-            "积分技巧与含参积分",
-            "概率方法与集中不等式"
-          ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "讲义/教材"
-          ],
-          "aliases": [
-            "含参积分、特殊函数与概率论"
-          ],
-          "pages": 33,
-          "id": "266f4805cd79345f",
-          "author": "阮禾",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/parameter-integrals-special-functions-probability/dist/parameter-integrals-special-functions-probability.pdf",
-          "groupKey": "subjects:lecture-66482177e4a4",
-          "section": "papers"
-        },
         {
           "name": "分析方法：收敛、微分与 Fourier 逼近（短稿）",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
@@ -266,39 +229,6 @@
           "section": "subjects"
         },
         {
-          "name": "含参、广义积分与极限：9月23日数学手稿",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "2026-09-23 笔记.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/analysis-handwritten-integral-notes/library-2026-09-23/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/analysis-handwritten-integral-notes.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "含参、广义积分与极限：9月23日数学手稿"
-          ],
-          "pages": 3,
-          "id": "3fde175d4a4cfa13",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/analysis-handwritten-integral-notes/library-2026-09-23/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
-          "groupKey": "subjects:selected-lecture-analysis-handwritten-integral-notes",
-          "section": "subjects"
-        },
-        {
           "name": "可导函数导数必有连续点",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -428,39 +358,6 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/liouville-exp-square/library-2026-09-04/e_x2_non_elementary_liouville.pdf",
           "groupKey": "subjects:selected-lecture-liouville-exp-square",
-          "section": "subjects"
-        },
-        {
-          "name": "重积分整理讲义",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "n重积分_整理.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-23/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/n-fold-integral-notes.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "多元微积分与重积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "讲义/教材"
-          ],
-          "aliases": [
-            "重积分整理讲义"
-          ],
-          "pages": 11,
-          "id": "c0d37620cad5b38f",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-23/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
-          "groupKey": "subjects:selected-lecture-n-fold-integral-notes",
           "section": "subjects"
         },
         {
@@ -601,43 +498,6 @@
           "section": "subjects"
         },
         {
-          "name": "空间体积与积分估计四题",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "空间体积与积分估计_四题解答与推广.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-22/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/spatial-volume-four-problems.md",
-          "note": "对应72题旧A1–A4的变式或推广，11页；不另计4道新题。",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "多元微积分与重积分"
-          ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目与解答"
-          ],
-          "aliases": [
-            "空间体积与积分估计四题"
-          ],
-          "pages": 11,
-          "id": "3a6b5a83587bda34",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-22/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
-          "groupKey": "subjects:lecture-d1da471de272",
-          "section": "papers",
-          "groupRole": "旧A1–A4 · 变式与推广",
-          "sourceLabel": "深圳中学·阮禾"
-        },
-        {
           "name": "实变函数、复变函数与傅里叶分析",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -734,107 +594,6 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/measure-dmu/library-2026-09-16/dmu_%E7%8E%8B%E8%80%85%E7%99%BE%E9%A2%98%E6%A8%A1%E6%9D%BF.pdf",
           "groupKey": "subjects:selected-lecture-measure-dmu",
-          "section": "subjects"
-        },
-        {
-          "name": "重积分手写知识笔记",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "n重积分(1).pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-23/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/n-fold-handwritten-notes.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "多元微积分与重积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "重积分手写知识笔记"
-          ],
-          "pages": 1,
-          "id": "0a13f1ab3f1f0771",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integrals-and-series/library-2026-09-23/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
-          "groupKey": "subjects:selected-lecture-n-fold-handwritten-notes",
-          "section": "subjects"
-        },
-        {
-          "name": "含参积分手稿59：一致收敛与判别",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "无标题的笔记本 (59).pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/parameter-integrals-handwritten-notes/library-2026-10-05/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/parameter-integrals-handwritten-notes.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "含参积分手稿59：一致收敛与判别",
-            "实分析与含参/广义积分手写知识笔记59/61"
-          ],
-          "pages": 1,
-          "id": "4802c4637765e669",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/parameter-integrals-handwritten-notes/library-2026-10-05/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
-          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
-          "section": "subjects"
-        },
-        {
-          "name": "含参积分手稿61：求导与特殊函数",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "无标题的笔记本 (61).pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/parameter-integrals-handwritten-notes/library-2026-10-05/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/parameter-integrals-handwritten-notes.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "含参积分手稿61：求导与特殊函数",
-            "实分析与含参/广义积分手写知识笔记59/61"
-          ],
-          "pages": 1,
-          "id": "cf5a79e569dda697",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/parameter-integrals-handwritten-notes/library-2026-10-05/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
-          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
           "section": "subjects"
         },
         {
@@ -1211,150 +970,6 @@
           "section": "subjects"
         },
         {
-          "name": "MIT积分竞赛：精选96题题目册",
-          "purpose": "用于独立作答与练习，配套说明见详情。",
-          "kind": "PDF",
-          "filename": "MIT_Integration_Bee_精选96题_纯题目版(1).pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integration-bee/library-2026-09-20/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88%281%29.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/integration-bee.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "MIT Integration Bee",
-          "institutions": [
-            "MIT Integration Bee"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "MIT积分竞赛：精选96题题目册",
-            "MIT Integration Bee：题目、解答与排版分支"
-          ],
-          "pages": 20,
-          "id": "d488c3abc35bf426",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-20/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88%281%29.pdf",
-          "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "papers"
-        },
-        {
-          "name": "MIT积分竞赛：精选96题解答",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "MIT_Integration_Bee_精选96题_题目与解答版.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integration-bee/library-2026-09-18/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/integration-bee.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "MIT Integration Bee",
-          "institutions": [
-            "MIT Integration Bee"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目与解答"
-          ],
-          "aliases": [
-            "MIT积分竞赛：精选96题解答",
-            "MIT Integration Bee：题目、解答与排版分支"
-          ],
-          "pages": 34,
-          "id": "92a75098085255a9",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-18/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
-          "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "papers"
-        },
-        {
-          "name": "MIT积分竞赛：571题专题题解",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "MIT_Integration_Bee_专题_题目与解答版.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/integration-bee.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "MIT Integration Bee",
-          "institutions": [
-            "MIT Integration Bee"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目与解答"
-          ],
-          "aliases": [
-            "MIT积分竞赛：571题专题题解",
-            "MIT Integration Bee：题目、解答与排版分支"
-          ],
-          "pages": 93,
-          "id": "1e7d709661a4c883",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
-          "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "papers"
-        },
-        {
-          "name": "MIT积分竞赛：571题专题题目册",
-          "purpose": "用于独立作答与练习，配套说明见详情。",
-          "kind": "PDF",
-          "filename": "MIT_Integration_Bee_专题_纯题目版.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/integration-bee.md",
-          "note": "",
-          "subjects": [
-            "分析"
-          ],
-          "topics": [
-            "积分技巧与含参积分"
-          ],
-          "institution": "MIT Integration Bee",
-          "institutions": [
-            "MIT Integration Bee"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "MIT积分竞赛：571题专题题目册",
-            "MIT Integration Bee：题目、解答与排版分支"
-          ],
-          "pages": 56,
-          "id": "c73ae75b6417f4da",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
-          "groupKey": "subjects:selected-lecture-integration-bee",
-          "section": "papers"
-        },
-        {
           "name": "单调函数最优节点：完整证明",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -1624,73 +1239,6 @@
           "section": "subjects"
         },
         {
-          "name": "行列式求导与循环矩阵：手写笔记",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "行列式求导公式与循环矩阵特征值分析.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/calculus/derivative-operators/library-2026-10-04/%E8%A1%8C%E5%88%97%E5%BC%8F%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%9F%A9%E9%98%B5%E7%89%B9%E5%BE%81%E5%80%BC%E5%88%86%E6%9E%90.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/determinant-circulant-notes.md",
-          "note": "",
-          "subjects": [
-            "线性代数",
-            "分析"
-          ],
-          "topics": [
-            "矩阵微积分"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "行列式求导与循环矩阵：手写笔记"
-          ],
-          "pages": 2,
-          "id": "bdd25e3f0999ea64",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/calculus/derivative-operators/library-2026-10-04/%E8%A1%8C%E5%88%97%E5%BC%8F%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%9F%A9%E9%98%B5%E7%89%B9%E5%BE%81%E5%80%BC%E5%88%86%E6%9E%90.pdf",
-          "groupKey": "subjects:selected-lecture-determinant-circulant-notes",
-          "section": "subjects"
-        },
-        {
-          "name": "群论（拼好饭版）讲义",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "GroupTheory.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/group-theory-yii/library-2026-09-10/GroupTheory.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/group-theory-yii.md",
-          "note": "",
-          "subjects": [
-            "群论与表示论"
-          ],
-          "topics": [
-            "群论基础"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "讲义/教材"
-          ],
-          "aliases": [
-            "群论（拼好饭版）讲义"
-          ],
-          "pages": 16,
-          "id": "8f42123214bfe9d1",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/group-theory-yii/library-2026-09-10/GroupTheory.pdf",
-          "groupKey": "subjects:selected-lecture-group-theory-yii",
-          "section": "subjects"
-        },
-        {
           "name": "内积与范数讲义预览",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -1721,40 +1269,6 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/inner-product-norm/library-2026-09-23/wangzhe_v3_preview.pdf",
           "groupKey": "subjects:selected-lecture-inner-product-norm",
-          "section": "subjects"
-        },
-        {
-          "name": "计算应用数学第1.5题：矩阵逆推导手稿",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "questions (3)(1).pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/matrix-inverse-example-handwritten/library-2026-10-06/questions%20%283%29%281%29.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/matrix-inverse-example-handwritten.md",
-          "note": "",
-          "subjects": [
-            "线性代数"
-          ],
-          "topics": [
-            "矩阵与线性算子"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "计算应用数学第1.5题：矩阵逆推导手稿",
-            "计算应用数学第一.5题：矩阵逆推导手稿"
-          ],
-          "pages": 2,
-          "id": "cd99e104d2f93f84",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/matrix-inverse-example-handwritten/library-2026-10-06/questions%20%283%29%281%29.pdf",
-          "groupKey": "subjects:selected-lecture-matrix-inverse-example-handwritten",
           "section": "subjects"
         },
         {
@@ -2535,40 +2049,6 @@
           "section": "subjects"
         },
         {
-          "name": "拓扑课堂笔记：链、同调与定向",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "topology-class-notes.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/topology-class-notes/dist/topology-class-notes.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/topology-class-notes/README.md",
-          "note": "",
-          "subjects": [
-            "拓扑与几何"
-          ],
-          "topics": [
-            "拓扑与同调"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "拓扑课堂笔记：链、同调与定向",
-            "链复形、同调与定向"
-          ],
-          "pages": 15,
-          "id": "81177043a75336b0",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/topology-class-notes/dist/topology-class-notes.pdf",
-          "groupKey": "subjects:lecture-d2be2228580d",
-          "section": "subjects"
-        },
-        {
           "name": "平面几何投影共线管道引理",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -2939,40 +2419,6 @@
           "section": "subjects"
         },
         {
-          "name": "阮禾概率手稿：题目与 AI 补充",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "PDF",
-          "filename": "ruanhe-probability-three.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-probability-three/dist/ruanhe-probability-three.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-probability-three/README.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "AI 解答"
-          ],
-          "aliases": [
-            "阮禾概率手稿：题目与 AI 补充",
-            "阮禾老师概率论讲义"
-          ],
-          "pages": 8,
-          "id": "5f9f8b16ca7c4c81",
-          "author": "阮禾",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-probability-three/dist/ruanhe-probability-three.pdf",
-          "groupKey": "subjects:lecture-fd437a50f942",
-          "section": "subjects"
-        },
-        {
           "name": "随机过程与极限分布札记",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -3071,41 +2517,6 @@
           "author": "",
           "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/strong-law-guided-proof/dist/strong-law-guided-proof.pdf",
           "groupKey": "subjects:lecture-f6fc0cbea876",
-          "section": "subjects"
-        },
-        {
-          "name": "概率例题与习题：147题纯题集",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "概率例题与习题_一题一页.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/probability-one-problem-per-page/dist/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/probability-one-problem-per-page/README.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "概率讲义与配套练习",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "概率例题与习题：147题纯题集",
-            "概率例题与习题：一题一页",
-            "概率讲义与配套练习"
-          ],
-          "pages": 147,
-          "id": "c17abd6a370e6a70",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/probability-one-problem-per-page/dist/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5.pdf",
-          "groupKey": "subjects:lecture-451cafb73aec",
           "section": "subjects"
         },
         {
@@ -5226,52 +4637,6 @@
           "section": "subjects"
         },
         {
-          "name": "阮禾思考题72题 · 题目与AI解答",
-          "purpose": "按专题学习72道思考题，核对简洁证明与原题条件。",
-          "kind": "PDF",
-          "filename": "ruanhe-thinking-notes.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-notes.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/README.md",
-          "note": "新手稿64题加原8题；6个专题，独立数学复核、逐页视觉及源码干净重编通过。原图歧义在相应题解说明。",
-          "subjects": [
-            "分析",
-            "概率与统计",
-            "拓扑与几何",
-            "数论与代数"
-          ],
-          "topics": [
-            "数列、递推与渐近",
-            "微分、积分与函数",
-            "级数与多项式",
-            "数论与离散构造",
-            "概率与随机过程",
-            "几何与多元积分"
-          ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "AI 解答"
-          ],
-          "aliases": [
-            "阮禾思考题与 AI 解答",
-            "阮禾老师思考题：题目与AI解答"
-          ],
-          "pages": 54,
-          "id": "d46317f110e36196",
-          "author": "阮禾（原题）；AI（解答与排版）",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-notes.pdf",
-          "groupKey": "subjects:lecture-d1da471de272",
-          "section": "papers",
-          "sourceLabel": "深圳中学·阮禾",
-          "groupRole": "题目与AI解答"
-        },
-        {
           "name": "解题札记",
           "purpose": "按线性代数和概率论分类，查看简短关键想法与定理表述。",
           "kind": "PDF",
@@ -6171,39 +5536,6 @@
           "section": "subjects"
         },
         {
-          "name": "高新雨（松松饼）大学物理：五章26.1原稿",
-          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
-          "kind": "ZIP",
-          "filename": "大物1质点运动学【26.1】.zip",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/remaining-learning-r6/gaoxinyu-university-physics/library-2026-09-23/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.1%E3%80%91.zip",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/library-drafts/catalog/gaoxinyu-university-physics.md",
-          "note": "",
-          "subjects": [
-            "普通物理"
-          ],
-          "topics": [
-            "综合普通物理"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "手写笔记"
-          ],
-          "aliases": [
-            "高新雨（松松饼）大学物理：五章26.1原稿"
-          ],
-          "pages": null,
-          "id": "799f7655d4962cd1",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/library-drafts/remaining-learning-r6/gaoxinyu-university-physics/library-2026-09-23/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.1%E3%80%91.zip",
-          "groupKey": "subjects:selected-lecture-gaoxinyu-university-physics",
-          "section": "subjects"
-        },
-        {
           "name": "三叶结与Seifert曲面：HTML教学可视化",
           "purpose": "查看配套演示与学习材料，使用条件见详情。",
           "kind": "ZIP（HTML 演示）",
@@ -6305,26 +5637,240 @@
           "section": "subjects"
         },
         {
-          "name": "阮禾思考题72题 · 纯题习题版",
-          "purpose": "连续排版的72道题，不附AI解答，不强制一题一页。",
+          "name": "领军综合诊断三卷 · 题目与解答合订本",
+          "purpose": "用于独立作答与练习，配套说明见详情。",
           "kind": "PDF",
-          "filename": "ruanhe-thinking-practice.pdf",
-          "url": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-practice.pdf",
-          "detail": "https://github.com/xhc144/lecture-notes/blob/main/lectures/ruanhe-thinking-notes/README.md",
-          "note": "与54页解答册同一组72题，保留原题号和条件。",
+          "filename": "完整试卷与解答.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
           "subjects": [
-            "分析",
-            "概率与统计",
-            "拓扑与几何",
-            "数论与代数"
+            "综合数学"
           ],
           "topics": [
-            "数列、递推与渐近",
-            "微分、积分与函数",
-            "级数与多项式",
-            "数论与离散构造",
-            "概率与随机过程",
-            "几何与多元积分"
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目与解答"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 题目与解答合订本",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 39,
+          "id": "9e1d43eb0de83b46",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "题目与解答合订本",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "领军综合诊断三卷 · 标准答案与完整解答",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "标准答案与完整解答.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "参考解答"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 标准答案与完整解答",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 13,
+          "id": "2b99b63bc6cb251e",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "答案与完整解答",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "领军综合诊断三卷 · 考生题册",
+          "purpose": "用于独立作答与练习，配套说明见详情。",
+          "kind": "PDF",
+          "filename": "考生卷.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 考生题册",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 9,
+          "id": "a74967b45b01eea0",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "考生题册",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "领军综合诊断三卷 · 诊断体系",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "诊断体系.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "考纲/评分"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 诊断体系",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 5,
+          "id": "824ac56a7b084efb",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "诊断体系",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "领军综合诊断三卷 · 命题覆盖表",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "命题覆盖表.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "考纲/评分"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 命题覆盖表",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 5,
+          "id": "d6de857ae3ead5e8",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "命题覆盖表",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "领军综合诊断三卷 · 评分标准",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "评分标准.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/leader-diagnostic/README.md",
+          "note": "",
+          "subjects": [
+            "综合数学"
+          ],
+          "topics": [
+            "综合训练（未细分）"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "领军综合诊断三卷",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "考纲/评分"
+          ],
+          "aliases": [
+            "领军综合诊断三卷 · 评分标准",
+            "2027考纲综合摸底测试（独立编制练习）",
+            "领军综合诊断三卷"
+          ],
+          "pages": 7,
+          "id": "92c78ad2d6357914",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/leader-diagnostic/components/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
+          "groupKey": "independent-leader-diagnostic-three",
+          "section": "subjects",
+          "groupRole": "评分标准",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "深圳中学六卷67题 · 题源核查",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "六套数学卷67题题源核查.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/docs/source-research/shenzhen-six-papers-2026-10-04/%E5%85%AD%E5%A5%97%E6%95%B0%E5%AD%A6%E5%8D%B767%E9%A2%98%E9%A2%98%E6%BA%90%E6%A0%B8%E6%9F%A5.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/docs/source-research/shenzhen-six-papers-2026-10-04/README.md",
+          "note": "",
+          "subjects": [
+            "试卷与竞赛"
+          ],
+          "topics": [
+            "模拟试卷与训练"
           ],
           "institution": "深圳中学",
           "institutions": [
@@ -6335,28 +5881,173 @@
           "number": null,
           "examDate": null,
           "uses": [
+            "题源/审校"
+          ],
+          "aliases": [
+            "深圳中学六卷67题 · 题源核查",
+            "六套数学卷67题题源核查",
+            "深中六卷67题 · 题源核查",
+            "深圳六卷67题 · 题源核查"
+          ],
+          "pages": 5,
+          "id": "706f643296366e5e",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/docs/source-research/shenzhen-six-papers-2026-10-04/%E5%85%AD%E5%A5%97%E6%95%B0%E5%AD%A6%E5%8D%B767%E9%A2%98%E9%A2%98%E6%BA%90%E6%A0%B8%E6%9F%A5.pdf",
+          "groupKey": "reference-shenzhen-six-papers-origin-audit",
+          "section": "tools",
+          "groupRole": "题源核查"
+        },
+        {
+          "name": "概率综合能力测试 · 历史题目",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "概率论综合能力测试.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/README.md",
+          "note": "",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "概率讲义与配套练习",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
             "题目/学生册"
           ],
           "aliases": [
-            "阮禾思考题与 AI 解答",
-            "阮禾老师思考题：题目与AI解答"
+            "概率综合能力测试 · 历史题目",
+            "概率讲义与配套练习"
           ],
-          "pages": 16,
-          "id": "ruanhe-thinking-practice-72",
-          "author": "阮禾（原题）；AI（解答与排版）",
-          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/lectures/ruanhe-thinking-notes/dist/ruanhe-thinking-practice.pdf",
-          "groupKey": "subjects:lecture-d1da471de272",
-          "section": "papers",
-          "sourceLabel": "深圳中学·阮禾",
-          "groupRole": "纯题习题版"
+          "pages": 1,
+          "id": "5fb2f2762951b3bf",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
+          "groupKey": "probability-capability-test",
+          "section": "subjects",
+          "groupRole": "历史题目稿",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "概率综合能力测试 · 历史简版解答",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "概率论综合能力测试_解答.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/README.md",
+          "note": "有待核验、候选或未完成部分，见详情。",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "概率讲义与配套练习",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "参考解答"
+          ],
+          "aliases": [
+            "概率综合能力测试 · 历史简版解答",
+            "概率讲义与配套练习"
+          ],
+          "pages": 12,
+          "id": "066eb5d44174fa5a",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
+          "groupKey": "probability-capability-test",
+          "section": "subjects",
+          "groupRole": "历史简版解答",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "概率综合能力测试 · 历史详细解答",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "概率论综合能力测试_详细解答.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/README.md",
+          "note": "",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "概率讲义与配套练习",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "参考解答"
+          ],
+          "aliases": [
+            "概率综合能力测试 · 历史详细解答",
+            "概率讲义与配套练习"
+          ],
+          "pages": 13,
+          "id": "fbaa57150732a7e5",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
+          "groupKey": "probability-capability-test",
+          "section": "subjects",
+          "groupRole": "历史详细解答",
+          "sourceLabel": "AI 命题试卷"
+        },
+        {
+          "name": "概率综合能力测试 · 历史重编题册",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "概率论综合能力测试_重编版.pdf",
+          "url": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
+          "detail": "https://github.com/xhc144/lecture-notes/blob/main/archives/ai-authored/probability-capability-test/README.md",
+          "note": "",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "概率讲义与配套练习",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "概率综合能力测试 · 历史重编题册",
+            "概率讲义与配套练习"
+          ],
+          "pages": 1,
+          "id": "f035186f4bc23966",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/lecture-notes/raw/refs/heads/main/archives/ai-authored/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
+          "groupKey": "probability-capability-test",
+          "section": "subjects",
+          "groupRole": "历史重编题册",
+          "sourceLabel": "AI 命题试卷"
         }
       ],
       "contents": [
-        "分析、代数、概率、几何与数值专题",
-        "普通物理、理论物理与计算机资料",
-        "原稿、练习册、题解及演示"
+        "数学、物理与计算机的自主专题",
+        "AI原创讲义、练习与命题",
+        "管理资料与研究记录另行折叠"
       ],
-      "howToUse": "先按学科和专题筛选，再按讲义、题目或解答选择版本。"
+      "howToUse": "先展开学科和专题，再选择讲义、练习、题解或源码版本。"
     },
     {
       "id": "stacked-grove",
@@ -9950,9 +9641,9 @@
     },
     {
       "id": "exam-papers",
-      "title": "试卷、教师题解与机构讲义",
+      "title": "外部课程讲义、机构试卷与竞赛真题",
       "category": "math",
-      "intro": "按试卷列出题目、教师原稿和整理题解，便于独立训练与核对。",
+      "intro": "按老师、机构和比赛归档外部课程资料、原稿与忠实转写，同题的配套AI解答和历史版本集中选择。",
       "limits": [
         "2026-10-06 晚间导师题解仍待配卷；2026-10-07 下午已配模拟 10，但教师第 7(b) 题证明有缺口。",
         "CMC 三份资料在同一 ZIP 内；Yau 稿缺少图文件且部分证明未完成。"
@@ -12541,7 +12232,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_national_day_5h_R04.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
           "section": "papers",
-          "groupRole": "自学讲义"
+          "groupRole": "自学讲义",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "国庆16题学生册 P07",
@@ -12579,7 +12271,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_student_P07.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
           "section": "papers",
-          "groupRole": "学生题册"
+          "groupRole": "学生题册",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "国庆16题参考解答 P07",
@@ -12617,7 +12310,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_teacher_P07.pdf",
           "groupKey": "lecture-shenzhen-topology-national-day-16",
           "section": "papers",
-          "groupRole": "教师解答"
+          "groupRole": "教师解答",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "第一讲：SVD、低秩逼近与最小二乘",
@@ -12635,10 +12329,8 @@
             "矩阵分解与谱理论",
             "数值线性代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "数值线性代数三讲",
           "phase": "",
           "number": null,
@@ -12658,7 +12350,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%B8%80%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
           "section": "papers",
-          "groupRole": "第一讲：SVD、低秩逼近与最小二乘"
+          "groupRole": "第一讲：SVD、低秩逼近与最小二乘",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第二讲：谱半径、幂法与结构化特征值",
@@ -12676,10 +12369,8 @@
             "矩阵分解与谱理论",
             "数值线性代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "数值线性代数三讲",
           "phase": "",
           "number": null,
@@ -12699,7 +12390,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%BA%8C%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
           "section": "papers",
-          "groupRole": "第二讲：谱半径、幂法与结构化特征值"
+          "groupRole": "第二讲：谱半径、幂法与结构化特征值",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第三讲：矩阵范数、条件数与定常迭代",
@@ -12717,10 +12409,8 @@
             "内积、范数与条件数",
             "数值线性代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "数值线性代数三讲",
           "phase": "",
           "number": null,
@@ -12740,7 +12430,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/numerical-linear-algebra/year-unconfirmed/source/%E6%95%B0%E5%80%BC%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%AC%AC%E4%B8%89%E8%AE%B2.pdf",
           "groupKey": "lecture-shenzhen-numerical-linear-algebra",
           "section": "papers",
-          "groupRole": "第三讲：矩阵范数、条件数与定常迭代"
+          "groupRole": "第三讲：矩阵范数、条件数与定常迭代",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第1讲：群表示与基本结构 v2",
@@ -12756,10 +12447,8 @@
           "topics": [
             "群表示与群代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "群表示五讲",
           "phase": "",
           "number": null,
@@ -12782,7 +12471,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT01_representations_examples_v2%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
           "section": "papers",
-          "groupRole": "第1讲：群表示与基本结构 v2"
+          "groupRole": "第1讲：群表示与基本结构 v2",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第2讲：群代数与Schur引理 v1",
@@ -12798,10 +12488,8 @@
           "topics": [
             "群表示与群代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "群表示五讲",
           "phase": "",
           "number": null,
@@ -12823,7 +12511,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT02_module_schur_v1%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
           "section": "papers",
-          "groupRole": "第2讲：群代数与Schur引理 v1"
+          "groupRole": "第2讲：群代数与Schur引理 v1",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第3讲：特征标与正交关系 v2",
@@ -12839,10 +12528,8 @@
           "topics": [
             "特征标与特征标表"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "群表示五讲",
           "phase": "",
           "number": null,
@@ -12864,7 +12551,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT03_characters_orthogonality_v2.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
           "section": "papers",
-          "groupRole": "第3讲：特征标与正交关系 v2"
+          "groupRole": "第3讲：特征标与正交关系 v2",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第4讲：特征标表 v1",
@@ -12880,10 +12568,8 @@
           "topics": [
             "特征标与特征标表"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "群表示五讲",
           "phase": "",
           "number": null,
@@ -12905,7 +12591,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT04_character_tables_v1.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
           "section": "papers",
-          "groupRole": "第4讲：特征标表 v1"
+          "groupRole": "第4讲：特征标表 v1",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "第5讲：构造不可约表示 v2",
@@ -12921,10 +12608,8 @@
           "topics": [
             "群表示与群代数"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "群表示五讲",
           "phase": "",
           "number": null,
@@ -12946,7 +12631,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/representation-theory/year-unconfirmed/source/RT05_representation_constructions_v2%281%29.pdf",
           "groupKey": "lecture-shenzhen-representation-theory",
           "section": "papers",
-          "groupRole": "第5讲：构造不可约表示 v2"
+          "groupRole": "第5讲：构造不可约表示 v2",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "新领军概率自学讲义 · 学生册 R54",
@@ -12985,7 +12671,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/probability_student_R54%281%29.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
           "section": "papers",
-          "groupRole": "学生讲义"
+          "groupRole": "学生讲义",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "概率例题与习题 · 一题一页 R54",
@@ -13025,7 +12712,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5%282%29.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
           "section": "papers",
-          "groupRole": "一题一页留白练习"
+          "groupRole": "一题一页留白练习",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "新领军概率自学讲义 · 参考解答 R59",
@@ -13064,7 +12752,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%96%B0%E9%A2%86%E5%86%9B%E8%AE%A1%E5%88%92%E6%A6%82%E7%8E%87%E8%87%AA%E5%AD%A6%E8%AE%B2%E4%B9%89_%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88_R59.pdf",
           "groupKey": "lecture-shenzhen-probability-self-study",
           "section": "papers",
-          "groupRole": "教师解答"
+          "groupRole": "教师解答",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "第一至八章 · 原版学生题册",
@@ -13102,7 +12791,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/source/%E8%AE%A1%E7%AE%97%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E9%A2%98%E8%AE%AD%E7%BB%83_%E7%AC%AC%E4%B8%80%E8%87%B3%E5%85%AB%E7%AB%A0_%E5%AD%A6%E7%94%9F%E9%A2%98%E5%86%8C%281%29.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
           "section": "papers",
-          "groupRole": "原版学生题册"
+          "groupRole": "原版学生题册",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "第一至八章 · 79题一题一页留白版",
@@ -13141,7 +12831,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/reformatted/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
           "section": "papers",
-          "groupRole": "79题留白版"
+          "groupRole": "79题留白版",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "当前建议练习 · 6题学生册",
@@ -13179,7 +12870,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/selected-core-6/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
           "section": "papers",
-          "groupRole": "6题留白选编"
+          "groupRole": "6题留白选编",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "初次选编 · 18题历史学生册",
@@ -13217,7 +12909,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/selected-theory-18/questions.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
           "section": "papers",
-          "groupRole": "18题历史留白选编"
+          "groupRole": "18题历史留白选编",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "79题AI方法核查报告",
@@ -13255,7 +12948,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/method-audit/method-audit.pdf",
           "groupKey": "lecture-shenzhen-computational-applied-1-8",
           "section": "papers",
-          "groupRole": "AI方法核查"
+          "groupRole": "AI方法核查",
+          "sourceLabel": "深圳中学"
         },
         {
           "name": "普通物理第1章：质点运动学",
@@ -13271,10 +12965,8 @@
           "topics": [
             "质点运动学"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13296,7 +12988,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第1章：质点运动学"
+          "groupRole": "普通物理第1章：质点运动学",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "普通物理第2章：质点动力学",
@@ -13312,10 +13005,8 @@
           "topics": [
             "质点动力学"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13337,7 +13028,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A92%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第2章：质点动力学"
+          "groupRole": "普通物理第2章：质点动力学",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "普通物理第3章：刚体力学基础",
@@ -13353,10 +13045,8 @@
           "topics": [
             "刚体力学"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13378,7 +13068,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A93%E5%88%9A%E4%BD%93%E5%8A%9B%E5%AD%A6%E5%9F%BA%E7%A1%80%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第3章：刚体力学基础"
+          "groupRole": "普通物理第3章：刚体力学基础",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "普通物理第4章：电荷与电场",
@@ -13394,10 +13085,8 @@
           "topics": [
             "电荷与电场"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13419,7 +13108,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A94%E7%94%B5%E8%8D%B7%E4%B8%8E%E7%94%B5%E5%9C%BA%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第4章：电荷与电场"
+          "groupRole": "普通物理第4章：电荷与电场",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "普通物理第5章：电流与磁场",
@@ -13435,10 +13125,8 @@
           "topics": [
             "电流与磁场"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13460,7 +13148,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A95%E7%94%B5%E6%B5%81%E4%B8%8E%E7%A3%81%E5%9C%BA%E3%80%9026.2%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第5章：电流与磁场"
+          "groupRole": "普通物理第5章：电流与磁场",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "普通物理第6章：电磁感应与麦克斯韦方程组",
@@ -13476,10 +13165,8 @@
           "topics": [
             "电磁感应与麦克斯韦方程"
           ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
+          "institution": "来源待核",
+          "institutions": [],
           "series": "普通物理分章讲义",
           "phase": "",
           "number": null,
@@ -13501,7 +13188,8 @@
           "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/2026/source/%E5%A4%A7%E7%89%A96%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E4%B8%8E%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84%E3%80%9026.1%E3%80%91.pdf",
           "groupKey": "lecture-shenzhen-general-physics",
           "section": "papers",
-          "groupRole": "普通物理第6章：电磁感应与麦克斯韦方程组"
+          "groupRole": "普通物理第6章：电磁感应与麦克斯韦方程组",
+          "sourceLabel": "教师资料（机构待核）"
         },
         {
           "name": "数学分析综合练习讲义（学生版）",
@@ -14821,228 +14509,6 @@
           "sourceLabel": "高中数学联赛"
         },
         {
-          "name": "领军综合诊断三卷 · 题目与解答合订本",
-          "purpose": "用于独立作答与练习，配套说明见详情。",
-          "kind": "PDF",
-          "filename": "完整试卷与解答.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目与解答"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 题目与解答合订本",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 39,
-          "id": "9e1d43eb0de83b46",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E5%AE%8C%E6%95%B4%E8%AF%95%E5%8D%B7%E4%B8%8E%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "题目与解答合订本",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "领军综合诊断三卷 · 标准答案与完整解答",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "标准答案与完整解答.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "参考解答"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 标准答案与完整解答",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 13,
-          "id": "2b99b63bc6cb251e",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/mixed-tests/library-2026-09-13/%E6%A0%87%E5%87%86%E7%AD%94%E6%A1%88%E4%B8%8E%E5%AE%8C%E6%95%B4%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "答案与完整解答",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "领军综合诊断三卷 · 考生题册",
-          "purpose": "用于独立作答与练习，配套说明见详情。",
-          "kind": "PDF",
-          "filename": "考生卷.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 考生题册",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 9,
-          "id": "a74967b45b01eea0",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%80%83%E7%94%9F%E5%8D%B7.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "考生题册",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "领军综合诊断三卷 · 诊断体系",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "诊断体系.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "考纲/评分"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 诊断体系",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 5,
-          "id": "824ac56a7b084efb",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%8A%E6%96%AD%E4%BD%93%E7%B3%BB.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "诊断体系",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "领军综合诊断三卷 · 命题覆盖表",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "命题覆盖表.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "考纲/评分"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 命题覆盖表",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 5,
-          "id": "d6de857ae3ead5e8",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E5%91%BD%E9%A2%98%E8%A6%86%E7%9B%96%E8%A1%A8.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "命题覆盖表",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "领军综合诊断三卷 · 评分标准",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "评分标准.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/leader-2027-diagnostic-test.md",
-          "note": "",
-          "subjects": [
-            "综合数学"
-          ],
-          "topics": [
-            "综合训练（未细分）"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "领军综合诊断三卷",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "考纲/评分"
-          ],
-          "aliases": [
-            "领军综合诊断三卷 · 评分标准",
-            "2027考纲综合摸底测试（独立编制练习）",
-            "领军综合诊断三卷"
-          ],
-          "pages": 7,
-          "id": "92c78ad2d6357914",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/remaining-learning-r6/leader-2027-diagnostic-test/library-2026-09-13/%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86.pdf",
-          "groupKey": "independent-leader-diagnostic-three",
-          "section": "subjects",
-          "groupRole": "评分标准",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
           "name": "领军零模一 · 历史扫描原卷",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -15285,45 +14751,6 @@
           "groupRole": "加试 · 加试第二题坐标法补充题解",
           "sourceLabel": "谜之竞赛",
           "dateLabel": "2026年7月"
-        },
-        {
-          "name": "深圳中学六卷67题 · 题源核查",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "六套数学卷67题题源核查.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/mathematics/shenzhen-mock-exams/library-2026-10-04/%E5%85%AD%E5%A5%97%E6%95%B0%E5%AD%A6%E5%8D%B767%E9%A2%98%E9%A2%98%E6%BA%90%E6%A0%B8%E6%9F%A5.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/item-32b54636d3ad.md",
-          "note": "",
-          "subjects": [
-            "试卷与竞赛"
-          ],
-          "topics": [
-            "模拟试卷与训练"
-          ],
-          "institution": "深圳中学",
-          "institutions": [
-            "深圳中学"
-          ],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题源/审校"
-          ],
-          "aliases": [
-            "深圳中学六卷67题 · 题源核查",
-            "六套数学卷67题题源核查",
-            "深中六卷67题 · 题源核查",
-            "深圳六卷67题 · 题源核查"
-          ],
-          "pages": 5,
-          "id": "706f643296366e5e",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/mathematics/shenzhen-mock-exams/library-2026-10-04/%E5%85%AD%E5%A5%97%E6%95%B0%E5%AD%A6%E5%8D%B767%E9%A2%98%E9%A2%98%E6%BA%90%E6%A0%B8%E6%9F%A5.pdf",
-          "groupKey": "reference-shenzhen-six-papers-origin-audit",
-          "section": "tools",
-          "groupRole": "题源核查"
         },
         {
           "name": "深圳中学联赛模拟23 · 修订题目与解答",
@@ -16256,150 +15683,6 @@
           "sourceLabel": "全国中学生物理竞赛"
         },
         {
-          "name": "概率综合能力测试 · 历史题目",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "概率论综合能力测试.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/initial-probability-2026-10-07.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "概率讲义与配套练习",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "概率综合能力测试 · 历史题目",
-            "概率讲义与配套练习"
-          ],
-          "pages": 1,
-          "id": "5fb2f2762951b3bf",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95.pdf",
-          "groupKey": "probability-capability-test",
-          "section": "subjects",
-          "groupRole": "历史题目稿",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "概率综合能力测试 · 历史简版解答",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "概率论综合能力测试_解答.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/initial-probability-2026-10-07.md",
-          "note": "有待核验、候选或未完成部分，见详情。",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "概率讲义与配套练习",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "参考解答"
-          ],
-          "aliases": [
-            "概率综合能力测试 · 历史简版解答",
-            "概率讲义与配套练习"
-          ],
-          "pages": 12,
-          "id": "066eb5d44174fa5a",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "probability-capability-test",
-          "section": "subjects",
-          "groupRole": "历史简版解答",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "概率综合能力测试 · 历史详细解答",
-          "purpose": "对照解法与评分说明，留意原页的审校范围。",
-          "kind": "PDF",
-          "filename": "概率论综合能力测试_详细解答.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/initial-probability-2026-10-07.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "概率讲义与配套练习",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "参考解答"
-          ],
-          "aliases": [
-            "概率综合能力测试 · 历史详细解答",
-            "概率讲义与配套练习"
-          ],
-          "pages": 13,
-          "id": "fbaa57150732a7e5",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E8%AF%A6%E7%BB%86%E8%A7%A3%E7%AD%94.pdf",
-          "groupKey": "probability-capability-test",
-          "section": "subjects",
-          "groupRole": "历史详细解答",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
-          "name": "概率综合能力测试 · 历史重编题册",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "概率论综合能力测试_重编版.pdf",
-          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
-          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/library-learning/catalog/initial-probability-2026-10-07.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "概率模型与计数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "概率讲义与配套练习",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "题目/学生册"
-          ],
-          "aliases": [
-            "概率综合能力测试 · 历史重编题册",
-            "概率讲义与配套练习"
-          ],
-          "pages": 1,
-          "id": "f035186f4bc23966",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/library-learning/probability/probability-capability-test/library-2026-09-20/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%BB%BC%E5%90%88%E8%83%BD%E5%8A%9B%E6%B5%8B%E8%AF%95_%E9%87%8D%E7%BC%96%E7%89%88.pdf",
-          "groupKey": "probability-capability-test",
-          "section": "subjects",
-          "groupRole": "历史重编题册",
-          "sourceLabel": "AI 命题试卷"
-        },
-        {
           "name": "清北学堂模拟9 · 题目",
           "purpose": "8题及全部小问的一页A4净题卷，适合独立作答。",
           "kind": "PDF",
@@ -16798,14 +16081,746 @@
           "section": "papers",
           "groupRole": "LaTeX/TikZ源码",
           "dateLabel": "2026国庆"
+        },
+        {
+          "name": "含参积分、特殊函数与概率论",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "parameter-integrals-special-functions-probability.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/parameter-integrals-probability/dist/parameter-integrals-special-functions-probability.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/parameter-integrals-probability/README.md",
+          "note": "",
+          "subjects": [
+            "分析",
+            "概率与统计"
+          ],
+          "topics": [
+            "积分技巧与含参积分",
+            "概率方法与集中不等式"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "讲义/教材"
+          ],
+          "aliases": [
+            "含参积分、特殊函数与概率论"
+          ],
+          "pages": 33,
+          "id": "266f4805cd79345f",
+          "author": "阮禾",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/year-unconfirmed/parameter-integrals-probability/dist/parameter-integrals-special-functions-probability.pdf",
+          "groupKey": "subjects:lecture-66482177e4a4",
+          "section": "papers",
+          "sourceLabel": "深圳中学"
+        },
+        {
+          "name": "含参、广义积分与极限：9月23日数学手稿",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "2026-09-23 笔记.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/README.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "含参、广义积分与极限：9月23日数学手稿"
+          ],
+          "pages": 3,
+          "id": "3fde175d4a4cfa13",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
+          "groupKey": "subjects:selected-lecture-analysis-handwritten-integral-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "重积分整理讲义",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "n重积分_整理.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/README.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "多元微积分与重积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "讲义/教材"
+          ],
+          "aliases": [
+            "重积分整理讲义"
+          ],
+          "pages": 11,
+          "id": "c0d37620cad5b38f",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
+          "groupKey": "subjects:selected-lecture-n-fold-integral-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "空间体积与积分估计四题",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "空间体积与积分估计_四题解答与推广.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/four-problems/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/README.md",
+          "note": "对应72题旧A1–A4的变式或推广，11页；不另计4道新题。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "多元微积分与重积分"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目与解答"
+          ],
+          "aliases": [
+            "空间体积与积分估计四题"
+          ],
+          "pages": 11,
+          "id": "3a6b5a83587bda34",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/year-unconfirmed/thinking-problems/four-problems/%E7%A9%BA%E9%97%B4%E4%BD%93%E7%A7%AF%E4%B8%8E%E7%A7%AF%E5%88%86%E4%BC%B0%E8%AE%A1_%E5%9B%9B%E9%A2%98%E8%A7%A3%E7%AD%94%E4%B8%8E%E6%8E%A8%E5%B9%BF.pdf",
+          "groupKey": "subjects:lecture-d1da471de272",
+          "section": "papers",
+          "groupRole": "旧A1–A4 · 变式与推广",
+          "sourceLabel": "深圳中学·阮禾"
+        },
+        {
+          "name": "重积分手写知识笔记",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "n重积分(1).pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/README.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "多元微积分与重积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "重积分手写知识笔记"
+          ],
+          "pages": 1,
+          "id": "0a13f1ab3f1f0771",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
+          "groupKey": "subjects:selected-lecture-n-fold-handwritten-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "含参积分手稿59：一致收敛与判别",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "无标题的笔记本 (59).pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/README.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "含参积分手稿59：一致收敛与判别",
+            "实分析与含参/广义积分手写知识笔记59/61"
+          ],
+          "pages": 1,
+          "id": "4802c4637765e669",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
+          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "含参积分手稿61：求导与特殊函数",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "无标题的笔记本 (61).pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/README.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "含参积分手稿61：求导与特殊函数",
+            "实分析与含参/广义积分手写知识笔记59/61"
+          ],
+          "pages": 1,
+          "id": "cf5a79e569dda697",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
+          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "MIT积分竞赛：精选96题题目册",
+          "purpose": "用于独立作答与练习，配套说明见详情。",
+          "kind": "PDF",
+          "filename": "MIT_Integration_Bee_精选96题_纯题目版(1).pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-20/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88%281%29.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/catalog/integration-bee.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "MIT Integration Bee",
+          "institutions": [
+            "MIT Integration Bee"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "MIT积分竞赛：精选96题题目册",
+            "MIT Integration Bee：题目、解答与排版分支"
+          ],
+          "pages": 20,
+          "id": "d488c3abc35bf426",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-20/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88%281%29.pdf",
+          "groupKey": "subjects:selected-lecture-integration-bee",
+          "section": "papers"
+        },
+        {
+          "name": "MIT积分竞赛：精选96题解答",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "MIT_Integration_Bee_精选96题_题目与解答版.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-18/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/catalog/integration-bee.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "MIT Integration Bee",
+          "institutions": [
+            "MIT Integration Bee"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目与解答"
+          ],
+          "aliases": [
+            "MIT积分竞赛：精选96题解答",
+            "MIT Integration Bee：题目、解答与排版分支"
+          ],
+          "pages": 34,
+          "id": "92a75098085255a9",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-18/MIT_Integration_Bee_%E7%B2%BE%E9%80%8996%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
+          "groupKey": "subjects:selected-lecture-integration-bee",
+          "section": "papers"
+        },
+        {
+          "name": "MIT积分竞赛：571题专题题解",
+          "purpose": "对照解法与评分说明，留意原页的审校范围。",
+          "kind": "PDF",
+          "filename": "MIT_Integration_Bee_专题_题目与解答版.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/catalog/integration-bee.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "MIT Integration Bee",
+          "institutions": [
+            "MIT Integration Bee"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目与解答"
+          ],
+          "aliases": [
+            "MIT积分竞赛：571题专题题解",
+            "MIT Integration Bee：题目、解答与排版分支"
+          ],
+          "pages": 93,
+          "id": "1e7d709661a4c883",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E9%A2%98%E7%9B%AE%E4%B8%8E%E8%A7%A3%E7%AD%94%E7%89%88.pdf",
+          "groupKey": "subjects:selected-lecture-integration-bee",
+          "section": "papers"
+        },
+        {
+          "name": "MIT积分竞赛：571题专题题目册",
+          "purpose": "用于独立作答与练习，配套说明见详情。",
+          "kind": "PDF",
+          "filename": "MIT_Integration_Bee_专题_纯题目版.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/competitions/mit-integration-bee/archives/library-drafts/catalog/integration-bee.md",
+          "note": "",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "积分技巧与含参积分"
+          ],
+          "institution": "MIT Integration Bee",
+          "institutions": [
+            "MIT Integration Bee"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "MIT积分竞赛：571题专题题目册",
+            "MIT Integration Bee：题目、解答与排版分支"
+          ],
+          "pages": 56,
+          "id": "c73ae75b6417f4da",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/competitions/mit-integration-bee/archives/library-drafts/analysis/integration-bee/library-2026-09-17/MIT_Integration_Bee_%E4%B8%93%E9%A2%98_%E7%BA%AF%E9%A2%98%E7%9B%AE%E7%89%88.pdf",
+          "groupKey": "subjects:selected-lecture-integration-bee",
+          "section": "papers"
+        },
+        {
+          "name": "行列式求导与循环矩阵：手写笔记",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "行列式求导公式与循环矩阵特征值分析.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/determinant-circulant-handwriting/%E8%A1%8C%E5%88%97%E5%BC%8F%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%9F%A9%E9%98%B5%E7%89%B9%E5%BE%81%E5%80%BC%E5%88%86%E6%9E%90.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/determinant-circulant-handwriting/README.md",
+          "note": "",
+          "subjects": [
+            "线性代数",
+            "分析"
+          ],
+          "topics": [
+            "矩阵微积分"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "行列式求导与循环矩阵：手写笔记"
+          ],
+          "pages": 2,
+          "id": "bdd25e3f0999ea64",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/determinant-circulant-handwriting/%E8%A1%8C%E5%88%97%E5%BC%8F%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%BE%AA%E7%8E%AF%E7%9F%A9%E9%98%B5%E7%89%B9%E5%BE%81%E5%80%BC%E5%88%86%E6%9E%90.pdf",
+          "groupKey": "subjects:selected-lecture-determinant-circulant-notes",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "群论（拼好饭版）讲义",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "GroupTheory.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/yii-i/2026-04-22/group-theory/GroupTheory.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/yii-i/2026-04-22/group-theory/README.md",
+          "note": "",
+          "subjects": [
+            "群论与表示论"
+          ],
+          "topics": [
+            "群论基础"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "讲义/教材"
+          ],
+          "aliases": [
+            "群论（拼好饭版）讲义"
+          ],
+          "pages": 16,
+          "id": "8f42123214bfe9d1",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/yii-i/2026-04-22/group-theory/GroupTheory.pdf",
+          "groupKey": "subjects:selected-lecture-group-theory-yii",
+          "section": "papers",
+          "sourceLabel": "教师资料（机构待核）"
+        },
+        {
+          "name": "计算应用数学第1.5题：矩阵逆推导手稿",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "questions (3)(1).pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/matrix-inverse-handwriting/questions%20%283%29%281%29.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/author-unconfirmed/matrix-inverse-handwriting/README.md",
+          "note": "",
+          "subjects": [
+            "线性代数"
+          ],
+          "topics": [
+            "矩阵与线性算子"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "计算应用数学第1.5题：矩阵逆推导手稿",
+            "计算应用数学第一.5题：矩阵逆推导手稿"
+          ],
+          "pages": 2,
+          "id": "cd99e104d2f93f84",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/author-unconfirmed/matrix-inverse-handwriting/questions%20%283%29%281%29.pdf",
+          "groupKey": "subjects:selected-lecture-matrix-inverse-example-handwritten",
+          "section": "papers",
+          "sourceLabel": "来源待核"
+        },
+        {
+          "name": "拓扑课堂笔记：链、同调与定向",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "topology-class-notes.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/2026-10-05/topology-class-notes/dist/topology-class-notes.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/classroom/2026-10-05/topology-class-notes/README.md",
+          "note": "一页课堂提纲的15页AI整理与扩写，含补充证明；教师姓名待核。",
+          "subjects": [
+            "拓扑与几何"
+          ],
+          "topics": [
+            "拓扑与同调"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "AI整理与扩写"
+          ],
+          "aliases": [
+            "拓扑课堂笔记：链、同调与定向",
+            "链复形、同调与定向"
+          ],
+          "pages": 15,
+          "id": "81177043a75336b0",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/classroom/2026-10-05/topology-class-notes/dist/topology-class-notes.pdf",
+          "groupKey": "subjects:lecture-d2be2228580d",
+          "section": "papers",
+          "sourceLabel": "来源待核",
+          "groupRole": "课堂提纲 · AI整理与扩写"
+        },
+        {
+          "name": "阮禾概率手稿：题目与 AI 补充",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "PDF",
+          "filename": "ruanhe-probability-three.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/2026-10-07/probability-handwriting/dist/ruanhe-probability-three.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/2026-10-07/probability-handwriting/README.md",
+          "note": "",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "AI 解答"
+          ],
+          "aliases": [
+            "阮禾概率手稿：题目与 AI 补充",
+            "阮禾老师概率论讲义"
+          ],
+          "pages": 8,
+          "id": "5f9f8b16ca7c4c81",
+          "author": "阮禾",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/2026-10-07/probability-handwriting/dist/ruanhe-probability-three.pdf",
+          "groupKey": "subjects:lecture-fd437a50f942",
+          "section": "papers",
+          "sourceLabel": "深圳中学"
+        },
+        {
+          "name": "概率例题与习题：147题纯题集",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "概率例题与习题_一题一页.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/2026-10/probability-practice-history/dist/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/2026-10/probability-practice-history/README.md",
+          "note": "",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "概率讲义与配套练习",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "概率例题与习题：147题纯题集",
+            "概率例题与习题：一题一页",
+            "概率讲义与配套练习"
+          ],
+          "pages": 147,
+          "id": "c17abd6a370e6a70",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/2026-10/probability-practice-history/dist/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5.pdf",
+          "groupKey": "subjects:lecture-451cafb73aec",
+          "section": "papers",
+          "sourceLabel": "深圳中学"
+        },
+        {
+          "name": "阮禾思考题72题 · 题目与AI解答",
+          "purpose": "按专题学习72道思考题，核对简洁证明与原题条件。",
+          "kind": "PDF",
+          "filename": "ruanhe-thinking-notes.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/dist/ruanhe-thinking-notes.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/README.md",
+          "note": "新手稿64题加原8题；6个专题，独立数学复核、逐页视觉及源码干净重编通过。原图歧义在相应题解说明。",
+          "subjects": [
+            "分析",
+            "概率与统计",
+            "拓扑与几何",
+            "数论与代数"
+          ],
+          "topics": [
+            "数列、递推与渐近",
+            "微分、积分与函数",
+            "级数与多项式",
+            "数论与离散构造",
+            "概率与随机过程",
+            "几何与多元积分"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "AI 解答"
+          ],
+          "aliases": [
+            "阮禾思考题与 AI 解答",
+            "阮禾老师思考题：题目与AI解答"
+          ],
+          "pages": 54,
+          "id": "d46317f110e36196",
+          "author": "阮禾（原题）；AI（解答与排版）",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/dist/ruanhe-thinking-notes.pdf",
+          "groupKey": "subjects:lecture-d1da471de272",
+          "section": "papers",
+          "sourceLabel": "深圳中学·阮禾",
+          "groupRole": "题目与AI解答"
+        },
+        {
+          "name": "高新雨（松松饼）大学物理：五章26.1原稿",
+          "purpose": "查阅原稿或学习笔记，核对批注与整理来源。",
+          "kind": "ZIP",
+          "filename": "大物1质点运动学【26.1】.zip",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/teacher-lectures/physics/general-physics/26.1-archive/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.1%E3%80%91.zip",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/teacher-lectures/physics/general-physics/26.1-archive/README.md",
+          "note": "",
+          "subjects": [
+            "普通物理"
+          ],
+          "topics": [
+            "综合普通物理"
+          ],
+          "institution": "来源待核",
+          "institutions": [],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "高新雨（松松饼）大学物理：五章26.1原稿"
+          ],
+          "pages": null,
+          "id": "799f7655d4962cd1",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/teacher-lectures/physics/general-physics/26.1-archive/%E5%A4%A7%E7%89%A91%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%E3%80%9026.1%E3%80%91.zip",
+          "groupKey": "subjects:selected-lecture-gaoxinyu-university-physics",
+          "section": "papers",
+          "sourceLabel": "教师资料（机构待核）"
+        },
+        {
+          "name": "阮禾思考题72题 · 纯题习题版",
+          "purpose": "连续排版的72道题，不附AI解答，不强制一题一页。",
+          "kind": "PDF",
+          "filename": "ruanhe-thinking-practice.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/dist/ruanhe-thinking-practice.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/README.md",
+          "note": "与54页解答册同一组72题，保留原题号和条件。",
+          "subjects": [
+            "分析",
+            "概率与统计",
+            "拓扑与几何",
+            "数论与代数"
+          ],
+          "topics": [
+            "数列、递推与渐近",
+            "微分、积分与函数",
+            "级数与多项式",
+            "数论与离散构造",
+            "概率与随机过程",
+            "几何与多元积分"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "阮禾思考题与 AI 解答",
+            "阮禾老师思考题：题目与AI解答"
+          ],
+          "pages": 16,
+          "id": "ruanhe-thinking-practice-72",
+          "author": "阮禾（原题）；AI（解答与排版）",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/ruanhe/year-unconfirmed/thinking-problems/72-problems/dist/ruanhe-thinking-practice.pdf",
+          "groupKey": "subjects:lecture-d1da471de272",
+          "section": "papers",
+          "sourceLabel": "深圳中学·阮禾",
+          "groupRole": "纯题习题版"
         }
       ],
       "contents": [
-        "清北学堂、深圳中学等试卷系列",
-        "题目、教师原稿、AI 解答与留白练习册",
-        "机构专题讲义、竞赛题库及考纲"
+        "教师课程、机构试卷与竞赛真题",
+        "同组题目、教师原稿、AI解答与配套源码",
+        "来源待核的课堂手稿与版本说明"
       ],
-      "howToUse": "组合机构、系列、阶段和用途筛选；专题讲义也按真实学科收录。"
+      "howToUse": "按来源逐层展开类别、老师或系列和学科，再选择同组文件。"
     }
   ],
   "revision": "azuma-short-notes-20261008",
@@ -16987,7 +17002,7 @@
         "266f4805cd79345f"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
       "series": "",
@@ -16999,7 +17014,10 @@
         "probability"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "subjects:lecture-a871692fdfd7",
@@ -17125,8 +17143,8 @@
       "key": "subjects:selected-lecture-analysis-handwritten-integral-notes",
       "id": "6ac26ea57e58398a",
       "title": "含参、广义积分与极限：9月23日数学手稿",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17139,7 +17157,7 @@
         "3fde175d4a4cfa13"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -17149,7 +17167,11 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-derivative-continuity-point",
@@ -17275,8 +17297,8 @@
       "key": "subjects:selected-lecture-n-fold-integral-notes",
       "id": "5992970f37bd6da3",
       "title": "重积分整理讲义",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17289,7 +17311,7 @@
         "c0d37620cad5b38f"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
       "series": "",
@@ -17299,7 +17321,11 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-fourier-course",
@@ -17488,8 +17514,8 @@
       "key": "subjects:selected-lecture-n-fold-handwritten-notes",
       "id": "3bece5177e67343a",
       "title": "重积分手写知识笔记",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17502,7 +17528,7 @@
         "0a13f1ab3f1f0771"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -17512,14 +17538,18 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
       "id": "a08420c3ac787bfe",
       "title": "实分析与含参/广义积分手写知识笔记59/61",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17533,7 +17563,7 @@
         "cf5a79e569dda697"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -17543,7 +17573,11 @@
       "subjectKeys": [
         "analysis"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-vector-matrix-derivatives",
@@ -17724,7 +17758,7 @@
         "c73ae75b6417f4da"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "用于独立作答与练习，配套说明见详情。",
       "series": "",
@@ -17946,8 +17980,8 @@
       "key": "subjects:selected-lecture-determinant-circulant-notes",
       "id": "ca0120676cbbeaf8",
       "title": "行列式求导与循环矩阵：手写笔记",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17961,7 +17995,7 @@
         "bdd25e3f0999ea64"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -17972,14 +18006,18 @@
         "analysis",
         "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-group-theory-yii",
       "id": "6aa72b6b7ed516fe",
       "title": "群论（拼好饭版）讲义",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -17992,7 +18030,7 @@
         "8f42123214bfe9d1"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
       "series": "",
@@ -18002,7 +18040,11 @@
       "subjectKeys": [
         "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "教师资料（机构待核）",
+      "teacherLabel": "Yii.I.",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-inner-product-norm",
@@ -18038,8 +18080,8 @@
       "key": "subjects:selected-lecture-matrix-inverse-example-handwritten",
       "id": "ef9538d4b7dc6533",
       "title": "计算应用数学第1.5题：矩阵逆推导手稿",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -18052,7 +18094,7 @@
         "cd99e104d2f93f84"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -18062,7 +18104,11 @@
       "subjectKeys": [
         "algebra"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师与作者待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-item-99897853696f",
@@ -18499,9 +18545,9 @@
     {
       "key": "subjects:lecture-d2be2228580d",
       "id": "b98b3881d5ed1ec4",
-      "title": "链复形、同调与定向",
-      "section": "subjects",
-      "institution": "待归类",
+      "title": "拓扑课堂笔记：链、同调与定向",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -18514,9 +18560,9 @@
         "81177043a75336b0"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
-      "description": "查阅原稿或学习笔记，核对批注与整理来源。",
+      "description": "一页课堂提纲的15页AI整理与扩写，含补充证明；教师姓名待核。",
       "series": "",
       "phase": "",
       "number": null,
@@ -18524,7 +18570,11 @@
       "subjectKeys": [
         "geometry"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "来源待核",
+      "teacherLabel": "教师姓名待核",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-tube-lemma-projection",
@@ -18744,8 +18794,8 @@
       "key": "subjects:lecture-fd437a50f942",
       "id": "53303b5ce03500d9",
       "title": "阮禾老师概率论讲义",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "深圳中学",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -18758,7 +18808,7 @@
         "5f9f8b16ca7c4c81"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -18768,7 +18818,11 @@
       "subjectKeys": [
         "probability"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:lecture-ede30cef84eb",
@@ -18866,8 +18920,8 @@
       "key": "subjects:lecture-451cafb73aec",
       "id": "fec472fb2083d138",
       "title": "概率例题与习题：一题一页",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "深圳中学",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -18880,7 +18934,7 @@
         "c17abd6a370e6a70"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
       "series": "概率讲义与配套练习",
@@ -18890,7 +18944,11 @@
       "subjectKeys": [
         "probability"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:lecture-95f92cdcdda0",
@@ -19944,7 +20002,7 @@
         "3a6b5a83587bda34"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "同一组72题：54页AI解答、16页纯题习题版及旧A1–A4的11页变式与推广。变式稿不另计4道新题。",
       "series": "",
@@ -20625,8 +20683,8 @@
       "key": "subjects:selected-lecture-gaoxinyu-university-physics",
       "id": "727565e0183db7b6",
       "title": "高新雨（松松饼）大学物理：五章26.1原稿",
-      "section": "subjects",
-      "institution": "待归类",
+      "section": "papers",
+      "institution": "来源待核",
       "materialType": "lecture",
       "status": "",
       "subjects": [
@@ -20639,7 +20697,7 @@
         "799f7655d4962cd1"
       ],
       "repoIds": [
-        "lecture-notes"
+        "exam-papers"
       ],
       "description": "查阅原稿或学习笔记，核对批注与整理来源。",
       "series": "",
@@ -20649,7 +20707,11 @@
       "subjectKeys": [
         "physics"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "sourceLabel": "教师资料（机构待核）",
+      "teacherLabel": "高新雨（松松饼）",
+      "navigationDomain": "课堂讲义",
+      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-seifert-trefoil-tool",
@@ -23826,14 +23888,17 @@
         "geometry"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-shenzhen-numerical-linear-algebra",
       "id": "8545d03017271dce",
       "title": "数值线性代数 · 第一至三讲",
       "section": "papers",
-      "institution": "深圳中学",
+      "institution": "来源待核",
       "materialType": "lecture-series",
       "status": "",
       "subjects": [
@@ -23863,14 +23928,17 @@
         "applied"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "教师资料（机构待核）",
+      "teacherLabel": "谢非非",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-shenzhen-representation-theory",
       "id": "585283a0d399a473",
       "title": "群表示论 · 第一至五讲",
       "section": "papers",
-      "institution": "深圳中学",
+      "institution": "来源待核",
       "materialType": "lecture-series",
       "status": "",
       "subjects": [
@@ -23899,7 +23967,10 @@
         "algebra"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "教师资料（机构待核）",
+      "teacherLabel": "巩峻成",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-shenzhen-probability-self-study",
@@ -23932,7 +24003,10 @@
         "probability"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-shenzhen-computational-applied-1-8",
@@ -23967,14 +24041,17 @@
         "applied"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "深圳中学",
+      "teacherLabel": "阮禾",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-shenzhen-general-physics",
       "id": "faccd176400f0695",
       "title": "普通物理 · 六章原讲义",
       "section": "papers",
-      "institution": "深圳中学",
+      "institution": "来源待核",
       "materialType": "lecture-series",
       "status": "",
       "subjects": [
@@ -24008,7 +24085,10 @@
         "physics"
       ],
       "uncertainties": [],
-      "originCategory": "external"
+      "originCategory": "external",
+      "sourceLabel": "教师资料（机构待核）",
+      "teacherLabel": "高新雨（松松饼）",
+      "navigationDomain": "课堂讲义"
     },
     {
       "key": "lecture-jiuxue-national-day-analysis",
@@ -24366,7 +24446,7 @@
         "92c78ad2d6357914"
       ],
       "repoIds": [
-        "exam-papers"
+        "lecture-notes"
       ],
       "description": "三卷合订及配套评分资料，按现有文件选择。",
       "series": "领军综合诊断三卷",
@@ -24491,7 +24571,7 @@
         "706f643296366e5e"
       ],
       "repoIds": [
-        "exam-papers"
+        "lecture-notes"
       ],
       "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
       "series": "",
@@ -24670,7 +24750,9 @@
         "physics",
         "mixed"
       ],
-      "uncertainties": []
+      "uncertainties": [],
+      "browseHidden": true,
+      "navigationDomain": "管理资料：打印辅助"
     },
     {
       "key": "collection-cmc-recommended-review-package",
@@ -25083,7 +25165,7 @@
         "f035186f4bc23966"
       ],
       "repoIds": [
-        "exam-papers"
+        "lecture-notes"
       ],
       "description": "同一套卷的题目、原稿与解答，按用途选择下载。",
       "series": "概率讲义与配套练习",

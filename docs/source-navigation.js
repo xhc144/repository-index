@@ -19,6 +19,27 @@
     'reference-leader-syllabus','reference-math-league-syllabus',
     'study-xmo-torus-grid','study-cmc-fourier-six','study-spatial-four-expanded'
   ]);
+  // Verified course-source metadata. Teacher names do not imply an institution.
+  const verifiedCourseGroups = {
+    'subjects:lecture-66482177e4a4': {source:'深圳中学',teacher:'阮禾'},
+    'subjects:lecture-fd437a50f942': {source:'深圳中学',teacher:'阮禾'},
+    'subjects:lecture-451cafb73aec': {source:'深圳中学',teacher:'阮禾'},
+    'lecture-shenzhen-topology-national-day-16': {source:'深圳中学',teacher:'阮禾'},
+    'lecture-shenzhen-probability-self-study': {source:'深圳中学',teacher:'阮禾'},
+    'lecture-shenzhen-computational-applied-1-8': {source:'深圳中学',teacher:'阮禾'},
+    'lecture-shenzhen-numerical-linear-algebra': {source:'教师资料（机构待核）',teacher:'谢非非'},
+    'lecture-shenzhen-representation-theory': {source:'教师资料（机构待核）',teacher:'巩峻成'},
+    'lecture-shenzhen-general-physics': {source:'教师资料（机构待核）',teacher:'高新雨（松松饼）'},
+    'subjects:selected-lecture-gaoxinyu-university-physics': {source:'教师资料（机构待核）',teacher:'高新雨（松松饼）'},
+    'subjects:selected-lecture-group-theory-yii': {source:'教师资料（机构待核）',teacher:'Yii.I.'},
+    'subjects:lecture-d2be2228580d': {source:'来源待核',teacher:'教师姓名待核',title:'拓扑课堂笔记：链、同调与定向'},
+    'subjects:selected-lecture-analysis-handwritten-integral-notes': {source:'来源待核',teacher:'教师与作者待核'},
+    'subjects:selected-lecture-n-fold-integral-notes': {source:'来源待核',teacher:'教师与作者待核'},
+    'subjects:selected-lecture-n-fold-handwritten-notes': {source:'来源待核',teacher:'教师与作者待核'},
+    'subjects:selected-lecture-parameter-integrals-handwritten-notes': {source:'来源待核',teacher:'教师与作者待核'},
+    'subjects:selected-lecture-determinant-circulant-notes': {source:'来源待核',teacher:'教师与作者待核'},
+    'subjects:selected-lecture-matrix-inverse-example-handwritten': {source:'来源待核',teacher:'教师与作者待核'}
+  };
   function source(group) {
     const label = group.sourceLabel || group.institution || '来源待核';
     return label === '深圳中学·阮禾' ? '深圳中学' : /^(待归类|来源未确认)$/.test(label) ? '来源待核' : label;
@@ -83,12 +104,27 @@
       }
     }
     for (const group of data.materialGroups) {
-      if (group.materialType === 'cross-paper-audit') {
+      if (group.materialType === 'cross-paper-audit' || group.materialType === 'printing-aid') {
         group.browseHidden=true;
         group.section='tools';
-        group.navigationDomain='管理资料：核查记录';
+        group.navigationDomain=group.materialType==='cross-paper-audit'?'管理资料：核查记录':'管理资料：打印辅助';
       }
       if (knownExternalGroups.has(group.key)) group.section='papers';
+      const course=verifiedCourseGroups[group.key];
+      if (course) {
+        Object.assign(group,{section:'papers',sourceLabel:course.source,teacherLabel:course.teacher,navigationDomain:'课堂讲义'});
+        if (course.title) group.title=course.title;
+        group.institution=course.source==='深圳中学'?'深圳中学':'来源待核';
+        for (const id of group.itemIds) {
+          const item=byItem.get(id);
+          if (item) Object.assign(item,{sourceLabel:course.source,institution:group.institution,institutions:group.institution==='来源待核'?[]:[group.institution]});
+        }
+      }
+      if (group.key==='subjects:lecture-d2be2228580d') {
+        group.description='一页课堂提纲的15页AI整理与扩写，含补充证明；教师姓名待核。';
+        const item=byItem.get('81177043a75336b0');
+        if (item) Object.assign(item,{groupRole:'课堂提纲 · AI整理与扩写',uses:['AI整理与扩写'],note:group.description});
+      }
       if (group.sourceLabel === 'AI 命题试卷') {
         group.section='subjects';group.navigationDomain='AI原创题卷';group.originCategory='ai-original';
       } else if (group.section === 'papers') group.originCategory='external';
@@ -137,5 +173,5 @@
     }
     return root;
   }
-  return {apply,source,domain,teachers,path,build,knownExternalGroups};
+  return {apply,source,domain,teachers,path,build,knownExternalGroups,verifiedCourseGroups};
 });
