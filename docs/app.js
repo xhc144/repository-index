@@ -245,7 +245,8 @@ function renderRoute() {
 async function start() {
   const response=await fetch('./catalog.json?v=20261008-source-groups');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
   groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
-  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
+  const groupSearch=new Map(groups.map(group=>[group.key,[group.title,group.description,group.navigationDomain,group.browseHidden?'管理资料核查记录':''].join(' ')]));
+  fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,groupSearch.get(item.groupKey),repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
   $('group-total').textContent=groups.filter(group=>!group.browseHidden).length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
   for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
   for(const id of ['brand','footer-home'])$(id).addEventListener('click',event=>{event.preventDefault();navigate('#home');});
@@ -255,7 +256,8 @@ async function start() {
   $('close-detail').addEventListener('click',closeDetails);$('back-detail').addEventListener('click',closeDetails);
   $('material-dialog').addEventListener('cancel',event=>{event.preventDefault();closeDetails();});
   $('material-dialog').addEventListener('click',event=>{if(event.target===$('material-dialog'))closeDetails();});
-  const restoreRoute=()=>{currentPage=history.state&&history.state.page||1;if(history.state&&typeof history.state.query==='string')$('search').value=history.state.query;renderRoute();};
+  let restoreFrame=0;
+  const restoreRoute=()=>{cancelAnimationFrame(restoreFrame);restoreFrame=requestAnimationFrame(()=>{currentPage=history.state&&history.state.page||1;if(history.state&&typeof history.state.query==='string')$('search').value=history.state.query;renderRoute();});};
   window.addEventListener('popstate',restoreRoute);window.addEventListener('hashchange',restoreRoute);
   renderRoute();
 }
