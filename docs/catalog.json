@@ -13513,7 +13513,7 @@
           "groupRole": "原专题解答"
         },
         {
-          "name": "进阶九学国庆研讨会模拟试题 · 原解答",
+          "name": "进阶九学一试模拟1 · 原解答",
           "purpose": "对照解法与评分说明，留意原页的审校范围。",
           "kind": "PDF",
           "filename": "国庆研讨会模拟试题解答.pdf",
@@ -13530,9 +13530,9 @@
           "institutions": [
             "进阶九学"
           ],
-          "series": "国庆研讨会模拟试题",
-          "phase": "",
-          "number": null,
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
           "examDate": null,
           "uses": [
             "教师解答"
@@ -13551,7 +13551,7 @@
           "section": "papers",
           "groupRole": "原解答",
           "sourceLabel": "进阶九学",
-          "dateLabel": "年份未标"
+          "dateLabel": "2026国庆"
         },
         {
           "name": "代数1H · 第一次作业",
@@ -16422,7 +16422,7 @@
         },
         {
           "id": "5eea6757fabd5787",
-          "name": "进阶九学国庆研讨会模拟试题 · 整理题目",
+          "name": "进阶九学一试模拟1 · 整理题目",
           "purpose": "用于独立作答与练习，原解答在同组选择。",
           "kind": "PDF",
           "filename": "questions.pdf",
@@ -16441,9 +16441,9 @@
             "进阶九学"
           ],
           "sourceLabel": "进阶九学",
-          "series": "国庆研讨会模拟试题",
-          "phase": "",
-          "number": null,
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
           "examDate": null,
           "uses": [
             "题目/学生册"
@@ -16456,11 +16456,12 @@
           "author": "",
           "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
           "section": "papers",
-          "groupRole": "整理题目"
+          "groupRole": "历史整理题目",
+          "dateLabel": "2026国庆"
         },
         {
           "id": "b848514af59c61b3",
-          "name": "进阶九学国庆研讨会模拟试题 · 题目源码 ZIP",
+          "name": "进阶九学一试模拟1 · 题目源码 ZIP",
           "purpose": "获取整理题目册的可编辑TeX、配图与PDF。",
           "kind": "ZIP",
           "filename": "source.zip",
@@ -16479,9 +16480,9 @@
             "进阶九学"
           ],
           "sourceLabel": "进阶九学",
-          "series": "国庆研讨会模拟试题",
-          "phase": "",
-          "number": null,
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
           "examDate": null,
           "uses": [
             "源码/安装"
@@ -16494,7 +16495,8 @@
           "author": "",
           "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
           "section": "papers",
-          "groupRole": "题目源码 ZIP"
+          "groupRole": "历史题目源码",
+          "dateLabel": "2026国庆"
         },
         {
           "id": "6328ba0ba75ebc48",
@@ -16571,6 +16573,162 @@
           "groupKey": "shenzhen-league-mock-unnumbered",
           "section": "papers",
           "groupRole": "题目源码 ZIP"
+        },
+        {
+          "id": "jx2026first01orig",
+          "name": "进阶九学一试模拟1 · 原始试卷",
+          "purpose": "原始试卷",
+          "kind": "PDF",
+          "filename": "original-paper.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/original-paper.pdf",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/original-paper.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "2026国庆研讨会一试模拟1，已逐题对应原有8题解答。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "进阶九学2026国庆一试模拟1",
+            "原始试卷"
+          ],
+          "pages": 4,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "原始试卷",
+          "dateLabel": "2026国庆"
+        },
+        {
+          "id": "jx2026first01tex",
+          "name": "进阶九学一试模拟1 · LaTeX重排试卷",
+          "purpose": "LaTeX重排试卷",
+          "kind": "PDF",
+          "filename": "retypeset-paper.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/retypeset-paper.pdf",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/retypeset-paper.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "2026国庆研讨会一试模拟1，已逐题对应原有8题解答。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
+          "examDate": null,
+          "uses": [
+            "题目/学生册"
+          ],
+          "aliases": [
+            "进阶九学2026国庆一试模拟1",
+            "LaTeX重排试卷"
+          ],
+          "pages": 4,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "LaTeX重排试卷",
+          "dateLabel": "2026国庆"
+        },
+        {
+          "id": "jx2026first01ref",
+          "name": "进阶九学一试模拟1 · 随包参考解答",
+          "purpose": "随包参考解答",
+          "kind": "PDF",
+          "filename": "reference-solutions.pdf",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/reference-solutions.pdf",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/reference-solutions.pdf",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "随新资料包提供的5页参考解答，未独立核实作者署名。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
+          "examDate": null,
+          "uses": [
+            "参考解答"
+          ],
+          "aliases": [
+            "进阶九学2026国庆一试模拟1",
+            "随包参考解答"
+          ],
+          "pages": 5,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "随包参考解答",
+          "dateLabel": "2026国庆"
+        },
+        {
+          "id": "jx2026first01src",
+          "name": "进阶九学一试模拟1 · LaTeX/TikZ源码",
+          "purpose": "LaTeX/TikZ源码",
+          "kind": "ZIP",
+          "filename": "editable-source.zip",
+          "url": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/editable-source.zip",
+          "downloadUrl": "https://github.com/xhc144/exam-papers/raw/refs/heads/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/editable-source.zip",
+          "detail": "https://github.com/xhc144/exam-papers/blob/main/materials/jinjie-jiuxue/year-unconfirmed/national-day/README.md",
+          "note": "2026国庆研讨会一试模拟1，已逐题对应原有8题解答。",
+          "subjects": [
+            "分析"
+          ],
+          "topics": [
+            "分析基础与微积分"
+          ],
+          "institution": "进阶九学",
+          "institutions": [
+            "进阶九学"
+          ],
+          "sourceLabel": "进阶九学",
+          "series": "国庆研讨会",
+          "phase": "一试",
+          "number": 1,
+          "examDate": null,
+          "uses": [
+            "源码/安装"
+          ],
+          "aliases": [
+            "进阶九学2026国庆一试模拟1",
+            "LaTeX/TikZ源码"
+          ],
+          "pages": null,
+          "author": "",
+          "groupKey": "jiuxue-national-day-mock-year-unconfirmed",
+          "section": "papers",
+          "groupRole": "LaTeX/TikZ源码",
+          "dateLabel": "2026国庆"
         }
       ],
       "contents": [
@@ -16581,7 +16739,7 @@
       "howToUse": "组合机构、系列、阶段和用途筛选；专题讲义也按真实学科收录。"
     }
   ],
-  "revision": "20261007-home-groups",
+  "revision": "jiuxue-first-test-01-20261008",
   "subjects": [
     "分析",
     "线性代数",
@@ -23792,18 +23950,24 @@
     {
       "key": "jiuxue-national-day-mock-year-unconfirmed",
       "id": "74033bf7b9476f33",
-      "title": "进阶九学国庆研讨会模拟试题",
+      "title": "进阶九学一试模拟1",
       "section": "papers",
       "institution": "进阶九学",
       "materialType": "exam-paper",
       "status": "",
       "subjects": [
-        "分析"
+        "分析",
+        "代数",
+        "概率"
       ],
       "topics": [
-        "分析基础与微积分"
+        "综合试卷"
       ],
       "itemIds": [
+        "jx2026first01orig",
+        "jx2026first01tex",
+        "jx2026first01ref",
+        "jx2026first01src",
         "dcdbb8c87a017f4c",
         "5eea6757fabd5787",
         "b848514af59c61b3"
@@ -23811,10 +23975,10 @@
       "repoIds": [
         "exam-papers"
       ],
-      "description": "已确认机构来源；原解答与后续整理的题目在同一套卷入口选择。",
-      "series": "国庆研讨会模拟试题",
-      "phase": "",
-      "number": null,
+      "description": "2026国庆研讨会，8题100分；反函数积分、生成σ代数、矩阵、群作用、符号动力系统、独立性、切比雪夫迭代与随机映射。原卷、重排题面、解答及源码同组下载。",
+      "series": "国庆研讨会",
+      "phase": "一试",
+      "number": 1,
       "examDate": null,
       "subjectKeys": [
         "analysis"
@@ -23824,7 +23988,7 @@
         "unpaired:dcdbb8c87a017f4c"
       ],
       "sourceLabel": "进阶九学",
-      "dateLabel": "年份未标"
+      "dateLabel": "2026国庆"
     },
     {
       "key": "coursework-tsinghua-qiuzhen-algebra-1h-01",
