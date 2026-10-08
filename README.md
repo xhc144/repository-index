@@ -4,6 +4,8 @@
 
 网页首页提供课程与试卷资料、AI原创与学科资料、书籍、工具与作品四个入口。外部资料按机构或比赛进入，再展开课堂讲义、机构试卷、竞赛真题、老师、系列和学科；CMC独立折叠。同一原题组的题目、教师原解答、AI解答、练习册与源码集中选择，已核PDF页数与保留原权限的直接下载不变。AI原创资料单独按学科浏览。核查日志在管理资料中默认折叠，也可通过搜索和历史入口查找。
 
+[阮禾课堂讲义系列](https://xhc144.github.io/repository-index/#group/teacher-series-ruanhe-classroom)集中展示已核实的课程文件，先选专题，再选同讲版本；阮禾思考题作为同教师下的独立题集。原稿、转写和老师使用AI编写的身份只采用确认信息，未核实的文件不补造。
+
 下方旧目录及 [Git 历史](https://github.com/xhc144/repository-index/commits/main/) 继续保留，供查阅旧入口。分类与迁移核对日期：2026-10-08，已核对31项迁移入口、原文件ID与PDF页数、全部259个旧资料组及其别名深链；桌面和移动浏览器的折叠、搜索、详情返回与下载入口已检查。拓扑课堂15页资料保留原ID，教师姓名仍待核；旧目录核对日期仍见文末。
 
 xhc144 的私有项目总目录，按用途查找资料、成品与源码。各项目的最新内容、使用限制和许可证，以对应仓库说明为准。
@@ -23,8 +25,8 @@ xhc144 的私有项目总目录，按用途查找资料、成品与源码。各�
 | 仓库 | 内容 | 阅读与下载 | 源码入口 |
 | --- | --- | --- | --- |
 | [book-project](https://github.com/xhc144/book-project) | 多年数学竞赛讲义的统一整理稿 | [当前总稿 PDF](https://github.com/xhc144/book-project/blob/main/deliverables/book-current.pdf) · [交付目录](https://github.com/xhc144/book-project/tree/main/deliverables) | [LaTeX 主文件](https://github.com/xhc144/book-project/blob/main/existing_latex/source_project/%E8%AE%B2%E4%B9%89%E9%87%8D%E6%8E%92LaTeX%E6%BA%90%E4%BB%A3%E7%A0%81/main.tex) |
-| [lecture-notes](https://github.com/xhc144/lecture-notes) | AI原创讲义、独立专题与原创练习；外部题组的配套解答随原题归档 | [讲义目录与 PDF / ZIP](https://github.com/xhc144/lecture-notes/blob/main/README.md) | [各讲义目录](https://github.com/xhc144/lecture-notes/tree/main/lectures) |
-| [exam-papers · 课程与试卷资料](https://github.com/xhc144/exam-papers) | 老师、机构、比赛的外部资料与忠实转写；同组保留配套AI解答与源码 | [资料目录与下载](https://github.com/xhc144/exam-papers/blob/main/README.md) | [源码与文件目录](https://github.com/xhc144/exam-papers/tree/main) |
+| [ai-study-notes](https://github.com/xhc144/ai-study-notes) | AI原创讲义、独立专题与原创练习；外部题组的配套解答随原题归档 | [讲义目录与 PDF / ZIP](https://github.com/xhc144/ai-study-notes/blob/main/README.md) | [各讲义目录](https://github.com/xhc144/ai-study-notes/tree/main/lectures) |
+| [course-materials · 课程与试卷资料](https://github.com/xhc144/course-materials) | 老师、机构、比赛的外部资料与忠实转写；同组保留配套AI解答与源码 | [资料目录与下载](https://github.com/xhc144/course-materials/blob/main/README.md) | [源码与文件目录](https://github.com/xhc144/course-materials/tree/main) |
 
 ## AI 工具
 
@@ -58,8 +60,8 @@ xhc144 的私有项目总目录，按用途查找资料、成品与源码。各�
 
 维护本目录先读 [AGENTS.md](AGENTS.md)。修改具体项目时，先读目标 README，再读实际存在的根级及目录级维护说明：
 
-- [讲义库 AGENTS.md](https://github.com/xhc144/lecture-notes/blob/main/AGENTS.md) · [AI 修改指南](https://github.com/xhc144/lecture-notes/blob/main/docs/ai-editing-guide.md)
-- [机构资料库 AGENTS.md](https://github.com/xhc144/exam-papers/blob/main/AGENTS.md) · [AI 工具 AGENTS.md](https://github.com/xhc144/skills/blob/main/AGENTS.md)
+- [讲义库 AGENTS.md](https://github.com/xhc144/ai-study-notes/blob/main/AGENTS.md) · [AI 修改指南](https://github.com/xhc144/ai-study-notes/blob/main/docs/ai-editing-guide.md)
+- [机构资料库 AGENTS.md](https://github.com/xhc144/course-materials/blob/main/AGENTS.md) · [AI 工具 AGENTS.md](https://github.com/xhc144/skills/blob/main/AGENTS.md)
 - [安心守护 AGENTS.md](https://github.com/xhc144/face-guard/blob/main/AGENTS.md) · [学习信息流 AGENTS.md](https://github.com/xhc144/study-feed/blob/main/AGENTS.md)
 
 book-project、stacked-grove、blender-designs 从各自 README 和项目说明进入。保留原件、来源与已有验证记录，修改后的构建、测试和审查结果分别记录。

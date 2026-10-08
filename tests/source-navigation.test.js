@@ -44,13 +44,21 @@ assert(audit.browseHidden,'audit stays available by deep link but leaves reading
 const printing=groups.find(group=>group.key==='tool-printing-separators');
 assert(printing.browseHidden,'printing aids do not crowd the reading tree');
 for(const [key,course] of Object.entries(navigation.verifiedCourseGroups)){
-  const group=groups.find(group=>group.key===key);
+  const group=groups.find(group=>group.key===key||group.aliasKeys?.includes(key));
   assert(group,'verified course is present: '+key);
   assert.equal(group.section,'papers','external course stays with its source: '+key);
   assert.equal(group.sourceLabel,course.source);
   assert.equal(group.teacherLabel,course.teacher);
   assert.equal(group.navigationDomain,'课堂讲义');
 }
+const classroom=groups.find(group=>group.key==='ruanhe-classroom-lecture-series');
+assert(classroom,'one Ruanhe classroom series entry exists');
+assert(!classroom.itemIds.some(id=>ruanhe.itemIds.includes(id)),'thinking exercises stay separate from classroom series');
+assert.equal(new Set(classroom.courseTopics.flatMap(topic=>topic.itemIds)).size,classroom.itemIds.length,'topic version choices cover each course file once');
+for(const topic of classroom.courseTopics)for(const id of topic.itemIds)assert.equal(byItem.get(id).courseTopicKey,topic.key);
+for(const id of ['83629ba21c9a1bc3','53303b5ce03500d9','fec472fb2083d138','c99db3d0d0def158','92f9c343cf94c353','d9885261d04ef041'])
+  assert.equal(byDeepLink.get(id),classroom,'old classroom topic deep link stays in the series');
+assert.equal(navigation.identityLabel({filename:'teacher-ai-lecture.pdf',kind:'PDF',uses:['AI 解答']}),'','electronic formatting and uses do not prove teacher AI authorship');
 const topology=groups.find(group=>group.key==='subjects:lecture-d2be2228580d');
 assert.equal(byItem.get('81177043a75336b0').pages,15);
 assert(topology.itemIds.includes('81177043a75336b0'),'topology retains its original file ID');
@@ -79,7 +87,7 @@ const regenerated=copy(data);
 for(const group of regenerated.materialGroups){delete group.teacherLabel;delete group.navigationDomain;if(navigation.verifiedCourseGroups[group.key]){group.section='subjects';delete group.sourceLabel;}}
 const restored=navigation.apply(regenerated);
 for(const [key,course] of Object.entries(navigation.verifiedCourseGroups)){
-  const group=restored.materialGroups.find(group=>group.key===key);
+  const group=restored.materialGroups.find(group=>group.key===key||group.aliasKeys?.includes(key));
   assert.equal(group.section,'papers');assert.equal(group.sourceLabel,course.source);assert.equal(group.teacherLabel,course.teacher);
 }
 console.log('PASS: preserved 443 files/assets and old deep links; 72-question ownership; mixed-source labeling; CMC/source/teacher/subject tree; hidden audit; AI original separation.');

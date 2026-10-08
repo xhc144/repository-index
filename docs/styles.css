@@ -21,4 +21,7 @@
 .branch-body{display:grid;gap:.65rem;padding:0 1rem 1rem}
 .branch-body .material-branch{border-radius:.55rem}.branch-body .branch-summary{padding:.7rem .85rem;font-size:.96rem}
 .branch-body .group-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:.4rem 0 0}
+.file-role-badges{display:flex;flex-wrap:wrap;gap:5px;min-width:0}.identity-label{background:#e1ecef;color:#315d68}.course-topic .file-choice{min-width:0}.series-directory-link{display:block;font-size:12px;color:var(--accent);margin-bottom:16px}
+.quick-links button{background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 13px;font-size:12px;color:var(--accent)}
+@media(max-width:600px){.quick-links button{padding:6px 9px;font-size:10px}}
 @media(max-width:600px){.branch-body{padding:0 .45rem .55rem}.branch-summary{padding:.85rem .7rem}.branch-body .branch-summary{padding:.7rem .55rem}.branch-count{font-size:.78rem}.tree-controls{justify-content:flex-start}}

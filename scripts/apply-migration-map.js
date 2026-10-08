@@ -14,7 +14,7 @@ assert.equal(manifest.schemaVersion,1,'manifest schemaVersion must be 1');
 assert(Array.isArray(manifest.migrations),'manifest needs migrations array');
 const repoById=new Map(data.repositories.map(repo=>[repo.id,repo]));
 const itemById=new Map(data.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item}])));
-const allowedRepos=new Set(['lecture-notes','exam-papers']);
+const allowedRepos=new Set(['ai-study-notes','course-materials']);
 const seen=new Set();
 function validateLink(link,repoId,type){
   const url=new URL(link);

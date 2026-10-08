@@ -62,6 +62,7 @@
     return contestSources.has(source(group)) ? '竞赛真题' : '机构试卷';
   }
   function series(group) {
+    if (group.courseSeriesTitle) return group.courseSeriesTitle;
     if (source(group) === '深圳中学') {
       if (/^shenzhen-zero-/.test(group.key)) return '零试';
       if (/^shenzhen-first-/.test(group.key)) return '一试';
@@ -70,6 +71,26 @@
     }
     if (/^qingbei-/.test(group.key)) return '模拟卷';
     return '';
+  }
+  const identityLabels={'teacher-handwritten':'老师手写原稿','manuscript-transcription':'手稿转写整理','teacher-ai-authored':'老师使用AI编写'};
+  function identityLabel(item) {return Object.hasOwn(identityLabels,item.sourceIdentity)?identityLabels[item.sourceIdentity]:'';}
+  function mergeRuanheClassroom(data,byItem) {
+    const key='ruanhe-classroom-lecture-series';
+    const members=data.materialGroups.filter(group=>group.key===key||(group.teacherLabel==='阮禾'&&group.navigationDomain==='课堂讲义'));
+    if(!members.length)return;
+    const existing=members.find(group=>group.key===key);
+    const topicByKey=new Map((existing?.courseTopics||[]).map(topic=>[topic.key,topic]));
+    for(const group of members){
+      if(group.key===key)continue;
+      const topicKey=group.courseTopicKey||group.key;
+      const prior=topicByKey.get(topicKey);
+      const topic={key:topicKey,title:group.courseTopicTitle||group.title,itemIds:unique([...(prior?.itemIds||[]),...group.itemIds]),legacyIds:unique([...(prior?.legacyIds||[]),group.id,...(group.aliasIds||[])])};
+      topicByKey.set(topicKey,topic);
+      for(const id of group.itemIds){const item=byItem.get(id);if(item)Object.assign(item,{courseTopicKey:topic.key,courseTopicTitle:topic.title});}
+    }
+    const group={...(existing||members[0]),key,id:existing?.id||'teacher-series-ruanhe-classroom',title:'阮禾课堂讲义系列',section:'papers',sourceLabel:'深圳中学',institution:'深圳中学',teacherLabel:'阮禾',materialType:'lecture-series',navigationDomain:'课堂讲义',originCategory:'external',courseSeriesTitle:'阮禾课堂讲义系列',description:'从微积分到概率论，按专题选择已核实的课程文件；同讲原稿、转写、AI讲义与解答在专题内选择，来源身份按确认信息标明。',itemIds:unique(members.flatMap(member=>member.itemIds)),repoIds:unique(members.flatMap(member=>member.repoIds)),subjects:unique(members.flatMap(member=>member.subjects)),subjectKeys:unique(members.flatMap(member=>member.subjectKeys)),aliasIds:unique(members.flatMap(member=>[...(member.aliasIds||[]),...(member.key===key?[]:[member.id])])),aliasKeys:unique(members.flatMap(member=>[...(member.aliasKeys||[]),...(member.key===key?[]:[member.key])])),uncertainties:unique(members.flatMap(member=>member.uncertainties)),courseTopics:[...topicByKey.values()],series:'阮禾课堂讲义系列',phase:'',number:null,examDate:null};
+    for(const id of group.itemIds){const item=byItem.get(id);if(item)item.groupKey=key;}
+    data.materialGroups=data.materialGroups.filter(group=>!members.includes(group));data.materialGroups.push(group);
   }
   function apply(data) {
     const items=data.repositories.flatMap(repo => repo.items);
@@ -133,11 +154,12 @@
         if (item) item.section=group.section;
       }
     }
+    mergeRuanheClassroom(data,byItem);
     const papers=data.navigation.sections.find(section => section.id === 'papers');
     if (papers) Object.assign(papers,{title:'课程与试卷资料',description:'按机构、比赛、老师与学科折叠浏览课堂讲义、机构试卷和竞赛真题；题目与配套解答同组。'});
     const subjects=data.navigation.sections.find(section => section.id === 'subjects');
     if (subjects) Object.assign(subjects,{title:'AI原创与学科资料',description:'AI原创讲义与独立专题按学科浏览；原题的AI解答随原题组收录。'});
-    data.sourceNavigationRevision='20261008-source-groups';
+    data.sourceNavigationRevision='20261008-ruanhe-series-1';
     return data;
   }
   function primarySubject(group, subjects) {
@@ -154,6 +176,7 @@
     const parts=[{id:source(group),title:source(group)},{id:domain(group),title:domain(group)}];
     const teacher=teachers(group,byItem)[0];
     if (teacher) parts.push({id:'teacher:'+teacher,title:'老师：'+teacher});
+    if (group.courseTopics) return parts;
     const family=series(group);
     if (family) parts.push({id:'series:'+family,title:family});
     parts.push({id:'subject:'+subject.id,title:subject.title});
@@ -173,5 +196,5 @@
     }
     return root;
   }
-  return {apply,source,domain,teachers,path,build,knownExternalGroups,verifiedCourseGroups};
+  return {apply,source,domain,teachers,path,build,knownExternalGroups,verifiedCourseGroups,identityLabel};
 });
