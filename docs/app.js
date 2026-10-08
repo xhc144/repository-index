@@ -180,8 +180,8 @@ function fileRole(item) {
   if(item.uses.includes('题目/学生册'))return '题目 / 学生册';
   return item.uses.join(' · ');
 }
-function filePriority(item) {return item.uses.includes('题目/学生册')?0:item.uses.includes('教师解答')?1:item.uses.includes('机构原解答')?2:item.uses.includes('AI 解答')?3:4;}
-function detailKind(item){const role=fileRole(item);return /源码/.test(role)||item.uses.includes('源码/安装')?'source':item.sourceIdentity==='teacher-handwritten'?'original':item.sourceIdentity==='manuscript-transcription'?'transcription':item.sourceIdentity==='teacher-ai-authored'?'teacher-ai':/AI.*解答/.test(role)?'ai':/解答|答案|解析|证明|题解|详解/.test(role)?'solutions':'questions';}
+function filePriority(item) {return ['teacher-handwritten','course-handwritten'].includes(item.sourceIdentity)?-2:item.sourceIdentity==='manuscript-transcription'?-1:item.uses.includes('题目/学生册')?0:item.uses.includes('教师解答')?1:item.uses.includes('机构原解答')?2:item.uses.includes('AI 解答')?3:4;}
+function detailKind(item){const role=fileRole(item);return /源码/.test(role)||item.uses.includes('源码/安装')?'source':item.sourceIdentity==='teacher-handwritten'?'original':item.sourceIdentity==='course-handwritten'?'board':item.sourceIdentity==='manuscript-transcription'?'transcription':item.sourceIdentity==='teacher-ai-authored'?'teacher-ai':item.sourceIdentity==='ai-expanded'?'ai-expanded':item.sourceIdentity==='teacher-typeset-unconfirmed'?'teacher-material':/AI.*解答/.test(role)?'ai':/解答|答案|解析|证明|题解|详解/.test(role)?'solutions':'questions';}
 function downloadButton(item) {
   const text=item.kind==='PDF'?'下载 PDF ↓':item.downloadUrl?'下载 '+(item.kind.includes('ZIP')?'ZIP':item.kind)+' ↓':'打开入口 ↗';
   const el=anchor(text,item.downloadUrl||item.url,'download-button');
@@ -194,29 +194,42 @@ function details(group) {
   if(group.seriesUrl)fragment.append(anchor('系列总目录 / 来源与版本 ↗',group.seriesUrl,'series-directory-link'));
   if(group.uncertainties.length)fragment.append(node('p','detail-warning',group.uncertainties.join(' · ')+'，以原项目说明为准。'));
   const records=group.itemIds.map(id=>fileById.get(id)).sort((a,b)=>filePriority(a.item)-filePriority(b.item)||collator.compare(a.item.name,b.item.name));
-  const availableKinds=unique(records.map(record=>detailKind(record.item)));
-  if(availableKinds.length>1){const controls=node('div','detail-filters');controls.setAttribute('aria-label','按用途选择文件');const choices=[['all','全部文件'],['original','老师手写原稿'],['transcription','手稿转写整理'],['teacher-ai','老师使用AI编写'],['questions',group.courseTopics||group.section==='subjects'?'讲义 / 题目':'题目 / 练习'],['solutions','原稿 / 解答'],['ai','AI 解答'],['source','源码']];for(const [value,text] of choices){if(value!=='all'&&!availableKinds.includes(value))continue;const control=button(text,()=>{detailUse=value;details(group);});control.setAttribute('aria-pressed',String(detailUse===value));controls.append(control);}fragment.append(controls);}
+  const availableKinds=unique(records.filter(record=>!record.item.managementOnly).map(record=>detailKind(record.item)));
+  if(availableKinds.length>1){const controls=node('div','detail-filters');controls.setAttribute('aria-label','按用途选择文件');const choices=[['all','全部文件'],['original','老师手写原稿'],['board','原手写电子板书'],['transcription','手稿转写整理'],['teacher-ai','老师使用AI编写'],['ai-expanded','AI整理扩写'],['teacher-material','老师提供的排版资料'],['questions',group.courseTopics||group.section==='subjects'?'讲义 / 题目':'题目 / 练习'],['solutions','原稿 / 解答'],['ai','AI 解答'],['source','源码']];for(const [value,text] of choices){if(value!=='all'&&!availableKinds.includes(value))continue;const control=button(text,()=>{detailUse=value;details(group);});control.setAttribute('aria-pressed',String(detailUse===value));controls.append(control);}fragment.append(controls);}
   const sharedArchives=new Map();for(const record of records){const item=record.item;if(item.containerShared&&records.filter(other=>other.item.downloadUrl===item.downloadUrl).length>1)sharedArchives.set(item.downloadUrl,item);}
   if(sharedArchives.size){const packages=node('div','archive-downloads');for(const item of sharedArchives.values()){const el=downloadButton(item);el.textContent='下载整包 ZIP ↓';el.classList.add('archive-download');el.setAttribute('aria-label',group.title+'：下载整包ZIP');packages.append(el);}packages.append(node('p','','包内文档分别列出；相同资料包只提供一个整包下载。'));fragment.append(packages);}
   const list=node('div','file-choices');
   const topicLists=new Map();
+  const unitLists=new Map();
   if(group.courseTopics){
     const requested=group.courseTopics.find(topic=>topic.legacyIds.includes(routeParts()[1]));
     for(const topic of group.courseTopics){
-      const topicRecords=records.filter(record=>record.item.courseTopicKey===topic.key&&(detailUse==='all'||detailKind(record.item)===detailUse));
+      const topicRecords=records.filter(record=>!record.item.managementOnly&&record.item.courseTopicKey===topic.key&&(detailUse==='all'||detailKind(record.item)===detailUse));
       if(!topicRecords.length)continue;
       const fold=node('details','course-topic material-branch');fold.dataset.topic=topic.key;
       fold.open=requested?requested.key===topic.key:detailUse!=='all'||terms().length>0&&topicRecords.some(record=>searchMatches(record,terms()));
       const summary=node('summary','branch-summary');summary.append(node('span','branch-title',topic.title),node('span','branch-count',topicRecords.length+' 份文件'));
       const choices=node('div','file-choices branch-body');fold.append(summary,choices);list.append(fold);topicLists.set(topic.key,choices);
+      for(const unit of topic.units||[]){
+        const unitRecords=topicRecords.filter(record=>record.item.courseUnitKey===unit.key);if(!unitRecords.length)continue;
+        const unitFold=node('details','course-unit material-branch');unitFold.dataset.unit=unit.key;
+        unitFold.open=Boolean(requested?.key===topic.key)||detailUse!=='all'||terms().length>0&&unitRecords.some(record=>searchMatches(record,terms()));
+        const unitSummary=node('summary','branch-summary');unitSummary.append(node('span','branch-title',unit.title),node('span','branch-count',unitRecords.length+' 份文件'));
+        const unitChoices=node('div','file-choices branch-body');unitFold.append(unitSummary,unitChoices);choices.append(unitFold);unitLists.set(unit.key,unitChoices);
+      }
     }
   }
+  let managementList;
+  const managementRecords=records.filter(record=>record.item.managementOnly);
+  if(managementRecords.length&&detailUse==='all'){
+    const fold=node('details','management-branch material-branch');const summary=node('summary','branch-summary');summary.append(node('span','branch-title','管理核查资料'),node('span','branch-count',managementRecords.length+' 份文件'));managementList=node('div','file-choices branch-body');fold.append(summary,managementList);list.append(fold);
+  }
   for(const record of records){
-    const item=record.item;if(detailUse!=='all'&&detailKind(item)!==detailUse)continue;const file=node('article','file-choice');file.dataset.file=item.id;
-    const meta=node('div','file-meta');const roles=node('div','file-role-badges');const identity=sourceNavigation.identityLabel(item);if(identity)roles.append(node('span','role identity-label',identity));roles.append(node('span','role',fileRole(item)));meta.append(roles,node('span','pages',item.containedPdfPages?'ZIP 内含 PDF '+item.containedPdfPages+' 页':item.pages!==null?item.pages+' 页':item.kind));file.append(meta);
+    const item=record.item;if(detailUse!=='all'&&(item.managementOnly||detailKind(item)!==detailUse))continue;const file=node('article','file-choice');file.dataset.file=item.id;
+    const meta=node('div','file-meta');const roles=node('div','file-role-badges');const identity=sourceNavigation.identityLabel(item);if(identity)roles.append(node('span','role identity-label',identity));roles.append(node('span','role',fileRole(item)));meta.append(roles,node('span','pages',item.pageLabel|| (item.containedPdfPages?'ZIP 内含 PDF '+item.containedPdfPages+' 页':item.pages!==null?item.pages+' 页':item.kind)));file.append(meta);
     const h=node('h3');h.append(anchor(item.name,item.detail,'file-title'));file.append(h);
     if(item.note)file.append(node('p','file-note',item.note));
-    const actions=node('div','file-actions');if(sharedArchives.has(item.downloadUrl))actions.append(node('span','source-link','包内文档，随整包下载。'));else actions.append(downloadButton(item));actions.append(anchor('详情 / 源码 ↗',item.detail,'source-link'),anchor('文件页 / 历史 ↗',item.url,'source-link'));file.append(actions);(topicLists.get(item.courseTopicKey)||list).append(file);
+    const actions=node('div','file-actions');if(sharedArchives.has(item.downloadUrl))actions.append(node('span','source-link','包内文档，随整包下载。'));else actions.append(downloadButton(item));actions.append(anchor('详情 / 源码 ↗',item.detail,'source-link'),anchor('文件页 / 历史 ↗',item.url,'source-link'));file.append(actions);(item.managementOnly?managementList:unitLists.get(item.courseUnitKey)||topicLists.get(item.courseTopicKey)||list).append(file);
   }
   fragment.append(list);
   const sources=node('div','detail-sources');sources.append(node('span','','所属仓库'));for(const rid of group.repoIds)sources.append(anchor(rid+' ↗',repositories.get(rid).url));fragment.append(sources);
@@ -257,7 +270,7 @@ function renderRoute() {
   if(focusedGroup){const trigger=$('view').querySelector('[data-group="'+focusedGroup+'"]');if(trigger){for(let ancestor=trigger.parentElement;ancestor;ancestor=ancestor.parentElement)if(ancestor.tagName==='DETAILS')ancestor.open=true;trigger.focus({preventScroll:true});}focusedGroup='';}
 }
 async function start() {
-  const response=await fetch('./catalog.json?v=20261008-ruanhe-series-1');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
+  const response=await fetch('./catalog.json?v=20261008-ruanhe-series-2');if(!response.ok)throw new Error('Catalog request failed');catalog=sourceNavigation.apply(catalogClassification.apply(await response.json()));
   groups=catalog.materialGroups;groupById=new Map(groups.flatMap(group=>[group.id,...(group.aliasIds||[])].map(id=>[id,group])));repositories=new Map(catalog.repositories.map(repo=>[repo.id,repo]));
   const groupSearch=new Map(groups.map(group=>[group.key,[group.title,group.description,group.navigationDomain,group.browseHidden?'管理资料':''].join(' ')]));
   fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,item.courseTopicTitle,sourceNavigation.identityLabel(item),groupSearch.get(item.groupKey),repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));

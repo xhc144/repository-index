@@ -2419,40 +2419,6 @@
           "section": "subjects"
         },
         {
-          "name": "随机过程与极限分布札记",
-          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
-          "kind": "PDF",
-          "filename": "probability-process-notes.pdf",
-          "url": "https://github.com/xhc144/ai-study-notes/blob/main/lectures/probability-process-notes/dist/probability-process-notes.pdf",
-          "detail": "https://github.com/xhc144/ai-study-notes/blob/main/lectures/probability-process-notes/README.md",
-          "note": "",
-          "subjects": [
-            "概率与统计"
-          ],
-          "topics": [
-            "极限定理与特征函数"
-          ],
-          "institution": "来源待核",
-          "institutions": [],
-          "series": "",
-          "phase": "",
-          "number": null,
-          "examDate": null,
-          "uses": [
-            "讲义/教材"
-          ],
-          "aliases": [
-            "随机过程与极限分布札记",
-            "概率论2：随机过程与极限分布"
-          ],
-          "pages": 5,
-          "id": "923411c0e829fd4a",
-          "author": "",
-          "downloadUrl": "https://github.com/xhc144/ai-study-notes/raw/refs/heads/main/lectures/probability-process-notes/dist/probability-process-notes.pdf",
-          "groupKey": "subjects:lecture-ede30cef84eb",
-          "section": "subjects"
-        },
-        {
           "name": "概率方法计算积分",
           "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
           "kind": "PDF",
@@ -12203,7 +12169,7 @@
           "filename": "topology_national_day_5h_R04.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_national_day_5h_R04.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "拓扑与几何"
           ],
@@ -12234,8 +12200,11 @@
           "section": "papers",
           "groupRole": "自学讲义",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-topology-national-day-16",
-          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题"
+          "courseTopicKey": "topology",
+          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题",
+          "courseUnitKey": "topology-national-day",
+          "courseUnitTitle": "国庆自学讲义与16题配套",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "国庆16题学生册 P07",
@@ -12244,7 +12213,7 @@
           "filename": "topology_16_student_P07.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_student_P07.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "拓扑与几何"
           ],
@@ -12275,8 +12244,11 @@
           "section": "papers",
           "groupRole": "学生题册",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-topology-national-day-16",
-          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题"
+          "courseTopicKey": "topology",
+          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题",
+          "courseUnitKey": "topology-national-day",
+          "courseUnitTitle": "国庆自学讲义与16题配套",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "国庆16题参考解答 P07",
@@ -12285,7 +12257,7 @@
           "filename": "topology_16_teacher_P07.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/source/topology_16_teacher_P07.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/topology/year-unconfirmed/national-day/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "拓扑与几何"
           ],
@@ -12316,8 +12288,11 @@
           "section": "papers",
           "groupRole": "教师解答",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-topology-national-day-16",
-          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题"
+          "courseTopicKey": "topology",
+          "courseTopicTitle": "拓扑与组合拓扑 · 国庆16题",
+          "courseUnitKey": "topology-national-day",
+          "courseUnitTitle": "国庆自学讲义与16题配套",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "第一讲：SVD、低秩逼近与最小二乘",
@@ -12647,7 +12622,7 @@
           "filename": "probability_student_R54(1).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/probability_student_R54%281%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "概率与统计"
           ],
@@ -12679,8 +12654,11 @@
           "section": "papers",
           "groupRole": "学生讲义",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-probability-self-study",
-          "courseTopicTitle": "新领军概率自学讲义与配套练习"
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-self-study",
+          "courseUnitTitle": "概率自学讲义与原题练习、参考解答",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "概率例题与习题 · 一题一页 R54",
@@ -12689,7 +12667,7 @@
           "filename": "概率例题与习题_一题一页(2).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5%282%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "概率与统计"
           ],
@@ -12722,8 +12700,11 @@
           "section": "papers",
           "groupRole": "一题一页留白练习",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-probability-self-study",
-          "courseTopicTitle": "新领军概率自学讲义与配套练习"
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-self-study",
+          "courseUnitTitle": "概率自学讲义与原题练习、参考解答",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "新领军概率自学讲义 · 参考解答 R59",
@@ -12732,7 +12713,7 @@
           "filename": "新领军计划概率自学讲义_习题答案_R59.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/source/%E6%96%B0%E9%A2%86%E5%86%9B%E8%AE%A1%E5%88%92%E6%A6%82%E7%8E%87%E8%87%AA%E5%AD%A6%E8%AE%B2%E4%B9%89_%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88_R59.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/probability/2026-10/self-study/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "概率与统计"
           ],
@@ -12764,8 +12745,11 @@
           "section": "papers",
           "groupRole": "教师解答",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-probability-self-study",
-          "courseTopicTitle": "新领军概率自学讲义与配套练习"
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-self-study",
+          "courseUnitTitle": "概率自学讲义与原题练习、参考解答",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "第一至八章 · 原版学生题册",
@@ -12774,7 +12758,7 @@
           "filename": "计算应用数学专题训练_第一至八章_学生题册(1).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/source/%E8%AE%A1%E7%AE%97%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6%E4%B8%93%E9%A2%98%E8%AE%AD%E7%BB%83_%E7%AC%AC%E4%B8%80%E8%87%B3%E5%85%AB%E7%AB%A0_%E5%AD%A6%E7%94%9F%E9%A2%98%E5%86%8C%281%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/README.md",
-          "note": "",
+          "note": "老师提供的排版资料，生成方式待核。",
           "subjects": [
             "数值与应用数学"
           ],
@@ -12805,8 +12789,11 @@
           "section": "papers",
           "groupRole": "原版学生题册",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-computational-applied-1-8",
-          "courseTopicTitle": "计算应用数学专题训练 · 第一至八章"
+          "courseTopicKey": "computational",
+          "courseTopicTitle": "计算应用数学 · 第一至八章",
+          "courseUnitKey": "computational-1-8",
+          "courseUnitTitle": "原版题册与同题留白、选编练习",
+          "sourceIdentity": "teacher-typeset-unconfirmed"
         },
         {
           "name": "第一至八章 · 79题一题一页留白版",
@@ -12847,8 +12834,10 @@
           "section": "papers",
           "groupRole": "79题留白版",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-computational-applied-1-8",
-          "courseTopicTitle": "计算应用数学专题训练 · 第一至八章"
+          "courseTopicKey": "computational",
+          "courseTopicTitle": "计算应用数学 · 第一至八章",
+          "courseUnitKey": "computational-1-8",
+          "courseUnitTitle": "原版题册与同题留白、选编练习"
         },
         {
           "name": "当前建议练习 · 6题学生册",
@@ -12888,8 +12877,10 @@
           "section": "papers",
           "groupRole": "6题留白选编",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-computational-applied-1-8",
-          "courseTopicTitle": "计算应用数学专题训练 · 第一至八章"
+          "courseTopicKey": "computational",
+          "courseTopicTitle": "计算应用数学 · 第一至八章",
+          "courseUnitKey": "computational-1-8",
+          "courseUnitTitle": "原版题册与同题留白、选编练习"
         },
         {
           "name": "初次选编 · 18题历史学生册",
@@ -12929,8 +12920,10 @@
           "section": "papers",
           "groupRole": "18题历史留白选编",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-computational-applied-1-8",
-          "courseTopicTitle": "计算应用数学专题训练 · 第一至八章"
+          "courseTopicKey": "computational",
+          "courseTopicTitle": "计算应用数学 · 第一至八章",
+          "courseUnitKey": "computational-1-8",
+          "courseUnitTitle": "原版题册与同题留白、选编练习"
         },
         {
           "name": "79题AI方法核查报告",
@@ -12939,7 +12932,7 @@
           "filename": "method-audit.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/method-audit/method-audit.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/teacher-lectures/mathematics/computational-applied-mathematics/year-unconfirmed/chapters-01-08/README.md",
-          "note": "",
+          "note": "79题AI方法核查报告，放在管理核查资料中查阅。",
           "subjects": [
             "数值与应用数学"
           ],
@@ -12970,8 +12963,11 @@
           "section": "papers",
           "groupRole": "AI方法核查",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "lecture-shenzhen-computational-applied-1-8",
-          "courseTopicTitle": "计算应用数学专题训练 · 第一至八章"
+          "courseTopicKey": "computational",
+          "courseTopicTitle": "计算应用数学 · 第一至八章",
+          "courseUnitKey": "computational-1-8",
+          "courseUnitTitle": "原版题册与同题留白、选编练习",
+          "managementOnly": true
         },
         {
           "name": "普通物理第1章：质点运动学",
@@ -16111,7 +16107,7 @@
           "filename": "parameter-integrals-special-functions-probability.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/year-unconfirmed/parameter-integrals-probability/dist/parameter-integrals-special-functions-probability.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/year-unconfirmed/parameter-integrals-probability/README.md",
-          "note": "",
+          "note": "33页AI整理扩写：重积分对应第1—13页、原59第13—17页、原61第17—27页、概率论原稿第27—33页；含校订与补证。",
           "subjects": [
             "分析",
             "概率与统计"
@@ -16141,8 +16137,12 @@
           "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "subjects:lecture-66482177e4a4",
-          "courseTopicTitle": "含参积分、特殊函数与概率论"
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "integrals-expanded",
+          "courseUnitTitle": "跨原稿的33页AI整理扩写",
+          "sourceIdentity": "ai-expanded",
+          "groupRole": "原题重排、校订与补证"
         },
         {
           "name": "含参、广义积分与极限：9月23日数学手稿",
@@ -16151,7 +16151,7 @@
           "filename": "2026-09-23 笔记.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/README.md",
-          "note": "",
+          "note": "黑笔个人修订记录，与课程原始板书分开标识。",
           "subjects": [
             "分析"
           ],
@@ -16176,7 +16176,9 @@
           "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/classroom/author-unconfirmed/analysis-handwritten-integral-notes/2026-09-23%20%E7%AC%94%E8%AE%B0.pdf",
           "groupKey": "subjects:selected-lecture-analysis-handwritten-integral-notes",
           "section": "papers",
-          "sourceLabel": "来源待核"
+          "sourceLabel": "来源待核",
+          "sourceIdentity": "personal-note",
+          "groupRole": "个人修订记录"
         },
         {
           "name": "重积分整理讲义",
@@ -16185,15 +16187,17 @@
           "filename": "n重积分_整理.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/README.md",
-          "note": "",
+          "note": "按n重积分原手稿转写整理，11页。",
           "subjects": [
             "分析"
           ],
           "topics": [
             "多元微积分与重积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -16208,9 +16212,15 @@
           "id": "c0d37620cad5b38f",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/classroom/author-unconfirmed/multiple-integrals/transcription/n%E9%87%8D%E7%A7%AF%E5%88%86_%E6%95%B4%E7%90%86.pdf",
-          "groupKey": "subjects:selected-lecture-n-fold-integral-notes",
+          "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
-          "sourceLabel": "来源待核"
+          "sourceLabel": "深圳中学",
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "multiple-integrals",
+          "courseUnitTitle": "n重积分与含参反常积分判别",
+          "sourceIdentity": "manuscript-transcription",
+          "groupRole": "重积分原稿转写"
         },
         {
           "name": "空间体积与积分估计四题",
@@ -16256,15 +16266,17 @@
           "filename": "n重积分(1).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/README.md",
-          "note": "",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
           "subjects": [
             "分析"
           ],
           "topics": [
             "多元微积分与重积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -16279,9 +16291,16 @@
           "id": "0a13f1ab3f1f0771",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/classroom/author-unconfirmed/multiple-integrals/handwriting/n%E9%87%8D%E7%A7%AF%E5%88%86%281%29.pdf",
-          "groupKey": "subjects:selected-lecture-n-fold-handwritten-notes",
+          "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
-          "sourceLabel": "来源待核"
+          "sourceLabel": "深圳中学",
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "multiple-integrals",
+          "courseUnitTitle": "n重积分与含参反常积分判别",
+          "sourceIdentity": "course-handwritten",
+          "pageLabel": "1张长图／电子板书",
+          "groupRole": "课程原始板书"
         },
         {
           "name": "含参积分手稿59：一致收敛与判别",
@@ -16290,15 +16309,17 @@
           "filename": "无标题的笔记本 (59).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/README.md",
-          "note": "",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
           "subjects": [
             "分析"
           ],
           "topics": [
             "积分技巧与含参积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -16314,9 +16335,16 @@
           "id": "4802c4637765e669",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2859%29.pdf",
-          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
+          "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
-          "sourceLabel": "来源待核"
+          "sourceLabel": "深圳中学",
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "parameter-59",
+          "courseUnitTitle": "含参反常积分的连续性与极限交换（原59）",
+          "sourceIdentity": "course-handwritten",
+          "pageLabel": "1张长图／电子板书",
+          "groupRole": "课程原始板书"
         },
         {
           "name": "含参积分手稿61：求导与特殊函数",
@@ -16325,15 +16353,17 @@
           "filename": "无标题的笔记本 (61).pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/README.md",
-          "note": "",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
           "subjects": [
             "分析"
           ],
           "topics": [
             "积分技巧与含参积分"
           ],
-          "institution": "来源待核",
-          "institutions": [],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
           "series": "",
           "phase": "",
           "number": null,
@@ -16349,9 +16379,16 @@
           "id": "cf5a79e569dda697",
           "author": "",
           "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/classroom/author-unconfirmed/parameter-integrals-handwritten-notes/%E6%97%A0%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%94%E8%AE%B0%E6%9C%AC%20%2861%29.pdf",
-          "groupKey": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
+          "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
-          "sourceLabel": "来源待核"
+          "sourceLabel": "深圳中学",
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "parameter-61",
+          "courseUnitTitle": "含参积分求导及Gamma／Beta函数（原61）",
+          "sourceIdentity": "course-handwritten",
+          "pageLabel": "1张长图／电子板书",
+          "groupRole": "课程原始板书"
         },
         {
           "name": "MIT积分竞赛：精选96题题目册",
@@ -16644,7 +16681,7 @@
           "filename": "ruanhe-probability-three.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/2026-10-07/probability-handwriting/dist/ruanhe-probability-three.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/2026-10-07/probability-handwriting/README.md",
-          "note": "",
+          "note": "对应概率论3原稿，AI补充条件、证明、计算与图示，8页；原稿页眉为第二章。",
           "subjects": [
             "概率与统计"
           ],
@@ -16673,8 +16710,12 @@
           "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "subjects:lecture-fd437a50f942",
-          "courseTopicTitle": "阮禾老师概率论讲义"
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-3",
+          "courseUnitTitle": "分布函数、Poisson分布与几何概率（概率论3）",
+          "sourceIdentity": "ai-expanded",
+          "groupRole": "概率论3 · 条件与证明补充"
         },
         {
           "name": "概率例题与习题：147题纯题集",
@@ -16683,7 +16724,7 @@
           "filename": "概率例题与习题_一题一页.pdf",
           "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/2026-10/probability-practice-history/dist/%E6%A6%82%E7%8E%87%E4%BE%8B%E9%A2%98%E4%B8%8E%E4%B9%A0%E9%A2%98_%E4%B8%80%E9%A2%98%E4%B8%80%E9%A1%B5.pdf",
           "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/2026-10/probability-practice-history/README.md",
-          "note": "",
+          "note": "147页纯题排版；历史工程中的18页分支另存，不能据页数当作同稿旧版。",
           "subjects": [
             "概率与统计"
           ],
@@ -16713,8 +16754,10 @@
           "groupKey": "ruanhe-classroom-lecture-series",
           "section": "papers",
           "sourceLabel": "深圳中学",
-          "courseTopicKey": "subjects:lecture-451cafb73aec",
-          "courseTopicTitle": "概率例题与习题：一题一页"
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-self-study",
+          "courseUnitTitle": "概率自学讲义与原题练习、参考解答"
         },
         {
           "name": "阮禾思考题72题 · 题目与AI解答",
@@ -16841,6 +16884,181 @@
           "section": "papers",
           "sourceLabel": "深圳中学·阮禾",
           "groupRole": "纯题习题版"
+        },
+        {
+          "id": "ruanhe-probability-original-1",
+          "name": "有限概率模型、条件期望与停时定理 · 原手写电子板书",
+          "purpose": "查阅阮禾课程原始板书，与同专题AI整理扩写核对。",
+          "kind": "PDF",
+          "filename": "概率论.pdf",
+          "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA.pdf",
+          "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA.pdf",
+          "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/README.md",
+          "pages": 1,
+          "pageLabel": "1张长图／电子板书",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "sourceLabel": "深圳中学",
+          "series": "阮禾课堂讲义系列",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "概率论.pdf",
+            "有限概率模型、条件期望与停时定理"
+          ],
+          "author": "",
+          "groupKey": "ruanhe-classroom-lecture-series",
+          "section": "papers",
+          "sourceIdentity": "course-handwritten",
+          "courseTopicKey": "integrals",
+          "courseTopicTitle": "重积分、含参积分与特殊函数",
+          "courseUnitKey": "probability-1",
+          "courseUnitTitle": "有限概率模型、条件期望与停时定理（概率论原稿）",
+          "groupRole": "课程原始板书"
+        },
+        {
+          "id": "ruanhe-probability-original-2",
+          "name": "随机游走、生成函数与占位模型 · 原手写电子板书",
+          "purpose": "查阅阮禾课程原始板书，与同专题AI整理扩写核对。",
+          "kind": "PDF",
+          "filename": "概率论2.pdf",
+          "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA2.pdf",
+          "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA2.pdf",
+          "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/README.md",
+          "pages": 1,
+          "pageLabel": "1张长图／电子板书",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "sourceLabel": "深圳中学",
+          "series": "阮禾课堂讲义系列",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "概率论2.pdf",
+            "随机游走、生成函数与占位模型"
+          ],
+          "author": "",
+          "groupKey": "ruanhe-classroom-lecture-series",
+          "section": "papers",
+          "sourceIdentity": "course-handwritten",
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-2",
+          "courseUnitTitle": "随机游走、生成函数与占位模型（概率论2）",
+          "groupRole": "课程原始板书"
+        },
+        {
+          "id": "ruanhe-probability-original-3",
+          "name": "分布函数、Poisson分布与几何概率 · 原手写电子板书",
+          "purpose": "查阅阮禾课程原始板书，与同专题AI整理扩写核对。",
+          "kind": "PDF",
+          "filename": "概率论3.pdf",
+          "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA3.pdf",
+          "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/ruanhe/handwritten-series/source/%E6%A6%82%E7%8E%87%E8%AE%BA3.pdf",
+          "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/README.md",
+          "pages": 1,
+          "pageLabel": "1张长图／电子板书",
+          "note": "阮禾课程的原手写电子板书；课程来源与执笔身份分开标识。",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "概率模型与计数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "sourceLabel": "深圳中学",
+          "series": "阮禾课堂讲义系列",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "手写笔记"
+          ],
+          "aliases": [
+            "概率论3.pdf",
+            "分布函数、Poisson分布与几何概率"
+          ],
+          "author": "",
+          "groupKey": "ruanhe-classroom-lecture-series",
+          "section": "papers",
+          "sourceIdentity": "course-handwritten",
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-3",
+          "courseUnitTitle": "分布函数、Poisson分布与几何概率（概率论3）",
+          "groupRole": "课程原始板书"
+        },
+        {
+          "name": "随机过程与极限分布札记",
+          "purpose": "阅读该专题的讲义或题选，按详情查找配套内容。",
+          "kind": "PDF",
+          "filename": "probability-process-notes.pdf",
+          "url": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/year-unconfirmed/probability-process-notes/dist/probability-process-notes.pdf",
+          "detail": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/year-unconfirmed/probability-process-notes/README.md",
+          "note": "对应概率论2原稿，保留例2—6原路线，AI补推导与另解，5页。",
+          "subjects": [
+            "概率与统计"
+          ],
+          "topics": [
+            "极限定理与特征函数"
+          ],
+          "institution": "深圳中学",
+          "institutions": [
+            "深圳中学"
+          ],
+          "series": "",
+          "phase": "",
+          "number": null,
+          "examDate": null,
+          "uses": [
+            "讲义/教材"
+          ],
+          "aliases": [
+            "随机过程与极限分布札记",
+            "概率论2：随机过程与极限分布"
+          ],
+          "pages": 5,
+          "id": "923411c0e829fd4a",
+          "author": "",
+          "downloadUrl": "https://github.com/xhc144/course-materials/raw/refs/heads/main/materials/ruanhe/year-unconfirmed/probability-process-notes/dist/probability-process-notes.pdf",
+          "groupKey": "ruanhe-classroom-lecture-series",
+          "section": "papers",
+          "sourceLabel": "深圳中学",
+          "courseTopicKey": "probability",
+          "courseTopicTitle": "概率论：原稿整理与自学配套",
+          "courseUnitKey": "probability-2",
+          "courseUnitTitle": "随机游走、生成函数与占位模型（概率论2）",
+          "sourceIdentity": "ai-expanded",
+          "groupRole": "概率论2 · 补推导与另解"
         }
       ],
       "contents": [
@@ -17285,40 +17503,6 @@
       "uncertainties": []
     },
     {
-      "key": "subjects:selected-lecture-n-fold-integral-notes",
-      "id": "5992970f37bd6da3",
-      "title": "重积分整理讲义",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "lecture",
-      "status": "",
-      "subjects": [
-        "分析"
-      ],
-      "topics": [
-        "多元微积分与重积分"
-      ],
-      "itemIds": [
-        "c0d37620cad5b38f"
-      ],
-      "repoIds": [
-        "course-materials"
-      ],
-      "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "analysis"
-      ],
-      "uncertainties": [],
-      "sourceLabel": "来源待核",
-      "teacherLabel": "教师与作者待核",
-      "navigationDomain": "课堂讲义",
-      "originCategory": "external"
-    },
-    {
       "key": "subjects:selected-lecture-fourier-course",
       "id": "57f516614c9068cb",
       "title": "傅里叶分析速成讲义",
@@ -17500,75 +17684,6 @@
         "analysis"
       ],
       "uncertainties": []
-    },
-    {
-      "key": "subjects:selected-lecture-n-fold-handwritten-notes",
-      "id": "3bece5177e67343a",
-      "title": "重积分手写知识笔记",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "lecture",
-      "status": "",
-      "subjects": [
-        "分析"
-      ],
-      "topics": [
-        "多元微积分与重积分"
-      ],
-      "itemIds": [
-        "0a13f1ab3f1f0771"
-      ],
-      "repoIds": [
-        "course-materials"
-      ],
-      "description": "查阅原稿或学习笔记，核对批注与整理来源。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "analysis"
-      ],
-      "uncertainties": [],
-      "sourceLabel": "来源待核",
-      "teacherLabel": "教师与作者待核",
-      "navigationDomain": "课堂讲义",
-      "originCategory": "external"
-    },
-    {
-      "key": "subjects:selected-lecture-parameter-integrals-handwritten-notes",
-      "id": "a08420c3ac787bfe",
-      "title": "实分析与含参/广义积分手写知识笔记59/61",
-      "section": "papers",
-      "institution": "来源待核",
-      "materialType": "lecture",
-      "status": "",
-      "subjects": [
-        "分析"
-      ],
-      "topics": [
-        "积分技巧与含参积分"
-      ],
-      "itemIds": [
-        "4802c4637765e669",
-        "cf5a79e569dda697"
-      ],
-      "repoIds": [
-        "course-materials"
-      ],
-      "description": "查阅原稿或学习笔记，核对批注与整理来源。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "analysis"
-      ],
-      "uncertainties": [],
-      "sourceLabel": "来源待核",
-      "teacherLabel": "教师与作者待核",
-      "navigationDomain": "课堂讲义",
-      "originCategory": "external"
     },
     {
       "key": "subjects:selected-lecture-vector-matrix-derivatives",
@@ -18778,36 +18893,6 @@
       "examDate": null,
       "subjectKeys": [
         "geometry"
-      ],
-      "uncertainties": []
-    },
-    {
-      "key": "subjects:lecture-ede30cef84eb",
-      "id": "a7cf025497a04a60",
-      "title": "概率论2：随机过程与极限分布",
-      "section": "subjects",
-      "institution": "待归类",
-      "materialType": "lecture",
-      "status": "",
-      "subjects": [
-        "概率与统计"
-      ],
-      "topics": [
-        "极限定理与特征函数"
-      ],
-      "itemIds": [
-        "923411c0e829fd4a"
-      ],
-      "repoIds": [
-        "ai-study-notes"
-      ],
-      "description": "阅读该专题的讲义或题选，按详情查找配套内容。",
-      "series": "",
-      "phase": "",
-      "number": null,
-      "examDate": null,
-      "subjectKeys": [
-        "probability"
       ],
       "uncertainties": []
     },
@@ -25012,6 +25097,11 @@
         "概率方法与集中不等式"
       ],
       "itemIds": [
+        "c0d37620cad5b38f",
+        "0a13f1ab3f1f0771",
+        "4802c4637765e669",
+        "cf5a79e569dda697",
+        "923411c0e829fd4a",
         "266f4805cd79345f",
         "5f9f8b16ca7c4c81",
         "c17abd6a370e6a70",
@@ -25025,12 +25115,15 @@
         "c87c0bf076ae741d",
         "7d1de16d045c7a96",
         "a0d2cb410c9df911",
-        "0a872ee95680dd1b"
+        "0a872ee95680dd1b",
+        "ruanhe-probability-original-1",
+        "ruanhe-probability-original-2",
+        "ruanhe-probability-original-3"
       ],
       "repoIds": [
         "course-materials"
       ],
-      "description": "从微积分到概率论，按专题选择已核实的课程文件；同讲原稿、转写、AI讲义与解答在专题内选择，来源身份按确认信息标明。",
+      "description": "按专题展开同讲原始板书、转写、AI整理扩写和配套解答。六份连续电子板书已核实；当前最早稿从问题5开始，更早资料尚未定位。老师提供的排版讲义标明生成方式待核。",
       "series": "阮禾课堂讲义系列",
       "phase": "",
       "number": null,
@@ -25048,6 +25141,10 @@
       "navigationDomain": "课堂讲义",
       "courseSeriesTitle": "阮禾课堂讲义系列",
       "aliasIds": [
+        "5992970f37bd6da3",
+        "3bece5177e67343a",
+        "a08420c3ac787bfe",
+        "a7cf025497a04a60",
         "83629ba21c9a1bc3",
         "53303b5ce03500d9",
         "fec472fb2083d138",
@@ -25056,6 +25153,10 @@
         "d9885261d04ef041"
       ],
       "aliasKeys": [
+        "subjects:selected-lecture-n-fold-integral-notes",
+        "subjects:selected-lecture-n-fold-handwritten-notes",
+        "subjects:selected-lecture-parameter-integrals-handwritten-notes",
+        "subjects:lecture-ede30cef84eb",
         "subjects:lecture-66482177e4a4",
         "subjects:lecture-fd437a50f942",
         "subjects:lecture-451cafb73aec",
@@ -25065,37 +25166,111 @@
       ],
       "courseTopics": [
         {
-          "key": "subjects:lecture-66482177e4a4",
-          "title": "含参积分、特殊函数与概率论",
+          "key": "integrals",
+          "title": "重积分、含参积分与特殊函数",
           "itemIds": [
-            "266f4805cd79345f"
+            "266f4805cd79345f",
+            "c0d37620cad5b38f",
+            "0a13f1ab3f1f0771",
+            "4802c4637765e669",
+            "cf5a79e569dda697",
+            "ruanhe-probability-original-1"
           ],
           "legacyIds": [
-            "83629ba21c9a1bc3"
+            "83629ba21c9a1bc3",
+            "5992970f37bd6da3",
+            "3bece5177e67343a",
+            "a08420c3ac787bfe"
+          ],
+          "units": [
+            {
+              "key": "multiple-integrals",
+              "title": "n重积分与含参反常积分判别",
+              "itemIds": [
+                "0a13f1ab3f1f0771",
+                "c0d37620cad5b38f"
+              ]
+            },
+            {
+              "key": "parameter-59",
+              "title": "含参反常积分的连续性与极限交换（原59）",
+              "itemIds": [
+                "4802c4637765e669"
+              ]
+            },
+            {
+              "key": "parameter-61",
+              "title": "含参积分求导及Gamma／Beta函数（原61）",
+              "itemIds": [
+                "cf5a79e569dda697"
+              ]
+            },
+            {
+              "key": "probability-1",
+              "title": "有限概率模型、条件期望与停时定理（概率论原稿）",
+              "itemIds": [
+                "ruanhe-probability-original-1"
+              ]
+            },
+            {
+              "key": "integrals-expanded",
+              "title": "跨原稿的33页AI整理扩写",
+              "itemIds": [
+                "266f4805cd79345f"
+              ]
+            }
           ]
         },
         {
-          "key": "subjects:lecture-fd437a50f942",
-          "title": "阮禾老师概率论讲义",
+          "key": "probability",
+          "title": "概率论：原稿整理与自学配套",
           "itemIds": [
-            "5f9f8b16ca7c4c81"
+            "5f9f8b16ca7c4c81",
+            "c17abd6a370e6a70",
+            "a65b6d50617fec1f",
+            "5a63b4d810f73757",
+            "517748da373bc9d7",
+            "923411c0e829fd4a",
+            "ruanhe-probability-original-2",
+            "ruanhe-probability-original-3"
           ],
           "legacyIds": [
-            "53303b5ce03500d9"
+            "53303b5ce03500d9",
+            "fec472fb2083d138",
+            "92f9c343cf94c353",
+            "a7cf025497a04a60"
+          ],
+          "units": [
+            {
+              "key": "probability-2",
+              "title": "随机游走、生成函数与占位模型（概率论2）",
+              "itemIds": [
+                "ruanhe-probability-original-2",
+                "923411c0e829fd4a"
+              ]
+            },
+            {
+              "key": "probability-3",
+              "title": "分布函数、Poisson分布与几何概率（概率论3）",
+              "itemIds": [
+                "ruanhe-probability-original-3",
+                "5f9f8b16ca7c4c81"
+              ]
+            },
+            {
+              "key": "probability-self-study",
+              "title": "概率自学讲义与原题练习、参考解答",
+              "itemIds": [
+                "a65b6d50617fec1f",
+                "5a63b4d810f73757",
+                "517748da373bc9d7",
+                "c17abd6a370e6a70"
+              ]
+            }
           ]
         },
         {
-          "key": "subjects:lecture-451cafb73aec",
-          "title": "概率例题与习题：一题一页",
-          "itemIds": [
-            "c17abd6a370e6a70"
-          ],
-          "legacyIds": [
-            "fec472fb2083d138"
-          ]
-        },
-        {
-          "key": "lecture-shenzhen-topology-national-day-16",
+          "key": "topology",
           "title": "拓扑与组合拓扑 · 国庆16题",
           "itemIds": [
             "05de03cbd5c3080b",
@@ -25104,23 +25279,22 @@
           ],
           "legacyIds": [
             "c99db3d0d0def158"
-          ]
-        },
-        {
-          "key": "lecture-shenzhen-probability-self-study",
-          "title": "新领军概率自学讲义与配套练习",
-          "itemIds": [
-            "a65b6d50617fec1f",
-            "5a63b4d810f73757",
-            "517748da373bc9d7"
           ],
-          "legacyIds": [
-            "92f9c343cf94c353"
+          "units": [
+            {
+              "key": "topology-national-day",
+              "title": "国庆自学讲义与16题配套",
+              "itemIds": [
+                "05de03cbd5c3080b",
+                "c481ff18f2f5f5b9",
+                "e8f93952a8473e49"
+              ]
+            }
           ]
         },
         {
-          "key": "lecture-shenzhen-computational-applied-1-8",
-          "title": "计算应用数学专题训练 · 第一至八章",
+          "key": "computational",
+          "title": "计算应用数学 · 第一至八章",
           "itemIds": [
             "c9ba1d0ab5fccb99",
             "c87c0bf076ae741d",
@@ -25130,11 +25304,25 @@
           ],
           "legacyIds": [
             "d9885261d04ef041"
+          ],
+          "units": [
+            {
+              "key": "computational-1-8",
+              "title": "原版题册与同题留白、选编练习",
+              "itemIds": [
+                "c9ba1d0ab5fccb99",
+                "c87c0bf076ae741d",
+                "7d1de16d045c7a96",
+                "a0d2cb410c9df911",
+                "0a872ee95680dd1b"
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "seriesUrl": "https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/README.md"
     }
   ],
   "classificationRevision": "20261008-competition-2",
-  "sourceNavigationRevision": "20261008-ruanhe-series-1"
+  "sourceNavigationRevision": "20261008-ruanhe-series-2"
 }
