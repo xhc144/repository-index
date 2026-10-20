@@ -68,7 +68,7 @@ function showHome() {
   const quick=node('section','quick-start');quick.append(node('h2','','常用入口'));
   const links=node('div','quick-links');links.append(routeLink('清北学堂模拟卷 →',route('papers','清北学堂')),routeLink('深圳中学试卷 →',route('papers','深圳中学')),routeLink('概率与统计讲义 →',route('subjects','probability')));quick.append(links);fragment.append(quick);
   const classroomEntry=button('阮禾课堂讲义系列 →',()=>openGroup('teacher-series-ruanhe-classroom'));classroomEntry.dataset.group='teacher-series-ruanhe-classroom';links.append(classroomEntry);
-  const overview=routeLink('',route('repositories'),'overview-entry');const body=node('div');body.append(node('h2','','12 个仓库，各放什么？'),node('p','','查看每个项目的用途、使用方式、仓库主页和代表资料。'));overview.append(body,node('span','','仓库总览 →'));fragment.append(overview);
+  const overview=anchor('','../','overview-entry');const body=node('div');body.append(node('h2','','所有仓库，各放什么？'),node('p','','查看每个仓库的用途与入口，以及哪些内容还只在分支里。'));overview.append(body,node('span','','仓库总览 →'));fragment.append(overview);
   $('view').replaceChildren(fragment);$('results-status').textContent='';
 }
 function browseCategories(section) {
@@ -257,7 +257,7 @@ function renderRoute() {
   lastBrowse=location.hash||'#home';
   for(const el of $('main-nav').querySelectorAll('a')){const selected=el.dataset.section===section;el.toggleAttribute('aria-current',selected);if(selected)el.setAttribute('aria-current','page');}
   $('search-form').hidden=section==='repositories';$('clear-search').hidden=!$('search').value;
-  if(section==='repositories'){showRepositories();}
+  if(section==='repositories'){location.replace('../');return;}
   else if(section==='home'){
     if(terms().length){heading('搜索结果','同一份资料集中展示，点开后选择具体文件。');breadcrumb([['首页','#home'],['搜索结果']]);showGroups('home');}else showHome();
   }else if(labels[section]){
@@ -275,7 +275,7 @@ async function start() {
   const groupSearch=new Map(groups.map(group=>[group.key,[group.title,group.description,group.navigationDomain,group.browseHidden?'管理资料':''].join(' ')]));
   fileById=new Map(catalog.repositories.flatMap(repo=>repo.items.map(item=>[item.id,{repo,item,search:normalize([item.name,item.purpose,item.filename,...item.subjects,...item.topics,item.institution,item.sourceLabel,item.series,item.phase,...item.uses,...item.aliases,item.author,item.kind,item.pages!==null?item.pages+'页':'',item.groupRole,item.courseTopicTitle,sourceNavigation.identityLabel(item),groupSearch.get(item.groupKey),repo.id].join(' ')),numberSearch:normalize([item.name,item.series,...item.aliases].join(' '))}])));
   $('group-total').textContent=groups.filter(group=>!group.browseHidden).length;$('pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF').length;$('verified-pdf-total').textContent=[...fileById.values()].filter(record=>record.item.kind==='PDF'&&Number.isInteger(record.item.pages)&&record.item.pages>0).length;$('updated').textContent=catalog.updated;$('updated').dateTime=catalog.updated;
-  for(const [id,title] of Object.entries(labels)){const el=routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
+  for(const [id,title] of Object.entries(labels)){const el=id==='repositories'?anchor(title,'../'):routeLink(title,route(id));el.dataset.section=id;$('main-nav').append(el);}
   for(const id of ['brand','footer-home'])$(id).addEventListener('click',event=>{event.preventDefault();navigate('#home');});
   $('search-form').addEventListener('submit',event=>event.preventDefault());$('search').addEventListener('input',()=>{currentPage=1;renderRoute();});
   $('search').addEventListener('keydown',event=>{if(event.key==='Escape'){$('search').value='';currentPage=1;renderRoute();}});

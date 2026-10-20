@@ -1,0 +1,1687 @@
+{
+ "scannedAt": "2026-10-20T17:23:10.287Z",
+ "user": "xhc144",
+ "owners": [
+  "xhc144",
+  "xhc144-qiuzhen",
+  "xhc144-notes",
+  "xhc144-works",
+  "xhc144-ai"
+ ],
+ "repos": {
+  "xhc144-ai/ai-self-study": {
+   "owner": "xhc144-ai",
+   "name": "ai-self-study",
+   "private": false,
+   "archived": false,
+   "description": "",
+   "language": "TeX",
+   "topics": [],
+   "license": "NOASSERTION",
+   "sizeKB": 243995,
+   "createdAt": "2026-10-12T00:26:18Z",
+   "pushedAt": "2026-10-12T03:32:37Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 515,
+   "pdf": 98,
+   "tex": 104,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "fc074076f31a294e7629cb15cf2b90e641eb5540",
+     "date": "2026-10-12T03:32:24Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-ai/skills": {
+   "owner": "xhc144-ai",
+   "name": "skills",
+   "private": true,
+   "archived": false,
+   "description": "AI 工具合集：Skills、MCP 服务、几何绘图与工程交接工具，含源码、安装说明和来源历史",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "developer-tools",
+    "mcp",
+    "skills"
+   ],
+   "license": "",
+   "sizeKB": 3362,
+   "createdAt": "2026-10-01T13:17:29Z",
+   "pushedAt": "2026-10-14T17:05:07Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 717,
+   "pdf": 3,
+   "tex": 45,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "30264928e0e5b72210776c0dd10235873584952a",
+     "date": "2026-10-14T17:05:05Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-notes/ai-study-notes": {
+   "owner": "xhc144-notes",
+   "name": "ai-study-notes",
+   "private": true,
+   "archived": false,
+   "description": "讲义写作与归档仓库：按专题保存 LaTeX 源码、PDF、参考资料与审校记录，共用模板和构建工具。",
+   "language": "TeX",
+   "topics": [
+    "education",
+    "latex",
+    "lecture-notes",
+    "math",
+    "physics"
+   ],
+   "license": "",
+   "sizeKB": 673061,
+   "createdAt": "2026-09-30T15:06:19Z",
+   "pushedAt": "2026-10-12T16:26:26Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 3030,
+   "pdf": 179,
+   "tex": 1332,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "history-import/2026-10-04-lectures",
+     "sha": "062ca6625ee030c564635e0d151bed03deb35b90",
+     "date": "2026-10-04T14:09:22Z",
+     "ahead": 0,
+     "behind": 86,
+     "state": "merged"
+    },
+    {
+     "name": "main",
+     "sha": "5d01fab99d60e90d372aa869964936d39b363cc3",
+     "date": "2026-10-12T16:26:25Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-notes/book-project": {
+   "owner": "xhc144-notes",
+   "name": "book-project",
+   "private": true,
+   "archived": false,
+   "description": "数学竞赛讲义的长期 LaTeX 图书工程：总稿 PDF、可编辑源码、原始材料与整理记录",
+   "language": "TeX",
+   "topics": [
+    "education",
+    "latex",
+    "math",
+    "math-olympiad",
+    "textbook"
+   ],
+   "license": "",
+   "sizeKB": 200260,
+   "createdAt": "2026-09-30T04:38:34Z",
+   "pushedAt": "2026-10-07T12:14:49Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 1183,
+   "pdf": 8,
+   "tex": 208,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "0e3cc06fd0e6bc53e9b4004a2b8e8140ca7fe05f",
+     "date": "2026-10-07T12:14:41Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-notes/chem-teaching-materials": {
+   "owner": "xhc144-notes",
+   "name": "chem-teaching-materials",
+   "private": false,
+   "archived": false,
+   "description": "高中化学教学资料：选择性必修1课件、高考一轮知识清单、思维导图、校本课资料",
+   "language": "TeX",
+   "topics": [],
+   "license": "",
+   "sizeKB": 545274,
+   "createdAt": "2026-10-15T09:13:03Z",
+   "pushedAt": "2026-10-16T12:08:48Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 154,
+   "pdf": 1,
+   "tex": 24,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "claude/funny-cori-g00nra",
+     "sha": "d7c80d8da98e08a1832f4f304b0a82859909dc0a",
+     "date": "2026-10-16T12:08:46Z",
+     "ahead": 1,
+     "behind": 0,
+     "state": "branch-only",
+     "touched": 2,
+     "same": 0,
+     "onlyBranch": 1,
+     "branchNewer": 1,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "claude/vibrant-lamport-q2zg1b",
+     "sha": "79a4800b7eb09923d1c31f66ece8a9a1502ebc81",
+     "date": "2026-10-16T10:08:09Z",
+     "ahead": 1,
+     "behind": 5,
+     "state": "branch-only",
+     "touched": 1,
+     "same": 0,
+     "onlyBranch": 1,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "main",
+     "sha": "7962e4d92d1570bce77711ed13b16e736eb92173",
+     "date": "2026-10-16T10:56:59Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-notes/course-materials": {
+   "owner": "xhc144-notes",
+   "name": "course-materials",
+   "private": true,
+   "archived": false,
+   "description": "机构讲义与试卷资料库：按机构与系列保存讲义、试卷、解答、原始 PDF 和可编辑源文件",
+   "language": "TeX",
+   "topics": [
+    "education",
+    "exam",
+    "latex",
+    "lecture-notes",
+    "math",
+    "problem-solving"
+   ],
+   "license": "",
+   "sizeKB": 230916,
+   "createdAt": "2026-10-01T15:49:19Z",
+   "pushedAt": "2026-10-14T03:24:08Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 774,
+   "pdf": 167,
+   "tex": 275,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "ef9686e414ae8844f2525570ac6010399815dd8e",
+     "date": "2026-10-14T03:24:06Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-notes/gtm-selected-library": {
+   "owner": "xhc144-notes",
+   "name": "gtm-selected-library",
+   "private": true,
+   "archived": false,
+   "description": "Personal GTM selected mathematics reference library and download progress",
+   "language": "TeX",
+   "topics": [],
+   "license": "",
+   "sizeKB": 3383689,
+   "createdAt": "2026-10-13T13:11:42Z",
+   "pushedAt": "2026-10-18T14:13:54Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 28711,
+   "pdf": 642,
+   "tex": 3902,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "36e7eecc7de7f6f371f9b123c6e092b78b314df0",
+     "date": "2026-10-18T14:13:48Z",
+     "isDefault": true
+    },
+    {
+     "name": "translate/gtm-005-zh",
+     "sha": "78385cb6b0b580cfac89e13736bd1a1acd3a6e6f",
+     "date": "2026-10-15T12:08:42Z",
+     "ahead": 1,
+     "behind": 945,
+     "state": "branch-only",
+     "touched": 4,
+     "same": 0,
+     "onlyBranch": 1,
+     "branchNewer": 3,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/gtm-007-zh",
+     "sha": "5c8896238d528b698a42a7d05b8f098424788f52",
+     "date": "2026-10-13T16:30:03Z",
+     "ahead": 0,
+     "behind": 978,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-009-zh",
+     "sha": "1b6daf8c91d619d9759405c99d2eb684a006ce64",
+     "date": "2026-10-13T18:26:17Z",
+     "ahead": 0,
+     "behind": 968,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-011-zh",
+     "sha": "d6752796847ec3216059d53e25ea5e2853931315",
+     "date": "2026-10-14T03:22:48Z",
+     "ahead": 0,
+     "behind": 950,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-033-zh",
+     "sha": "52d0cc12b89c7426f4203f6bda6b57b95b4471b4",
+     "date": "2026-10-14T02:30:05Z",
+     "ahead": 0,
+     "behind": 941,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-042-zh",
+     "sha": "654fd12302ef6f66628ae44ab940e3a5138084ef",
+     "date": "2026-10-13T16:03:41Z",
+     "ahead": 0,
+     "behind": 979,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-052-zh",
+     "sha": "e93ae51b0b04add76ba8d16cd303e30f71620626",
+     "date": "2026-10-15T13:26:57Z",
+     "ahead": 30,
+     "behind": 956,
+     "state": "content-in-main",
+     "touched": 854,
+     "same": 854,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/gtm-060-zh",
+     "sha": "4ca644577248ce28de612db7b3f3343e917629a0",
+     "date": "2026-10-15T17:51:16Z",
+     "ahead": 0,
+     "behind": 873,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-073-zh",
+     "sha": "17e8949e4df29070e11b1724393ddb5e856ee1df",
+     "date": "2026-10-15T17:14:07Z",
+     "ahead": 0,
+     "behind": 893,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-082-zh",
+     "sha": "33be43b8b123ada3579213eda2fee92f2a04379f",
+     "date": "2026-10-15T13:05:11Z",
+     "ahead": 12,
+     "behind": 934,
+     "state": "content-in-main",
+     "touched": 941,
+     "same": 941,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/gtm-084-zh",
+     "sha": "17ef3ed7f8db352a92779305a1e42cc09770ddbc",
+     "date": "2026-10-15T12:25:21Z",
+     "ahead": 0,
+     "behind": 829,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-096-zh",
+     "sha": "c59fcc8f40e446a804dc92c9328e1e0d82be0257",
+     "date": "2026-10-16T02:18:58Z",
+     "ahead": 0,
+     "behind": 803,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-106-zh",
+     "sha": "bec3a957474f87fea884507e3c734feef14831c5",
+     "date": "2026-10-16T07:48:40Z",
+     "ahead": 0,
+     "behind": 587,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-113-zh",
+     "sha": "98b48a0c6e6b8f69a6235093a3403d2fbd18a526",
+     "date": "2026-10-16T08:17:56Z",
+     "ahead": 0,
+     "behind": 586,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-129-zh",
+     "sha": "17f9d0c810a84bcab8db70c53b102c2b2a335452",
+     "date": "2026-10-16T02:56:28Z",
+     "ahead": 0,
+     "behind": 782,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-135-zh",
+     "sha": "9959ea791c2ae4091f04923ace2108557856f6db",
+     "date": "2026-10-16T02:03:21Z",
+     "ahead": 0,
+     "behind": 694,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-139-zh",
+     "sha": "e5d1a6302da7ed78e46e8c85776770dacbaec185",
+     "date": "2026-10-16T08:46:27Z",
+     "ahead": 0,
+     "behind": 643,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-150-zh",
+     "sha": "6f0a0510907747501702f34f4f73637333c9d7d2",
+     "date": "2026-10-16T08:48:58Z",
+     "ahead": 0,
+     "behind": 637,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-152-zh",
+     "sha": "2c58486152062dc73145b36a83d8a861222862a9",
+     "date": "2026-10-18T07:50:13Z",
+     "ahead": 0,
+     "behind": 328,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-169-zh",
+     "sha": "2689088ba70be1b270186ae59d0ac95f40983248",
+     "date": "2026-10-16T00:55:19Z",
+     "ahead": 0,
+     "behind": 831,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-173-zh",
+     "sha": "ecccff43493de3bc6613b0d4b7de1653c46bcad9",
+     "date": "2026-10-18T08:22:38Z",
+     "ahead": 0,
+     "behind": 323,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-176-zh",
+     "sha": "7d7dade90059859dcf11b53c17e706d9c2a202d1",
+     "date": "2026-10-16T02:46:22Z",
+     "ahead": 0,
+     "behind": 687,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-202-zh",
+     "sha": "2e00d4c071bc84b741bac9a0d68d3a84fe0f7400",
+     "date": "2026-10-16T06:05:35Z",
+     "ahead": 0,
+     "behind": 559,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-203-zh",
+     "sha": "61e0cc23650f7e5ea963461067464f86171f7351",
+     "date": "2026-10-18T07:14:02Z",
+     "ahead": 0,
+     "behind": 332,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-207-zh",
+     "sha": "996cbd033ea657f0464e61c3d31765f089c2b6cc",
+     "date": "2026-10-18T08:16:35Z",
+     "ahead": 0,
+     "behind": 320,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-211-zh",
+     "sha": "db2a42c2d04567991e48afe1c50929dcbb8444eb",
+     "date": "2026-10-18T14:07:08Z",
+     "ahead": 0,
+     "behind": 302,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-212-zh",
+     "sha": "a407bdce4e435ddeda94cfae438663d6242d881a",
+     "date": "2026-10-18T12:50:31Z",
+     "ahead": 0,
+     "behind": 290,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-218-zh",
+     "sha": "516f2431468583631a7ac83598f31f0619ac6911",
+     "date": "2026-10-18T07:27:47Z",
+     "ahead": 0,
+     "behind": 462,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-222-zh",
+     "sha": "c03ac414dc37edcf4c41c3fbdb02f71ff5869de6",
+     "date": "2026-10-16T02:20:41Z",
+     "ahead": 0,
+     "behind": 700,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-238-zh",
+     "sha": "00476d0ef0937cf51d775f5f5a533a0faf4b15fe",
+     "date": "2026-10-18T12:27:10Z",
+     "ahead": 0,
+     "behind": 216,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-267-zh",
+     "sha": "49a8adaecdcfd755984ab149d447b32086c31850",
+     "date": "2026-10-18T11:02:59Z",
+     "ahead": 0,
+     "behind": 209,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-275-zh",
+     "sha": "643376eabf78bfc9d413f329474904435e652ac0",
+     "date": "2026-10-18T10:43:59Z",
+     "ahead": 0,
+     "behind": 171,
+     "state": "merged"
+    },
+    {
+     "name": "translate/gtm-282-zh",
+     "sha": "75a2a149aad7a93a6437580139cfa23601142e38",
+     "date": "2026-10-15T11:39:18Z",
+     "ahead": 1,
+     "behind": 961,
+     "state": "branch-only",
+     "touched": 6,
+     "same": 0,
+     "onlyBranch": 1,
+     "branchNewer": 5,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/gtm-295-zh",
+     "sha": "7ded5faecf6eed48bfa90e6cb214fd96575bea12",
+     "date": "2026-10-18T10:26:57Z",
+     "ahead": 0,
+     "behind": 168,
+     "state": "merged"
+    }
+   ]
+  },
+  "xhc144-notes/mit-ocw-notes": {
+   "owner": "xhc144-notes",
+   "name": "mit-ocw-notes",
+   "private": false,
+   "archived": false,
+   "description": "MIT OCW讲义归档及按学科整编的中文原生LaTeX讲义，供个人非商业学习。",
+   "language": "HTML",
+   "topics": [],
+   "license": "",
+   "sizeKB": 744263,
+   "createdAt": "2026-10-08T03:18:25Z",
+   "pushedAt": "2026-10-12T16:08:17Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 8719,
+   "pdf": 1345,
+   "tex": 1283,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "b8b80c4d9288f2a191fb8da2e65fe0903e89efdc",
+     "date": "2026-10-12T16:08:16Z",
+     "isDefault": true
+    },
+    {
+     "name": "recovery/quantum-additions-20261011",
+     "sha": "e781803cdd8492474b6a303ad92c9a80d688b0f6",
+     "date": "2026-10-11T16:26:06Z",
+     "ahead": 0,
+     "behind": 167,
+     "state": "merged"
+    }
+   ]
+  },
+  "xhc144-notes/shuzhimi-toolbox": {
+   "owner": "xhc144-notes",
+   "name": "shuzhimi-toolbox",
+   "private": true,
+   "archived": false,
+   "description": "",
+   "language": "TeX",
+   "topics": [],
+   "license": "",
+   "sizeKB": 2873814,
+   "createdAt": "2026-10-06T14:55:06Z",
+   "pushedAt": "2026-10-07T14:53:23Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 21478,
+   "pdf": 5909,
+   "tex": 36,
+   "truncated": false,
+   "releases": [
+    {
+     "tag": "data-v1",
+     "name": "data-files-v1",
+     "publishedAt": "2026-10-06T18:12:35Z",
+     "assets": 8
+    }
+   ],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "13f775272c8b49ecb5f0e2b4fe031aa5f3b29e1f",
+     "date": "2026-10-07T14:53:08Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-qiuzhen/qiuzhen-2027-reference-library": {
+   "owner": "xhc144-qiuzhen",
+   "name": "qiuzhen-2027-reference-library",
+   "private": true,
+   "archived": false,
+   "description": "",
+   "language": "TeX",
+   "topics": [],
+   "license": "",
+   "sizeKB": 1610896,
+   "createdAt": "2026-10-04T14:15:08Z",
+   "pushedAt": "2026-10-14T03:54:53Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 13625,
+   "pdf": 1857,
+   "tex": 6236,
+   "truncated": false,
+   "releases": [
+    {
+     "tag": "d06-29-mathematical-statistics-zh-cn-v0022",
+     "name": "数理统计与数据分析（第三版）简体中文 v0022",
+     "publishedAt": null,
+     "assets": 0
+    }
+   ],
+   "branches": [
+    {
+     "name": "continue/zorich-ii-20261006-source-recovered",
+     "sha": "d27ee4dee3410404c01a3f15d771ecb69bc22571",
+     "date": "2026-10-06T13:35:52Z",
+     "ahead": 0,
+     "behind": 53,
+     "state": "merged"
+    },
+    {
+     "name": "fix/beginning-topology-figure420-20261006",
+     "sha": "c84e9bebfaaa14023f18603818e7c56c5b060030",
+     "date": "2026-10-06T10:33:23Z",
+     "ahead": 0,
+     "behind": 144,
+     "state": "merged"
+    },
+    {
+     "name": "fix/graph-navigation-20261006",
+     "sha": "8d847a8e2c89e321599c83111b1c33f153fc6c02",
+     "date": "2026-10-06T13:13:57Z",
+     "ahead": 0,
+     "behind": 56,
+     "state": "merged"
+    },
+    {
+     "name": "fix/halliday-vol02-fig16-14",
+     "sha": "311d2452c76848142c6bdfa1718549f2cbf541da",
+     "date": "2026-10-06T12:23:28Z",
+     "ahead": 0,
+     "behind": 81,
+     "state": "merged"
+    },
+    {
+     "name": "fix/halliday-vol03-navigation-30-8",
+     "sha": "2a14dc911f373137b904a6fc40a348970d891323",
+     "date": "2026-10-06T15:01:00Z",
+     "ahead": 0,
+     "behind": 38,
+     "state": "merged"
+    },
+    {
+     "name": "fix/rice-formulas-20261006",
+     "sha": "810b21c2996f6696b4a0f41681206248e22f0b10",
+     "date": "2026-10-06T13:52:40Z",
+     "ahead": 0,
+     "behind": 52,
+     "state": "merged"
+    },
+    {
+     "name": "integrate/halliday-complete-20261006",
+     "sha": "569d76eb6e6d6754c3aa98962c6a87dda1767547",
+     "date": "2026-10-06T15:34:42Z",
+     "ahead": 0,
+     "behind": 27,
+     "state": "merged"
+    },
+    {
+     "name": "main",
+     "sha": "f664b8535db5d98128e0ee769340fc688e57d262",
+     "date": "2026-10-14T03:54:52Z",
+     "isDefault": true
+    },
+    {
+     "name": "preserve/zorich-ii-20261006T124547Z-source-drafts",
+     "sha": "c59f7b02f9afb7575f4fc88d91f89094a1deaa03",
+     "date": "2026-10-06T12:45:47Z",
+     "ahead": 1,
+     "behind": 77,
+     "state": "branch-only",
+     "touched": 24,
+     "same": 19,
+     "onlyBranch": 1,
+     "branchNewer": 0,
+     "mainNewer": 4,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "preserve/zorich-ii-20261006T131039Z-remaining-drafts",
+     "sha": "1dad6f2b7636bd6db5a21bb1129a897e1b911c22",
+     "date": "2026-10-06T13:10:39Z",
+     "ahead": 1,
+     "behind": 61,
+     "state": "branch-only",
+     "touched": 15,
+     "same": 8,
+     "onlyBranch": 1,
+     "branchNewer": 0,
+     "mainNewer": 6,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "recover/dummit-foote-20261006",
+     "sha": "348b4b61fe47625f7469c6a3b83b2e4d932a7f34",
+     "date": "2026-10-06T12:24:44Z",
+     "ahead": 58,
+     "behind": 344,
+     "state": "main-newer",
+     "touched": 375,
+     "same": 371,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 4,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "recover/zorich-ii-20261006",
+     "sha": "16c9c4e28d4682e98a5b80df001c48ecc140afb7",
+     "date": "2026-10-06T09:35:46Z",
+     "ahead": 7,
+     "behind": 412,
+     "state": "main-newer",
+     "touched": 51,
+     "same": 37,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 14,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "retypeset/introduction-linear-algebra-zh-cn",
+     "sha": "e9a1bedad86ca1ff633d83537105b0f76ca16a53",
+     "date": "2026-10-06T04:49:08Z",
+     "ahead": 15,
+     "behind": 206,
+     "state": "branch-only",
+     "touched": 324,
+     "same": 1,
+     "onlyBranch": 323,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "retypeset/numerical-linear-algebra-gao-wei-bai",
+     "sha": "95fd562f65fc573e65f191e14e19b486fb705b35",
+     "date": "2026-10-06T00:31:46Z",
+     "ahead": 15,
+     "behind": 250,
+     "state": "content-in-main",
+     "touched": 429,
+     "same": 429,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "retypeset/shan-probability-expectation-zh-cn",
+     "sha": "c5c97204396c05429b9042abbb307a2d0eaf7290",
+     "date": "2026-10-05T20:31:52Z",
+     "ahead": 12,
+     "behind": 338,
+     "state": "content-in-main",
+     "touched": 383,
+     "same": 383,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "retypeset/zhao-qualitative-semiquantitative-physics",
+     "sha": "c45bb927fe1aee41e751664a505a8e529ca09910",
+     "date": "2026-10-06T04:57:38Z",
+     "ahead": 31,
+     "behind": 223,
+     "state": "branch-only",
+     "touched": 436,
+     "same": 15,
+     "onlyBranch": 421,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/beginning-topology-20261005",
+     "sha": "cd1918511761601617610418d71f74683730df53",
+     "date": "2026-10-05T14:52:29Z",
+     "ahead": 0,
+     "behind": 482,
+     "state": "merged"
+    },
+    {
+     "name": "translate/coxeter-introduction-geometry-zh-cn",
+     "sha": "7dc737628e58f5d68a8c46e06c627802cca03aa1",
+     "date": "2026-10-05T21:50:08Z",
+     "ahead": 0,
+     "behind": 445,
+     "state": "merged"
+    },
+    {
+     "name": "translate/dummit-foote-abstract-algebra-zh-cn",
+     "sha": "310e1b07f06e711a64df49a217727943a199c43c",
+     "date": "2026-10-06T01:10:42Z",
+     "ahead": 51,
+     "behind": 344,
+     "state": "main-newer",
+     "touched": 280,
+     "same": 266,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 14,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/groups-matrices-vector-spaces-zh",
+     "sha": "61d32956dd71b3f75fb46cc26822b4e8c3a41464",
+     "date": "2026-10-05T07:40:21Z",
+     "ahead": 0,
+     "behind": 485,
+     "state": "merged"
+    },
+    {
+     "name": "translate/halliday-fundamentals-physics-zh-cn",
+     "sha": "77d1286a122d8f87c0b497930eec18db13ddb955",
+     "date": "2026-10-07T00:42:53Z",
+     "ahead": 2,
+     "behind": 282,
+     "state": "branch-only",
+     "touched": 7,
+     "same": 0,
+     "onlyBranch": 7,
+     "branchNewer": 0,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/halliday-vol01-lossless-zh-cn",
+     "sha": "9701fe8889f4a443d22e80b5a6311f87b8a72489",
+     "date": "2026-10-06T14:06:51Z",
+     "ahead": 0,
+     "behind": 43,
+     "state": "merged"
+    },
+    {
+     "name": "translate/halliday-vol01-zh-cn",
+     "sha": "e60e8949417477a4d29406173e502085997bfad2",
+     "date": "2026-10-06T13:14:23Z",
+     "ahead": 4,
+     "behind": 282,
+     "state": "main-newer",
+     "touched": 1045,
+     "same": 1038,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 7,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/halliday-vol02-zh-cn",
+     "sha": "bf689d9e0ec61c2371e63a93af7e3f6bcbffb53a",
+     "date": "2026-10-06T11:56:41Z",
+     "ahead": 0,
+     "behind": 274,
+     "state": "merged"
+    },
+    {
+     "name": "translate/halliday-vol03-zh-cn",
+     "sha": "c54305bc4908842024439135ab0c13896b026888",
+     "date": "2026-10-06T12:56:50Z",
+     "ahead": 0,
+     "behind": 270,
+     "state": "merged"
+    },
+    {
+     "name": "translate/halliday-vol04-zh-cn",
+     "sha": "73e9e1695ce90d1623193b1c8edc721f1f9c7f80",
+     "date": "2026-10-06T13:44:38Z",
+     "ahead": 9,
+     "behind": 282,
+     "state": "main-newer",
+     "touched": 649,
+     "same": 647,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 2,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translate/mathematical-analysis-i-zh-cn",
+     "sha": "72c48b73d01d18907ffd952e1404de3ac47be809",
+     "date": "2026-10-06T04:22:29Z",
+     "ahead": 0,
+     "behind": 448,
+     "state": "merged"
+    },
+    {
+     "name": "translate/mathematical-statistics-data-analysis-zh-cn",
+     "sha": "1245f98ff36e089c70d7407a956bb16cc6f21181",
+     "date": "2026-10-05T17:04:31Z",
+     "ahead": 0,
+     "behind": 447,
+     "state": "merged"
+    },
+    {
+     "name": "translate/openintro-statistics-zh-cn",
+     "sha": "c3a30bdf3ebbf53510424ba86c64e08860e03a4f",
+     "date": "2026-10-05T18:17:50Z",
+     "ahead": 0,
+     "behind": 467,
+     "state": "merged"
+    },
+    {
+     "name": "translate/photons-and-nuclei-20261005",
+     "sha": "6c3acb03609e78f3054dada09c1019166ca21962",
+     "date": "2026-10-05T08:00:09Z",
+     "ahead": 0,
+     "behind": 498,
+     "state": "merged"
+    },
+    {
+     "name": "translate/probabilistic-method-4",
+     "sha": "38c54f97d44befe1b64052640a4fc317f0927bd0",
+     "date": "2026-10-05T10:56:39Z",
+     "ahead": 0,
+     "behind": 459,
+     "state": "merged"
+    },
+    {
+     "name": "translate/zorich-mathematical-analysis-ii-zh-cn",
+     "sha": "f5b1d0b9e57db2c05ef74d04f66be1e05bb0e967",
+     "date": "2026-10-05T15:29:12Z",
+     "ahead": 5,
+     "behind": 412,
+     "state": "main-newer",
+     "touched": 34,
+     "same": 22,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 12,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "translation/fascinating-world-graph-theory-zh-20261005",
+     "sha": "2f4face807b6736c9ab8057773def9120a791973",
+     "date": "2026-10-05T11:08:00Z",
+     "ahead": 0,
+     "behind": 506,
+     "state": "merged"
+    },
+    {
+     "name": "translations/intermediate-counting-probability-20261005",
+     "sha": "fd515fc61ce2fcdb579b3fcc3a6891879ec243cb",
+     "date": "2026-10-05T17:29:33Z",
+     "ahead": 0,
+     "behind": 479,
+     "state": "merged"
+    },
+    {
+     "name": "translations/the-knot-book-20261005",
+     "sha": "1429c54fb3202fe9b47ec315ed813f45fea2a21f",
+     "date": "2026-10-05T12:09:55Z",
+     "ahead": 0,
+     "behind": 475,
+     "state": "merged"
+    }
+   ]
+  },
+  "xhc144-qiuzhen/qiuzhen-supplementary-library": {
+   "owner": "xhc144-qiuzhen",
+   "name": "qiuzhen-supplementary-library",
+   "private": true,
+   "archived": false,
+   "description": "求真书院 2027 领军计划补充书目：Zariski-Samuel 交换代数 I/II、Walter 常微分方程、李思讲义与论文等，共 69 份 PDF。普通 Git 存储，无需 Git LFS。",
+   "language": "",
+   "topics": [],
+   "license": "",
+   "sizeKB": 183944,
+   "createdAt": "2026-10-14T03:18:59Z",
+   "pushedAt": "2026-10-14T04:13:38Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 76,
+   "pdf": 66,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "8464687fd07a8a37bd3ac9dcadd726b213fa1301",
+     "date": "2026-10-14T04:13:37Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-qiuzhen/tsinghua-math-exams": {
+   "owner": "xhc144-qiuzhen",
+   "name": "tsinghua-math-exams",
+   "private": true,
+   "archived": false,
+   "description": "清华数学系与求真书院历年课程考试、资格考试资料，按课程与年份整理，题目和答案配对并保留来源。",
+   "language": "TeX",
+   "topics": [],
+   "license": "",
+   "sizeKB": 222496,
+   "createdAt": "2026-10-09T05:09:04Z",
+   "pushedAt": "2026-10-09T17:24:15Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 1957,
+   "pdf": 433,
+   "tex": 187,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "1ddcdbd23a0bd996dee20350e42af2b7b3969168",
+     "date": "2026-10-09T17:24:09Z",
+     "isDefault": true
+    },
+    {
+     "name": "review/linear-english-2024-midterm",
+     "sha": "0fa8ad46c5ef7245303b42e08df52ec807981448",
+     "date": "2026-10-09T17:02:20Z",
+     "ahead": 1,
+     "behind": 15,
+     "state": "main-newer",
+     "touched": 37,
+     "same": 32,
+     "onlyBranch": 0,
+     "branchNewer": 0,
+     "mainNewer": 5,
+     "deletedInBranch": 0
+    }
+   ]
+  },
+  "xhc144-qiuzhen/yupin-lecture-notes": {
+   "owner": "xhc144-qiuzhen",
+   "name": "yupin-lecture-notes",
+   "private": true,
+   "archived": false,
+   "description": "清华大学数学系于品讲义：数学分析（三版）、Riemann 几何、群与Galois理论、抽象代数，含习题解答与香蕉空间可编辑源；原件按字节保存，不使用 Git LFS。",
+   "language": "",
+   "topics": [],
+   "license": "",
+   "sizeKB": 38155,
+   "createdAt": "2026-10-14T03:22:28Z",
+   "pushedAt": "2026-10-14T03:55:16Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 80,
+   "pdf": 10,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "4e62192c4fd16cc7cc72b2f8a98691899931f860",
+     "date": "2026-10-14T03:55:16Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/api-observer": {
+   "owner": "xhc144-works",
+   "name": "api-observer",
+   "private": true,
+   "archived": false,
+   "description": "",
+   "language": "Python",
+   "topics": [],
+   "license": "",
+   "sizeKB": 765,
+   "createdAt": "2026-10-04T04:44:12Z",
+   "pushedAt": "2026-10-07T14:54:33Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 24,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "bcce89d629a06a6af076ef1954c9dc2172605bbe",
+     "date": "2026-10-07T14:54:32Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/blender-designs": {
+   "owner": "xhc144-works",
+   "name": "blender-designs",
+   "private": true,
+   "archived": false,
+   "description": "Blender 建模与设计作品归档：可编辑场景、渲染图及完整交付包，按项目分类。",
+   "language": "",
+   "topics": [
+    "3d-modeling",
+    "blender",
+    "design"
+   ],
+   "license": "",
+   "sizeKB": 10117,
+   "createdAt": "2026-10-01T10:58:01Z",
+   "pushedAt": "2026-10-07T14:54:07Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 11,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "44e95539bae910a40c9b3ed6e5786d6a9dd27f6e",
+     "date": "2026-10-07T14:54:05Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/face-guard": {
+   "owner": "xhc144-works",
+   "name": "face-guard",
+   "private": true,
+   "archived": false,
+   "description": "安心守护 Android 离线人脸识别与系统锁屏试用项目；包含源码、APK 与验证边界说明",
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "kotlin",
+    "software"
+   ],
+   "license": "Apache-2.0",
+   "sizeKB": 10602,
+   "createdAt": "2026-10-02T15:53:03Z",
+   "pushedAt": "2026-10-07T14:56:14Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 174,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [
+    {
+     "tag": "v0.2.2-evaluation",
+     "name": "安心守护 0.2.2 · 独立测试评估版",
+     "publishedAt": "2026-10-04T10:49:12Z",
+     "assets": 2
+    },
+    {
+     "tag": "v0.2.1-trial",
+     "name": "安心守护 0.2.1 · 离线试用版",
+     "publishedAt": "2026-10-02T16:18:02Z",
+     "assets": 5
+    }
+   ],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "feb88af695e7478681150d7b074bf9f9ab3fd5c9",
+     "date": "2026-10-07T14:56:13Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/prism-wardens": {
+   "owner": "xhc144-works",
+   "name": "prism-wardens",
+   "private": false,
+   "archived": false,
+   "description": "",
+   "language": "TypeScript",
+   "topics": [],
+   "license": "",
+   "sizeKB": 74480,
+   "createdAt": "2026-10-17T07:09:21Z",
+   "pushedAt": "2026-10-19T03:13:46Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 161,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [
+    {
+     "tag": "v1.0.3",
+     "name": "棱镜守卫 Prism Wardens v1.0.3",
+     "publishedAt": "2026-10-19T03:09:05Z",
+     "assets": 6
+    },
+    {
+     "tag": "v1.0.2",
+     "name": "棱镜守卫 Prism Wardens v1.0.2",
+     "publishedAt": "2026-10-19T02:17:30Z",
+     "assets": 4
+    }
+   ],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "20534513a8674a0bb6da0212597547984ec42476",
+     "date": "2026-10-19T03:13:45Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/stacked-grove": {
+   "owner": "xhc144-works",
+   "name": "stacked-grove",
+   "private": true,
+   "archived": false,
+   "description": "叠叶村 / Stacked Grove：SDL3 卡牌堆叠游戏源码、Windows 交付包与测试报告归档。",
+   "language": "",
+   "topics": [
+    "game",
+    "sdl3",
+    "software",
+    "windows"
+   ],
+   "license": "",
+   "sizeKB": 19470,
+   "createdAt": "2026-10-01T10:56:21Z",
+   "pushedAt": "2026-10-07T14:53:38Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 9,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "3e622e97b7562a50a868fcbcfef498bde6ce660f",
+     "date": "2026-10-07T14:53:36Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144-works/study-feed": {
+   "owner": "xhc144-works",
+   "name": "study-feed",
+   "private": true,
+   "archived": false,
+   "description": "随手读懂一点：本地优先的中文学习信息流，含知识卡片、深读、收藏复习、源码与静态构建",
+   "language": "Python",
+   "topics": [
+    "education",
+    "javascript",
+    "software",
+    "web"
+   ],
+   "license": "",
+   "sizeKB": 3337,
+   "createdAt": "2026-10-02T16:32:18Z",
+   "pushedAt": "2026-10-07T14:55:32Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 282,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "a1f54d28d30c9a759e352cc37a75803a55a36c85",
+     "date": "2026-10-07T14:55:30Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144/claude-lab": {
+   "owner": "xhc144",
+   "name": "claude-lab",
+   "private": false,
+   "archived": false,
+   "description": "",
+   "language": "JavaScript",
+   "topics": [],
+   "license": "",
+   "sizeKB": 1093040,
+   "createdAt": "2026-10-11T04:47:00Z",
+   "pushedAt": "2026-10-20T07:25:18Z",
+   "defaultBranch": "main",
+   "pagesUrl": "https://xhc144.github.io/claude-lab/",
+   "readme": "README.md",
+   "files": 2164,
+   "pdf": 50,
+   "tex": 50,
+   "truncated": false,
+   "releases": [
+    {
+     "tag": "phonica-v1.1.0",
+     "name": "声准 Phonica 1.1.0（Windows）",
+     "publishedAt": "2026-10-16T05:55:12Z",
+     "assets": 4
+    },
+    {
+     "tag": "particle-universe-v1.1.0",
+     "name": "音乐粒子宇宙 Particle Universe 1.1.0（Windows）",
+     "publishedAt": "2026-10-16T05:54:39Z",
+     "assets": 5
+    },
+    {
+     "tag": "motif-v0.10.1",
+     "name": "律影 Motif 0.10.1（Windows）",
+     "publishedAt": "2026-10-16T16:21:37Z",
+     "assets": 5
+    },
+    {
+     "tag": "motif-v0.10.0",
+     "name": "律影 Motif 0.10.0（Windows）",
+     "publishedAt": "2026-10-16T05:54:39Z",
+     "assets": 5
+    },
+    {
+     "tag": "moteng-v1.1.1",
+     "name": "墨誊 Moteng 1.1.1（Windows）",
+     "publishedAt": "2026-10-16T15:05:01Z",
+     "assets": 4
+    },
+    {
+     "tag": "moteng-v1.1.0",
+     "name": "墨誊 Moteng 1.1.0（Windows）",
+     "publishedAt": "2026-10-16T05:54:32Z",
+     "assets": 4
+    },
+    {
+     "tag": "hongyan-mail-v1.1.1",
+     "name": "鸿雁邮箱 Hongyan Mail 1.1.1（Windows）",
+     "publishedAt": "2026-10-16T15:05:31Z",
+     "assets": 5
+    },
+    {
+     "tag": "hongyan-mail-v1.1.0",
+     "name": "鸿雁邮箱 Hongyan Mail 1.1.0（Windows）",
+     "publishedAt": "2026-10-16T05:54:44Z",
+     "assets": 5
+    },
+    {
+     "tag": "phonica-latest",
+     "name": "声准 Phonica · 自动更新信息",
+     "publishedAt": "2026-10-16T05:55:15Z",
+     "assets": 1
+    },
+    {
+     "tag": "particle-universe-latest",
+     "name": "音乐粒子宇宙 Particle Universe · 自动更新信息",
+     "publishedAt": "2026-10-16T05:54:41Z",
+     "assets": 1
+    },
+    {
+     "tag": "motif-latest",
+     "name": "律影 Motif · 自动更新信息",
+     "publishedAt": "2026-10-16T05:54:41Z",
+     "assets": 1
+    },
+    {
+     "tag": "moteng-latest",
+     "name": "墨誊 Moteng · 自动更新信息",
+     "publishedAt": "2026-10-16T05:54:34Z",
+     "assets": 1
+    },
+    {
+     "tag": "hongyan-mail-latest",
+     "name": "鸿雁邮箱 Hongyan Mail · 自动更新信息",
+     "publishedAt": "2026-10-16T05:54:46Z",
+     "assets": 1
+    },
+    {
+     "tag": "phonica-v1.0.0",
+     "name": "声准 Phonica 1.0.0（Windows 安装包）",
+     "publishedAt": "2026-10-14T09:48:51Z",
+     "assets": 2
+    },
+    {
+     "tag": "phonica-models-v1",
+     "name": "声准 Phonica · acoustic models",
+     "publishedAt": "2026-10-14T06:45:48Z",
+     "assets": 11
+    }
+   ],
+   "branches": [
+    {
+     "name": "claude/admiring-darwin-n77vx0",
+     "sha": "697469e19ee52e2612839df5c8b4aa3679830f14",
+     "date": "2026-10-15T15:11:33Z",
+     "ahead": 0,
+     "behind": 130,
+     "state": "merged"
+    },
+    {
+     "name": "claude/adoring-lovelace-emwe1s",
+     "sha": "39c8729a2e2d740fc8cd1eb36afb768c62d3e41a",
+     "date": "2026-10-20T07:23:48Z",
+     "ahead": 0,
+     "behind": 3,
+     "state": "merged"
+    },
+    {
+     "name": "claude/awesome-albattani-zp7pwm",
+     "sha": "a61d0d5752b1acd285f3d9e3b73b61c9cc5a8f48",
+     "date": "2026-10-17T07:12:25Z",
+     "ahead": 0,
+     "behind": 10,
+     "state": "merged"
+    },
+    {
+     "name": "claude/brave-hypatia-lpegw9",
+     "sha": "4b683edad725a881587bc4d60759228f57da6028",
+     "date": "2026-10-15T11:40:41Z",
+     "ahead": 0,
+     "behind": 82,
+     "state": "merged"
+    },
+    {
+     "name": "claude/busy-gates-j6vdps",
+     "sha": "56bcc110f194d944344864c925ff4ffd45b4a28c",
+     "date": "2026-10-16T16:11:36Z",
+     "ahead": 0,
+     "behind": 38,
+     "state": "merged"
+    },
+    {
+     "name": "claude/determined-rubin-lapugg",
+     "sha": "d7820cbe1cc35f0611d8533b1339832d2704dd52",
+     "date": "2026-10-16T06:41:16Z",
+     "ahead": 1,
+     "behind": 52,
+     "state": "branch-only",
+     "touched": 4,
+     "same": 0,
+     "onlyBranch": 1,
+     "branchNewer": 2,
+     "mainNewer": 1,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "claude/eager-allen-qqz0pu",
+     "sha": "b42f85a0184d92f5cbe91bea26bfb3e5616d90db",
+     "date": "2026-10-15T13:56:00Z",
+     "ahead": 0,
+     "behind": 78,
+     "state": "merged"
+    },
+    {
+     "name": "claude/ecstatic-thompson-5wwaij",
+     "sha": "b290a8c0ab072ecafc51e489f625f754d6cab9de",
+     "date": "2026-10-15T11:00:53Z",
+     "ahead": 0,
+     "behind": 212,
+     "state": "merged"
+    },
+    {
+     "name": "claude/loving-franklin-g1g39d",
+     "sha": "d8c5241dd01da251bf4f646429385fd94b7907ba",
+     "date": "2026-10-17T04:45:13Z",
+     "ahead": 0,
+     "behind": 14,
+     "state": "merged"
+    },
+    {
+     "name": "claude/peaceful-brahmagupta-oaax7t",
+     "sha": "94a06aa9382a1dec96c133db2aac294ab11f616f",
+     "date": "2026-10-16T04:44:29Z",
+     "ahead": 0,
+     "behind": 78,
+     "state": "merged"
+    },
+    {
+     "name": "claude/peaceful-darwin-1seyft",
+     "sha": "55ee43ae4256c251c0fb9d24f59835933ba9415b",
+     "date": "2026-10-16T15:49:20Z",
+     "ahead": 0,
+     "behind": 30,
+     "state": "merged"
+    },
+    {
+     "name": "claude/pensive-galileo-r87j31",
+     "sha": "51f69514747a4dcd7cf407e7e9ac48cc9edf8df4",
+     "date": "2026-10-16T05:56:56Z",
+     "ahead": 0,
+     "behind": 53,
+     "state": "merged"
+    },
+    {
+     "name": "claude/vibrant-goldberg-gdxsg6",
+     "sha": "11a509329e69e48d2693f49bbd7217fddd61b9b1",
+     "date": "2026-10-16T05:10:30Z",
+     "ahead": 0,
+     "behind": 69,
+     "state": "merged"
+    },
+    {
+     "name": "claude/zealous-meitner-jqqpu0",
+     "sha": "9a3b64a9cda5f7193e0dad83e7fec6821e0a7918",
+     "date": "2026-10-16T10:42:15Z",
+     "ahead": 0,
+     "behind": 46,
+     "state": "merged"
+    },
+    {
+     "name": "main",
+     "sha": "fdf2da45c6c63482b7d411e81de9573e0daa8237",
+     "date": "2026-10-20T07:24:35Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144/Claude-lab-2": {
+   "owner": "xhc144",
+   "name": "Claude-lab-2",
+   "private": false,
+   "archived": false,
+   "description": "",
+   "language": "",
+   "topics": [],
+   "license": "",
+   "sizeKB": 1243,
+   "createdAt": "2026-10-20T10:15:24Z",
+   "pushedAt": "2026-10-20T16:53:18Z",
+   "defaultBranch": "main",
+   "pagesUrl": "",
+   "readme": "README.md",
+   "files": 1,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "claude/pdf-reader",
+     "sha": "a3a250e28442d9dddff034d201fd8b0e08347336",
+     "date": "2026-10-20T16:53:15Z",
+     "ahead": 10,
+     "behind": 0,
+     "state": "branch-only",
+     "touched": 179,
+     "same": 0,
+     "onlyBranch": 178,
+     "branchNewer": 1,
+     "mainNewer": 0,
+     "deletedInBranch": 0
+    },
+    {
+     "name": "main",
+     "sha": "0bee077ef457d709941effbc7f02ebd512fb232a",
+     "date": "2026-10-20T10:15:25Z",
+     "isDefault": true
+    }
+   ]
+  },
+  "xhc144/repository-index": {
+   "owner": "xhc144",
+   "name": "repository-index",
+   "private": false,
+   "archived": false,
+   "description": "中文仓库总目录：数学与物理资料、AI 工具、软件与游戏、设计作品的分类导航与下载入口",
+   "language": "JavaScript",
+   "topics": [
+    "documentation",
+    "navigation"
+   ],
+   "license": "",
+   "sizeKB": 1122,
+   "createdAt": "2026-10-03T05:05:59Z",
+   "pushedAt": "2026-10-08T10:55:35Z",
+   "defaultBranch": "main",
+   "pagesUrl": "https://xhc144.github.io/repository-index/",
+   "readme": "README.md",
+   "files": 13,
+   "pdf": 0,
+   "tex": 0,
+   "truncated": false,
+   "releases": [],
+   "branches": [
+    {
+     "name": "main",
+     "sha": "301eae73b164aae7d802c01f7af5a0fb864842c1",
+     "date": "2026-10-08T10:52:53Z",
+     "isDefault": true
+    },
+    {
+     "name": "navigation/ruanhe-series-20261008",
+     "sha": "301eae73b164aae7d802c01f7af5a0fb864842c1",
+     "date": "2026-10-08T10:52:53Z",
+     "ahead": 0,
+     "behind": 0,
+     "state": "merged"
+    },
+    {
+     "name": "navigation/source-groups-20261008",
+     "sha": "25d0a56959245affc1be31a990cd1216ef51d2df",
+     "date": "2026-10-08T09:54:51Z",
+     "ahead": 0,
+     "behind": 4,
+     "state": "merged"
+    },
+    {
+     "name": "navigation-integration-20261008",
+     "sha": "fd8bfce878090ce4f3340924e5b30ac7fb026d58",
+     "date": "2026-10-08T10:16:08Z",
+     "ahead": 0,
+     "behind": 2,
+     "state": "merged"
+    }
+   ]
+  }
+ }
+}

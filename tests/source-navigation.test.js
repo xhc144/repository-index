@@ -2,9 +2,9 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const classification=require('../docs/classify-catalog.js');
-const navigation=require('../docs/source-navigation.js');
-const original=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/catalog.json'),'utf8'));
+const classification=require('../docs/materials/classify-catalog.js');
+const navigation=require('../docs/materials/source-navigation.js');
+const original=JSON.parse(fs.readFileSync(path.join(__dirname,'../docs/materials/catalog.json'),'utf8'));
 const copy=value=>JSON.parse(JSON.stringify(value));
 const data=navigation.apply(classification.apply(copy(original)));
 const items=data.repositories.flatMap(repo=>repo.items);
@@ -53,7 +53,7 @@ for(const [key,course] of Object.entries(navigation.verifiedCourseGroups)){
 }
 const classroom=groups.find(group=>group.key==='ruanhe-classroom-lecture-series');
 assert(classroom,'one Ruanhe classroom series entry exists');
-assert.equal(classroom.seriesUrl,'https://github.com/xhc144/course-materials/blob/main/materials/ruanhe/README.md');
+assert.equal(classroom.seriesUrl,'https://github.com/xhc144-notes/course-materials/blob/main/materials/ruanhe/README.md');
 assert.equal(classroom.courseTopics.length,4,'one source series contains four course topics');
 assert.equal(classroom.itemIds.length,22,'six boards and existing versions are all retained, including the closed audit');
 assert(!classroom.itemIds.some(id=>ruanhe.itemIds.includes(id)),'thinking exercises stay separate from classroom series');
