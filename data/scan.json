@@ -1627,9 +1627,9 @@
     }
    ]
   },
-  "xhc144/repository-index": {
+  "xhc144/xhc144.github.io": {
    "owner": "xhc144",
-   "name": "repository-index",
+   "name": "xhc144.github.io",
    "private": false,
    "archived": false,
    "description": "中文仓库总目录：数学与物理资料、AI 工具、软件与游戏、设计作品的分类导航与下载入口",
@@ -1643,7 +1643,7 @@
    "createdAt": "2026-10-03T05:05:59Z",
    "pushedAt": "2026-10-08T10:55:35Z",
    "defaultBranch": "main",
-   "pagesUrl": "https://xhc144.github.io/repository-index/",
+   "pagesUrl": "https://xhc144.github.io/",
    "readme": "README.md",
    "files": 13,
    "pdf": 0,

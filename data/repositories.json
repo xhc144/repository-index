@@ -512,9 +512,9 @@
       }
     },
     {
-      "full": "xhc144/repository-index",
-      "title": "仓库总览（本仓库）",
-      "summary": "这个页面以及资料文件目录的源码：仓库数据、扫描脚本、页面生成脚本和维护规则。",
+      "full": "xhc144/xhc144.github.io",
+      "title": "xhc144.github.io 网站（本仓库）",
+      "summary": "xhc144.github.io 的源码：首页总入口、仓库总览与资料文件目录，以及仓库数据、扫描脚本、页面生成脚本和维护规则。",
       "highlights": [
         "data/repositories.json：仓库中文介绍",
         "data/scan.json：分支与文件树扫描结果",
@@ -523,8 +523,12 @@
       "tags": [],
       "links": [
         {
+          "label": "仓库总览",
+          "url": "https://xhc144.github.io/repos/"
+        },
+        {
           "label": "资料文件目录",
-          "url": "https://xhc144.github.io/repository-index/materials/"
+          "url": "https://xhc144.github.io/materials/"
         }
       ]
     }

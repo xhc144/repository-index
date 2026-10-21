@@ -107,6 +107,8 @@ svg { width: 14px; height: 14px; fill: currentColor; flex: none; }
   padding: 26px 0 40px;
 }
 .hero a { color: inherit; }
+.hero .brand { color: var(--hero-muted); text-decoration: none; }
+.hero .brand:hover { color: var(--hero-ink); }
 .hero-top { display: flex; justify-content: space-between; align-items: center; }
 .brand { display: flex; align-items: center; gap: 12px; margin: 0; font-weight: 600; letter-spacing: .04em; color: var(--hero-muted); }
 .brand span { display: grid; place-items: center; width: 34px; height: 36px; border: 1px solid rgb(255 255 255 / 25%); border-radius: 8px; font: 24px var(--serif); color: var(--hero-ink); }

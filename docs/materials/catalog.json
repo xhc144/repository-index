@@ -9130,16 +9130,16 @@
       "limits": [
         "实际 PDF、源码和程序仍保存在各自仓库；本仓库只维护导航。"
       ],
-      "url": "https://github.com/xhc144/repository-index",
-      "detail": "https://github.com/xhc144/repository-index/blob/main/README.md",
+      "url": "https://github.com/xhc144/xhc144.github.io",
+      "detail": "https://github.com/xhc144/xhc144.github.io/blob/main/README.md",
       "items": [
         {
           "name": "旧分类导航 README",
           "purpose": "查阅既有仓库入口和旧导航记录。",
           "kind": "Markdown",
           "filename": "README.md",
-          "url": "https://github.com/xhc144/repository-index/blob/main/README.md",
-          "detail": "https://github.com/xhc144/repository-index/blob/main/README.md",
+          "url": "https://github.com/xhc144/xhc144.github.io/blob/main/README.md",
+          "detail": "https://github.com/xhc144/xhc144.github.io/blob/main/README.md",
           "note": "",
           "subjects": [
             "软件与游戏"
@@ -9171,8 +9171,8 @@
           "purpose": "了解分类、链接与验证状态的维护要求。",
           "kind": "Markdown",
           "filename": "AGENTS.md",
-          "url": "https://github.com/xhc144/repository-index/blob/main/AGENTS.md",
-          "detail": "https://github.com/xhc144/repository-index/blob/main/AGENTS.md",
+          "url": "https://github.com/xhc144/xhc144.github.io/blob/main/AGENTS.md",
+          "detail": "https://github.com/xhc144/xhc144.github.io/blob/main/AGENTS.md",
           "note": "",
           "subjects": [
             "软件与游戏"

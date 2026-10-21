@@ -1,6 +1,7 @@
-// 由 data/repositories.json（中文介绍）与 data/scan.json（扫描结果）生成：
-//   docs/index.html  仓库总览网页
-//   README.md        仓库说明
+// 由 data/repositories.json（中文介绍）、data/scan.json（扫描结果）与 data/portal.json（首页入口）生成：
+//   docs/index.html        首页：通往各个网页与 GitHub 账号的总入口
+//   docs/repos/index.html  仓库总览网页
+//   README.md              仓库说明
 // 不联网；先运行 node scripts/scan-repos.mjs 刷新扫描结果。
 import fs from 'node:fs';
 import path from 'node:path';
@@ -10,8 +11,10 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const site = read('data/repositories.json');
 const scan = read('data/scan.json');
+const portal = read('data/portal.json');
 const GH = 'https://github.com';
-const PAGES = 'https://xhc144.github.io/repository-index/';
+const PAGES = 'https://xhc144.github.io/';
+const SELF = `${GH}/xhc144/xhc144.github.io`;
 
 // ---------- 数据整理 ----------
 const curated = new Map(site.repos.map(repo => [repo.full, repo]));
@@ -201,16 +204,16 @@ const html = `<!doctype html>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
   <meta name="theme-color" content="#193f3a">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23193f3a'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23dceae1'%3E%CE%A3%3C/text%3E%3C/svg%3E">
-  <script src="./boot.js"></script>
-  <link rel="stylesheet" href="./home.css?v=${scannedDate}">
-  <script src="./home.js?v=${scannedDate}" defer></script>
+  <script src="../boot.js"></script>
+  <link rel="stylesheet" href="../home.css?v=${scannedDate}">
+  <script src="../home.js?v=${scannedDate}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主内容</a>
   <header class="hero">
     <div class="wrap">
       <div class="hero-top">
-        <p class="brand"><span aria-hidden="true">∑</span>xhc144 · 仓库总览</p>
+        <a class="brand" href="../"><span aria-hidden="true">∑</span>xhc144 · 仓库总览</a>
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切换深浅色">◐</button>
       </div>
       <h1>我的全部仓库，<br>一页看清。</h1>
@@ -221,7 +224,7 @@ const html = `<!doctype html>
         <div><dt>分支</dt><dd>${totals.branches}</dd><p>不含 main，${totals.merged} 个内容已在 main</p></div>
         <div class="stat-warn"><dt>内容只在分支</dt><dd>${majorBranches.length}</dd><p>${new Set(majorBranches.map(branch => branch.repo.full)).size} 个仓库${minorBranches.length ? `，另 ${minorBranches.length} 个只差记录` : ''}</p></div>
       </dl>
-      <nav class="owner-nav" aria-label="按组织跳转">${owners.map(owner => `<a href="#owner-${esc(owner.id)}"><b>${esc(owner.name)}</b><span>${esc(owner.id)} · ${owner.repos.length}</span></a>`).join('')}<a href="#branches"><b>分支核查</b><span>${majorBranches.length} 处内容只在分支</span></a><a href="./materials/"><b>资料文件目录</b><span>按试卷、学科找 PDF</span></a></nav>
+      <nav class="owner-nav" aria-label="按组织跳转">${owners.map(owner => `<a href="#owner-${esc(owner.id)}"><b>${esc(owner.name)}</b><span>${esc(owner.id)} · ${owner.repos.length}</span></a>`).join('')}<a href="#branches"><b>分支核查</b><span>${majorBranches.length} 处内容只在分支</span></a><a href="../materials/"><b>资料文件目录</b><span>按试卷、学科找 PDF</span></a></nav>
     </div>
   </header>
 
@@ -268,16 +271,81 @@ ${owners.map(owner => `
         <h2 id="materials-title">要找具体的试卷、讲义或书？</h2>
         <p>资料文件目录把多个仓库里的 PDF 按试卷（机构、比赛）、学科讲义和书籍归组，同一份资料的题目、原解答、AI 解答与源码集中选择下载。旧链接会自动转到这里。</p>
       </div>
-      <a class="button" href="./materials/">打开资料文件目录 ${icon.arrow}</a>
+      <a class="button" href="../materials/">打开资料文件目录 ${icon.arrow}</a>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <p>扫描时间 ${esc(scan.scannedAt.replace('T', ' ').slice(0, 16))} UTC。仓库名称、可见性、文件数、分支与 Releases 来自 GitHub API；中文介绍依据各仓库当前 README，页数等数字以各仓库说明为准。私有仓库的链接需要登录有权限的 GitHub 账号，这个公开页面不授予访问权限。</p>
-      <nav aria-label="维护入口"><a href="${GH}/xhc144/repository-index">本页源码</a><a href="${GH}/xhc144/repository-index/blob/main/AGENTS.md">维护规则</a><a href="./materials/">资料文件目录</a><a href="#main">回到顶部 ↑</a></nav>
+      <nav aria-label="维护入口"><a href="../">首页</a><a href="${SELF}">本页源码</a><a href="${SELF}/blob/main/AGENTS.md">维护规则</a><a href="../materials/">资料文件目录</a><a href="#main">回到顶部 ↑</a></nav>
     </div>
   </footer>
+</body>
+</html>
+`;
+
+// ---------- 首页 ----------
+// 只放入口：三个主要网页、Claude 实验室里的作品、各 GitHub 账号；详细内容留在各自页面。
+// 搜索框用的索引随页面一起生成，放在 application/json 数据块里（不执行，符合 CSP）。
+const portalIcon = {
+  layers: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12.5 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>',
+  book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5H9a3 3 0 0 1 3 3V20a2.5 2.5 0 0 0-2.5-2.5h-7Z"/><path d="M21.5 5.5H15a3 3 0 0 0-3 3V20a2.5 2.5 0 0 1 2.5-2.5h7Z"/></svg>',
+  flask: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.5L4.6 18.4A1.7 1.7 0 0 0 6.1 21h11.8a1.7 1.7 0 0 0 1.5-2.6L14 9.5V3"/><path d="M7 15.5h10"/></svg>',
+  search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+};
+const accounts = [...owners].sort((a, b) => Number(b.id === 'xhc144') - Number(a.id === 'xhc144'));
+const shortOwner = id => portal.accounts[id] || id;
+const searchIndex = [
+  ...portal.entries.map(entry => ({k: '入口', t: entry.name, s: entry.meta.replace('{repos}', totals.repos), u: entry.url})),
+  ...portal.apps.map(app => ({k: '作品', t: app.name, s: app.note, u: app.url})),
+  ...repos.map(repo => ({k: shortOwner(repo.full.split('/')[0]), t: repo.title, s: repo.full, u: `repos/#${repo.name}`, p: repo.private ? 1 : 0,
+    q: [repo.summary, ...(repo.tags || []).map(tagName)].join(' ')})),
+  ...accounts.map(owner => ({k: 'GitHub', t: owner.name, s: owner.id, u: `${GH}/${owner.id}`})),
+];
+const portalHtml = `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(portal.title)}</title>
+  <meta name="description" content="${esc(portal.title)}：${portal.entries.map(entry => esc(entry.name)).join('、')}。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141513" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23193f3a'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23dceae1'%3E%CE%A3%3C/text%3E%3C/svg%3E">
+  <script src="./boot.js" data-portal></script>
+  <link rel="stylesheet" href="./portal.css?v=${scannedDate}">
+  <script src="./portal.js?v=${scannedDate}" defer></script>
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切换深浅色"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z"/></svg></button>
+  <main>
+    <h1 class="title" aria-label="${esc(portal.title)}">${[...portal.title].map(ch => `<span class="l" aria-hidden="true"><span>${esc(ch)}</span></span>`).join('')}</h1>
+    <p class="tagline reveal">${esc(portal.tagline)}</p>
+
+    <div class="search reveal" role="search">
+      ${portalIcon.search}
+      <input id="q" type="text" placeholder="搜索仓库、资料或作品" autocomplete="off" spellcheck="false" role="combobox" aria-label="搜索仓库、资料或作品" aria-expanded="false" aria-controls="results" aria-autocomplete="list">
+      <kbd aria-hidden="true">/</kbd>
+      <ul id="results" role="listbox" aria-label="搜索结果" hidden></ul>
+    </div>
+
+    <nav class="entries reveal" aria-label="主要入口">${portal.entries.map((entry, i) => `
+      <a href="${esc(entry.url)}">
+        <span class="num">0${i + 1}</span>${portalIcon[entry.icon] || ''}
+        <b>${esc(entry.name)}</b>
+        <span class="meta">${esc(entry.meta.replace('{repos}', totals.repos))}</span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>`).join('')}
+    </nav>
+
+    <nav class="row reveal" aria-label="在线作品"><span class="label">作品</span>${portal.apps.map(app => `<a href="${esc(app.url)}" title="${esc(app.note)}">${esc(app.name)}</a>`).join('')}</nav>
+    <nav class="row reveal" aria-label="GitHub 账号与组织"><span class="label">GitHub</span>${accounts.map(owner => `<a href="${GH}/${esc(owner.id)}" title="${esc(owner.id)} · ${owner.repos.length} 个仓库">${esc(shortOwner(owner.id))}</a>`).join('')}</nav>
+  </main>
+  <footer><a href="${SELF}">源码</a></footer>
+  <script type="application/json" id="index-data">${JSON.stringify(searchIndex).replace(/</g, '\u003c')}</script>
 </body>
 </html>
 `;
@@ -287,7 +355,7 @@ const mdEsc = value => String(value ?? '').replace(/\|/g, '\\|');
 const mdLinks = repo => repo.links.filter(link => link.label !== '仓库主页').map(link => `[${link.label}](${link.url})`).join(' · ');
 const readme = `# xhc144 仓库总览
 
-**网页版：[${PAGES.replace('https://', '')}](${PAGES})** · [资料文件目录](${PAGES}materials/)
+**网页版：[${PAGES.replace('https://', '').replace(/\/$/, '')}](${PAGES})**（首页）· [仓库总览](${PAGES}repos/) · [资料文件目录](${PAGES}materials/) · [Claude 实验室](${PAGES}claude-lab/)
 
 个人账号与 ${totals.owners - 1} 个组织下共 **${totals.repos} 个仓库**（${totals.public} 个公开、${totals.private} 个私有）。下面按组织列出每个仓库的用途与入口；所有分支都核对过——**${majorBranches.length} 个分支还有 main 没有的实质内容**，见[分支核查](#分支核查)。
 
@@ -321,12 +389,14 @@ ${[...majorBranches, ...minorBranches].map(branch => `| [${branch.repo.name}](${
 
 \`\`\`bash
 node scripts/scan-repos.mjs     # 重新扫描全部仓库与分支，写入 data/scan.json
-node scripts/build-home.mjs     # 生成 docs/index.html 与 README.md
+node scripts/build-home.mjs     # 生成首页 docs/index.html、仓库总览 docs/repos/index.html 与 README.md
 \`\`\`
 
-新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；未收录的仓库会先用 GitHub 简介生成并在命令行提示。资料文件目录的数据与测试见 \`docs/materials/\`、\`scripts/normalize-catalog.js\` 与 \`tests/\`。维护规则见 [AGENTS.md](AGENTS.md)。
+新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；首页的入口与 Claude 实验室作品列表在 [data/portal.json](data/portal.json)。未收录的仓库会先用 GitHub 简介生成并在命令行提示。资料文件目录的数据与测试见 \`docs/materials/\`、\`scripts/normalize-catalog.js\` 与 \`tests/\`。维护规则见 [AGENTS.md](AGENTS.md)。
 `;
 
-fs.writeFileSync(path.join(root, 'docs', 'index.html'), html);
+fs.mkdirSync(path.join(root, 'docs', 'repos'), {recursive: true});
+fs.writeFileSync(path.join(root, 'docs', 'index.html'), portalHtml);
+fs.writeFileSync(path.join(root, 'docs', 'repos', 'index.html'), html);
 fs.writeFileSync(path.join(root, 'README.md'), readme);
-console.log(`已生成 docs/index.html 与 README.md：${totals.repos} 个仓库，${totals.branches} 个分支，${totals.open} 个有未并入内容`);
+console.log(`已生成首页、仓库总览与 README.md：${totals.repos} 个仓库，${totals.branches} 个分支，${totals.open} 个有未并入内容`);

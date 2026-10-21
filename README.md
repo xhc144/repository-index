@@ -1,6 +1,6 @@
 # xhc144 仓库总览
 
-**网页版：[xhc144.github.io/repository-index/](https://xhc144.github.io/repository-index/)** · [资料文件目录](https://xhc144.github.io/repository-index/materials/)
+**网页版：[xhc144.github.io](https://xhc144.github.io/)**（首页）· [仓库总览](https://xhc144.github.io/repos/) · [资料文件目录](https://xhc144.github.io/materials/) · [Claude 实验室](https://xhc144.github.io/claude-lab/)
 
 个人账号与 4 个组织下共 **22 个仓库**（7 个公开、15 个私有）。下面按组织列出每个仓库的用途与入口；所有分支都核对过——**8 个分支还有 main 没有的实质内容**，见[分支核查](#分支核查)。
 
@@ -61,7 +61,7 @@ Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。
 | --- | --- | --- | --- |
 | [claude-lab](https://github.com/xhc144/claude-lab)<br>公开 · 2026-10-20 | **Claude 实验仓库**：多个独立实验的合集：交互数学、创世沙盒与游戏、AI 产品原型、多智能体研究实验室、Windows 桌面软件、程序化数学影片与 LaTeX 模板。GitHub Pages 上的项目导航收录 25 个项目。 | [在线页面](https://xhc144.github.io/claude-lab/) · [Releases · 15](https://github.com/xhc144/claude-lab/releases) · [全部分支 · 15](https://github.com/xhc144/claude-lab/branches/all) | 15 个，**1 个有未并入内容** |
 | [Claude-lab-2](https://github.com/xhc144/Claude-lab-2)<br>公开 · 2026-10-20 | **Folio PDF 阅读器**：main 只有初始 README，项目全部源码都在 claude/pdf-reader 分支。 PySide6 与 PyMuPDF 编写的跨平台桌面 PDF 阅读器：阅读、批注、手写签名、点读朗读、OCR、压缩合并拆分、打印与演示模式，接入千问、DeepSeek、Ollama 等 AI 服务。 | [分支源码](https://github.com/xhc144/Claude-lab-2/tree/claude/pdf-reader) · [分支 README](https://github.com/xhc144/Claude-lab-2/blob/claude/pdf-reader/README.md) · [全部分支 · 2](https://github.com/xhc144/Claude-lab-2/branches/all) | 2 个，**1 个有未并入内容** |
-| [repository-index](https://github.com/xhc144/repository-index)<br>公开 · 2026-10-08 | **仓库总览（本仓库）**：这个页面以及资料文件目录的源码：仓库数据、扫描脚本、页面生成脚本和维护规则。 | [在线页面](https://xhc144.github.io/repository-index/) · [资料文件目录](https://xhc144.github.io/repository-index/materials/) · [全部分支 · 4](https://github.com/xhc144/repository-index/branches/all) | 4 个，内容都已在 main |
+| [xhc144.github.io](https://github.com/xhc144/xhc144.github.io)<br>公开 · 2026-10-08 | **xhc144.github.io 网站（本仓库）**：xhc144.github.io 的源码：首页总入口、仓库总览与资料文件目录，以及仓库数据、扫描脚本、页面生成脚本和维护规则。 | [在线页面](https://xhc144.github.io/) · [仓库总览](https://xhc144.github.io/repos/) · [资料文件目录](https://xhc144.github.io/materials/) · [全部分支 · 4](https://github.com/xhc144/xhc144.github.io/branches/all) | 4 个，内容都已在 main |
 
 ## 分支核查
 
@@ -85,7 +85,7 @@ Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。
 
 ## 资料文件目录
 
-[资料文件目录](https://xhc144.github.io/repository-index/materials/)把多个仓库里的 PDF 按试卷、学科讲义与书籍归组（247 组资料、408 份 PDF，目录核对于 2026-10-08），同一份资料的题目、原解答、AI 解答与源码集中选择下载。原来的网页地址（如 `#group/…`）会自动转到这里。
+[资料文件目录](https://xhc144.github.io/materials/)把多个仓库里的 PDF 按试卷、学科讲义与书籍归组（247 组资料、408 份 PDF，目录核对于 2026-10-08），同一份资料的题目、原解答、AI 解答与源码集中选择下载。原来的网页地址（如 `#group/…`）会自动转到这里。
 
 ## 更新本页
 
@@ -93,7 +93,7 @@ Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。
 
 ```bash
 node scripts/scan-repos.mjs     # 重新扫描全部仓库与分支，写入 data/scan.json
-node scripts/build-home.mjs     # 生成 docs/index.html 与 README.md
+node scripts/build-home.mjs     # 生成首页 docs/index.html、仓库总览 docs/repos/index.html 与 README.md
 ```
 
-新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；未收录的仓库会先用 GitHub 简介生成并在命令行提示。资料文件目录的数据与测试见 `docs/materials/`、`scripts/normalize-catalog.js` 与 `tests/`。维护规则见 [AGENTS.md](AGENTS.md)。
+新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；首页的入口与 Claude 实验室作品列表在 [data/portal.json](data/portal.json)。未收录的仓库会先用 GitHub 简介生成并在命令行提示。资料文件目录的数据与测试见 `docs/materials/`、`scripts/normalize-catalog.js` 与 `tests/`。维护规则见 [AGENTS.md](AGENTS.md)。

@@ -2,9 +2,9 @@
 
 ## 范围
 
-本仓库是 xhc144 个人账号及其组织（xhc144-qiuzhen、xhc144-notes、xhc144-works、xhc144-ai）全部仓库的公开导航源，维护 README.md 与 docs/ 中的 GitHub Pages 静态页面。保持简体中文、分类清晰、入口精简；实际资料、源码和构建产物保存在各自私有项目中。公开目录仅保存获授权的名称、用途、分类、实际页数、使用限制与稳定 GitHub 入口，禁止复制私有正文、用户数据、凭据或带令牌的下载地址。按用户明确要求，PDF 使用保留 GitHub 原权限的稳定 raw 下载链接，资料名称另开详情；不代理下载或复制文件到公开仓库。
+本仓库（xhc144/xhc144.github.io，原名 repository-index）是 xhc144 个人账号及其组织（xhc144-qiuzhen、xhc144-notes、xhc144-works、xhc144-ai）全部仓库的公开导航源，维护 README.md 与 docs/ 中的 GitHub Pages 静态页面。保持简体中文、分类清晰、入口精简；实际资料、源码和构建产物保存在各自私有项目中。公开目录仅保存获授权的名称、用途、分类、实际页数、使用限制与稳定 GitHub 入口，禁止复制私有正文、用户数据、凭据或带令牌的下载地址。按用户明确要求，PDF 使用保留 GitHub 原权限的稳定 raw 下载链接，资料名称另开详情；不代理下载或复制文件到公开仓库。
 
-- 网页首页（docs/index.html）与 README.md 是仓库总览，均由 `node scripts/build-home.mjs` 从 data/repositories.json（中文介绍）和 data/scan.json（扫描结果）生成，不手改生成结果。总览按账号与组织分节，用类别标签（数学、物理、化学、试卷与竞赛、译稿与重排、AI、软件、游戏、影片、设计）筛选。
+- 本仓库即 xhc144.github.io。首页（docs/index.html）只放入口：仓库总览、资料文件目录、Claude 实验室、实验室里的作品与各 GitHub 账号，并带搜索；仓库总览在 docs/repos/index.html。首页、仓库总览与 README.md 均由 `node scripts/build-home.mjs` 从 data/repositories.json（中文介绍）、data/scan.json（扫描结果）和 data/portal.json（首页入口与作品列表）生成，不手改生成结果。首页样式与交互在 docs/portal.css、docs/portal.js；旧的根路径锚点由 docs/boot.js 转到 repos/。总览按账号与组织分节，用类别标签（数学、物理、化学、试卷与竞赛、译稿与重排、AI、软件、游戏、影片、设计）筛选。
 - 分支核查是总览的一部分：`node scripts/scan-repos.mjs` 列出每个分支，对仍有独立提交的分支逐文件比较与 main 的内容。分支说明写在 data/repositories.json 的 branchNotes；只差核验或交接记录的分支标 `minor`。只报告状态，不替其他仓库合并或删除分支。
 - 资料文件目录在 docs/materials/，按真实内容区分试卷、学科资料、书籍、工具与作品，分类浏览结合中文搜索和组内用途选择。避免重复收录同一路径文件。旧的根路径深链（#group/… 等）由 docs/boot.js 转到 materials/。
 - 资料文件目录首页用试卷、学科资料、书籍、工具与作品四个中央入口，不以全文件长列表或长左栏开场。试卷按机构进入，讲义与书籍按学科进入；同卷或同讲义用稳定 groupKey 展示一张卡，详情保留各用途文件及实际页数。已审查 section/groupKey 优先于仓库名和用途猜测；题集、合订和待配卷明确区分，未知关系不强行合并。
