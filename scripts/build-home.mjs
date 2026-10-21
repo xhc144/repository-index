@@ -152,31 +152,52 @@ function branchList(repo) {
       </details>`;
 }
 
+// 一句话用途：取简介第一个分句（冒号、句号、分号之前）。
+function gist(text) {
+  let first = (String(text).match(/^[^：。；（(]+/) || [text])[0].trim();
+  // 太长时在 40 字以内最后一个逗号处截断
+  if (first.length > 40) { const cut = first.lastIndexOf('，', 40); if (cut > 8) first = first.slice(0, cut); }
+  return first;
+}
+
 function repoCard(repo) {
   const tags = repo.tags.map(tag => `<span class="tag">${esc(tagName(tag))}</span>`).join('');
   const meta = [
+    `<span>${esc(repo.full)}</span>`,
     repo.language && `<span>${esc(repo.language)}</span>`,
     `<span>${fmtSize(repo.sizeKB)}</span>`,
-    `<span>${repo.mainNote ? 'main ' : ''}${repo.files.toLocaleString('en-US')} 个文件${repo.pdf ? ` · ${repo.pdf.toLocaleString('en-US')} 个 PDF` : ''}</span>`,
+    `<span>${repo.files.toLocaleString('en-US')} 个文件${repo.pdf ? ` · ${repo.pdf.toLocaleString('en-US')} 个 PDF` : ''}</span>`,
     `<span>更新于 ${fmtDate(repo.pushedAt)}</span>`,
   ].filter(Boolean).join('');
-  const branchLine = branchList(repo);
+  const isAuto = link => ['仓库主页', '在线页面'].includes(link.label) || /^(Releases|全部分支)/.test(link.label);
+  const curated = repo.links.filter(link => !isAuto(link));
+  const primary = [
+    ...(repo.pagesUrl ? [{label: '在线页面', url: repo.pagesUrl}] : []),
+    ...curated.slice(0, 2),
+    {label: 'GitHub', url: repo.url},
+  ];
+  const secondary = [...curated.slice(2), ...repo.links.filter(link => /^(Releases|全部分支)/.test(link.label))];
+  const short = gist(repo.summary);
   const search = [repo.full, repo.title, repo.summary, ...repo.highlights, ...repo.tags.map(tagName), repo.language, ...repo.branches.map(b => b.name)].join(' ').toLowerCase();
   return `
-      <article class="repo${repo.open.length ? ' repo-open' : ''}" id="${esc(repo.name)}" data-tags="${esc(repo.tags.join(' '))}" data-vis="${repo.private ? 'private' : 'public'}" data-search="${esc(search)}">
-        <header>
-          <p class="repo-path"><a href="${esc(repo.url)}" title="${esc(repo.full)}">${esc(repo.name)}</a></p>
-          <p class="badges">${repo.private ? `<span class="badge badge-private">${icon.lock}私有</span>` : `<span class="badge badge-public">${icon.globe}公开</span>`}${repo.pagesUrl ? '<span class="badge">Pages</span>' : ''}${repo.open.length ? `<span class="badge badge-warn">${icon.branch}分支有内容</span>` : ''}</p>
-        </header>
-        <h3>${esc(repo.title)}</h3>
-        ${repo.mainNote ? `<p class="main-note"><strong>注意：</strong>${esc(repo.mainNote)}</p>` : ''}
-        <p class="summary">${esc(repo.summary)}</p>
-        ${repo.highlights.length ? `<ul class="highlights">${repo.highlights.map(item => `<li>${esc(item)}</li>`).join('')}</ul>` : ''}
-        ${repo.limits ? `<p class="limits">${esc(repo.limits)}</p>` : ''}
+      <article class="repo" id="${esc(repo.name)}" data-tags="${esc(repo.tags.join(' '))}" data-vis="${repo.private ? 'private' : 'public'}" data-search="${esc(search)}">
+        <div class="repo-top">
+          <h3>${esc(repo.title)}</h3>
+          ${repo.private ? `<span class="lock" title="私有仓库，需要登录有权限的账号">${icon.lock}</span>` : ''}
+        </div>
+        <p class="summary">${esc(short)}</p>
         ${tags ? `<p class="tags">${tags}</p>` : ''}
-        <p class="meta">${meta}</p>
-        <nav class="links" aria-label="${esc(repo.name)} 入口">${repo.links.map(link => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join('')}</nav>
-        ${branchLine}
+        <nav class="links" aria-label="${esc(repo.name)} 入口">${primary.map(link => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join('')}</nav>
+        <details class="more">
+          <summary>详情${repo.open.length ? `<span class="dot" title="有分支内容尚未并入 main"></span>` : ''}</summary>
+          ${repo.mainNote ? `<p class="main-note">${esc(repo.mainNote)}</p>` : ''}
+          ${short !== repo.summary ? `<p class="full">${esc(repo.summary)}</p>` : ''}
+          ${repo.highlights.length ? `<ul class="highlights">${repo.highlights.map(item => `<li>${esc(item)}</li>`).join('')}</ul>` : ''}
+          ${repo.limits ? `<p class="limits">${esc(repo.limits)}</p>` : ''}
+          ${secondary.length ? `<nav class="links links-more" aria-label="${esc(repo.name)} 更多入口">${secondary.map(link => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join('')}</nav>` : ''}
+          <p class="meta">${meta}</p>
+          ${branchList(repo)}
+        </details>
       </article>`;
 }
 
@@ -225,30 +246,15 @@ const html = `<!doctype html>
   <header class="hero">
     <div class="wrap">
       <h1>仓库总览</h1>
-      <p class="lede">个人账号与 ${totals.owners - 1} 个组织的 ${totals.repos} 个仓库：每个仓库的用途和入口，以及哪些内容还只在分支里。</p>
-      <dl class="stats">
-        <div><dt>仓库</dt><dd>${totals.repos}</dd><p>${totals.public} 公开 · ${totals.private} 私有</p></div>
-        <div><dt>账号与组织</dt><dd>${totals.owners}</dd><p>个人账号 + ${totals.owners - 1} 个组织</p></div>
-        <div><dt>分支</dt><dd>${totals.branches}</dd><p>不含 main，${totals.merged} 个内容已在 main</p></div>
-        <div class="stat-warn"><dt>内容只在分支</dt><dd>${majorBranches.length}</dd><p>${new Set(majorBranches.map(branch => branch.repo.full)).size} 个仓库${minorBranches.length ? `，另 ${minorBranches.length} 个只差记录` : ''}</p></div>
-      </dl>
-      <nav class="owner-nav" aria-label="按组织跳转">${owners.map(owner => `<a href="#owner-${esc(owner.id)}"><b>${esc(owner.name)}</b><span>${esc(owner.id)} · ${owner.repos.length}</span></a>`).join('')}<a href="#branches"><b>分支核查</b><span>${majorBranches.length} 处内容只在分支</span></a><a href="../materials/"><b>PDF 资料库</b><span>按试卷、学科找 PDF</span></a></nav>
+      <p class="lede">${totals.repos} 个仓库 · ${totals.public} 公开 · ${totals.private} 私有 · 个人账号与 ${totals.owners - 1} 个组织</p>
+      <nav class="owner-nav" aria-label="按组织跳转">${owners.map(owner => `<a href="#owner-${esc(owner.id)}"><b>${esc(owner.name)}</b><span>${owner.repos.length}</span></a>`).join('')}</nav>
     </div>
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="spotlight wrap" id="branches" aria-labelledby="branches-title">
-      <div class="section-head">
-        <p class="eyebrow">分支核查 · ${esc(scannedDate)}</p>
-        <h2 id="branches-title">这些内容还只在分支里</h2>
-        <p>逐个比较了 ${totals.branches} 个分支与 main 的文件内容。下面 ${majorBranches.length} 个分支有 main 没有的实质内容${minorBranches.length ? `，另有 ${minorBranches.length} 个只差几份记录文件` : ''}；其余 ${totals.merged} 个分支的内容 main 都已经有了（含提交历史不同、但文件相同的情况）。</p>
-      </div>
-      ${spotlight()}
-    </section>
-
     <section class="browse wrap" aria-label="仓库列表">
       <form class="filters" id="filters" role="search">
-        <label class="search"><span class="sr-only">搜索仓库</span><input id="q" type="search" placeholder="搜索仓库、用途或分支，如：GTM、塔防、拓扑…" autocomplete="off"></label>
+        <label class="search"><span class="sr-only">搜索仓库</span><input id="q" type="search" placeholder="搜索仓库，如：GTM、塔防、拓扑" autocomplete="off"></label>
         <div class="chips chips-tags" role="group" aria-label="按类别筛选">
           <button type="button" class="chip" data-tag="" aria-pressed="true">全部 <span>${totals.repos}</span></button>
           ${tagCounts.map(([tag, count]) => `<button type="button" class="chip" data-tag="${esc(tag)}" aria-pressed="false">${esc(tagName(tag))} <span>${count}</span></button>`).join('\n          ')}
@@ -257,7 +263,6 @@ const html = `<!doctype html>
           <button type="button" class="chip" data-vis="" aria-pressed="true">全部</button>
           <button type="button" class="chip" data-vis="public" aria-pressed="false">公开</button>
           <button type="button" class="chip" data-vis="private" aria-pressed="false">私有</button>
-          <button type="button" class="chip chip-warn" data-open="1" aria-pressed="false">分支有内容</button>
         </div>
         <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
       </form>
@@ -265,7 +270,7 @@ ${owners.map(owner => `
       <section class="owner" id="owner-${esc(owner.id)}" aria-labelledby="owner-${esc(owner.id)}-title">
         <div class="owner-head">
           <h2 id="owner-${esc(owner.id)}-title">${esc(owner.name)}</h2>
-          <p><a href="${GH}/${esc(owner.id)}">${esc(owner.id)}</a> · ${owner.repos.length} 个仓库${owner.intro ? ` · ${esc(owner.intro)}` : ''}</p>
+          <p><a href="${GH}/${esc(owner.id)}">${esc(owner.id)} ↗</a></p>
         </div>
         <div class="grid">${owner.repos.map(repoCard).join('')}
         </div>
@@ -273,19 +278,16 @@ ${owners.map(owner => `
       <p class="empty" id="empty" hidden>没有符合条件的仓库。</p>
     </section>
 
-    <section class="materials wrap" aria-labelledby="materials-title">
-      <div>
-        <p class="eyebrow">PDF 资料库</p>
-        <h2 id="materials-title">要找具体的试卷、讲义或书？</h2>
-        <p>PDF 资料库把多个仓库里的 PDF 按试卷（机构、比赛）、学科讲义和书籍归组，同一份资料的题目、原解答、AI 解答与源码集中选择下载。旧链接会自动转到这里。</p>
-      </div>
-      <a class="button" href="../materials/">打开PDF 资料库 ${icon.arrow}</a>
-    </section>
+    <details class="maintenance wrap" id="branches">
+      <summary><span>分支核查</span><span class="maint-sum">${majorBranches.length ? `${majorBranches.length} 处内容还只在分支里` : '所有分支都已并入'} · ${esc(scannedDate)}</span></summary>
+      <p class="maint-intro">逐个比较了 ${totals.branches} 个分支与 main 的文件内容：${totals.merged} 个分支的内容 main 已经有了，下面这些还没有。</p>
+      ${spotlight()}
+    </details>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>扫描时间 ${esc(scan.scannedAt.replace('T', ' ').slice(0, 16))} UTC。仓库名称、可见性、文件数、分支与 Releases 来自 GitHub API；中文介绍依据各仓库当前 README，页数等数字以各仓库说明为准。私有仓库的链接需要登录有权限的 GitHub 账号，这个公开页面不授予访问权限。</p>
+      <p>扫描于 ${esc(scan.scannedAt.replace('T', ' ').slice(0, 16))} UTC · 私有仓库的链接需要登录有权限的 GitHub 账号</p>
       <nav aria-label="维护入口"><a href="../">首页</a><a href="${SELF}">本页源码</a><a href="${SELF}/blob/main/AGENTS.md">维护规则</a><a href="../materials/">PDF 资料库</a><a href="#main">回到顶部 ↑</a></nav>
     </div>
   </footer>

@@ -241,3 +241,51 @@ svg { width: 14px; height: 14px; fill: currentColor; flex: none; }
   .repo, .repo:hover { transition: none; transform: none; }
   .repo.flash { animation: none; }
 }
+
+/* ---------- 精简后的卡片：重点在前，细节收进「详情」 ---------- */
+.grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.repo { padding: 18px 20px 14px; }
+.repo-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.repo h3 { margin: 0 0 4px; font: 600 18px/1.4 var(--serif); }
+.repo-top .lock { flex: none; margin-top: 4px; color: var(--muted); }
+.repo-top .lock svg { width: 13px; height: 13px; }
+.summary { color: var(--muted); font-size: 14px; }
+.tags { margin-top: 10px; }
+.links { margin-top: 14px; }
+.links a { height: 30px; padding: 0 12px; border-radius: 999px; }
+.more { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 13.5px; }
+.more > summary {
+  display: flex; align-items: center; gap: 6px; width: fit-content;
+  cursor: pointer; list-style: none; color: var(--muted); font-size: 13px;
+}
+.more > summary::-webkit-details-marker { display: none; }
+.more > summary::after { content: "›"; font-size: 15px; transition: transform .2s var(--ease); }
+.more[open] > summary::after { transform: rotate(90deg); }
+.more > summary:hover { color: var(--accent); }
+.more .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--warn); }
+.more .full { margin: 10px 0 0; color: var(--ink-soft); }
+.more .main-note { margin: 10px 0 0; }
+.more .meta { margin-top: 10px; }
+.links-more { margin-top: 10px; }
+.links-more a:first-child { background: transparent; border-color: var(--line-strong); color: var(--accent); }
+.links-more a:first-child:hover { background: var(--accent-soft); color: var(--accent); filter: none; }
+.more .branches { margin: 10px 0 0; padding: 10px 0 0; }
+.more .branches.single { margin-bottom: 0; }
+.owner { margin-top: 34px; }
+.owner-head h2 { font-size: 22px; }
+.owner-nav span { font-family: var(--mono); }
+
+/* ---------- 底部折叠的分支核查 ---------- */
+.maintenance { margin-top: 48px; }
+.maintenance > summary {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px;
+  padding: 16px 0; border-top: 1px solid var(--line);
+  cursor: pointer; list-style: none;
+}
+.maintenance > summary::-webkit-details-marker { display: none; }
+.maintenance > summary > span:first-child { font: 600 18px var(--serif); color: var(--ink); }
+.maintenance > summary::after { content: "展开"; margin-left: auto; color: var(--muted); font-size: 13px; }
+.maintenance[open] > summary::after { content: "收起"; }
+.maint-sum { color: var(--warn); font-size: 13px; }
+.maint-intro { margin: 0; color: var(--muted); font-size: 14px; }
+@media (max-width: 760px) { .spot-list { grid-template-columns: 1fr; } }

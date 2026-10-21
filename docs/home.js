@@ -58,13 +58,14 @@
       document.querySelectorAll('.chip').forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.tag === '' || chip.dataset.vis === '')));
       apply();
     }
-    const details = target.querySelector('details.branches');
-    if (details) details.open = true;
+    for (const details of target.querySelectorAll('details.more, details.branches')) details.open = true;
     target.scrollIntoView();
     target.classList.add('flash');
     setTimeout(() => target.classList.remove('flash'), 1600);
   }
-  addEventListener('hashchange', reveal);
+  function openMaintenance() { if (location.hash === '#branches') document.getElementById('branches').open = true; }
+  addEventListener('hashchange', () => { openMaintenance(); reveal(); });
+  openMaintenance();
   apply();
   reveal();
 })();
