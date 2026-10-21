@@ -2,20 +2,71 @@
   "title": "xhc144",
   "tagline": "数学 · 资料 · 作品",
   "entries": [
-    {"name": "仓库总览", "url": "repos/", "icon": "layers", "meta": "{repos} 个仓库"},
-    {"name": "资料目录", "url": "materials/", "icon": "book", "meta": "试卷 · 讲义 · 书籍"},
-    {"name": "Claude 实验室", "url": "claude-lab/", "icon": "flask", "meta": "游戏 · 可视化 · 影片"}
+    {
+      "name": "仓库总览",
+      "url": "repos/",
+      "icon": "layers",
+      "meta": "{repos} 个仓库"
+    },
+    {
+      "name": "PDF 资料库",
+      "url": "materials/",
+      "icon": "book",
+      "meta": "试卷 · 讲义 · 书籍"
+    },
+    {
+      "name": "Claude 实验室",
+      "url": "claude-lab/",
+      "icon": "flask",
+      "meta": "游戏 · 可视化 · 影片"
+    }
   ],
   "apps": [
-    {"name": "数境", "url": "claude-lab/mathscape/", "note": "MathScape：矩阵、复映射、微分方程可视化"},
-    {"name": "知识星图", "url": "claude-lab/math-starmap/", "note": "按新领军考纲连起来的数学知识图谱"},
-    {"name": "0 → ∞", "url": "claude-lab/personal-site/", "note": "数学、物理与 AI 的交互仪器"},
-    {"name": "万象", "url": "claude-lab/myriad/", "note": "Myriad：地形、生态与文明演化沙盒"},
-    {"name": "薪火纪", "url": "claude-lab/emberstack/", "note": "Emberstack：卡牌堆叠文明策略游戏"},
-    {"name": "回响荒野", "url": "claude-lab/echowild/", "note": "Echowild：体素世界建造与生存，需键鼠"},
-    {"name": "星枢", "url": "claude-lab/tensora/", "note": "Tensora：AI 基础设施控制台原型"},
-    {"name": "墨经", "url": "claude-lab/mojing/", "note": "Mojing：中文数学 LaTeX 模板"},
-    {"name": "讲解影片", "url": "claude-lab/#film", "note": "9 部数学讲解影片"}
+    {
+      "name": "数境",
+      "url": "claude-lab/mathscape/",
+      "note": "MathScape：矩阵、复映射、微分方程可视化"
+    },
+    {
+      "name": "知识星图",
+      "url": "claude-lab/math-starmap/",
+      "note": "按新领军考纲连起来的数学知识图谱"
+    },
+    {
+      "name": "0 → ∞",
+      "url": "claude-lab/personal-site/",
+      "note": "数学、物理与 AI 的交互仪器"
+    },
+    {
+      "name": "万象",
+      "url": "claude-lab/myriad/",
+      "note": "Myriad：地形、生态与文明演化沙盒"
+    },
+    {
+      "name": "薪火纪",
+      "url": "claude-lab/emberstack/",
+      "note": "Emberstack：卡牌堆叠文明策略游戏"
+    },
+    {
+      "name": "回响荒野",
+      "url": "claude-lab/echowild/",
+      "note": "Echowild：体素世界建造与生存，需键鼠"
+    },
+    {
+      "name": "星枢",
+      "url": "claude-lab/tensora/",
+      "note": "Tensora：AI 基础设施控制台原型"
+    },
+    {
+      "name": "墨经",
+      "url": "claude-lab/mojing/",
+      "note": "Mojing：中文数学 LaTeX 模板"
+    },
+    {
+      "name": "讲解影片",
+      "url": "claude-lab/#film",
+      "note": "9 部数学讲解影片"
+    }
   ],
   "accounts": {
     "xhc144": "个人",

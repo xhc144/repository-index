@@ -498,18 +498,10 @@
       ],
       "links": [
         {
-          "label": "分支源码",
-          "url": "https://github.com/xhc144/Claude-lab-2/tree/claude/pdf-reader"
-        },
-        {
-          "label": "分支 README",
-          "url": "https://github.com/xhc144/Claude-lab-2/blob/claude/pdf-reader/README.md"
+          "label": "README",
+          "url": "https://github.com/xhc144/Claude-lab-2/blob/main/README.md"
         }
-      ],
-      "mainNote": "main 只有初始 README，项目全部源码都在 claude/pdf-reader 分支。",
-      "branchNotes": {
-        "claude/pdf-reader": "Folio PDF 阅读器的全部源码、截图、打包脚本与 CI 工作流，共 178 个 main 没有的文件。"
-      }
+      ]
     },
     {
       "full": "xhc144/xhc144.github.io",

@@ -1,5 +1,5 @@
 {
- "scannedAt": "2026-10-20T17:23:10.287Z",
+ "scannedAt": "2026-10-21T02:19:15.767Z",
  "user": "xhc144",
  "owners": [
   "xhc144",
@@ -1357,11 +1357,11 @@
    "license": "",
    "sizeKB": 1093040,
    "createdAt": "2026-10-11T04:47:00Z",
-   "pushedAt": "2026-10-20T07:25:18Z",
+   "pushedAt": "2026-10-21T01:09:20Z",
    "defaultBranch": "main",
    "pagesUrl": "https://xhc144.github.io/claude-lab/",
    "readme": "README.md",
-   "files": 2164,
+   "files": 2165,
    "pdf": 50,
    "tex": 50,
    "truncated": false,
@@ -1459,127 +1459,9 @@
    ],
    "branches": [
     {
-     "name": "claude/admiring-darwin-n77vx0",
-     "sha": "697469e19ee52e2612839df5c8b4aa3679830f14",
-     "date": "2026-10-15T15:11:33Z",
-     "ahead": 0,
-     "behind": 130,
-     "state": "merged"
-    },
-    {
-     "name": "claude/adoring-lovelace-emwe1s",
-     "sha": "39c8729a2e2d740fc8cd1eb36afb768c62d3e41a",
-     "date": "2026-10-20T07:23:48Z",
-     "ahead": 0,
-     "behind": 3,
-     "state": "merged"
-    },
-    {
-     "name": "claude/awesome-albattani-zp7pwm",
-     "sha": "a61d0d5752b1acd285f3d9e3b73b61c9cc5a8f48",
-     "date": "2026-10-17T07:12:25Z",
-     "ahead": 0,
-     "behind": 10,
-     "state": "merged"
-    },
-    {
-     "name": "claude/brave-hypatia-lpegw9",
-     "sha": "4b683edad725a881587bc4d60759228f57da6028",
-     "date": "2026-10-15T11:40:41Z",
-     "ahead": 0,
-     "behind": 82,
-     "state": "merged"
-    },
-    {
-     "name": "claude/busy-gates-j6vdps",
-     "sha": "56bcc110f194d944344864c925ff4ffd45b4a28c",
-     "date": "2026-10-16T16:11:36Z",
-     "ahead": 0,
-     "behind": 38,
-     "state": "merged"
-    },
-    {
-     "name": "claude/determined-rubin-lapugg",
-     "sha": "d7820cbe1cc35f0611d8533b1339832d2704dd52",
-     "date": "2026-10-16T06:41:16Z",
-     "ahead": 1,
-     "behind": 52,
-     "state": "branch-only",
-     "touched": 4,
-     "same": 0,
-     "onlyBranch": 1,
-     "branchNewer": 2,
-     "mainNewer": 1,
-     "deletedInBranch": 0
-    },
-    {
-     "name": "claude/eager-allen-qqz0pu",
-     "sha": "b42f85a0184d92f5cbe91bea26bfb3e5616d90db",
-     "date": "2026-10-15T13:56:00Z",
-     "ahead": 0,
-     "behind": 78,
-     "state": "merged"
-    },
-    {
-     "name": "claude/ecstatic-thompson-5wwaij",
-     "sha": "b290a8c0ab072ecafc51e489f625f754d6cab9de",
-     "date": "2026-10-15T11:00:53Z",
-     "ahead": 0,
-     "behind": 212,
-     "state": "merged"
-    },
-    {
-     "name": "claude/loving-franklin-g1g39d",
-     "sha": "d8c5241dd01da251bf4f646429385fd94b7907ba",
-     "date": "2026-10-17T04:45:13Z",
-     "ahead": 0,
-     "behind": 14,
-     "state": "merged"
-    },
-    {
-     "name": "claude/peaceful-brahmagupta-oaax7t",
-     "sha": "94a06aa9382a1dec96c133db2aac294ab11f616f",
-     "date": "2026-10-16T04:44:29Z",
-     "ahead": 0,
-     "behind": 78,
-     "state": "merged"
-    },
-    {
-     "name": "claude/peaceful-darwin-1seyft",
-     "sha": "55ee43ae4256c251c0fb9d24f59835933ba9415b",
-     "date": "2026-10-16T15:49:20Z",
-     "ahead": 0,
-     "behind": 30,
-     "state": "merged"
-    },
-    {
-     "name": "claude/pensive-galileo-r87j31",
-     "sha": "51f69514747a4dcd7cf407e7e9ac48cc9edf8df4",
-     "date": "2026-10-16T05:56:56Z",
-     "ahead": 0,
-     "behind": 53,
-     "state": "merged"
-    },
-    {
-     "name": "claude/vibrant-goldberg-gdxsg6",
-     "sha": "11a509329e69e48d2693f49bbd7217fddd61b9b1",
-     "date": "2026-10-16T05:10:30Z",
-     "ahead": 0,
-     "behind": 69,
-     "state": "merged"
-    },
-    {
-     "name": "claude/zealous-meitner-jqqpu0",
-     "sha": "9a3b64a9cda5f7193e0dad83e7fec6821e0a7918",
-     "date": "2026-10-16T10:42:15Z",
-     "ahead": 0,
-     "behind": 46,
-     "state": "merged"
-    },
-    {
      "name": "main",
-     "sha": "fdf2da45c6c63482b7d411e81de9573e0daa8237",
-     "date": "2026-10-20T07:24:35Z",
+     "sha": "e72afe1e730acb97a128eed7240f0ff26339fab8",
+     "date": "2026-10-21T01:03:23Z",
      "isDefault": true
     }
    ]
@@ -1590,39 +1472,46 @@
    "private": false,
    "archived": false,
    "description": "",
-   "language": "",
+   "language": "Python",
    "topics": [],
    "license": "",
-   "sizeKB": 1243,
+   "sizeKB": 1265,
    "createdAt": "2026-10-20T10:15:24Z",
-   "pushedAt": "2026-10-20T16:53:18Z",
+   "pushedAt": "2026-10-21T01:44:09Z",
    "defaultBranch": "main",
    "pagesUrl": "",
    "readme": "README.md",
-   "files": 1,
+   "files": 182,
    "pdf": 0,
    "tex": 0,
    "truncated": false,
-   "releases": [],
+   "releases": [
+    {
+     "tag": "v0.2.1",
+     "name": "v0.2.1",
+     "publishedAt": "2026-10-21T01:49:17Z",
+     "assets": 4
+    },
+    {
+     "tag": "v0.2.0",
+     "name": "v0.2.0",
+     "publishedAt": "2026-10-21T01:18:55Z",
+     "assets": 3
+    }
+   ],
    "branches": [
     {
-     "name": "claude/pdf-reader",
-     "sha": "a3a250e28442d9dddff034d201fd8b0e08347336",
-     "date": "2026-10-20T16:53:15Z",
-     "ahead": 10,
-     "behind": 0,
-     "state": "branch-only",
-     "touched": 179,
-     "same": 0,
-     "onlyBranch": 178,
-     "branchNewer": 1,
-     "mainNewer": 0,
-     "deletedInBranch": 0
+     "name": "claude/windows-installer",
+     "sha": "fb0e38514b96b403d6d9d40c06d30cb7462e9dfd",
+     "date": "2026-10-21T01:37:06Z",
+     "ahead": 0,
+     "behind": 1,
+     "state": "merged"
     },
     {
      "name": "main",
-     "sha": "0bee077ef457d709941effbc7f02ebd512fb232a",
-     "date": "2026-10-20T10:15:25Z",
+     "sha": "21f7ebafe076db99ba4396b37897b21662001d40",
+     "date": "2026-10-21T01:43:46Z",
      "isDefault": true
     }
    ]
@@ -1639,13 +1528,13 @@
     "navigation"
    ],
    "license": "",
-   "sizeKB": 1122,
+   "sizeKB": 1297,
    "createdAt": "2026-10-03T05:05:59Z",
-   "pushedAt": "2026-10-08T10:55:35Z",
+   "pushedAt": "2026-10-21T02:08:44Z",
    "defaultBranch": "main",
    "pagesUrl": "https://xhc144.github.io/",
    "readme": "README.md",
-   "files": 13,
+   "files": 26,
    "pdf": 0,
    "tex": 0,
    "truncated": false,
@@ -1653,33 +1542,9 @@
    "branches": [
     {
      "name": "main",
-     "sha": "301eae73b164aae7d802c01f7af5a0fb864842c1",
-     "date": "2026-10-08T10:52:53Z",
+     "sha": "40dccf214f92d94605892f9728b165f9b2776990",
+     "date": "2026-10-21T02:04:40Z",
      "isDefault": true
-    },
-    {
-     "name": "navigation/ruanhe-series-20261008",
-     "sha": "301eae73b164aae7d802c01f7af5a0fb864842c1",
-     "date": "2026-10-08T10:52:53Z",
-     "ahead": 0,
-     "behind": 0,
-     "state": "merged"
-    },
-    {
-     "name": "navigation/source-groups-20261008",
-     "sha": "25d0a56959245affc1be31a990cd1216ef51d2df",
-     "date": "2026-10-08T09:54:51Z",
-     "ahead": 0,
-     "behind": 4,
-     "state": "merged"
-    },
-    {
-     "name": "navigation-integration-20261008",
-     "sha": "fd8bfce878090ce4f3340924e5b30ac7fb026d58",
-     "date": "2026-10-08T10:16:08Z",
-     "ahead": 0,
-     "behind": 2,
-     "state": "merged"
     }
    ]
   }

@@ -2,13 +2,14 @@
 (function () {
   var script = document.currentScript;
   var hash = location.hash;
-  // 旧的资料目录深链（#group/… 等）转到 materials/。
-  if (/^#(home|papers|subjects|books|tools|group|repositories)(\/|$)/.test(hash)) {
+  var portal = script.hasAttribute('data-portal');
+  // 旧的资料目录深链（#group/… 等）原来在首页，转到 materials/。
+  if (portal && /^#(home|papers|subjects|books|tools|group|repositories)(\/|$)/.test(hash)) {
     location.replace(new URL('materials/', script.src).href + hash);
     return;
   }
   // 仓库总览原来就在首页，旧的锚点（#owner-…、#branches、仓库名）转到 repos/。
-  if (script.hasAttribute('data-portal') && hash && hash !== '#main') {
+  if (portal && hash && hash !== '#main') {
     location.replace(new URL('repos/', script.src).href + hash);
     return;
   }

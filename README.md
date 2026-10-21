@@ -1,10 +1,10 @@
 # xhc144 仓库总览
 
-**网页版：[xhc144.github.io](https://xhc144.github.io/)**（首页）· [仓库总览](https://xhc144.github.io/repos/) · [资料文件目录](https://xhc144.github.io/materials/) · [Claude 实验室](https://xhc144.github.io/claude-lab/)
+**网页版：[xhc144.github.io](https://xhc144.github.io/)**（首页）· [仓库总览](https://xhc144.github.io/repos/) · [PDF 资料库](https://xhc144.github.io/materials/) · [Claude 实验室](https://xhc144.github.io/claude-lab/)
 
-个人账号与 4 个组织下共 **22 个仓库**（7 个公开、15 个私有）。下面按组织列出每个仓库的用途与入口；所有分支都核对过——**8 个分支还有 main 没有的实质内容**，见[分支核查](#分支核查)。
+个人账号与 4 个组织下共 **22 个仓库**（7 个公开、15 个私有）。下面按组织列出每个仓库的用途与入口；所有分支都核对过——**6 个分支还有 main 没有的实质内容**，见[分支核查](#分支核查)。
 
-私有仓库的链接需要登录有权限的 GitHub 账号。中文介绍依据各仓库当前 README，页数、题数与进度以各仓库说明为准。扫描时间：2026-10-20 17:23 UTC。
+私有仓库的链接需要登录有权限的 GitHub 账号。中文介绍依据各仓库当前 README，页数、题数与进度以各仓库说明为准。扫描时间：2026-10-21 02:19 UTC。
 
 ## 求真书院资料 · [xhc144-qiuzhen](https://github.com/xhc144-qiuzhen)
 
@@ -59,22 +59,20 @@ Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。
 
 | 仓库 | 用途 | 入口 | 分支 |
 | --- | --- | --- | --- |
-| [claude-lab](https://github.com/xhc144/claude-lab)<br>公开 · 2026-10-20 | **Claude 实验仓库**：多个独立实验的合集：交互数学、创世沙盒与游戏、AI 产品原型、多智能体研究实验室、Windows 桌面软件、程序化数学影片与 LaTeX 模板。GitHub Pages 上的项目导航收录 25 个项目。 | [在线页面](https://xhc144.github.io/claude-lab/) · [Releases · 15](https://github.com/xhc144/claude-lab/releases) · [全部分支 · 15](https://github.com/xhc144/claude-lab/branches/all) | 15 个，**1 个有未并入内容** |
-| [Claude-lab-2](https://github.com/xhc144/Claude-lab-2)<br>公开 · 2026-10-20 | **Folio PDF 阅读器**：main 只有初始 README，项目全部源码都在 claude/pdf-reader 分支。 PySide6 与 PyMuPDF 编写的跨平台桌面 PDF 阅读器：阅读、批注、手写签名、点读朗读、OCR、压缩合并拆分、打印与演示模式，接入千问、DeepSeek、Ollama 等 AI 服务。 | [分支源码](https://github.com/xhc144/Claude-lab-2/tree/claude/pdf-reader) · [分支 README](https://github.com/xhc144/Claude-lab-2/blob/claude/pdf-reader/README.md) · [全部分支 · 2](https://github.com/xhc144/Claude-lab-2/branches/all) | 2 个，**1 个有未并入内容** |
-| [xhc144.github.io](https://github.com/xhc144/xhc144.github.io)<br>公开 · 2026-10-08 | **xhc144.github.io 网站（本仓库）**：xhc144.github.io 的源码：首页总入口、仓库总览与资料文件目录，以及仓库数据、扫描脚本、页面生成脚本和维护规则。 | [在线页面](https://xhc144.github.io/) · [仓库总览](https://xhc144.github.io/repos/) · [资料文件目录](https://xhc144.github.io/materials/) · [全部分支 · 4](https://github.com/xhc144/xhc144.github.io/branches/all) | 4 个，内容都已在 main |
+| [claude-lab](https://github.com/xhc144/claude-lab)<br>公开 · 2026-10-21 | **Claude 实验仓库**：多个独立实验的合集：交互数学、创世沙盒与游戏、AI 产品原型、多智能体研究实验室、Windows 桌面软件、程序化数学影片与 LaTeX 模板。GitHub Pages 上的项目导航收录 25 个项目。 | [在线页面](https://xhc144.github.io/claude-lab/) · [Releases · 15](https://github.com/xhc144/claude-lab/releases) | 仅 main |
+| [Claude-lab-2](https://github.com/xhc144/Claude-lab-2)<br>公开 · 2026-10-21 | **Folio PDF 阅读器**：PySide6 与 PyMuPDF 编写的跨平台桌面 PDF 阅读器：阅读、批注、手写签名、点读朗读、OCR、压缩合并拆分、打印与演示模式，接入千问、DeepSeek、Ollama 等 AI 服务。 | [README](https://github.com/xhc144/Claude-lab-2/blob/main/README.md) · [Releases · 2](https://github.com/xhc144/Claude-lab-2/releases) · [全部分支 · 2](https://github.com/xhc144/Claude-lab-2/branches/all) | 2 个，内容都已在 main |
+| [xhc144.github.io](https://github.com/xhc144/xhc144.github.io)<br>公开 · 2026-10-21 | **xhc144.github.io 网站（本仓库）**：xhc144.github.io 的源码：首页总入口、仓库总览与资料文件目录，以及仓库数据、扫描脚本、页面生成脚本和维护规则。 | [在线页面](https://xhc144.github.io/) · [仓库总览](https://xhc144.github.io/repos/) · [资料文件目录](https://xhc144.github.io/materials/) | 仅 main |
 
 ## 分支核查
 
-逐个比较了 91 个非 main 分支：先看分支提交是否都已在 main 中，再对仍有独立提交的分支逐文件比较内容。80 个分支的内容 main 已经有了（包括提交历史不同、文件完全相同的情况）。以下 11 个分支有 main 没有的文件或较新的改动，其中 8 个是实质内容、3 个只差几份核验或交接记录：
+逐个比较了 74 个非 main 分支：先看分支提交是否都已在 main 中，再对仍有独立提交的分支逐文件比较内容。65 个分支的内容 main 已经有了（包括提交历史不同、文件完全相同的情况）。以下 9 个分支有 main 没有的文件或较新的改动，其中 6 个是实质内容、3 个只差几份核验或交接记录：
 
 | 仓库 · 分支 | 情况 | 说明 |
 | --- | --- | --- |
-| [Claude-lab-2](https://github.com/xhc144/Claude-lab-2) · [`claude/pdf-reader`](https://github.com/xhc144/Claude-lab-2/tree/claude/pdf-reader) | 178 个文件仅在分支 · 1 个文件分支较新 · 10 个独立提交 | Folio PDF 阅读器的全部源码、截图、打包脚本与 CI 工作流，共 178 个 main 没有的文件。 |
 | [qiuzhen-2027-reference-library](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library) · [`retypeset/zhao-qualitative-semiquantitative-physics`](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library/tree/retypeset/zhao-qualitative-semiquantitative-physics) | 421 个文件仅在分支 · 31 个独立提交 | 赵凯华《定性与半定量物理学》重排的暂停稿：已验 144/249 源页，另存 145–161 页未验草稿。按当时要求暂停、不并入 main。 |
 | [qiuzhen-2027-reference-library](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library) · [`retypeset/introduction-linear-algebra-zh-cn`](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library/tree/retypeset/introduction-linear-algebra-zh-cn) | 323 个文件仅在分支 · 15 个独立提交 | 《线性代数入门》原生 LaTeX 重排的暂停稿：保留源 1–186 页（全书 335 页），183–186 页为未审草稿。按当时要求暂停、不并入 main。 |
 | [qiuzhen-2027-reference-library](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library) · [`translate/halliday-fundamentals-physics-zh-cn`](https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library/tree/translate/halliday-fundamentals-physics-zh-cn) | 7 个文件仅在分支 · 2 个独立提交 | Halliday 第 15 阶段待核草稿（第 4 章 4-7 节与问答题），未编译、未计入完成页数。 |
 | [gtm-selected-library](https://github.com/xhc144-notes/gtm-selected-library) · [`translate/gtm-282-zh`](https://github.com/xhc144-notes/gtm-selected-library/tree/translate/gtm-282-zh) | 1 个文件仅在分支 · 5 个文件分支较新 · 1 个独立提交 | 译稿已在 main；分支有一次源码包复验和更新的交接说明（含重新打包的源码 ZIP），尚未并入。 |
-| [claude-lab](https://github.com/xhc144/claude-lab) · [`claude/determined-rubin-lapugg`](https://github.com/xhc144/claude-lab/tree/claude/determined-rubin-lapugg) | 1 个文件仅在分支 · 2 个文件分支较新 · 1 个文件 main 较新 · 1 个独立提交 | 新增 GitHub Pages 部署工作流 .github/workflows/pages.yml，并让 Ship 合并后触发部署；未并入 main。 |
 | [chem-teaching-materials](https://github.com/xhc144-notes/chem-teaching-materials) · [`claude/funny-cori-g00nra`](https://github.com/xhc144-notes/chem-teaching-materials/tree/claude/funny-cori-g00nra) | 1 个文件仅在分支 · 1 个文件分支较新 · 1 个独立提交 | 新增「数值积分实验台」网页（输入函数后对比各算法误差），并改了 README；未并入 main。 |
 | [chem-teaching-materials](https://github.com/xhc144-notes/chem-teaching-materials) · [`claude/vibrant-lamport-q2zg1b`](https://github.com/xhc144-notes/chem-teaching-materials/tree/claude/vibrant-lamport-q2zg1b) | 1 个文件仅在分支 · 1 个独立提交 | 新增《数值积分与数值微分》合编网页讲义；未并入 main。 |
 | [gtm-selected-library](https://github.com/xhc144-notes/gtm-selected-library) · [`translate/gtm-005-zh`](https://github.com/xhc144-notes/gtm-selected-library/tree/translate/gtm-005-zh) | 1 个文件仅在分支 · 3 个文件分支较新 · 1 个独立提交 | （只差记录）译稿已在 main；分支多一次续接核验记录，交付说明比 main 新。 |
@@ -83,9 +81,9 @@ Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。
 
 “仅在分支”指 main 中既没有同路径文件、也没有相同内容的文件；“分支较新”指同路径文件内容不同，且分支上的最后修改晚于 main。合并、删除分支需要分别到各仓库处理，本仓库不改动其他仓库。
 
-## 资料文件目录
+## PDF 资料库
 
-[资料文件目录](https://xhc144.github.io/materials/)把多个仓库里的 PDF 按试卷、学科讲义与书籍归组（247 组资料、408 份 PDF，目录核对于 2026-10-08），同一份资料的题目、原解答、AI 解答与源码集中选择下载。原来的网页地址（如 `#group/…`）会自动转到这里。
+[PDF 资料库](https://xhc144.github.io/materials/)把多个仓库里的 PDF 按试卷、学科讲义与书籍归组（247 组资料、408 份 PDF，目录核对于 2026-10-08），同一份资料的题目、原解答、AI 解答与源码集中选择下载。原来的网页地址（如 `#group/…`）会自动转到这里。
 
 ## 更新本页
 
@@ -96,4 +94,4 @@ node scripts/scan-repos.mjs     # 重新扫描全部仓库与分支，写入 dat
 node scripts/build-home.mjs     # 生成首页 docs/index.html、仓库总览 docs/repos/index.html 与 README.md
 ```
 
-新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；首页的入口与 Claude 实验室作品列表在 [data/portal.json](data/portal.json)。未收录的仓库会先用 GitHub 简介生成并在命令行提示。资料文件目录的数据与测试见 `docs/materials/`、`scripts/normalize-catalog.js` 与 `tests/`。维护规则见 [AGENTS.md](AGENTS.md)。
+新增或改名的仓库在 [data/repositories.json](data/repositories.json) 里补中文介绍；首页的入口与 Claude 实验室作品列表在 [data/portal.json](data/portal.json)。未收录的仓库会先用 GitHub 简介生成并在命令行提示。PDF 资料库的数据与测试见 `docs/materials/`、`scripts/normalize-catalog.js` 与 `tests/`。维护规则见 [AGENTS.md](AGENTS.md)。

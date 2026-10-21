@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="按机构、比赛、老师与学科找课堂讲义、试卷与竞赛资料，AI原创讲义独立浏览；同一份资料的题目、原解答与PDF集中选择下载。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
-  <meta name="theme-color" content="#193f3a">
-  <title>学习资料与作品导航 · xhc144</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23193f3a'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='44' fill='%23dceae1'%3E%CE%A3%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261020-materials">
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141513" media="(prefers-color-scheme: dark)">
+  <title>PDF 资料库 · xhc144</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d2723'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='42' fill='%23e2875f'%3E%CE%A3%3C/text%3E%3C/svg%3E">
+  <script src="../boot.js"></script>
+  <link rel="stylesheet" href="../site.css?v=20261020-site">
+  <link rel="stylesheet" href="./styles.css?v=20261020-site">
+  <script src="../site.js?v=20261020-site" defer></script>
   <script src="./classify-catalog.js?v=20261008-ruanhe-series-2" defer></script>
   <script src="./source-navigation.js?v=20261008-ruanhe-series-2" defer></script>
   <script src="./app.js?v=20261020-materials" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主内容</a>
-  <div class="overview-bar"><a href="../">← xhc144 首页</a><span>本页是资料文件目录：按试卷、学科与书籍查找各仓库里的 PDF</span></div>
+  <header class="site-nav"><div class="site-nav-inner">
+    <a class="site-home" href="../" aria-label="xhc144 首页"><span aria-hidden="true">∑</span><b>xhc<i>144</i></b></a>
+    <nav class="site-links" aria-label="站点导航"><a href="../repos/">仓库总览</a><a href="../materials/" aria-current="page">PDF 资料库</a><a href="../claude-lab/">实验室</a></nav>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切换深浅色"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z"/></svg></button>
+  </div></header>
   <header class="site-header"><div class="header-inner">
-    <a href="#home" id="brand" class="brand"><span aria-hidden="true">∑</span><div>学习资料与作品导航<small>XHC144 / COLLECTION</small></div></a>
+    <a href="#home" id="brand" class="brand"><div>PDF 资料库<small>试卷 · 讲义 · 书籍</small></div></a>
     <p class="header-counts"><strong id="group-total">—</strong> 组资料 <span>·</span> <strong id="pdf-total">—</strong> 份 PDF</p>
   </div></header>
   <nav id="main-nav" class="main-nav" aria-label="主要导航"></nav>

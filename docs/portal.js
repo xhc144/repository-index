@@ -5,14 +5,8 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const darkScheme = matchMedia('(prefers-color-scheme: dark)');
 
-  // ---------- 深浅色 ----------
-  $('theme-toggle').addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') || (darkScheme.matches ? 'dark' : 'light');
-    const next = current === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    try {localStorage.setItem('repo-index-theme', next);} catch (error) { /* 不保存也能用 */ }
-    field.recolor();
-  });
+  // 深浅色切换由 site.js 处理，这里只跟着重绘点阵。
+  document.addEventListener('themechange', () => field.recolor());
   darkScheme.addEventListener('change', () => field.recolor());
 
   // ---------- 背景点阵 ----------

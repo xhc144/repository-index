@@ -48,14 +48,6 @@
   $('q').addEventListener('input', event => {state.q = event.target.value.trim(); apply();});
   $('filters').addEventListener('submit', event => event.preventDefault());
 
-  $('theme-toggle').addEventListener('click', () => {
-    const root = document.documentElement;
-    const current = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const next = current === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    try {localStorage.setItem('repo-index-theme', next);} catch (error) { /* 不保存也能用 */ }
-  });
-
   // 从分支核查跳到某个仓库时，确保它没有被筛选隐藏，并展开分支列表。
   function reveal() {
     const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
