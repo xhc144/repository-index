@@ -4,9 +4,9 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const assert=require('node:assert/strict');
-const navigation=require('../docs/source-navigation.js');
-const classification=require('../docs/classify-catalog.js');
-const [manifestPath,catalogPath=path.join(__dirname,'../docs/catalog.json')]=process.argv.slice(2);
+const navigation=require('../docs/materials/source-navigation.js');
+const classification=require('../docs/materials/classify-catalog.js');
+const [manifestPath,catalogPath=path.join(__dirname,'../docs/materials/catalog.json')]=process.argv.slice(2);
 if(!manifestPath)throw new Error('Usage: node scripts/apply-migration-map.js verified-manifest.json [catalog.json]');
 const manifest=JSON.parse(fs.readFileSync(manifestPath,'utf8'));
 const data=JSON.parse(fs.readFileSync(catalogPath,'utf8'));

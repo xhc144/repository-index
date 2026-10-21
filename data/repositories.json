@@ -1,0 +1,532 @@
+{
+  "title": "xhc144 仓库总览",
+  "reviewed": "2026-10-20",
+  "owners": [
+    {
+      "id": "xhc144-qiuzhen",
+      "name": "求真书院资料",
+      "intro": "2027 数学领军计划的考纲参考书、补充书目、教师讲义与清华历年试卷。"
+    },
+    {
+      "id": "xhc144-notes",
+      "name": "讲义与学科资料",
+      "intro": "竞赛讲义、AI 原创讲义、外部课程与试卷、MIT OCW 中文重编、GTM 译稿和高中化学资料。"
+    },
+    {
+      "id": "xhc144-works",
+      "name": "软件、游戏与设计",
+      "intro": "可下载的游戏、Android 应用、学习网站、开发工具和 Blender 设计作品。"
+    },
+    {
+      "id": "xhc144-ai",
+      "name": "AI 工具与研究",
+      "intro": "个人技能与 MCP 工具合集，以及现代人工智能的中文自学教材与实验。"
+    },
+    {
+      "id": "xhc144",
+      "name": "个人账号",
+      "intro": "Claude 实验项目合集、新的 PDF 阅读器项目与本导航仓库。"
+    }
+  ],
+  "tags": {
+    "math": "数学",
+    "physics": "物理",
+    "chemistry": "化学",
+    "exam": "试卷与竞赛",
+    "translation": "译稿与重排",
+    "ai": "AI",
+    "software": "软件",
+    "game": "游戏",
+    "film": "影片",
+    "design": "设计"
+  },
+  "repos": [
+    {
+      "full": "xhc144-qiuzhen/qiuzhen-2027-reference-library",
+      "title": "2027 领军计划参考书库",
+      "summary": "按学科整理考纲参考书的中文阅读入口：23 本中文译稿与 21 本中文原书，共 44 本；每本书附匹配源码、版本历史和原书对照。",
+      "highlights": [
+        "分析、代数、几何与拓扑、概率与统计、应用数学、物理分区浏览",
+        "译稿为原生 LaTeX 重排，附匹配源码与版本历史",
+        "部分原件使用 Git LFS，新增 PDF 与源码用普通 Git"
+      ],
+      "tags": [
+        "math",
+        "physics",
+        "translation"
+      ],
+      "links": [
+        {
+          "label": "逐书详情",
+          "url": "https://github.com/xhc144-qiuzhen/qiuzhen-2027-reference-library/blob/main/docs/books.md"
+        }
+      ],
+      "branchNotes": {
+        "retypeset/introduction-linear-algebra-zh-cn": "《线性代数入门》原生 LaTeX 重排的暂停稿：保留源 1–186 页（全书 335 页），183–186 页为未审草稿。按当时要求暂停、不并入 main。",
+        "retypeset/zhao-qualitative-semiquantitative-physics": "赵凯华《定性与半定量物理学》重排的暂停稿：已验 144/249 源页，另存 145–161 页未验草稿。按当时要求暂停、不并入 main。",
+        "translate/halliday-fundamentals-physics-zh-cn": "Halliday 第 15 阶段待核草稿（第 4 章 4-7 节与问答题），未编译、未计入完成页数。",
+        "preserve/zorich-ii-20261006T124547Z-source-drafts": {
+          "text": "Zorich II 草稿保存点；main 已有更新版本，仅多一份交接记录。",
+          "minor": true
+        },
+        "preserve/zorich-ii-20261006T131039Z-remaining-drafts": {
+          "text": "Zorich II 剩余草稿保存点；main 已有更新版本，仅多一份交接记录。",
+          "minor": true
+        }
+      }
+    },
+    {
+      "full": "xhc144-qiuzhen/qiuzhen-supplementary-library",
+      "title": "求真补充书目",
+      "summary": "2027 领军计划补充资料：交换代数与常微分方程教材、李思的讲义、编著与研究资料。原 69 份 PDF 去掉 3 份重复后保留 66 份，普通 Git 存储，无需 Git LFS。",
+      "highlights": [
+        "按代数、分析等主题列出完整教材与讲义",
+        "试读、旧版本与课堂分讲归入同一主题",
+        "附 SHA256 校验与来源记录"
+      ],
+      "tags": [
+        "math"
+      ],
+      "links": [
+        {
+          "label": "来源记录",
+          "url": "https://github.com/xhc144-qiuzhen/qiuzhen-supplementary-library/blob/main/SOURCES.md"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-qiuzhen/yupin-lecture-notes",
+      "title": "于品讲义",
+      "summary": "清华大学数学系于品教授的课程讲义归档：数学分析（三个版本）、Riemann 几何、群与 Galois 理论、抽象代数（香蕉空间可编辑源），另有第三方整理的数分习题解答。",
+      "highlights": [
+        "10 份 PDF 原件按字节保存，不使用 Git LFS",
+        "抽象代数保留 68 项 Markdown 与图片源文件",
+        "第三方答案与教师讲义分别注明来源"
+      ],
+      "tags": [
+        "math"
+      ],
+      "links": [
+        {
+          "label": "讲义原件",
+          "url": "https://github.com/xhc144-qiuzhen/yupin-lecture-notes/tree/main/source"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-qiuzhen/tsinghua-math-exams",
+      "title": "清华数学试卷",
+      "summary": "清华数学系与求真书院历年课程考试、资格考试，按学科、课程和年份整理；中文题目、AI 参考解答与原卷配对，并保留来源。",
+      "highlights": [
+        "数学分析、测度与积分、复分析、代数、拓扑、泛函、优化、数值、概率统计等",
+        "每份试卷标注年份学期与考试类型",
+        "原卷与 LaTeX 源码分列"
+      ],
+      "tags": [
+        "math",
+        "exam"
+      ],
+      "links": [],
+      "branchNotes": {
+        "review/linear-english-2024-midterm": "2024 秋英文线性代数期中的中文稿，送独立审校用；对应文件已在 main，main 的版本更新。"
+      }
+    },
+    {
+      "full": "xhc144-notes/book-project",
+      "title": "数学竞赛统一讲义",
+      "summary": "把多年数学竞赛讲义去重整理成一部统一总稿的长期 LaTeX 图书工程：总稿 PDF、可编辑源码、原始材料和来源核对记录。",
+      "highlights": [
+        "当前总稿 PDF（项目 README 标注 1938 页）",
+        "原讲义与现稿对应表、来源闭合状态",
+        "LaTeX 主文件与构建说明"
+      ],
+      "tags": [
+        "math"
+      ],
+      "links": [
+        {
+          "label": "总稿 PDF",
+          "url": "https://github.com/xhc144-notes/book-project/blob/main/deliverables/book-current.pdf"
+        },
+        {
+          "label": "交付目录",
+          "url": "https://github.com/xhc144-notes/book-project/tree/main/deliverables"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-notes/ai-study-notes",
+      "title": "AI 讲义与原创练习",
+      "summary": "按学科保存 AI 原创讲义、独立专题与原创练习的 LaTeX 源码和 PDF：分析、代数、概率统计、组合图论、几何拓扑、数论、数值、物理、计算机等，共用模板与构建工具。",
+      "highlights": [
+        "先选学科，再选专题与资料组",
+        "同题的题目、解答、源码与历史放在一组",
+        "外部题组的配套解答随原题归档到课程资料库"
+      ],
+      "tags": [
+        "math",
+        "physics",
+        "ai"
+      ],
+      "links": [
+        {
+          "label": "讲义目录",
+          "url": "https://github.com/xhc144-notes/ai-study-notes/tree/main/lectures"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-notes/course-materials",
+      "title": "外部课程讲义、机构试卷与竞赛真题",
+      "summary": "老师、机构与比赛的外部资料及忠实转写：机构模拟卷、课堂讲义系列、CMC／丘赛／Putnam 等竞赛真题；同题的 AI 解答、纯题版与原手稿放在同一资料组。",
+      "highlights": [
+        "按机构、课程讲义、竞赛真题逐层展开",
+        "PDF 显示真实文件名、简述与直接下载",
+        "阮禾课堂讲义系列有独立总目录"
+      ],
+      "tags": [
+        "math",
+        "physics",
+        "exam"
+      ],
+      "links": [
+        {
+          "label": "阮禾课堂系列",
+          "url": "https://github.com/xhc144-notes/course-materials/blob/main/materials/ruanhe/README.md"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-notes/shuzhimi-toolbox",
+      "title": "数之谜工具箱",
+      "summary": "查资料用的竞赛讲义、题选与知识分册：综合定理与解题策略、代数不等式、数论、几何、组合概率等 15 个知识分册，另有题源索引和搜题工具。",
+      "highlights": [
+        "每份资料一个入口，展开后选正文、题目、解答或源码",
+        "题库数据放在 Release data-v1",
+        "无法正常解析的总编 PDF 与未完成稿在历史说明中"
+      ],
+      "tags": [
+        "math"
+      ],
+      "links": [
+        {
+          "label": "搜题工具",
+          "url": "https://github.com/xhc144-notes/shuzhimi-toolbox/tree/main/math_search_app"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-notes/mit-ocw-notes",
+      "title": "MIT OCW 讲义中文重编",
+      "summary": "MIT OpenCourseWare 讲义归档，以及按学科整编的中文原生 LaTeX 讲义（个人非商业学习）：数学 15 册、物理 20 册，各册附中文 PDF、源码 ZIP 与覆盖范围说明。",
+      "highlights": [
+        "数学：数值分析、数值代数、最优化、数理统计、拓扑、概率论等",
+        "物理：电动力学、量子力学、理论力学、天体物理与宇宙学等",
+        "英文原始讲义保留作来源核对"
+      ],
+      "tags": [
+        "math",
+        "physics",
+        "translation"
+      ],
+      "links": [
+        {
+          "label": "学科目录",
+          "url": "https://github.com/xhc144-notes/mit-ocw-notes/tree/main/subjects"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-notes/gtm-selected-library",
+      "title": "GTM 选书中文 LaTeX 项目",
+      "summary": "35 本 GTM 选书的英文原书与中文 LaTeX 译稿。main 已归档全部 35 套译稿，每本附版本记录、审校范围和底本缺页说明。",
+      "highlights": [
+        "每本书一个 translations/GTM-xxx 目录：PDF、源码 ZIP 与 QA 记录",
+        "多数译稿为全书初译，独立逐句审校范围按书标注",
+        "翻译规范与机器可读目录 catalog.json"
+      ],
+      "tags": [
+        "math",
+        "translation"
+      ],
+      "links": [
+        {
+          "label": "译稿目录",
+          "url": "https://github.com/xhc144-notes/gtm-selected-library/tree/main/translations"
+        },
+        {
+          "label": "翻译规范",
+          "url": "https://github.com/xhc144-notes/gtm-selected-library/blob/main/TRANSLATION_GUIDELINES.md"
+        }
+      ],
+      "branchNotes": {
+        "translate/gtm-005-zh": {
+          "text": "译稿已在 main；分支多一次续接核验记录，交付说明比 main 新。",
+          "minor": true
+        },
+        "translate/gtm-282-zh": "译稿已在 main；分支有一次源码包复验和更新的交接说明（含重新打包的源码 ZIP），尚未并入。",
+        "translate/gtm-052-zh": "提交历史与 main 不同，但全部文件内容已在 main。",
+        "translate/gtm-082-zh": "提交历史与 main 不同，但全部文件内容已在 main。"
+      }
+    },
+    {
+      "full": "xhc144-notes/chem-teaching-materials",
+      "title": "高中化学教学资料",
+      "summary": "整合编写的《高中化学系统讲义》（墨经书籍模板，README 标注 198 页），以及选择性必修 1 课件、高考一轮知识清单、思维导图和校本课资料。",
+      "highlights": [
+        "讲义 PDF、单文件 LaTeX 源码与完整源码包",
+        "原始资料 111 个文件：PPTX 课件与 DOCX 清单",
+        "面向广东新高考化学"
+      ],
+      "tags": [
+        "chemistry"
+      ],
+      "links": [
+        {
+          "label": "系统讲义 PDF",
+          "url": "https://github.com/xhc144-notes/chem-teaching-materials/blob/main/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6%E7%B3%BB%E7%BB%9F%E8%AE%B2%E4%B9%89/%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6%E7%B3%BB%E7%BB%9F%E8%AE%B2%E4%B9%89.pdf"
+        }
+      ],
+      "branchNotes": {
+        "claude/funny-cori-g00nra": "新增「数值积分实验台」网页（输入函数后对比各算法误差），并改了 README；未并入 main。",
+        "claude/vibrant-lamport-q2zg1b": "新增《数值积分与数值微分》合编网页讲义；未并入 main。"
+      }
+    },
+    {
+      "full": "xhc144-works/prism-wardens",
+      "title": "棱镜守卫 Prism Wardens",
+      "summary": "完整的策略塔防游戏：确定性战斗模拟、可托管或接管的 AI、规则与关卡编辑器、修改器、录像与战报；有 Web 版和带安装、卸载与自动更新的 Windows 桌面版。",
+      "highlights": [
+        "42 种防御单位、28 种敌人，冒险 5 章 30 关",
+        "原创 Canvas 画面默认内置；经典画面需导入自己持有的原版素材",
+        "Windows 安装版与便携版在 Releases 下载"
+      ],
+      "tags": [
+        "game",
+        "software",
+        "ai"
+      ],
+      "links": [
+        {
+          "label": "最新版本下载",
+          "url": "https://github.com/xhc144-works/prism-wardens/releases/latest"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-works/face-guard",
+      "title": "安心守护 FaceGuard",
+      "summary": "Android 8.0+ 离线人脸匹配与系统锁屏试用应用（Kotlin）：机主录入一人、授予相机和锁屏授权后开启守护。",
+      "highlights": [
+        "0.2.2 独立评估版 APK（ARM64／ARM32）",
+        "0.2.1 历史试用包、源码与验证说明",
+        "Apache-2.0 许可"
+      ],
+      "tags": [
+        "software",
+        "ai"
+      ],
+      "links": [
+        {
+          "label": "发布说明",
+          "url": "https://github.com/xhc144-works/face-guard/blob/main/docs/releases.md"
+        }
+      ],
+      "limits": "真实相机、实际锁屏解锁、识别准确率与端到端延迟尚未完成真机验证。"
+    },
+    {
+      "full": "xhc144-works/study-feed",
+      "title": "随手读懂一点 Study Feed",
+      "summary": "本地优先的简体中文学习信息流：144 张原创知识卡片和 410 段深读，按主题、时长和关键词阅读，支持收藏复习；附源码与静态构建。",
+      "highlights": [
+        "1.2.0 正式静态快照（根目录 dist/）",
+        "1.3.1 前端候选与 DeepSeek 生成器恢复源码",
+        "不需要运行时 Node 或 AI API"
+      ],
+      "tags": [
+        "software",
+        "math",
+        "physics"
+      ],
+      "links": [
+        {
+          "label": "交付说明",
+          "url": "https://github.com/xhc144-works/study-feed/blob/main/docs/delivery.md"
+        }
+      ],
+      "limits": "1.3.1 候选尚未部署，生成器没有上线。"
+    },
+    {
+      "full": "xhc144-works/api-observer",
+      "title": "API 观测室",
+      "summary": "独立的 OpenAI 格式模拟服务与简体中文监控面板（Python 3.12），用于检查请求、模拟状态码、延迟和 SSE；不调用 AI，不代理供应商，不产生模型费用。",
+      "highlights": [
+        "服务器部署包与完整源码测试包",
+        "Windows 下载、上传与部署指南",
+        "20 项本地测试及 Chromium 验证记录"
+      ],
+      "tags": [
+        "software",
+        "ai"
+      ],
+      "links": [
+        {
+          "label": "部署指南",
+          "url": "https://github.com/xhc144-works/api-observer/blob/main/deploy/WINDOWS_QUICKSTART.md"
+        }
+      ],
+      "limits": "真实服务器 Nginx/systemd、TLS 与主站会话端到端尚未验收。"
+    },
+    {
+      "full": "xhc144-works/stacked-grove",
+      "title": "叠叶村 Stacked Grove",
+      "summary": "SDL3 卡牌堆叠游戏的简体中文社区重构版：Windows x64 完整游戏包、源码 ZIP、测试报告与操作说明。",
+      "highlights": [
+        "完整解压后运行 Play.cmd 或 StackedGrove.exe",
+        "源码包保留依赖、构建说明与许可",
+        "SHA256 校验清单"
+      ],
+      "tags": [
+        "game",
+        "software"
+      ],
+      "links": [
+        {
+          "label": "测试报告",
+          "url": "https://github.com/xhc144-works/stacked-grove/blob/main/docs/TEST-REPORT.txt"
+        }
+      ],
+      "limits": "尚未在真实 Windows 或 Wine 中运行验收；部分机制未完成，没有音乐音效。"
+    },
+    {
+      "full": "xhc144-works/blender-designs",
+      "title": "Blender 设计作品",
+      "summary": "Blender 建模与设计交付归档。当前收录 Azure / Sea House 海景别墅概念场景：可编辑 .blend、两张 1500×1100 渲染图和完整交付包。",
+      "highlights": [
+        "Blender 4.3.2，Cycles 渲染",
+        "完整 ZIP、场景文件与渲染图分别下载"
+      ],
+      "tags": [
+        "design"
+      ],
+      "links": [
+        {
+          "label": "作品说明",
+          "url": "https://github.com/xhc144-works/blender-designs/blob/main/azure-sea-house/README.md"
+        }
+      ],
+      "limits": "建筑概念可视化，未做结构、规范或施工审核。"
+    },
+    {
+      "full": "xhc144-ai/skills",
+      "title": "个人技能、MCP 与配套工具",
+      "summary": "17 个按任务触发的主技能（几何、排版、教学、工程、写作、视频等），以及 MCP 服务、几何绘图引擎与工程交接工具；含安装说明、来源清单与历史备份。",
+      "highlights": [
+        "GSP 动态几何、TikZ 绘图、墨经与 Yii.I. LaTeX 模板",
+        "数学讲义写作、难度评估、解题模拟与发现",
+        "GitHub 批量上传、开源项目搜索、工程交接记录"
+      ],
+      "tags": [
+        "ai",
+        "math"
+      ],
+      "links": [
+        {
+          "label": "安装说明",
+          "url": "https://github.com/xhc144-ai/skills/blob/main/INSTALLATION.md"
+        },
+        {
+          "label": "技能目录",
+          "url": "https://github.com/xhc144-ai/skills/tree/main/skills"
+        }
+      ]
+    },
+    {
+      "full": "xhc144-ai/ai-self-study",
+      "title": "现代人工智能研究学习",
+      "summary": "从语言模型的数学与训练出发，读懂近年的基础模型论文并完成可复核的小研究：中文教材、论文中文资料、可运行实验和研究记录。",
+      "highlights": [
+        "中文教材 PDF：11 个学习单元与 3 个数学工具附录",
+        "NumPy 默认实验，另有可选的真实小模型实验",
+        "教材与论文合订 PDF、完整可编辑源码 ZIP"
+      ],
+      "tags": [
+        "ai",
+        "math"
+      ],
+      "links": [
+        {
+          "label": "下载目录",
+          "url": "https://github.com/xhc144-ai/ai-self-study/tree/main/dist"
+        }
+      ]
+    },
+    {
+      "full": "xhc144/claude-lab",
+      "title": "Claude 实验仓库",
+      "summary": "多个独立实验的合集：交互数学、创世沙盒与游戏、AI 产品原型、多智能体研究实验室、Windows 桌面软件、程序化数学影片与 LaTeX 模板。GitHub Pages 上的项目导航收录 25 个项目。",
+      "highlights": [
+        "浏览器：数境 MathScape、数学知识星图、万象 Myriad、薪火纪 Emberstack、回响荒野 Echowild",
+        "Windows 软件：律影 Motif、音乐粒子宇宙、声准 Phonica、墨誊 Moteng、鸿雁邮箱（Releases 发布、自动更新）",
+        "9 部数学讲解影片在线播放，墨经 LaTeX 模板，2027 新领军预测训练卷"
+      ],
+      "tags": [
+        "math",
+        "software",
+        "game",
+        "film",
+        "ai"
+      ],
+      "links": [],
+      "branchNotes": {
+        "claude/determined-rubin-lapugg": "新增 GitHub Pages 部署工作流 .github/workflows/pages.yml，并让 Ship 合并后触发部署；未并入 main。"
+      },
+      "branchSummary": "AI 在 claude/** 分支开发，Ship 流水线测试通过后自动合并进 main，所以大多数分支已经并入。"
+    },
+    {
+      "full": "xhc144/Claude-lab-2",
+      "title": "Folio PDF 阅读器",
+      "summary": "PySide6 与 PyMuPDF 编写的跨平台桌面 PDF 阅读器：阅读、批注、手写签名、点读朗读、OCR、压缩合并拆分、打印与演示模式，接入千问、DeepSeek、Ollama 等 AI 服务。",
+      "highlights": [
+        "朗读支持千问语音、OpenAI 兼容语音与离线系统语音",
+        "OCR 可用系统自带识别或 AI 视觉模型，并可 AI 校对",
+        "GitHub Actions 自动打包 Windows／macOS，带签名的自动更新"
+      ],
+      "tags": [
+        "software",
+        "ai"
+      ],
+      "links": [
+        {
+          "label": "分支源码",
+          "url": "https://github.com/xhc144/Claude-lab-2/tree/claude/pdf-reader"
+        },
+        {
+          "label": "分支 README",
+          "url": "https://github.com/xhc144/Claude-lab-2/blob/claude/pdf-reader/README.md"
+        }
+      ],
+      "mainNote": "main 只有初始 README，项目全部源码都在 claude/pdf-reader 分支。",
+      "branchNotes": {
+        "claude/pdf-reader": "Folio PDF 阅读器的全部源码、截图、打包脚本与 CI 工作流，共 178 个 main 没有的文件。"
+      }
+    },
+    {
+      "full": "xhc144/repository-index",
+      "title": "仓库总览（本仓库）",
+      "summary": "这个页面以及资料文件目录的源码：仓库数据、扫描脚本、页面生成脚本和维护规则。",
+      "highlights": [
+        "data/repositories.json：仓库中文介绍",
+        "data/scan.json：分支与文件树扫描结果",
+        "资料文件目录：247 组资料、408 份 PDF"
+      ],
+      "tags": [],
+      "links": [
+        {
+          "label": "资料文件目录",
+          "url": "https://xhc144.github.io/repository-index/materials/"
+        }
+      ]
+    }
+  ]
+}
